@@ -1,0 +1,36 @@
+% Consultas generales
+% Consultas de tipo
+tipo_pokemon(Tipo) :- tipo(Tipo).
+
+% Habitat
+habitat_pokemon(Habitat) :- habitat(Habitat).
+
+% Grupo huevo
+clase_huevo(Thuevo) :- grupo_huevo(Thuevo).
+
+% regiones
+regiones(Region) :- region(Region).
+
+%Debilidades
+movimientos_peligro(Debil, Fuerte) :- debilidad(Debil, _).
+
+% fortalezas
+Movimientos_eficaces(Fortaleza, Debilidad) :- fortaleza(Fortaleza, _).
+
+% Inmunidad
+inmunidad_tipos(Tipo_p, Inmunidad) :- inmunidad(Tipo_p, _).
+
+ Regla para determinar resistencias
+resistencia(Tipo1, Tipo2) :-
+    \+ fortaleza(Tipo1, Tipo2),
+    \+ debilidad(Tipo1, Tipo2).
+
+% Desripciones de habilidad
+des_habilidad(Habilidad) :- habilidad(Habilidad, _).
+
+% Consulta para obtener nombre y generacion de un pokemon
+numero_pokedex(Numero) :- pokemon(Numero, _, _, _).
+nombre_pokemon(Nombre) :- pokemon(_, Nombre, _, _).
+numero_nombre(Numero, Nombre) :- pokemon(Numero, Nombre, _, _).
+nombre_generacion(Nombre, Generacion) :- pokemon(_, Nombre, _, Generacion).
+nombre_tipo(Nombre, Tipo) :- pokemon(_, Nombre, Tipo, _).
