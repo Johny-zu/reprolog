@@ -527,6 +527,34 @@ habilidad('Voz fluida', 'Permite al portador usar movimientos de sonido con prio
 % habilidades Z
 habilidad('Zoquete', 'Evita que el portador use objetos en combate').
 
+% Naturalezas -> nombre, aumenta, disminuye
+naturaleza(fuerte, neutra, neutra).
+naturaleza(osada, defensa, ataque).
+naturaleza(miedosa, velocidad, ataque).
+naturaleza(modesta, ataque_especial, ataque).
+naturaleza(serena, defensa_especial, ataque).
+naturaleza(huraña, ataque, defensa).
+naturaleza(docil, neutra, neutra).
+naturaleza(activa, velocidad, defensa).
+naturaleza(afable, ataque_especial, defensa).
+naturaleza(amable, defensa_especial, defensa).
+naturaleza(audaz, ataque, velocidad).
+naturaleza(placida, defensa, velocidad).
+naturaleza(seria, neutra, neutra).
+naturaleza(mansa, ataque_especial, velocidad).
+naturaleza(grosera, defensa_especial, velocidad).
+naturaleza(firme, ataque, ataque_especial).
+naturaleza(agitada, defensa, ataque_especial).
+naturaleza(alegre, velocidad, ataque_especial).
+naturaleza(timida, neutra, neutra).
+naturaleza(cauta, defensa_especial, ataque_especial).
+naturaleza(picara, ataque, defensa_especial).
+naturaleza(floja, defensa, velocidad).
+naturaleza(ingenua, velocidad, defensa_especial).
+naturaleza(alocada, ataque_especial, defensa_especial).
+naturaleza(rara, neutra, neutra).
+
+
 % pokemon generacion 1
 pokemon(1, bulbasaur, [planta, veneno], 1).
 pokemon(2, ivysaur, [planta, veneno], 1).
@@ -1871,6 +1899,25 @@ inmunidad_tipos(Tipo_p, Inmunidad) :- inmunidad(Tipo_p, _).
 resistencia(Tipo1, Tipo2) :-
     \+ fortaleza(Tipo1, Tipo2),
     \+ debilidad(Tipo1, Tipo2).
+
+% Descripcion de naturaleza
+% Clasificar naturalezas fuertes: aumentan algo y no son neutras
+naturaleza_fuerte(Nombre, Aumenta) :-
+    naturaleza(Nombre, Aumenta, Disminuye),
+    Aumenta \= neutra,
+    Disminuye = neutra.
+
+% Clasificar naturalezas débiles: disminuyen algo y no son neutras
+naturaleza_debil(Nombre, Disminuye) :-
+    naturaleza(Nombre, Aumenta, Disminuye),
+    Aumenta = neutra,
+    Disminuye \= neutra.
+
+% Clasificar naturalezas neutras: no aumentan ni disminuyen
+naturaleza_neutra(Nombre) :-
+    naturaleza(Nombre, Aumenta, Disminuye),
+    Aumenta = neutra,
+    Disminuye = neutra.
 
 % Desripciones de habilidad
 des_habilidad(Habilidad) :- habilidad(Habilidad, _).

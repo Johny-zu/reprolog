@@ -28,6 +28,26 @@ resistencia(Tipo1, Tipo2) :-
 % Desripciones de habilidad
 des_habilidad(Habilidad) :- habilidad(Habilidad, _).
 
+% Descripcion de naturaleza
+% Clasificar naturalezas fuertes: aumentan algo y no son neutras
+naturaleza_fuerte(Nombre, Aumenta) :-
+    naturaleza(Nombre, Aumenta, Disminuye),
+    Aumenta \= neutra,
+    Disminuye = neutra.
+
+% Clasificar naturalezas débiles: disminuyen algo y no son neutras
+naturaleza_debil(Nombre, Disminuye) :-
+    naturaleza(Nombre, Aumenta, Disminuye),
+    Aumenta = neutra,
+    Disminuye \= neutra.
+
+% Clasificar naturalezas neutras: no aumentan ni disminuyen
+naturaleza_neutra(Nombre) :-
+    naturaleza(Nombre, Aumenta, Disminuye),
+    Aumenta = neutra,
+    Disminuye = neutra.
+
+
 % Consulta para obtener nombre y generacion de un pokemon
 numero_pokedex(Numero) :- pokemon(Numero, _, _, _).
 nombre_pokemon(Nombre) :- pokemon(_, Nombre, _, _).
