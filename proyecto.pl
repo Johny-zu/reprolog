@@ -18,6 +18,53 @@ tipo(dragon).
 tipo(siniestro).
 tipo(hada).
 
+% Habitat
+habitat(bosque).
+habitat(cueva).
+habitat(desierto).
+habitat(montaña).
+habitat(pradera).
+habitat(rio).
+habitat(mar).
+habitat(ciudad).
+habitat(pantano).
+habitat(campo).
+habitat(volcan).
+habitat(isla).
+habitat(lago).
+habitat(costa).
+habitat(cementerio).
+
+% Grupos de huevo
+grupo_huevo(monstruo).
+grupo_huevo(agua_1).
+grupo_huevo(bicho).
+grupo_huevo(volador).
+grupo_huevo(campo).
+grupo_huevo(hada).
+grupo_huevo(planta).
+grupo_huevo(humanoide).
+grupo_huevo(mineral).
+grupo_huevo(desconocido).
+grupo_huevo(agua_3).
+grupo_huevo(ditto).
+grupo_huevo(dragon).
+grupo_huevo(no_puede_criar).
+grupo_huevo(agua_2).
+grupo_huevo(amorfo).
+grupo_huevo(dinamo).
+
+% regiones
+region(kanto).
+region(johto).
+region(hoenn).
+region(sinnoh).
+region(unova).
+region(kalos).
+region(alola).
+region(galar).
+region(paldea).
+
 % Debilidades
 debilidad(normal, lucha).
 debilidad(normal, roca).
@@ -479,8 +526,6 @@ habilidad('Voz fluida', 'Permite al portador usar movimientos de sonido con prio
 
 % habilidades Z
 habilidad('Zoquete', 'Evita que el portador use objetos en combate').
-
-
 
 % pokemon generacion 1
 pokemon(1, bulbasaur, [planta, veneno], 1).
@@ -984,7 +1029,6 @@ pokemon(492, shaymin, [planta], 4).
 pokemon(493, arceus, [normal], 4).
 
 % pokemon generacion 5
-% pokemon generacion 5
 pokemon(494, victini, [psiquico, fuego], 5).
 pokemon(495, snivy, [planta], 5).
 pokemon(496, servine, [planta], 5).
@@ -1143,7 +1187,6 @@ pokemon(648, meloetta, [normal, psiquico], 5).
 pokemon(649, genesect, [bicho, acero], 5).
 
 % pokemon generacion 6
-% pokemon generacion 6
 pokemon(650, chespin, [planta], 6).
 pokemon(651, quilladin, [planta], 6).
 pokemon(652, chesnaught, [planta, lucha], 6).
@@ -1217,7 +1260,6 @@ pokemon(719, diancie, [roca, hada], 6).
 pokemon(720, hoopa, [psiquico, fantasma], 6).
 pokemon(721, volcanion, [fuego, agua], 6).
 
-% pokemon generacion 7
 % pokemon generacion 7
 pokemon(722, rowlet, [planta, volador], 7).
 pokemon(723, dartrix, [planta, volador], 7).
@@ -1400,7 +1442,6 @@ pokemon(897, spectrier, [fantasma], 8).
 pokemon(898, calyrex, [psiquico, planta], 8).
 
 % pokemon generacion 9
-% pokemon generacion 9
 pokemon(899, sprigatito, [planta], 9).
 pokemon(900, floragato, [planta], 9).
 pokemon(901, meowscarada, [planta, siniestro], 9).
@@ -1529,6 +1570,280 @@ pokemon(1023, dachsbun, [hada], 9).
 pokemon(1024, smoliv, [planta, normal], 9).
 pokemon(1025, dolliv, [planta, normal], 9).
 pokemon(1026, arboliva, [planta, normal], 9).
+
+% Grupos evolutivos de la primera generación con niveles de evolución
+evolucion(bulbasaur, ivysaur, 16).
+evolucion(ivysaur, venusaur, 32).
+evolucion(charmander, charmeleon, 16).
+evolucion(charmeleon, charizard, 36).
+evolucion(squirtle, wartortle, 16).
+evolucion(wartortle, blastoise, 36).
+evolucion(caterpie, metapod, 7).
+evolucion(metapod, butterfree, 10).
+evolucion(weedle, kakuna, 7).
+evolucion(kakuna, beedrill, 10).
+evolucion(pidgey, pidgeotto, 18).
+evolucion(pidgeotto, pidgeot, 36).
+evolucion(rattata, raticate, 20).
+evolucion(spearow, fearow, 20).
+evolucion(ekans, arbok, 22).
+evolucion(pichu, pikachu, amistad).
+evolucion(pikachu, raichu, piedra_trueno).
+evolucion(sandshrew, sandslash, 22).
+evolucion(nidoranf, nidorina, 16).
+evolucion(nidorina, nidoqueen, piedra_lunar).
+evolucion(nidoranm, nidorino, 16).
+evolucion(nidorino, nidoking, piedra_lunar).
+evolucion(cleffa, clefairy, amistad).
+evolucion(clefairy, clefable, piedra_lunar).
+evolucion(vulpix, ninetales, piedra_fuego).
+evolucion(igglybuff, jigglypuff, amistad).
+evolucion(jigglypuff, wigglytuff, piedra_lunar).
+evolucion(zubat, golbat, 22).
+evolucion(oddish, gloom, 21).
+evolucion(gloom, vileplume, piedra_hoja).
+evolucion(paras, parasect, 24).
+evolucion(venonat, venomoth, 31).
+evolucion(diglett, dugtrio, 26).
+evolucion(meowth, persian, 28).
+evolucion(psyduck, golduck, 33).
+evolucion(mankey, primeape, 28).
+evolucion(growlithe, arcanine, piedra_fuego).
+evolucion(poliwag, poliwhirl, 25).
+evolucion(poliwhirl, poliwrath, piedra_agua).
+evolucion(abra, kadabra, 16).
+evolucion(kadabra, alakazam, intercambio).
+evolucion(machop, machoke, 28).
+evolucion(machoke, machamp, intercambio).
+evolucion(bellsprout, weepinbell, 21).
+evolucion(weepinbell, victreebel, piedra_hoja).
+evolucion(tentacool, tentacruel, 30).
+evolucion(geodude, graveler, 25).
+evolucion(graveler, golem, intercambio).
+evolucion(ponyta, rapidash, 40).
+evolucion(slowpoke, slowbro, 37).
+evolucion(magnemite, magneton, 30).
+evolucion(doduo, dodrio, 31).
+evolucion(seel, dewgong, 34).
+evolucion(grimer, muk, 38).
+evolucion(shellder, cloyster, piedra_agua).
+evolucion(gastly, haunter, 25).
+evolucion(haunter, gengar, intercambio).
+evolucion(onix, steelix, intercambio_con_revestimiento_metalico).
+evolucion(drowzee, hypno, 26).
+evolucion(krabby, kingler, 28).
+evolucion(voltorb, electrode, 30).
+evolucion(exeggcute, exeggutor, piedra_hoja).
+evolucion(cubone, marowak, 28).
+evolucion(tyrogue, hitmonlee, 20).
+evolucion(tyrogue, hitmonchan, 20).
+evolucion(lickitung, lickilicky, rodar).
+evolucion(koffing, weezing, 35).
+evolucion(rhyhorn, rhydon, 42).
+evolucion(happiny, chansey, amistad).
+evolucion(chansey, blissey, amistad).
+evolucion(tangela, tangrowth, poder_ancestral).
+evolucion(kangaskhan, mega_kangaskhan, mega_piedra).
+evolucion(horsea, seadra, 32).
+evolucion(goldeen, seaking, 33).
+evolucion(staryu, starmie, piedra_agua).
+evolucion(mime_jr, mr_mime, mimica).
+evolucion(scyther, scizor, intercambio_con_revestimiento_metalico).
+evolucion(smoochum, jynx, 30).
+evolucion(elektrik, electabuzz, 30).
+evolucion(magby, magmar, 30).
+evolucion(pinsir, mega_pinsir, mega_piedra).
+evolucion(tauros, mega_tauros, mega_piedra).
+evolucion(magikarp, gyarados, 20).
+evolucion(lapras, mega_lapras, mega_piedra).
+evolucion(ditto, mega_ditto, mega_piedra).
+evolucion(eevee, vaporeon, piedra_agua).
+evolucion(eevee, jolteon, piedra_trueno).
+evolucion(eevee, flareon, piedra_fuego).
+evolucion(porygon, porygon2, mejora).
+evolucion(omanyte, omastar, 40).
+evolucion(kabuto, kabutops, 40).
+evolucion(aerodactyl, mega_aerodactyl, mega_piedra).
+evolucion(snorlax, mega_snorlax, mega_piedra).
+evolucion(articuno, mega_articuno, mega_piedra).
+evolucion(zapdos, mega_zapdos, mega_piedra).
+evolucion(moltres, mega_moltres, mega_piedra).
+evolucion(dratini, dragonair, 30).
+evolucion(dragonair, dragonite, 55).
+evolucion(mewtwo, mega_mewtwo_x, mega_piedra).
+evolucion(mewtwo, mega_mewtwo_y, mega_piedra).
+evolucion(mew, mega_mew, mega_piedra).
+
+% Grupos evolutivos de la segunda generación con niveles de evolución
+evolucion(chikorita, bayleef, 16).
+evolucion(bayleef, meganium, 32).
+evolucion(cyndaquil, quilava, 14).
+evolucion(quilava, typhlosion, 36).
+evolucion(totodile, croconaw, 18).
+evolucion(croconaw, feraligatr, 30).
+evolucion(sentret, furret, 15).
+evolucion(hoothoot, noctowl, 20).
+evolucion(ledyba, ledian, 18).
+evolucion(spinarak, ariados, 22).
+evolucion(chinchou, lanturn, 27).
+evolucion(pichu, pikachu, amistad).
+evolucion(pikachu, raichu, piedra_trueno).
+evolucion(cleffa, clefairy, amistad).
+evolucion(clefairy, clefable, piedra_lunar).
+evolucion(igglybuff, jigglypuff, amistad).
+evolucion(jigglypuff, wigglytuff, piedra_lunar).
+evolucion(togepi, togetic, amistad).
+evolucion(togetic, togekiss, piedra_dia).
+evolucion(natu, xatu, 25).
+evolucion(mareep, flaaffy, 15).
+evolucion(flaaffy, ampharos, 30).
+evolucion(marill, azumarill, 18).
+evolucion(sudowoodo, mega_sudowoodo, mega_piedra).
+evolucion(hoppip, skiploom, 18).
+evolucion(skiploom, jumpluff, 27).
+evolucion(aipom, ambipom, doble_golpe).
+evolucion(sunkern, sunflora, piedra_solar).
+evolucion(yanma, yanmega, poder_ancestral).
+evolucion(wooper, quagsire, 20).
+evolucion(murkrow, honchkrow, piedra_oscura).
+evolucion(misdreavus, mismagius, piedra_oscura).
+evolucion(unown, mega_unown, mega_piedra).
+evolucion(wynaut, wobbuffet, 15).
+evolucion(girafarig, mega_girafarig, mega_piedra).
+evolucion(pineco, forretress, 31).
+evolucion(dunsparce, mega_dunsparce, mega_piedra).
+evolucion(gligar, gliscor, colmillo_agudo).
+evolucion(snubbull, granbull, 23).
+evolucion(qwilfish, mega_qwilfish, mega_piedra).
+evolucion(shuckle, mega_shuckle, mega_piedra).
+evolucion(heracross, mega_heracross, mega_piedra).
+evolucion(sneasel, weavile, garra_afilada).
+evolucion(teddiursa, ursaring, 30).
+evolucion(slugma, magcargo, 38).
+evolucion(swinub, piloswine, 33).
+evolucion(piloswine, mamoswine, poder_ancestral).
+evolucion(corsola, mega_corsola, mega_piedra).
+evolucion(remoraid, octillery, 25).
+evolucion(delibird, mega_delibird, mega_piedra).
+evolucion(mantyke, mantine, remoraid).
+evolucion(skarmory, mega_skarmory, mega_piedra).
+evolucion(houndour, houndoom, 24).
+evolucion(houndoom, mega_houndoom, mega_piedra).
+evolucion(phanpy, donphan, 25).
+evolucion(stantler, mega_stantler, mega_piedra).
+evolucion(tyrogue, hitmontop, 20).
+evolucion(smoochum, jynx, 30).
+evolucion(elektrik, electabuzz, 30).
+evolucion(magby, magmar, 30).
+evolucion(miltank, mega_miltank, mega_piedra).
+evolucion(blissey, mega_blissey, mega_piedra).
+evolucion(raikou, mega_raikou, mega_piedra).
+evolucion(entei, mega_entei, mega_piedra).
+evolucion(suicune, mega_suicune, mega_piedra).
+evolucion(larvitar, pupitar, 30).
+evolucion(pupitar, tyranitar, 55).
+evolucion(tyranitar, mega_tyranitar, mega_piedra).
+evolucion(lugia, mega_lugia, mega_piedra).
+evolucion(ho-oh, mega_ho-oh, mega_piedra).
+evolucion(celebi, mega_celebi, mega_piedra).
+
+% Grupos evolutivos de la tercera generación con niveles de evolución
+evolucion(treecko, grovyle, 16).
+evolucion(grovyle, sceptile, 36).
+evolucion(torchic, combusken, 16).
+evolucion(combusken, blaziken, 36).
+evolucion(mudkip, marshtomp, 16).
+evolucion(marshtomp, swampert, 36).
+evolucion(poochyena, mightyena, 18).
+evolucion(zigzagoon, linoone, 20).
+evolucion(wurmple, silcoon, 7).
+evolucion(silcoon, beautifly, 10).
+evolucion(wurmple, cascoon, 7).
+evolucion(cascoon, dustox, 10).
+evolucion(lotad, lombre, 14).
+evolucion(lombre, ludicolo, piedra_agua).
+evolucion(seedot, nuzleaf, 14).
+evolucion(nuzleaf, shiftry, piedra_hoja).
+evolucion(taillow, swellow, 22).
+evolucion(wingull, pelipper, 25).
+evolucion(ralts, kirlia, 20).
+evolucion(kirlia, gardevoir, 30).
+evolucion(surskit, masquerain, 22).
+evolucion(shroomish, breloom, 23).
+evolucion(slakoth, vigoroth, 18).
+evolucion(vigoroth, slaking, 36).
+evolucion(nincada, ninjask, 20).
+evolucion(nincada, shedinja, 20).
+evolucion(whismur, loudred, 20).
+evolucion(loudred, exploud, 40).
+evolucion(makuhita, hariyama, 24).
+evolucion(nosepass, probopass, monte_corona).
+evolucion(skitty, delcatty, piedra_lunar).
+evolucion(sableye, mega_sableye, mega_piedra).
+evolucion(mawile, mega_mawile, mega_piedra).
+evolucion(aron, lairon, 32).
+evolucion(lairon, aggron, 42).
+evolucion(meditite, medicham, 37).
+evolucion(electrike, manectric, 26).
+evolucion(plusle, mega_plusle, mega_piedra).
+evolucion(minun, mega_minun, mega_piedra).
+evolucion(volbeat, mega_volbeat, mega_piedra).
+evolucion(illumise, mega_illumise, mega_piedra).
+evolucion(roselia, roserade, piedra_dia).
+evolucion(gulpin, swalot, 26).
+evolucion(carvanha, sharpedo, 30).
+evolucion(wailmer, wailord, 40).
+evolucion(numel, camerupt, 33).
+evolucion(torkoal, mega_torkoal, mega_piedra).
+evolucion(spoink, grumpig, 32).
+evolucion(spinda, mega_spinda, mega_piedra).
+evolucion(trapinch, vibrava, 35).
+evolucion(vibrava, flygon, 45).
+evolucion(cacnea, cacturne, 32).
+evolucion(swablu, altaria, 35).
+evolucion(zangoose, mega_zangoose, mega_piedra).
+evolucion(seviper, mega_seviper, mega_piedra).
+evolucion(lunatone, mega_lunatone, mega_piedra).
+evolucion(solrock, mega_solrock, mega_piedra).
+evolucion(barboach, whiscash, 30).
+evolucion(corphish, crawdaunt, 30).
+evolucion(baltoy, claydol, 36).
+evolucion(lileep, cradily, 40).
+evolucion(anorith, armaldo, 40).
+evolucion(feebas, milotic, belleza).
+evolucion(castform, mega_castform, mega_piedra).
+evolucion(kecleon, mega_kecleon, mega_piedra).
+evolucion(shuppet, banette, 37).
+evolucion(duskull, dusclops, 37).
+evolucion(tropius, mega_tropius, mega_piedra).
+evolucion(chimecho, mega_chimecho, mega_piedra).
+evolucion(absol, mega_absol, mega_piedra).
+evolucion(wynaut, wobbuffet, 15).
+evolucion(snorunt, glalie, 42).
+evolucion(glalie, mega_glalie, mega_piedra).
+evolucion(spheal, sealeo, 32).
+evolucion(sealeo, walrein, 44).
+evolucion(clamperl, huntail, diente_marino).
+evolucion(clamperl, gorebyss, escama_marina).
+evolucion(relicanth, mega_relicanth, mega_piedra).
+evolucion(luvdisc, mega_luvdisc, mega_piedra).
+evolucion(bagon, shelgon, 30).
+evolucion(shelgon, salamence, 50).
+evolucion(salamence, mega_salamence, mega_piedra).
+evolucion(beldum, metang, 20).
+evolucion(metang, metagross, 45).
+evolucion(metagross, mega_metagross, mega_piedra).
+evolucion(regirock, mega_regirock, mega_piedra).
+evolucion(regice, mega_regice, mega_piedra).
+evolucion(registeel, mega_registeel, mega_piedra).
+evolucion(latias, mega_latias, mega_piedra).
+evolucion(latios, mega_latios, mega_piedra).
+evolucion(kyogre, primal_kyogre, orbe_azul).
+evolucion(groudon, primal_groudon, orbe_rojo).
+evolucion(rayquaza, mega_rayquaza, ascenso_draco).
+evolucion(jirachi, mega_jirachi, mega_piedra).
+evolucion(deoxys, mega_deoxys, mega_piedra).
+
 
 % Consultas generales
 % Consulta para obtener nombre y generacion de un pokemon
