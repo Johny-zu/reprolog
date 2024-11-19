@@ -1,0 +1,20 @@
+Hechos en uso actualmente
+tipo
+habitat
+grupo huevo
+regiones
+Debilidades
+inmunidades
+fortalezas
+habilidades
+naturalezas
+pokemon
+
+
+evolucion_nivel
+evolucion_intercambio
+evolucion_objeto
+evolucion_amistad
+evolucion_nivel_habitat
+evolucion_nivel_hora
+evolucion_nivel_habilidad
