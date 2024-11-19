@@ -22,7 +22,7 @@ tipo(hada).
 habitat(bosque).
 habitat(cueva).
 habitat(desierto).
-habitat(montaña).
+habitat(montana).
 habitat(pradera).
 habitat(rio).
 habitat(mar).
@@ -204,7 +204,7 @@ habilidad('Anticipación', 'Permite al portador detectar movimientos peligrosos 
 habilidad('Antídoto (habilidad)', 'Permite al portador curar problemas de estado de veneno').
 habilidad('Armadura batalla', 'Aumenta la defensa del portador en un 50%').
 habilidad('Armadura frágil', 'Reduce la defensa del portador pero aumenta su velocidad al ser golpeado').
-habilidad('Armadura prisma', 'Reduce el daño recibido de movimientos super efectivos').
+habilidad('Armadura prisma', 'Reduce el dano recibido de movimientos super efectivos').
 habilidad('Audaz', 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
 habilidad('Aura feérica', 'Aumenta la potencia de los movimientos de tipo hada en un 33%').
 habilidad('Aura oscura', 'Aumenta la potencia de los movimientos de tipo siniestro en un 33%').
@@ -217,12 +217,12 @@ habilidad('Batería', 'Aumenta la potencia de los movimientos especiales de los 
 habilidad('Bromista', 'Permite al portador usar movimientos de estado con prioridad aumentada').
 
 % habilidades C
-habilidad('Cabeza roca', 'Evita que el portador reciba daño por retroceso').
+habilidad('Cabeza roca', 'Evita que el portador reciba dano por retroceso').
 habilidad('Cacheo', 'Permite al portador conocer el objeto del oponente al entrar en combate').
 habilidad('Cacofonía', 'Evita que el portador sea afectado por movimientos de sonido').
 habilidad('Cadena tóxica', 'Permite al portador envenenar al oponente al hacer contacto').
 habilidad('Calco', 'Permite al portador copiar la habilidad del oponente al entrar en combate').
-habilidad('Cálculo final', 'Permite al portador infligir daño al oponente al ser debilitado').
+habilidad('Cálculo final', 'Permite al portador infligir dano al oponente al ser debilitado').
 habilidad('Caldero debacle', 'Reduce la velocidad del portador al ser golpeado por un ataque').
 habilidad('Cambio color', 'Permite al portador cambiar su tipo al del último ataque recibido').
 habilidad('Cambio heroico', 'Permite al portador cambiar de forma en combate').
@@ -238,7 +238,7 @@ habilidad('Cobardía', 'Permite al portador escapar de los combates con facilida
 habilidad('Cola armadura', 'Aumenta la defensa del portador').
 habilidad('Cola surf', 'Permite al portador usar movimientos de tipo agua con prioridad aumentada').
 habilidad('Colector', 'Permite al portador aumentar su ataque especial al recibir un ataque de agua').
-habilidad('Cólera', 'Aumenta el ataque del portador cada vez que recibe daño').
+habilidad('Cólera', 'Aumenta el ataque del portador cada vez que recibe dano').
 habilidad('Comandar', 'Permite al portador aumentar las estadísticas de sus aliados en combate').
 habilidad('Combustible', 'Permite al portador aumentar la potencia de sus movimientos de fuego').
 habilidad('Competitivo', 'Aumenta el ataque especial del portador cuando sus estadísticas son reducidas').
@@ -255,7 +255,7 @@ habilidad('Cuerpo áureo', 'Evita que las estadísticas del portador sean reduci
 habilidad('Cuerpo horneado', 'Permite al portador aumentar la potencia de sus movimientos de fuego').
 habilidad('Cuerpo llama', 'Permite al portador quemar al oponente al hacer contacto').
 habilidad('Cuerpo maldito', 'Permite al portador inutilizar el último movimiento del oponente al hacer contacto').
-habilidad('Cuerpo mortal', 'Permite al portador infligir daño al oponente al ser debilitado').
+habilidad('Cuerpo mortal', 'Permite al portador infligir dano al oponente al ser debilitado').
 habilidad('Cuerpo puro', 'Evita que las estadísticas del portador sean reducidas').
 habilidad('Cuerpo vívido', 'Aumenta la precisión del portador').
 habilidad('Cura lluvia', 'Permite al portador recuperar PS bajo la lluvia').
@@ -265,11 +265,11 @@ habilidad('Cura natural', 'Permite al portador curar sus problemas de estado al 
 habilidad('Defensa hoja', 'Aumenta la defensa del portador bajo la luz solar intensa').
 habilidad('Descarga', 'Permite al portador paralizar al oponente al hacer contacto').
 habilidad('Despiste', 'Evita que el portador sea afectado por movimientos de atracción').
-habilidad('Detonación', 'Permite al portador infligir daño al oponente al ser debilitado').
+habilidad('Detonación', 'Permite al portador infligir dano al oponente al ser debilitado').
 habilidad('Dicha', 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
 habilidad('Dinamo', 'Aumenta la velocidad del portador al recibir un ataque eléctrico').
 habilidad('Disemillar', 'Permite al portador plantar semillas en el oponente al hacer contacto').
-habilidad('Disfraz', 'Permite al portador evitar daño una vez al entrar en combate').
+habilidad('Disfraz', 'Permite al portador evitar dano una vez al entrar en combate').
 habilidad('Don floral', 'Aumenta el ataque y la defensa de los aliados del portador bajo la luz solar intensa').
 habilidad('Efecto espora', 'Permite al portador causar problemas de estado al oponente al hacer contacto').
 
@@ -281,7 +281,7 @@ habilidad('Encadenado', 'Permite al portador evitar que el oponente escape').
 habilidad('Energía eólica', 'Aumenta la velocidad del portador bajo la luz solar intensa').
 habilidad('Energía pura', 'Evita que las estadísticas del portador sean reducidas').
 habilidad('Enjambre', 'Aumenta la potencia de los movimientos de tipo bicho cuando el portador tiene pocos PS').
-habilidad('Ensañamiento', 'Aumenta la potencia de los movimientos del portador cuando el oponente tiene pocos PS').
+habilidad('Ensanamiento', 'Aumenta la potencia de los movimientos del portador cuando el oponente tiene pocos PS').
 habilidad('Entusiasmo', 'Aumenta la potencia de los movimientos del portador pero reduce su precisión').
 habilidad('Escama de hielo', 'Aumenta la defensa del portador cuando tiene un problema de estado').
 habilidad('Escama especial', 'Aumenta la defensa especial del portador').
@@ -293,18 +293,18 @@ habilidad('Espada debacle', 'Aumenta la potencia de los movimientos de tipo acer
 habilidad('Espada indómita', 'Aumenta el ataque del portador al entrar en combate').
 habilidad('Espejo mágico', 'Refleja los movimientos de estado al oponente').
 habilidad('Espesura', 'Aumenta la potencia de los movimientos de tipo planta cuando el portador tiene pocos PS').
-habilidad('Espíritu vital', 'Permite al portador recuperar PS al causar daño').
+habilidad('Espíritu vital', 'Permite al portador recuperar PS al causar dano').
 habilidad('Evocarrecuerdos', 'Aumenta la potencia de los movimientos del portador dependiendo de los aliados debilitados').
 habilidad('Experto', 'Aumenta la potencia de los movimientos débiles del portador').
 habilidad('Expulsarena', 'Crea una tormenta de arena al entrar en combate').
 
 % habilidades F
-habilidad('Filtro', 'Reduce el daño recibido de movimientos super efectivos').
+habilidad('Filtro', 'Reduce el dano recibido de movimientos super efectivos').
 habilidad('Firmeza', 'Evita que el portador sea debilitado de un solo golpe cuando tiene todos sus PS').
 habilidad('Flaqueza', 'Permite al portador aumentar su ataque cuando recibe un golpe crítico').
 habilidad('Flexibilidad', 'Evita que el portador sea paralizado').
-habilidad('Francotirador', 'Aumenta el daño de los golpes críticos del portador').
-habilidad('Fuente energía', 'Permite al portador recuperar PS al causar daño').
+habilidad('Francotirador', 'Aumenta el dano de los golpes críticos del portador').
+habilidad('Fuente energía', 'Permite al portador recuperar PS al causar dano').
 habilidad('Fuerte afecto', 'Aumenta la potencia de los movimientos del portador cuando tiene un alto nivel de amistad').
 habilidad('Fuerza cerebral', 'Aumenta el ataque especial del portador').
 habilidad('Fuerza mental', 'Evita que el portador retroceda').
@@ -318,7 +318,7 @@ habilidad('Gélido', 'Permite al portador congelar al oponente al hacer contacto
 habilidad('General supremo', 'Aumenta la potencia de los movimientos del portador cuando tiene un alto nivel de amistad').
 habilidad('Geofagia', 'Permite al portador recuperar PS al consumir una baya en un campo de hierba').
 habilidad('Gran encanto', 'Aumenta la probabilidad de que los movimientos del portador causen retroceso').
-habilidad('Guardia espectro', 'Reduce el daño recibido de movimientos de tipo fantasma').
+habilidad('Guardia espectro', 'Reduce el dano recibido de movimientos de tipo fantasma').
 habilidad('Guardia metálica', 'Aumenta la defensa del portador').
 habilidad('Gula', 'Permite al portador consumir una baya cuando sus PS están por debajo del 50%').
 
@@ -336,7 +336,7 @@ habilidad('Humo blanco', 'Evita que las estadísticas del portador sean reducida
 habilidad('Hurto', 'Permite al portador robar el objeto del oponente al hacer contacto').
 
 % habilidades I
-habilidad('Ignífugo', 'Reduce el daño recibido de movimientos de tipo fuego').
+habilidad('Ignífugo', 'Reduce el dano recibido de movimientos de tipo fuego').
 habilidad('Ignorante', 'Ignora los cambios en las estadísticas del oponente').
 habilidad('Iluminación', 'Aumenta la precisión del portador y sus aliados').
 habilidad('Ilusión', 'Permite al portador entrar en combate disfrazado como el último Pokémon del equipo').
@@ -370,7 +370,7 @@ habilidad('Llovizna', 'Crea lluvia al entrar en combate').
 % habilidades M
 habilidad('Madrugar', 'Permite al portador despertarse más rápido de lo normal').
 habilidad('Maduración', 'Permite al portador duplicar el efecto de las bayas que consume').
-habilidad('Mal sueño', 'Reduce los PS del oponente dormido al final de cada turno').
+habilidad('Mal sueno', 'Reduce los PS del oponente dormido al final de cada turno').
 habilidad('Mandíbula dragón', 'Aumenta la potencia de los movimientos de tipo dragón del portador').
 habilidad('Mandíbula fuerte', 'Aumenta la potencia de los movimientos de mordisco del portador').
 habilidad('Mano rápida', 'Permite al portador usar movimientos de prioridad con mayor frecuencia').
@@ -379,7 +379,7 @@ habilidad('Manto níveo', 'Aumenta la evasión del portador en granizadas').
 habilidad('Mar del albor', 'Crea un campo de niebla al entrar en combate').
 habilidad('Mar llamas', 'Aumenta la potencia de los movimientos de tipo fuego del portador cuando tiene pocos PS').
 habilidad('Más', 'Aumenta el ataque especial del portador cuando hay un aliado con la habilidad Menos').
-habilidad('Medicina extraña', 'Permite al portador curar los problemas de estado de sus aliados al entrar en combate').
+habilidad('Medicina extrana', 'Permite al portador curar los problemas de estado de sus aliados al entrar en combate').
 habilidad('Megadisparador', 'Aumenta la potencia de los movimientos de pulso del portador').
 habilidad('Menos', 'Aumenta el ataque especial del portador cuando hay un aliado con la habilidad Más').
 habilidad('Metal liviano', 'Reduce el peso del portador').
@@ -390,21 +390,24 @@ habilidad('Momia', 'Permite al portador cambiar la habilidad del oponente a Momi
 habilidad('Monotema', 'Aumenta la potencia de los movimientos del portador cuando solo conoce un movimiento').
 habilidad('Motor hadrónico', 'Aumenta la velocidad del portador cuando recibe un ataque de tipo eléctrico').
 habilidad('Mudar', 'Permite al portador curar sus problemas de estado al final de cada turno').
-habilidad('Multiescamas', 'Reduce el daño recibido por el portador cuando tiene todos sus PS').
+habilidad('Multiescamas', 'Reduce el dano recibido por el portador cuando tiene todos sus PS').
 habilidad('Multitipo', 'Permite al portador cambiar su tipo dependiendo de la tabla que tenga equipada').
 habilidad('Muro mágico', 'Refleja los movimientos de estado al oponente').
 habilidad('Mutapetito', 'Permite al portador cambiar su tipo al del último movimiento que recibió').
-habilidad('Mutatipo', 'Permite al portador cambiar su tipo al del último movimiento que usó').habilidad('Nado rápido', 'Aumenta la velocidad del portador bajo la lluvia').
+habilidad('Mutatipo', 'Permite al portador cambiar su tipo al del último movimiento que usó').
+habilidad('Nado rápido', 'Aumenta la velocidad del portador bajo la lluvia').
 
 % habilidades N
 habilidad('Nebulogénesis', 'Crea un campo de niebla al entrar en combate').
 habilidad('Néctar dulce', 'Aumenta la potencia de los movimientos de tipo bicho del portador').
 habilidad('Nerviosismo', 'Evita que los oponentes usen bayas').
 habilidad('Nevada', 'Crea una tormenta de granizo al entrar en combate').
-habilidad('Normalidad', 'Permite al portador cambiar el tipo de sus movimientos a tipo normal').habilidad('Ojo compuesto', 'Aumenta la precisión de los movimientos del portador').
+habilidad('Normalidad', 'Permite al portador cambiar el tipo de sus movimientos a tipo normal').
+habilidad('Ojo compuesto', 'Aumenta la precisión de los movimientos del portador').
 
 % habilidades O
-habilidad('Ojo compuesto', 'Aumenta la precisión de los movimientos del portador').habilidad('Ojo mental', 'Evita que la precisión del portador sea reducida').
+habilidad('Ojo compuesto', 'Aumenta la precisión de los movimientos del portador').
+habilidad('Ojo mental', 'Evita que la precisión del portador sea reducida').
 habilidad('Olor persistente', 'Permite al portador golpear a Pokémon de tipo fantasma con movimientos de tipo normal y lucha').
 habilidad('Oportunista', 'Permite al portador copiar los aumentos de estadísticas del oponente').
 
@@ -412,9 +415,9 @@ habilidad('Oportunista', 'Permite al portador copiar los aumentos de estadístic
 habilidad('Paleosíntesis', 'Aumenta una estadística del portador bajo la luz solar intensa').
 habilidad('Pararrayos', 'Atrae los movimientos de tipo eléctrico y aumenta el ataque especial del portador').
 habilidad('Pareja de baile', 'Permite al portador copiar el último movimiento usado por un aliado').
-habilidad('Pelaje recio', 'Reduce el daño recibido de movimientos de contacto').
-habilidad('Peluche', 'Reduce el daño recibido de movimientos físicos, pero aumenta el daño recibido de movimientos de tipo fuego').
-habilidad('Pelusa', 'Reduce el daño recibido de movimientos de contacto, pero aumenta el daño recibido de movimientos de tipo fuego').
+habilidad('Pelaje recio', 'Reduce el dano recibido de movimientos de contacto').
+habilidad('Peluche', 'Reduce el dano recibido de movimientos físicos, pero aumenta el dano recibido de movimientos de tipo fuego').
+habilidad('Pelusa', 'Reduce el dano recibido de movimientos de contacto, pero aumenta el dano recibido de movimientos de tipo fuego').
 habilidad('Pereza', 'Permite al portador recuperar PS al final de cada turno').
 habilidad('Perro guardián', 'Evita que las estadísticas del portador sean reducidas').
 habilidad('Piel celeste', 'Cambia los movimientos de tipo normal a tipo volador y aumenta su potencia').
@@ -422,8 +425,8 @@ habilidad('Piel eléctrica', 'Cambia los movimientos de tipo normal a tipo eléc
 habilidad('Piel feérica', 'Cambia los movimientos de tipo normal a tipo hada y aumenta su potencia').
 habilidad('Piel helada', 'Cambia los movimientos de tipo normal a tipo hielo y aumenta su potencia').
 habilidad('Piel milagro', 'Aumenta la precisión de los movimientos de estado del portador').
-habilidad('Piel seca', 'Permite al portador recuperar PS al recibir un ataque de tipo agua, pero aumenta el daño recibido de movimientos de tipo fuego').
-habilidad('Piel tosca', 'Permite al portador causar daño al oponente al hacer contacto').
+habilidad('Piel seca', 'Permite al portador recuperar PS al recibir un ataque de tipo agua, pero aumenta el dano recibido de movimientos de tipo fuego').
+habilidad('Piel tosca', 'Permite al portador causar dano al oponente al hacer contacto').
 habilidad('Pies rápidos', 'Aumenta la velocidad del portador cuando sufre un problema de estado').
 habilidad('Poder arena', 'Aumenta la potencia de los movimientos de tipo roca, tierra y acero en tormentas de arena').
 habilidad('Poder fúngico', 'Permite al portador causar problemas de estado al oponente al hacer contacto').
@@ -437,11 +440,11 @@ habilidad('Presión', 'Aumenta el consumo de PP del oponente al usar movimientos
 habilidad('Prestidigitador', 'Permite al portador robar el objeto del oponente al hacer contacto').
 habilidad('Primer auxilio', 'Permite al portador recuperar PS al ser retirado del combate').
 habilidad('Psicogénesis', 'Crea un campo psíquico al entrar en combate').
-habilidad('Punk rock', 'Aumenta la potencia de los movimientos de sonido del portador y reduce el daño recibido de movimientos de sonido').
-habilidad('Punta acero', 'Permite al portador causar daño al oponente al hacer contacto').
+habilidad('Punk rock', 'Aumenta la potencia de los movimientos de sonido del portador y reduce el dano recibido de movimientos de sonido').
+habilidad('Punta acero', 'Permite al portador causar dano al oponente al hacer contacto').
 habilidad('Punto tóxico', 'Permite al portador envenenar al oponente al hacer contacto').
-habilidad('Puño férreo', 'Aumenta la potencia de los movimientos de puño del portador').
-habilidad('Puño invisible', 'Permite al portador golpear al oponente con movimientos de contacto sin hacer contacto físico').
+habilidad('Puno férreo', 'Aumenta la potencia de los movimientos de puno del portador').
+habilidad('Puno invisible', 'Permite al portador golpear al oponente con movimientos de contacto sin hacer contacto físico').
 
 % habilidades Q
 habilidad('Quitanieves', 'Aumenta la velocidad del portador en tormentas de granizo').
@@ -466,26 +469,27 @@ habilidad('Ritmo propio', 'Evita que el portador sea confundido').
 habilidad('Rivalidad', 'Aumenta la potencia de los movimientos del portador contra oponentes del mismo género, pero reduce la potencia contra oponentes de género diferente').
 habilidad('Rizos rebeldes', 'Aumenta la defensa del portador al ser golpeado por un movimiento de contacto').
 habilidad('Robustez', 'Evita que el portador sea debilitado de un solo golpe cuando tiene todos sus PS').
-habilidad('Roca sólida', 'Reduce el daño recibido de movimientos super efectivos').
+habilidad('Roca sólida', 'Reduce el dano recibido de movimientos super efectivos').
 habilidad('Rompeaura', 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
 habilidad('Rompemoldes', 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
-habilidad('Rumia', 'Permite al portador recuperar PS al consumir una baya').habilidad('Sacapecho', 'Evita que las estadísticas del portador sean reducidas').
+habilidad('Rumia', 'Permite al portador recuperar PS al consumir una baya').
+habilidad('Sacapecho', 'Evita que las estadísticas del portador sean reducidas').
 
 % habilidades S
-habilidad('Sal purificadora', 'Reduce el daño recibido de movimientos de tipo fantasma y evita que el portador sea afectado por problemas de estado').
-habilidad('Sebo', 'Reduce el daño recibido de movimientos de tipo fuego y hielo').
+habilidad('Sal purificadora', 'Reduce el dano recibido de movimientos de tipo fantasma y evita que el portador sea afectado por problemas de estado').
+habilidad('Sebo', 'Reduce el dano recibido de movimientos de tipo fuego y hielo').
 habilidad('Sequía', 'Crea luz solar intensa al entrar en combate').
 habilidad('Simbiosis', 'Permite al portador pasar su objeto a un aliado cuando este consume o pierde su objeto').
 habilidad('Simple', 'Duplica los cambios en las estadísticas del portador').
 habilidad('Sincronía', 'Permite al portador pasar su problema de estado al oponente que lo causó').
 habilidad('Sistema alfa', 'Permite al portador cambiar su tipo dependiendo del disco que tenga equipado').
 habilidad('Sombra trampa', 'Evita que el oponente escape').
-habilidad('Superguarda', 'Reduce el daño recibido de movimientos super efectivos').
+habilidad('Superguarda', 'Reduce el dano recibido de movimientos super efectivos').
 habilidad('Surcavientos', 'Aumenta la velocidad del portador cuando hay un viento afín en el campo de batalla').
 
 % habilidades T
 habilidad('Tablilla debacle', 'Reduce la potencia de los movimientos de tipo hada del oponente').
-habilidad('Telepatía', 'Evita que el portador reciba daño de los movimientos de sus aliados en combates múltiples').
+habilidad('Telepatía', 'Evita que el portador reciba dano de los movimientos de sus aliados en combates múltiples').
 habilidad('Tenacidad', 'Permite al portador resistir un golpe que lo debilitaría y quedarse con 1 PS').
 habilidad('Teracambio', 'Permite al portador cambiar su tipo al tipo Tera al entrar en combate').
 habilidad('Teracaparazón', 'Evita que el portador reciba golpes críticos').
@@ -498,7 +502,7 @@ habilidad('Títere tóxico', 'Permite al portador envenenar al oponente al hacer
 habilidad('Toque tóxico', 'Permite al portador envenenar al oponente al hacer contacto').
 habilidad('Torrente', 'Aumenta la potencia de los movimientos de tipo agua del portador cuando tiene pocos PS').
 habilidad('Tragamisil', 'Permite al portador recuperar PS al consumir una baya').
-habilidad('Trampa arena', 'Evita que el oponente escape y causa daño al final de cada turno').
+habilidad('Trampa arena', 'Evita que el oponente escape y causa dano al final de cada turno').
 habilidad('Transistor', 'Aumenta la potencia de los movimientos de tipo eléctrico del portador').
 habilidad('Transportarrocas', 'Permite al portador usar movimientos de tipo roca con prioridad aumentada').
 habilidad('Tumbos', 'Permite al portador aumentar su velocidad al ser golpeado').
@@ -522,18 +526,19 @@ habilidad('Vigilante', 'Permite al portador detectar movimientos peligrosos del 
 habilidad('Viscosecreción', 'Permite al portador reducir la velocidad del oponente al hacer contacto').
 habilidad('Viscosidad', 'Permite al portador reducir la velocidad del oponente al hacer contacto').
 habilidad('Vista lince', 'Evita que la precisión del portador sea reducida').
-habilidad('Voz fluida', 'Permite al portador usar movimientos de sonido con prioridad aumentada').habilidad('Zoquete', 'Evita que el portador use objetos en combate').
+habilidad('Voz fluida', 'Permite al portador usar movimientos de sonido con prioridad aumentada').
+habilidad('Zoquete', 'Evita que el portador use objetos en combate').
 
 % habilidades Z
 habilidad('Zoquete', 'Evita que el portador use objetos en combate').
 
-% Naturalezas -> nombre, aumenta, disminuye
+% Naturalezas nombre, aumenta, disminuye
 naturaleza(fuerte, neutra, neutra).
 naturaleza(osada, defensa, ataque).
 naturaleza(miedosa, velocidad, ataque).
 naturaleza(modesta, ataque_especial, ataque).
 naturaleza(serena, defensa_especial, ataque).
-naturaleza(huraña, ataque, defensa).
+naturaleza(hurana, ataque, defensa).
 naturaleza(docil, neutra, neutra).
 naturaleza(activa, velocidad, defensa).
 naturaleza(afable, ataque_especial, defensa).
@@ -1887,40 +1892,29 @@ clase_huevo(Thuevo) :- grupo_huevo(Thuevo).
 regiones(Region) :- region(Region).
 
 %Debilidades
-movimientos_peligro(Debil, Fuerte) :- debilidad(Debil, _).
+movimientos_peligro(Debil) :- debilidad(Debil, _).
 
 % fortalezas
-Movimientos_eficaces(Fortaleza, Debilidad) :- fortaleza(Fortaleza, _).
+movimientos_eficaces(Fortaleza, Debilidad) :- fortaleza(Fortaleza, Debilidad).
 
 % Inmunidad
-inmunidad_tipos(Tipo_p, Inmunidad) :- inmunidad(Tipo_p, _).
+inmunidad_tipos(Tipo_p) :- inmunidad(Tipo_p, _).
 
- Regla para determinar resistencias
-resistencia(Tipo1, Tipo2) :-
-    \+ fortaleza(Tipo1, Tipo2),
-    \+ debilidad(Tipo1, Tipo2).
+% Regla para determinar resistencias
+resistencia(Tipo1, Tipo2) :- \+ fortaleza(Tipo1, Tipo2), \+ debilidad(Tipo1, Tipo2).
 
 % Descripcion de naturaleza
 % Clasificar naturalezas fuertes: aumentan algo y no son neutras
-naturaleza_fuerte(Nombre, Aumenta) :-
-    naturaleza(Nombre, Aumenta, Disminuye),
-    Aumenta \= neutra,
-    Disminuye = neutra.
+naturaleza_fuerte(Nombre, Aumenta) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta \= neutra, Disminuye = neutra.
 
 % Clasificar naturalezas débiles: disminuyen algo y no son neutras
-naturaleza_debil(Nombre, Disminuye) :-
-    naturaleza(Nombre, Aumenta, Disminuye),
-    Aumenta = neutra,
-    Disminuye \= neutra.
+naturaleza_debil(Nombre, Disminuye) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta = neutra, Disminuye \= neutra.
 
 % Clasificar naturalezas neutras: no aumentan ni disminuyen
-naturaleza_neutra(Nombre) :-
-    naturaleza(Nombre, Aumenta, Disminuye),
-    Aumenta = neutra,
-    Disminuye = neutra.
+naturaleza_neutra(Nombre) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta = neutra, Disminuye = neutra.
 
 % Desripciones de habilidad
-des_habilidad(Habilidad) :- habilidad(Habilidad, _).
+desc_habilidad(Habilidad) :- habilidad(Habilidad, _).
 
 % Consulta para obtener nombre y generacion de un pokemon
 numero_pokedex(Numero) :- pokemon(Numero, _, _, _).

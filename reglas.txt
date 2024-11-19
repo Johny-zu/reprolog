@@ -1,3 +1,5 @@
+
+
 % Consultas generales
 % Consultas de tipo
 tipo_pokemon(Tipo) :- tipo(Tipo).
