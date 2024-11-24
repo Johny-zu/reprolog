@@ -23,6 +23,191 @@ genero(hembra).
 genero(macho).
 genero(desconocido).
 
+% solo macho
+solo_macho(nidoran).
+solo_macho(nidorino).
+solo_macho(nidoking).
+solo_macho(tyrogue).
+solo_macho(hitmonlee).
+solo_macho(hitmonchan).
+solo_macho(hitmontop).
+solo_macho(tauros).
+solo_macho(volbeat).
+solo_macho(latios).
+solo_macho(mothim).
+solo_macho(gallade).
+solo_macho(throh).
+solo_macho(sawk).
+solo_macho(rufflet).
+solo_macho(braviary).
+solo_macho(tornadus).
+solo_macho(landorus).
+solo_macho(thundurus).
+solo_macho(impidimp).
+solo_macho(morgrem).
+solo_macho(grimmsnarl).
+solo_macho(okidogi).
+solo_macho(munkidori).
+solo_macho(fezandipiti).
+
+% solo hembra
+solo_hembra(nidoran).
+solo_hembra(nidorina).
+solo_hembra(nidoqueen).
+solo_hembra(happiny).
+solo_hembra(chansey).
+solo_hembra(blissey).
+solo_hembra(kangaskhan).
+solo_hembra(smoochum).
+solo_hembra(jynx).
+solo_hembra(miltank).
+solo_hembra(illumise).
+solo_hembra(latias).
+solo_hembra(wormadam).
+solo_hembra(vespiquen).
+solo_hembra(froslass).
+solo_hembra(froslass).
+solo_hembra(petilil).
+solo_hembra(lilligant).
+solo_hembra(vullaby).
+solo_hembra(mandibuzz).
+solo_hembra(flabebe).
+solo_hembra(floette).
+solo_hembra(florges).
+solo_hembra(salazzle).
+solo_hembra(bounsweet).
+solo_hembra(steenee).
+solo_hembra(tsareena).
+solo_hembra(hatenna).
+solo_hembra(hattrem).
+solo_hembra(hatterene).
+solo_hembra(milcery).
+solo_hembra(alcremie).
+solo_hembra(enamorus).
+solo_hembra(tinkatink).
+solo_hembra(tinkatuff).
+solo_hembra(tinkaton).
+solo_hembra(ogrepon).
+
+% sin genero
+sin_genero(magnemite).
+sin_genero(magneton).
+sin_genero(magnezone).
+sin_genero(voltorb).
+sin_genero(electrode).
+sin_genero(staryu).
+sin_genero(starmie).
+sin_genero(ditto).    
+sin_genero(porygon).
+sin_genero(porygon2).
+sin_genero(porygonz).
+sin_genero(articuno).
+sin_genero(zapdos).
+sin_genero(moltres).
+sin_genero(mewtwo).
+sin_genero(mew).
+sin_genero(unown).
+sin_genero(raikou).
+sin_genero(entei).
+sin_genero(suicune).
+sin_genero(lugia).
+sin_genero(ho_oh).
+sin_genero(celebi).
+sin_genero(shedinja).
+sin_genero(lunatone).
+sin_genero(solrock).
+sin_genero(baltoy).
+sin_genero(claydol).
+sin_genero(beldum).
+sin_genero(metang).
+sin_genero(metagross).
+sin_genero(regirock).
+sin_genero(regice).
+sin_genero(registeel).
+sin_genero(kyogre).
+sin_genero(groudon).
+sin_genero(rayquaza).
+sin_genero(jirachi).
+sin_genero(deoxys).
+sin_genero(bronzor).
+sin_genero(bronzong).
+sin_genero(rotom).
+sin_genero(uxie).
+sin_genero(mesprit).
+sin_genero(azelf).
+sin_genero(dialga).
+sin_genero(palkia).
+sin_genero(regigigas).
+sin_genero(giratina).
+sin_genero(phione).
+sin_genero(manaphy).
+sin_genero(darkrai).
+sin_genero(shaymin).
+sin_genero(arceus).
+sin_genero(victini).
+sin_genero(klink).
+sin_genero(klang).
+sin_genero(klinklang).
+sin_genero(cryogonal).
+sin_genero(golett).
+sin_genero(golurk).
+sin_genero(cobalion).
+sin_genero(terrakion).
+sin_genero(virizion).
+sin_genero(reshiram).
+sin_genero(zekrom).
+sin_genero(kyurem).
+sin_genero(keldeo).
+sin_genero(meloetta).
+sin_genero(genesect).
+sin_genero(carbink).
+sin_genero(xerneas).
+sin_genero(yveltal).
+sin_genero(zygarde).
+sin_genero(diancie).
+sin_genero(hoopa).
+sin_genero(volcanion).
+sin_genero(codigo_cero).
+sin_genero(silvally).
+sin_genero(minior).
+sin_genero(dhelmise).
+sin_genero(tapu_koko).
+sin_genero(tapu_lele).
+sin_genero(tapu_bulu).
+sin_genero(tapu_fini).
+sin_genero(cosmog).
+sin_genero(cosmoem).
+sin_genero(solgaleo).
+sin_genero(lunala).
+sin_genero(necrozma).
+sin_genero(magearna).
+sin_genero(marshadow).
+sin_genero(poipole).
+sin_genero(naganadel).
+sin_genero(stakataka).
+sin_genero(blacephalon).
+sin_genero(zeraora).
+sin_genero(meltan).
+sin_genero(melmetal).
+sin_genero(sinistea).
+sin_genero(polteageist).
+sin_genero(falinks).
+sin_genero(dracozolt).
+sin_genero(arctozolt).
+sin_genero(dracovish).
+sin_genero(arctovish).
+sin_genero(zacian).
+sin_genero(zamazenta).
+sin_genero(eternatus).
+sin_genero(zarude).
+sin_genero(regieleki).
+sin_genero(regidrago).
+sin_genero(glastrier).
+sin_genero(spectrier).
+sin_genero(calyrex).
+sin_genero(tandemaus).
+sin_genero(maushold).
+
 % especie
 especie(semilla).
 especie(lagartija).
@@ -396,10 +581,6 @@ ratioCaptura(220).
 ratioCaptura(225).
 ratioCaptura(235).
 ratioCaptura(255).
-
-% Un solo genero(como nidorino y nidorina)
-soloUnGenero(hembra).
-soloUnGenero(macho). 
 
 stats_promedio(195).
 stats_promedio(200).
@@ -2358,7 +2539,7 @@ pokemon(768, golisopod, [bicho, agua], 7).
 pokemon(769, sandygast, [fantasma, tierra], 7).
 pokemon(770, palossand, [fantasma, tierra], 7).
 pokemon(771, pyukumuku, [agua], 7).
-pokemon(772, type_null, [normal], 7).
+pokemon(772, codigo_cero, [normal], 7).
 pokemon(773, silvally, [normal], 7).
 pokemon(774, minior, [roca, volador], 7).
 pokemon(775, komala, [normal], 7).
@@ -3438,15 +3619,27 @@ generacion_inicial(septima, [rowlet, litten, popplio]).
 generacion_inicial(octava, [grookey, scorbunny, sobble]).
 generacion_inicial(novena, [sprigatito, fuecoco, quaxly]).
 
-% trio de legendarios por generacion
+% pokemon legendarios por generacion
 gen_legendarios(primera, [articuno, zapdos, moltres, mewtwo]).
 gen_legendarios(segunda, [raikou, entei, suicune, lugia, ho-oh]).
 gen_legendarios(tercera, [latias, latios, kyogre, groudon, rayquaza, regirock, regice, registeel]).
 gen_legendarios(cuarta, [uxie, mesprit, azelf, dialga, palkia, heatran, regigigas, giratina, cresselia]).
-gen_legendarios(quinta, [tornadus, thundurus, reshiram, zekrom, landorus, kyurem]).
+gen_legendarios(quinta, [tornadus, thundurus, reshiram, zekrom, landorus, kyurem, cobalion, terrakion, virizion]).
 gen_legendarios(sexta, [xerneas, yveltal, zygarde]).
-gen_legendarios(septima, [solgaleo, lunala, necrozma]).
-gen_legendarios(octava, [zacian, zamazenta, eternatus]).
+gen_legendarios(septima, [solgaleo, lunala, necrozma, codigo_cero, silvally, tapu_koko, tapu_bulu, tapu_fini, tapu_lele, cosmog, cosmoem]).
+gen_legendarios(octava, [zacian, zamazenta, eternatus, kubfu, urshifu, regieleki, regidrago, glastrier, spectrier, calyrex, enamorus]).
+gen_legendarios(novena, [wo_chien, chien_pao, ting_lu, koraidon, miraidon, okidogi, munkidori, fezandipiti, ogrepon, terapagos]).
+
+% pokemon singulares
+generacionSingular(primera, mewtwo).
+generacionSingular(segunda, celebi).
+generacionSingular(tercera, [jirachi, deoxys]).
+generacionSingular(cuarta, [arceus, phione, manaphy, darkrai, shaymin]).
+generacionSingular(quinta, [genesect, meloetta, victini, keldeo]).
+generacionSingular(sexta, [diancie, hoopa, volcanion]).
+generacionSingular(septima, [marshadow, magearna, zeraora, meltan, melmetal]).
+generacionSingular(octava, zarude).
+generacionSingular(novena, peacharunt).
 
 % tipo_evolucion
 tipo_evolucion(lineal).

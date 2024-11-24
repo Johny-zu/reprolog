@@ -2,6 +2,9 @@ Hechos en uso actualmente
 Tipos de pokemon
 genero
 especie
+solo machos
+solo hembras
+sin genero
 habitat
 peso
 altura
