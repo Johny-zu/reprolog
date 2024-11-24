@@ -5,12 +5,27 @@ especie
 peso
 altura
 color
+un solo color
 varicolor
 figura
 forma
 habitat
 grupo huevo
+ratio de captura
+solo un genero
+promedio por stat
+porcentaje de captura por genero 
+pasos para eclosionar un huevo
+distincion por genero
+amistad base
 regiones
+objetos equipables
+Movimientos por nivel
+movimiento por mt
+movimientos por tutor
+movimientos huevo
+movimientos espciales(unico por pokemon)
+
 Generacion y region
 total de pokemon por region
 resistencia
@@ -22,15 +37,21 @@ fortalezas
 habilidades
 naturalezas
 pokemon
+habilidades
+habilidad_pokemon
+habilidad_oculta_pokemon
+habitad_pokemon
 generacion_inicial
 generacionLegendarios
 
 
 
 evolucion_nivel
+mega_ev
 evolucion_intercambio
 evolucion_objeto
 evolucion_amistad
 evolucion_nivel_habitat
 evolucion_nivel_hora
 evolucion_nivel_habilidad
+gigamax

@@ -291,6 +291,22 @@ color(violeta).
 color(celeste).
 color(dorado).
 
+% un color
+unColor(verde).
+unColor(rojo).
+unColor(naranja).
+unColor(azul).
+unColor(morado).
+unColor(amarillo).
+unColor(marron).
+unColor(morado).
+unColor(cafe).
+unColor(gris).
+unColor(negro).
+unColor(rosa).
+unColor(blanco).
+unColor(violeta).
+
 % varicolor
 variocolor(verde).
 variocolor(marron).
@@ -330,10 +346,10 @@ figura(18).
 figura(19).
 figura(20).
 
-%forma 
-forma(gigamax).
-forma(alola).
-forma(galar).
+%gigamax 
+gigamax(gigamax).
+gigamax(alola).
+gigamax(galar).
 
 % Grupos de huevo
 grupo_huevo(monstruo).
@@ -354,6 +370,176 @@ grupo_huevo(agua_2).
 grupo_huevo(amorfo).
 grupo_huevo(dinamo).
 
+% Ratio de captura
+ratioCaptura(3).
+ratioCaptura(5).
+ratioCaptura(25).
+ratioCaptura(30).
+ratioCaptura(35).
+ratioCaptura(45).
+ratioCaptura(50).
+ratioCaptura(60).
+ratioCaptura(65).
+ratioCaptura(70).
+ratioCaptura(75).
+ratioCaptura(80).
+ratioCaptura(90).
+ratioCaptura(120).
+ratioCaptura(127).
+ratioCaptura(145).
+ratioCaptura(150).
+ratioCaptura(170).
+ratioCaptura(180).
+ratioCaptura(190).
+ratioCaptura(200).
+ratioCaptura(220).
+ratioCaptura(225).
+ratioCaptura(235).
+ratioCaptura(255).
+
+% Un solo genero(como nidorino y nidorina)
+soloUnGenero(hembra).
+soloUnGenero(macho). 
+
+stats_promedio(195).
+stats_promedio(200).
+stats_promedio(205).
+stats_promedio(210).
+stats_promedio(198).
+stats_promedio(253).
+stats_promedio(251).
+stats_promedio(262).
+stats_promedio(264).
+stats_promedio(270).
+stats_promedio(280).
+stats_promedio(288).
+stats_promedio(290).
+stats_promedio(294).
+stats_promedio(295).
+stats_promedio(300).
+stats_promedio(302).
+stats_promedio(303).
+stats_promedio(305).
+stats_promedio(308).
+stats_promedio(310).
+stats_promedio(314).
+stats_promedio(318).
+stats_promedio(320).
+stats_promedio(325).
+stats_promedio(330).
+stats_promedio(345).
+stats_promedio(348).
+stats_promedio(349).
+stats_promedio(350).
+stats_promedio(358).
+stats_promedio(362).
+stats_promedio(363).
+stats_promedio(369).
+stats_promedio(371).
+stats_promedio(380).
+stats_promedio(385).
+stats_promedio(390).
+stats_promedio(395).
+stats_promedio(400).
+stats_promedio(405).
+stats_promedio(410).
+stats_promedio(413).
+stats_promedio(420).
+stats_promedio(425).
+stats_promedio(430).
+stats_promedio(440).
+stats_promedio(442).
+stats_promedio(454).
+stats_promedio(455).
+stats_promedio(458).
+stats_promedio(460).
+stats_promedio(465).
+stats_promedio(467).
+stats_promedio(480).
+stats_promedio(485).
+stats_promedio(488).
+stats_promedio(494).
+stats_promedio(500).
+stats_promedio(507).
+stats_promedio(510).
+stats_promedio(515).
+stats_promedio(518).
+stats_promedio(521).
+stats_promedio(523).
+stats_promedio(525).
+stats_promedio(528).
+stats_promedio(530).
+stats_promedio(534).
+stats_promedio(535).
+stats_promedio(540).
+stats_promedio(545).
+stats_promedio(552).
+stats_promedio(570).
+stats_promedio(580).
+stats_promedio(600).
+stats_promedio(670).
+stats_promedio(680).
+stats_promedio(720).
+
+% porcentaje de genero
+genero_porcentaje(macho, 87).
+genero_porcentaje(macho, 100).
+genero_porcentaje(macho, 0).
+genero_porcentaje(macho, 50).
+genero_porcentaje(hembra, 87).
+genero_porcentaje(hembra, 100).
+genero_porcentaje(hembra, 0).
+genero_porcentaje(hembra, 50).
+
+% distincion por genero
+distincion_genero(desconocido).
+distincion_genero(flor_lomo).
+distincion_genero(machas_alas).
+distincion_genero(bigote).
+distincion_genero(cola).
+distincion_genero(bigotes).
+distincion_genero(manchas_cola).
+distincion_genero(cuerno).
+distincion_genero(mejilla).
+distincion_genero(antenas).
+distincion_genero(hoja_central).
+distincion_genero(orejas).
+distincion_genero(cara).
+distincion_genero(pelaje).
+distincion_genero(melena).
+
+% amistad base
+amistadBase(20).
+amistadBase(30).
+amistadBase(35).
+amistadBase(40).
+amistadBase(50).
+amistadBase(60).
+amistadBase(70).
+amistadBase(80).
+amistadBase(90).
+amistadBase(100).
+
+% pasos para eclosionar
+pasosEclosion(0).
+pasosEclosion(1280).
+pasosEclosion(2560).
+pasosEclosion(2800).
+pasosEclosion(2805).
+pasosEclosion(3840).
+pasosEclosion(4080).
+pasosEclosion(5120).
+pasosEclosion(5120).
+pasosEclosion(5140).
+pasosEclosion(5355).
+pasosEclosion(5376).
+pasosEclosion(6400).
+pasosEclosion(8960).
+pasosEclosion(9180).
+pasosEclosion(10240).
+pasosEclosion(30720).
+pasosEclosion(desconocido).
+
 % regiones
 region(kanto).
 region(johto).
@@ -364,6 +550,464 @@ region(kalos).
 region(alola).
 region(galar).
 region(paldea).
+
+% objetos equipables
+objetos_equipables(bayamarga).
+objetos_equipables(baya).
+objetos_equipables(moneda_amuleto).
+objetos_equipables(hoja_plata).
+objetos_equipables(desconocido).
+objetos_equipables(seta).
+objetos_equipables(polvo_metalico).
+objetos_equipables(restos).
+objetos_equipables(pepita).
+objetos_equipables(hoja_dorada).
+objetos_equipables(mini_seta).
+objetos_equipables(polvo_plata).
+objetos_equipables(hueso_salvaje).
+objetos_equipables(baya_misteriosa).
+objetos_equipables(bolaluminosa).
+objetos_equipables(hojadorada).
+objetos_equipables(hueso).
+objetos_equipables(baya_dorada).
+objetos_equipables(proteina).
+objetos_equipables(perla).
+objetos_equipables(piedra).
+objetos_equipables(polvoestelar).
+objetos_equipables(baya_misterio).
+objetos_equipables(roca_rey).
+objetos_equipables(polvo_misterio).
+objetos_equipables(escama).
+objetos_equipables(flecha_venenosa).
+objetos_equipables(polvo).
+
+% Movimeinto por nivel
+movimiento_Nivel(placaje).
+movimiento_Nivel(latigo_cepa).
+movimiento_Nivel(tormenta_floral).
+movimiento_Nivel(ascuas).
+movimiento_Nivel(cuchillada).
+movimiento_Nivel(onda_ignea).
+movimiento_Nivel(pistola_agua).
+movimiento_Nivel(fortaleza).
+movimiento_Nivel(tornado).
+movimiento_Nivel(ataque_ala).
+movimiento_Nivel(picotazo).
+movimiento_Nivel(rapidez).
+movimiento_Nivel(hiperrayo).
+movimiento_Nivel(impactrueno).
+movimiento_Nivel(araniazo).
+movimiento_Nivel(desarme).
+movimiento_Nivel(rayo).
+movimiento_Nivel(cornada).
+movimiento_Nivel(salpicadura).
+movimiento_Nivel(hidrobomba).
+movimiento_Nivel(transgigamaxcion).
+movimiento_Nivel(acua).
+movimiento_Nivel(chispazo).
+movimiento_Nivel(psiquico).
+movimiento_Nivel(mordisco).
+movimiento_Nivel(latigo_cepa).
+movimiento_Nivel(ventisca).
+movimiento_Nivel(carantonia).
+movimiento_Nivel(golpe_cuerpo).
+movimiento_Nivel(confusion).
+movimiento_Nivel(corte).
+movimiento_Nivel(hipnosis).
+movimiento_Nivel(hidropulso).
+movimiento_Nivel(mordisco).
+movimiento_Nivel(hoja_magica).
+movimiento_Nivel(transgigamaxcion).
+movimiento_Nivel(anulacion).
+movimiento_Nivel(confusion).
+movimiento_Nivel(psicocorte).
+movimiento_Nivel(malisioso).
+movimiento_Nivel(brillo_magico).
+movimiento_Nivel(cara_susto).
+movimiento_Nivel(sombra).
+movimiento_Nivel(geomancia).
+movimiento_Nivel(vendaval).
+movimiento_Nivel(terremoto).
+movimiento_Nivel(calcinacion).
+movimiento_Nivel(cabezazo).
+movimiento_Nivel(proteccion).
+movimiento_Nivel(maquinacion).
+movimiento_Nivel(absorber).
+movimiento_Nivel(envite_luminoso).
+movimiento_Nivel(petalo_venenoso).
+movimiento_Nivel(picotazo_ven).
+movimiento_Nivel(pulsar).
+movimiento_Nivel(sombra_vil).
+movimiento_Nivel(punio_trueno).
+movimiento_Nivel(golpe_cabeza).
+movimiento_Nivel(ventisca).
+movimiento_Nivel(envite_ign).
+movimiento_Nivel(confusion).
+movimiento_Nivel(pulso_umbrio).
+movimiento_Nivel(bostezo).
+movimiento_Nivel(helada).
+movimiento_Nivel(luminocanon).
+movimiento_Nivel(puya_nociva).
+movimiento_Nivel(golpe_aire).
+movimiento_Nivel(aire_afilado).
+movimiento_Nivel(punio_fuego).
+movimiento_Nivel(sorpresa).
+movimiento_Nivel(drenadoras).
+movimiento_Nivel(mal_de_ojo).
+movimiento_Nivel(masaje).
+movimiento_Nivel(pico_taladro).
+movimiento_Nivel(malicioso).
+movimiento_Nivel(chorro_de_agua).
+movimiento_Nivel(psicoonda).
+movimiento_Nivel(fresquito).
+movimiento_Nivel(triturar).
+movimiento_Nivel(pulsor).
+movimiento_Nivel(eco_ancestral).
+movimiento_Nivel(colmillo_hielo).
+movimiento_Nivel(cabezahierro).
+movimiento_Nivel(placaje).
+movimiento_Nivel(burbuja).
+
+% Movimiento por MT
+movimiento_mt(derribo).
+movimiento_mt(bomba_acida).
+movimiento_mt(encanto).
+movimiento_mt(giro_fuego).
+movimiento_mt(surf).
+movimiento_mt(dispado).
+movimiento_mt(psiquico).
+movimiento_mt(golpe_aereo).
+movimiento_mt(vuelo).
+movimiento_mt(cola_ferrea).
+movimiento_mt(choque_toxico).
+movimiento_mt(rayo).
+movimiento_mt(tajo_umbrio).
+movimiento_mt(llamarada).
+movimiento_mt(rayo_confuso).
+movimiento_mt(toxico).
+movimiento_mt(hipnosis).
+movimiento_mt(terratemblor).
+movimiento_mt(azote).
+movimiento_mt(transgigamaxcion).
+movimiento_mt(golpe_aereo).
+movimiento_mt(lanzallamas).
+movimiento_mt(retorno).
+movimiento_mt(proteccion).
+movimiento_mt(hoja_aguda).
+movimiento_mt(rayo_hielo).
+movimiento_mt(brillo_magico).
+movimiento_mt(descanso).
+movimiento_mt(recuperacion).
+movimiento_mt(bola_sombra).
+movimiento_mt(fuerza).
+movimiento_mt(sorpresa).
+movimiento_mt(avalancha).
+movimiento_mt(cuerpo_pesado).
+movimiento_mt(garra_dragon).
+movimiento_mt(garra_umbria).
+movimiento_mt(destructor).
+movimiento_mt(sombrio).
+movimiento_mt(pulso).
+movimiento_mt(beso).
+movimiento_mt(viento_afinado).
+movimiento_mt(golpe_aereo).
+movimiento_mt(surf).
+movimiento_mt(terremoto).
+movimiento_mt(zona).
+movimiento_mt(garra_umbria).
+movimiento_mt(danza_petalo).
+movimiento_mt(gigadrenado).
+movimiento_mt(corte).
+movimiento_mt(bola_sombra).
+movimiento_mt(rayo_solar).
+movimiento_mt(bomba_lodo).
+movimiento_mt(cabeza_hierro).
+movimiento_mt(terremoto).
+movimiento_mt(somnifero).
+movimiento_mt(sol_matinal).
+movimiento_mt(rayo).
+movimiento_mt(garrra_metal).
+movimiento_mt(hidrobomba).
+movimiento_mt(refugio).
+movimiento_mt(tornado).
+movimiento_mt(encanto).
+movimiento_mt(tinieblas).
+movimiento_mt(proteccion).
+movimiento_mt(hidropulso).
+movimiento_mt(descanso).
+movimiento_mt(cabezazo).
+movimiento_mt(surf).
+movimiento_mt(rayo).
+movimiento_mt(maquinacion).
+movimiento_mt(salpicadura).
+movimiento_mt(cabeza).
+movimiento_mt(garra).
+movimiento_mt(cola).
+movimiento_mt(envite).
+movimiento_mt(mordisco).
+movimiento_mt(pantalla).
+movimiento_mt(terremoto).
+movimiento_mt(maldicion).
+movimiento_mt(sombra).
+movimiento_mt(dragon).
+movimiento_mt(corte).
+movimiento_mt(fuego).
+movimiento_mt(golpes).
+movimiento_mt(rayo_solar).
+movimiento_mt(danza_petalos).
+movimiento_mt(maquinacion).
+movimiento_mt(carga_dragon).
+
+% movimiento por tutor
+movimiento_Tutor(danza_espada).
+movimiento_Tutor(doble_filo).
+movimiento_Tutor(sustituto).
+movimiento_Tutor(lanza_llamas).
+movimiento_Tutor(lazallamas).
+movimiento_Tutor(giro_rapido).
+movimiento_Tutor(hidrocanion).
+movimiento_Tutor(picadura).
+movimiento_Tutor(disparo).
+movimiento_Tutor(rapidez).
+movimiento_Tutor(respiro).
+movimiento_Tutor(trueno).
+movimiento_Tutor(electrocanion).
+movimiento_Tutor(golpe_bajo).
+movimiento_Tutor(hiperrayo).
+movimiento_Tutor(maldicion).
+movimiento_Tutor(bomba).
+movimiento_Tutor(transgigamaxcion).
+movimiento_Tutor(deseo).
+movimiento_Tutor(superdiente).
+movimiento_Tutor(psiquico).
+movimiento_Tutor(rayo).
+movimiento_Tutor(energia_ball).
+movimiento_Tutor(frio_extremo).
+movimiento_Tutor(megapunio).
+movimiento_Tutor(gravedad).
+movimiento_Tutor(onda_trueno).
+movimiento_Tutor(psico_corte).
+movimiento_Tutor(megapatada).
+movimiento_Tutor(cuerpo_pesado).
+movimiento_Tutor(cabeza_hierro).
+movimiento_Tutor(pesadilla).
+movimiento_Tutor(niebla).
+movimiento_Tutor(azote).
+movimiento_Tutor(surf).
+movimiento_Tutor(rayo_aurora).
+movimiento_Tutor(filo).
+movimiento_Tutor(desarme).
+movimiento_Tutor(pulso_dragon).
+movimiento_Tutor(avalancha).
+movimiento_Tutor(acua).
+movimiento_Tutor(sonambulo).
+movimiento_Tutor(bomba).
+movimiento_Tutor(armadura).
+movimiento_Tutor(garra).
+movimiento_Tutor(tinieblas).
+movimiento_Tutor(trueno).
+movimiento_Tutor(punio_fuego).
+movimiento_Tutor(punio_meteoro).
+movimiento_Tutor(habilidad_oculta).
+movimiento_Tutor(danza_petalo).
+movimiento_Tutor(planta_fetida).
+movimiento_Tutor(esfuerzo).
+movimiento_Tutor(punio_veneno).
+movimiento_Tutor(desconocido).
+movimiento_Tutor(giro_bola).
+movimiento_Tutor(contonear).
+movimiento_Tutor(acua_jet).
+movimiento_Tutor(pistola).
+movimiento_Tutor(bola).
+movimiento_Tutor(frenesi_planta).
+movimiento_Tutor(cola_ferroz).
+movimiento_Tutor(blando).
+movimiento_Tutor(senial_ruido).
+movimiento_Tutor(mordida).
+movimiento_Tutor(absorber).
+movimiento_Tutor(explosion_germen).
+movimiento_Tutor(esfuerzo).
+movimiento_Tutor(ningun).
+movimiento_Tutor(golpe).
+movimiento_Tutor(colmillo).
+movimiento_Tutor(malicioso).
+movimiento_Tutor(tijera_x).
+movimiento_Tutor(agilidad).
+movimiento_Tutor(pulso).
+
+% movimiento huevo
+movimiento_Huevo(viento_cortante).
+movimiento_Huevo(tambor).
+movimiento_Huevo(colmillo_igneo).
+movimiento_Huevo(pulso_dragon).
+movimiento_Huevo(placaje).
+movimiento_Huevo(picadura).
+movimiento_Huevo(vendaval).
+movimiento_Huevo(ciclon).
+movimiento_Huevo(agilidad).
+movimiento_Huevo(mordisco).
+movimiento_Huevo(remolino).
+movimiento_Huevo(gruniido).
+movimiento_Huevo(encanto).
+movimiento_Huevo(cuerpo_llamas).
+movimiento_Huevo(fijar).
+movimiento_Huevo(niebla).
+movimiento_Huevo(barrera).
+movimiento_Huevo(transgigamaxcion).
+movimiento_Huevo(encantamiento).
+movimiento_Huevo(agua_lodosa).
+movimiento_Huevo(captura).
+movimiento_Huevo(maldicion).
+movimiento_Huevo(curacion).
+movimiento_Huevo(telepatia).
+movimiento_Huevo(desarme).
+movimiento_Huevo(rezo).
+movimiento_Huevo(contraataque).
+movimiento_Huevo(venganza).
+movimiento_Huevo(danza_petalos).
+movimiento_Huevo(drenadora).
+movimiento_Huevo(psicoonda).
+movimiento_Huevo(ciclon).
+movimiento_Huevo(sustituto).
+movimiento_Huevo(enfado).
+movimiento_Huevo(foco).
+movimiento_Huevo(rugido).
+movimiento_Huevo(trampa).
+movimiento_Huevo(contraataque).
+movimiento_Huevo(finta).
+movimiento_Huevo(matarile).
+movimiento_Huevo(latigo_cep).
+movimiento_Huevo(desconocido_movimiento).
+movimiento_Huevo(hojas_navajas).
+movimiento_Huevo(campana_curacion).
+movimiento_Huevo(chispa).
+movimiento_Huevo(cabezazo).
+movimiento_Huevo(trampa_rocas).
+movimiento_Huevo(bostezo).
+movimiento_Huevo(punio_bala).
+movimiento_Huevo(truco).
+movimiento_Huevo(pulso).
+movimiento_Huevo(psicocarga).
+movimiento_Huevo(poder_oculto).
+movimiento_Huevo(bello_misterio).
+movimiento_Huevo(cabeza_hierro).
+movimiento_Huevo(roca_afilada).
+movimiento_Huevo(danio_secundario).
+movimiento_Huevo(amago).
+movimiento_Huevo(copion).
+movimiento_Huevo(despejar).
+movimiento_Huevo(cabeza_metal).
+movimiento_Huevo(maquinacion).
+movimiento_Huevo(danza_luna).
+movimiento_Huevo(cuerpo_maldito).
+movimiento_Huevo(drenadoras).
+movimiento_Huevo(gigadrenado).
+movimiento_Huevo(bostezo).
+movimiento_Huevo(impactrueno).
+movimiento_Huevo(encanto).
+movimiento_Huevo(captura).
+movimiento_Huevo(canto).
+movimiento_Huevo(espada_santa).
+movimiento_Huevo(bubble_beam).
+movimiento_Huevo(furia).
+movimiento_Huevo(reciclaje).
+movimiento_Huevo(machada).
+movimiento_Huevo(robo).
+movimiento_Huevo(tajo_aereo).
+movimiento_Huevo(granizo).
+movimiento_Huevo(contraataque).
+movimiento_Huevo(punio_hielo).
+movimiento_Huevo(aroma_ve).
+movimiento_Huevo(absorber).
+movimiento_Huevo(desarme).
+movimiento_Huevo(drenadoras).
+movimiento_Huevo(contoneo).
+movimiento_Huevo(rapido).
+movimiento_Huevo(estallido).
+movimiento_Huevo(cola_ferrea).
+movimiento_Huevo(desconocido).
+movimiento_Huevo(susto).
+movimiento_Huevo(esporagodon).
+movimiento_Huevo(fuego_fatuo).
+movimiento_Huevo(pulso_aura).
+movimiento_Huevo(pico_taladro).
+movimiento_Huevo(aqua_ring).
+movimiento_Huevo(aquajet).
+
+% Movimiento especial por pokemon
+movimiento_Especial(planta_feroz).
+movimiento_Especial(acrobata).
+movimiento_Especial(cola_dragon).
+movimiento_Especial(llamarada).
+movimiento_Especial(hidro_bomba).
+movimiento_Especial(proteccion).
+movimiento_Especial(pico_taladro).
+movimiento_Especial(remolino).
+movimiento_Especial(viento).
+movimiento_Especial(hiper_rayo).
+movimiento_Especial(ataque_aereo).
+movimiento_Especial(chispa).
+movimiento_Especial(trueno).
+movimiento_Especial(furia).
+movimiento_Especial(fuego_fatuo).
+movimiento_Especial(pesadilla).
+movimiento_Especial(terremoto).
+movimiento_Especial(transgigamaxcion).
+movimiento_Especial(encantamiento).
+movimiento_Especial(agua_lodosa).
+movimiento_Especial(extrasensorial).
+movimiento_Especial(pulso_umbrio).
+movimiento_Especial(danza_lama).
+movimiento_Especial(nevada).
+movimiento_Especial(fuerza_lunar).
+movimiento_Especial(psiquico).
+movimiento_Especial(psi_onda).
+movimiento_Especial(recuperacion).
+movimiento_Especial(cometa).
+movimiento_Especial(derribo).
+movimiento_Especial(enfado).
+movimiento_Especial(avalancha).
+movimiento_Especial(rayo).
+movimiento_Especial(danza_llamas).
+movimiento_Especial(rafaga).
+movimiento_Especial(megapunio).
+movimiento_Especial(campana_curativa).
+movimiento_Especial(bomba_lodo).
+movimiento_Especial(rayo_solar).
+movimiento_Especial(anillo_igneo).
+movimiento_Especial(giro_bola).
+movimiento_Especial(lanza_rocas).
+movimiento_Especial(esfera_aural).
+movimiento_Especial(premonicion).
+movimiento_Especial(esfuerzo).
+movimiento_Especial(rayo_confuso).
+movimiento_Especial(bola_sombra).
+movimiento_Especial(desconocido).
+movimiento_Especial(cabeza_hierro).
+movimiento_Especial(garra_metal).
+movimiento_Especial(cabezahierro).
+movimiento_Especial(hidropulso).
+movimiento_Especial(hidrochorro).
+movimiento_Especial(erupcion).
+movimiento_Especial(remolino).
+movimiento_Especial(golpe_aereo).
+movimiento_Especial(cabeza_hierro).
+movimiento_Especial(rayo_lunar).
+movimiento_Especial(rayo_solar).
+movimiento_Especial(beso_dulce).
+movimiento_Especial(espora).
+movimiento_Especial(drenadoras).
+movimiento_Especial(danza_lluvia).
+movimiento_Especial(toxina).
+movimiento_Especial(tajo_umbrio).
+movimiento_Especial(pulso_dragon).
+movimiento_Especial(chispazo).
+movimiento_Especial(patada_salto_alto).
+movimiento_Especial(gigadrenado).
+movimiento_Especial(bomba_germen).
+movimiento_Especial(chorro_de_tinta).
+movimiento_Especial(arrancar).
+movimiento_Especial(hoja_magica).
 
 % Generacion y region
 generacionRegion(primera, kanto).
@@ -483,7 +1127,7 @@ habilidad(Aclimatación, 'Permite al portador cambiar su tipo al del último ata
 habilidad(Adaptable, 'Aumenta la potencia de los movimientos del mismo tipo que el portador').
 habilidad(Afortunado, 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
 habilidad(Agallas, 'Aumenta el ataque del portador cuando sufre un problema de estado').
-habilidad(Agrupamiento, 'Permite al portador cambiar de forma en combate').
+habilidad(Agrupamiento, 'Permite al portador cambiar de gigamax en combate').
 habilidad(Alas_vendaval, 'Aumenta la prioridad de los movimientos de tipo volador del portador').
 habilidad(Alerta, 'Evita que el portador sea golpeado por movimientos de prioridad').
 habilidad(Allanamiento, 'Permite al portador ignorar las barreras del oponente').
@@ -517,8 +1161,8 @@ habilidad(Calco, 'Permite al portador copiar la habilidad del oponente al entrar
 habilidad(Cálculo_final, 'Permite al portador infligir dano al oponente al ser debilitado').
 habilidad(Caldero_debacle, 'Reduce la velocidad del portador al ser golpeado por un ataque').
 habilidad(Cambio_color, 'Permite al portador cambiar su tipo al del último ataque recibido').
-habilidad(Cambio_heroico, 'Permite al portador cambiar de forma en combate').
-habilidad(Cambio_táctico, 'Permite al portador cambiar de forma dependiendo del movimiento usado').
+habilidad(Cambio_heroico, 'Permite al portador cambiar de gigamax en combate').
+habilidad(Cambio_táctico, 'Permite al portador cambiar de gigamax dependiendo del movimiento usado').
 habilidad(Capa_tóxica, 'Permite al portador envenenar al oponente al hacer contacto').
 habilidad(Caparazón, 'Evita que el portador reciba golpes críticos').
 habilidad(Cara_de_hielo, 'Permite al portador cambiar su tipo a hielo al ser golpeado').
@@ -638,7 +1282,7 @@ habilidad(Impulso, 'Aumenta la velocidad del portador al final de cada turno').
 habilidad(Impetu_ardiente, 'Aumenta la potencia de los movimientos de tipo fuego del portador').
 habilidad(Impetu_arena, 'Aumenta la velocidad del portador en tormentas de arena').
 habilidad(Impetu_toxico, 'Aumenta la potencia de los movimientos del portador cuando está envenenado').
-habilidad(Impostor, 'Permite al portador transformarse en el oponente al entrar en combate').
+habilidad(Impostor, 'Permite al portador transgigamaxrse en el oponente al entrar en combate').
 habilidad(Indefenso, 'Permite al portador golpear siempre con sus movimientos').
 habilidad(Inicio_lento, 'Reduce el ataque y la velocidad del portador durante los primeros cinco turnos').
 habilidad(Inmunidad, 'Evita que el portador sea envenenado').
@@ -677,7 +1321,7 @@ habilidad(Menos, 'Aumenta el ataque especial del portador cuando hay un aliado c
 habilidad(Metal_liviano, 'Reduce el peso del portador').
 habilidad(Metal_pesado, 'Aumenta el peso del portador').
 habilidad(Mimetismo, 'Permite al portador cambiar su tipo dependiendo del terreno en combate').
-habilidad(Modo_daruma, 'Permite al portador cambiar de forma cuando sus PS están por debajo del 50%').
+habilidad(Modo_daruma, 'Permite al portador cambiar de gigamax cuando sus PS están por debajo del 50%').
 habilidad(Momia, 'Permite al portador cambiar la habilidad del oponente a Momia al hacer contacto').
 habilidad(Monotema, 'Aumenta la potencia de los movimientos del portador cuando solo conoce un movimiento').
 habilidad(Motor_hadronico, 'Aumenta la velocidad del portador cuando recibe un ataque de tipo eléctrico').
@@ -783,7 +1427,7 @@ habilidad(telepatia, 'Evita que el portador reciba dano de los movimientos de su
 habilidad(tenacidad, 'Permite al portador resistir un golpe que lo debilitaría y quedarse con 1 PS').
 habilidad(teracambio, 'Permite al portador cambiar su tipo al tipo Tera al entrar en combate').
 habilidad(teracaparazon, 'Evita que el portador reciba golpes críticos').
-habilidad(teraformacion_0, 'Permite al portador cambiar su tipo al tipo Tera al usar un movimiento de tipo Tera').
+habilidad(teragigamaxcion_0, 'Permite al portador cambiar su tipo al tipo Tera al usar un movimiento de tipo Tera').
 habilidad(termoconversion, 'Permite al portador cambiar su tipo al tipo del último movimiento recibido').
 habilidad(terravoltaje, 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
 habilidad(tierra_del_ocaso, 'Crea un campo de niebla al entrar en combate').
@@ -800,7 +1444,7 @@ habilidad(turbollama, 'Permite al portador ignorar las habilidades del oponente 
 
 % habilidades U
 habilidad(ultraimpulso, 'Aumenta la estadística más alta del portador al debilitar a un oponente').
-habilidad(unidad_ecuestre, 'Permite al portador cambiar de forma al entrar en combate').
+habilidad(unidad_ecuestre, 'Permite al portador cambiar de gigamax al entrar en combate').
 habilidad(unisono, 'Permite al portador aumentar la potencia de sus movimientos cuando hay un aliado con la misma habilidad en el campo de batalla').
 
 % habilidades V
@@ -1893,6 +2537,815 @@ pokemon(1024, smoliv, [planta, normal], 9).
 pokemon(1025, dolliv, [planta, normal], 9).
 pokemon(1026, arboliva, [planta, normal], 9).
 
+% habilidades_pokemon
+Habilidad_pokemon(bulbasaur, espesura).
+Habilidad_pokemon(ivysaur, espesura).
+Habilidad_pokemon(venusaur, espesura).
+Habilidad_pokemon(charmander, mar_llamas).
+Habilidad_pokemon(charmeleon, mar_llamas).
+Habilidad_pokemon(charizard, mar_llamas).
+Habilidad_pokemon(squirtle, torrente).
+Habilidad_pokemon(wartortle, torrente).
+Habilidad_pokemon(blastoise, torrente).
+Habilidad_pokemon(caterpie, escudo_polvo).
+Habilidad_pokemon(metapod, mudar).
+Habilidad_pokemon(butterfree, ojo_compuesto).
+Habilidad_pokemon(weedle, escudo_polvo).
+Habilidad_pokemon(kakuna, mudar).
+Habilidad_pokemon(beedrill, enjambre).
+Habilidad_pokemon(pidgey, vista_lince).
+Habilidad_pokemon(pidgeotto, vista_lince).
+Habilidad_pokemon(pidgeot, vista_lince).
+Habilidad_pokemon(rattata, fuga).
+Habilidad_pokemon(raticate, fuga).
+Habilidad_pokemon(spearow, mirada_fija).
+Habilidad_pokemon(pikachu, estatica).
+Habilidad_pokemon(raichu, estatica).
+Habilidad_pokemon(meowth, recogida).
+Habilidad_pokemon(persian, limpieza).
+Habilidad_pokemon(ponyta, cuerpo_llamas).
+Habilidad_pokemon(rapidash, cuerpo_llamas).
+Habilidad_pokemon(gastly, levitacion).
+Habilidad_pokemon(haunter, levitacion).
+Habilidad_pokemon(gengar, levitacion).
+Habilidad_pokemon(rhyhorn, pararrayos).
+Habilidad_pokemon(rhydon, pararrayos).
+Habilidad_pokemon(magikarp, nado_rapido).
+Habilidad_pokemon(gyarados, intimidacion).
+Habilidad_pokemon(ditto, imposta).
+Habilidad_pokemon(eevee, adaptabilidad).
+Habilidad_pokemon(vaporeon, absorber_agua).
+Habilidad_pokemon(jolteon, absorber_voltaje).
+Habilidad_pokemon(flareon, absorbe_fuego).
+Habilidad_pokemon(espeon, sincronia).
+Habilidad_pokemon(umbreon, sincronia).
+Habilidad_pokemon(leafeon, hoja_afilada).
+Habilidad_pokemon(glaceon, manto_nieve).
+Habilidad_pokemon(sylveon, encanto).
+Habilidad_pokemon(snorlax, inmunidad).
+Habilidad_pokemon(ralts, sincronia).
+Habilidad_pokemon(kirlia, sincronia).
+Habilidad_pokemon(gardevoir, rastro).
+Habilidad_pokemon(gallade, impasible).
+Habilidad_pokemon(poliwhirl, absorbe_agua).
+Habilidad_pokemon(poliwrath, absorbe_agua).
+Habilidad_pokemon(politoed, absorbe_agua).
+Habilidad_pokemon(applin, cosecha).
+Habilidad_pokemon(flapple, corte_fuerte).
+Habilidad_pokemon(appletun, cosecha).
+Habilidad_pokemon(dipplin, torrente).
+Habilidad_pokemon(mew, sincronia).
+Habilidad_pokemon(mewtwo, presion).
+Habilidad_pokemon(celebi, cuerpo).
+Habilidad_pokemon(lugia, presion).
+Habilidad_pokemon(jirachi, dicha).
+Habilidad_pokemon(deoxys, presion).
+Habilidad_pokemon(latias, levitacion).
+Habilidad_pokemon(latios, levitacion).
+Habilidad_pokemon(dialga, presion).
+Habilidad_pokemon(palkia, presion).
+Habilidad_pokemon(giratina, presion).
+Habilidad_pokemon(xerneas, aura_feerica).
+Habilidad_pokemon(yveltal, presion).
+Habilidad_pokemon(zygarde, orden_ancestral).
+Habilidad_pokemon(victini, victoria).
+Habilidad_pokemon(meloetta, melodia).
+Habilidad_pokemon(genesect, descargar).
+Habilidad_pokemon(meltan, iman).
+Habilidad_pokemon(solgaleo, metal_escudo).
+Habilidad_pokemon(lunala, espectro_total).
+Habilidad_pokemon(necrozma, aura_oscura).
+Habilidad_pokemon(raikou, presion).
+Habilidad_pokemon(entei, presion).
+Habilidad_pokemon(suicune, absorbe_agua).
+Habilidad_pokemon(heracross, enjambre).
+Habilidad_pokemon(ledyba, enjambre).
+Habilidad_pokemon(ledian, enjambre).
+Habilidad_pokemon(flabebe, simbiosis).
+Habilidad_pokemon(floette, reino_floral).
+Habilidad_pokemon(florges, reino_floral).
+Habilidad_pokemon(roselia, espesura).
+Habilidad_pokemon(roserade, espesura).
+Habilidad_pokemon(voltorb, estatico).
+Habilidad_pokemon(electrode, estatico).
+Habilidad_pokemon(roggenrola, robustez).
+Habilidad_pokemon(boldore, robustez).
+Habilidad_pokemon(gigalith, robustez).
+Habilidad_pokemon(lucario, impasible).
+Habilidad_pokemon(meditite, pureza).
+Habilidad_pokemon(mime_jr, filtro).
+Habilidad_pokemon(mr_mime, filtro).
+Habilidad_pokemon(mawile, intimidacion).
+Habilidad_pokemon(yamask, presion).
+Habilidad_pokemon(darkrai, presion).
+Habilidad_pokemon(feebas, nado_rapido).
+Habilidad_pokemon(milotic, despejar).
+Habilidad_pokemon(grimer, viscosidad).
+Habilidad_pokemon(muk, absorbe_toxico).
+Habilidad_pokemon(aron, robustez).
+Habilidad_pokemon(lairon, robustez).
+Habilidad_pokemon(aggron, robustez).
+Habilidad_pokemon(oshawott, torrente).
+Habilidad_pokemon(dewott, torrente).
+Habilidad_pokemon(samurott, torrente).
+Habilidad_pokemon(tapu_fini, hidroimpulso).
+Habilidad_pokemon(groudon, sequia).
+Habilidad_pokemon(rayquaza, presion).
+Habilidad_pokemon(cubone, cabezazo).
+Habilidad_pokemon(marowak, pararrayos).
+Habilidad_pokemon(hoopa, magia_curiosa).
+Habilidad_pokemon(sableye, vista_lince).
+Habilidad_pokemon(cresselia, levitacion).
+Habilidad_pokemon(chikorita, espesura).
+Habilidad_pokemon(bayleef, espesura).
+Habilidad_pokemon(meganium, espesura).
+Habilidad_pokemon(togepi, encanto).
+Habilidad_pokemon(togetic, encanto).
+Habilidad_pokemon(togekiss, don_sereno).
+Habilidad_pokemon(pichu, estatica).
+Habilidad_pokemon(igglybuff, despeje).
+Habilidad_pokemon(jigglypuff, gran_encanto).
+Habilidad_pokemon(wigglytuff, gran_encanto).
+Habilidad_pokemon(smoochum, despierto).
+Habilidad_pokemon(jynx, despierto).
+Habilidad_pokemon(shroomish, efecto_espina).
+Habilidad_pokemon(breloom, efecto_espina).
+Habilidad_pokemon(surskit, enjambre).
+Habilidad_pokemon(surskit, absorbe_agua).
+Habilidad_pokemon(masquerain, enjambre).
+Habilidad_pokemon(gulpin, liquid_ooze).
+Habilidad_pokemon(swalot, liquid_ooze).
+Habilidad_pokemon(shuppet, insomnio).
+Habilidad_pokemon(banette, insomnio).
+Habilidad_pokemon(absol, presion).
+Habilidad_pokemon(zangoose, inmunidad).
+Habilidad_pokemon(kecleon, cambio_color).
+Habilidad_pokemon(shinx, robustez).
+Habilidad_pokemon(luxio, robustez).
+Habilidad_pokemon(luxray, rivalidad).
+Habilidad_pokemon(snorunt, gelido).
+Habilidad_pokemon(glalie, cuerpo_maldito).
+Habilidad_pokemon(froslass, velo_nieve).
+Habilidad_pokemon(buneary, fuga).
+Habilidad_pokemon(lopunny, fuga).
+Habilidad_pokemon(foongus, regeneracion).
+Habilidad_pokemon(amoonguss, regeneracion).
+Habilidad_pokemon(pumpkaboo, insomnio).
+Habilidad_pokemon(gourgeist, cosecha).
+Habilidad_pokemon(litleo, fuego_interno).
+Habilidad_pokemon(pyroar, robustez).
+Habilidad_pokemon(axew, rompemoldes).
+Habilidad_pokemon(fraxure, rompemoldes).
+Habilidad_pokemon(haxorus, rompemoldes).
+Habilidad_pokemon(inkay, ventosas).
+Habilidad_pokemon(malamar, ventosas).
+Habilidad_pokemon(pidove, agallas).
+Habilidad_pokemon(pidove, tenacidad).
+Habilidad_pokemon(tranquill, agallas).
+Habilidad_pokemon(tranquill, tenacidad).
+Habilidad_pokemon(unfezant, mirada_tensa).
+Habilidad_pokemon(unfezant, superanimo).
+Habilidad_pokemon(scraggy, intimidacion).
+Habilidad_pokemon(scraggy, nerviosismo).
+Habilidad_pokemon(skorupi, corte_fuerte).
+Habilidad_pokemon(drapion, batalla).
+Habilidad_pokemon(litten, mar_llamas).
+Habilidad_pokemon(torracat, mar_llamas).
+Habilidad_pokemon(incineroar, mar_llamas).
+Habilidad_pokemon(petilil, clorofila).
+Habilidad_pokemon(lilligant, clorofila).
+Habilidad_pokemon(zorua, ilusion).
+Habilidad_pokemon(zoroark, ilusion).
+Habilidad_pokemon(deino, cabeza_roca).
+Habilidad_pokemon(zweilous, cabeza_roca).
+Habilidad_pokemon(hydreigon, levitacion).
+Habilidad_pokemon(skrelp, absorbeagua).
+Habilidad_pokemon(tyrunt, mandibula_fuerte).
+Habilidad_pokemon(tyrantrum, mandibula_fuerte).
+Habilidad_pokemon(amaura, refrigerar).
+Habilidad_pokemon(aurorus, refraccion).
+Habilidad_pokemon(rowlet, espesura).
+Habilidad_pokemon(dartrix, espesura).
+Habilidad_pokemon(empoleon, torrente).
+Habilidad_pokemon(piplup, torrente).
+habilidad_pokemon(turtwig, espesura).
+habilidad_pokemon(grotle, espesura).
+habilidad_pokemon(torterra, espesura).
+habilidad_pokemon(chimchar, mar_llamas).
+habilidad_pokemon(monferno, mar_llamas).
+habilidad_pokemon(infernape, mar_llamas).
+habilidad_pokemon(piplup, torrente).
+habilidad_pokemon(prinplup, torrente).
+habilidad_pokemon(empoleon, torrente).
+habilidad_pokemon(starly, vista_lince).
+habilidad_pokemon(starly, intimidacion).
+habilidad_pokemon(staravia, intimidacion).
+habilidad_pokemon(staraptor, intimidacion).
+habilidad_pokemon(bidoof, simple).
+habilidad_pokemon(bidoof, despiste).
+habilidad_pokemon(bibarel, simple).
+habilidad_pokemon(bibarel, despiste).
+habilidad_pokemon(kricketot, fuga).
+habilidad_pokemon(kricketune, enjambre).
+habilidad_pokemon(shinx, intimidacion).
+habilidad_pokemon(shinx, rivalidad).
+habilidad_pokemon(luxio, intimidacion).
+habilidad_pokemon(luxio, rivalidad).
+habilidad_pokemon(luxray, intimidacion).
+habilidad_pokemon(luxray, rivalidad).
+habilidad_pokemon(budew, espesura).
+habilidad_pokemon(roselia, espesura).
+habilidad_pokemon(roserade, espesura).
+habilidad_pokemon(cranidos, cabeza_roca).
+habilidad_pokemon(rampardos, cabeza_roca).
+habilidad_pokemon(shieldon, robustez).
+habilidad_pokemon(bastiodon, robustez).
+habilidad_pokemon(burmy, muda).
+habilidad_pokemon(wormadam, capa_hoja).
+habilidad_pokemon(mothim, enjambre).
+habilidad_pokemon(combee, enjambre).
+habilidad_pokemon(vespiquen, presion).
+habilidad_pokemon(pachirisu, recogida).
+habilidad_pokemon(pachirisu, habilidad_fuga).
+habilidad_pokemon(buizel, nado_rapido).
+habilidad_pokemon(floatzel, nado_rapido).
+habilidad_pokemon(cherubi, clorofila).
+habilidad_pokemon(cherrim, clorofila).
+habilidad_pokemon(shellos, pegajoso).
+habilidad_pokemon(gastrodon, pegajoso).
+habilidad_pokemon(drifloon, ligera).
+habilidad_pokemon(drifblim, ligera).
+habilidad_pokemon(buneary, fuga).
+habilidad_pokemon(lopunny, fuga).
+habilidad_pokemon(glameow, flexible).
+habilidad_pokemon(purugly, flexible).
+habilidad_pokemon(chingling, levitacion).
+habilidad_pokemon(chimecho, levitacion).
+habilidad_pokemon(stunky, juego_sucio).
+habilidad_pokemon(skuntank, juego_sucio).
+habilidad_pokemon(bronzor, levitacion).
+habilidad_pokemon(bronzong, levitacion).
+habilidad_pokemon(bonsly, robustez).
+habilidad_pokemon(mime_jr, filtro).
+habilidad_pokemon(happiny, felicidad).
+habilidad_pokemon(chatot, voz_fluida).
+habilidad_pokemon(spiritomb, presion).
+habilidad_pokemon(gible, cabeza_roca).
+habilidad_pokemon(gabite, cabeza_roca).
+habilidad_pokemon(garchomp, cabeza_roca).
+habilidad_pokemon(munchlax, inmunidad).
+habilidad_pokemon(riolu, impasible).
+habilidad_pokemon(lucario, impasible).
+habilidad_pokemon(hippopotas, sequia).
+habilidad_pokemon(hippowdon, sequia).
+habilidad_pokemon(skorupi, batalla).
+habilidad_pokemon(drapion, batalla).
+habilidad_pokemon(croagunk, antisudor).
+habilidad_pokemon(toxicroak, antisudor).
+habilidad_pokemon(carnivine, levitacion).
+habilidad_pokemon(finneon, nado_rapido).
+habilidad_pokemon(lumineon, nado_rapido).
+habilidad_pokemon(mantyke, nado_rapido).
+habilidad_pokemon(snover, manto_nieve).
+habilidad_pokemon(abomasnow, manto_nieve).
+habilidad_pokemon(weavile, presion).
+habilidad_pokemon(magnezone, robustez).
+habilidad_pokemon(lickilicky, despiste).
+habilidad_pokemon(rhyperior, pararrayos).
+habilidad_pokemon(tangrowth, clorofila).
+habilidad_pokemon(electivire, electrico).
+habilidad_pokemon(magmortar, cuerpo_llamas).
+habilidad_pokemon(togekiss, don_sereno).
+habilidad_pokemon(yanmega, lentitud).
+habilidad_pokemon(leafeon, clorofila).
+habilidad_pokemon(glaceon, manto_nieve).
+habilidad_pokemon(gliscor, hiper_corte).
+habilidad_pokemon(mamoswine, manto_nieve).
+habilidad_pokemon(porygon_z, adaptabilidad).
+habilidad_pokemon(gallade, impasible).
+habilidad_pokemon(probopass, robustez).
+habilidad_pokemon(dusknoir, presion).
+habilidad_pokemon(froslass, manto_nieve).
+habilidad_pokemon(rotom, levitacion).
+
+% habilidad oculta
+habilidad_oculta_pokemon(bulbasaur, clorofila).
+habilidad_oculta_pokemon(ivysaur, clorofila).
+habilidad_oculta_pokemon(venusaur, clorofila).
+habilidad_oculta_pokemon(charmander, poder_solar).
+habilidad_oculta_pokemon(charmeleon, garra_dura).
+habilidad_oculta_pokemon(charizard, poder_solar).
+habilidad_oculta_pokemon(squirtle, cura_lluvia).
+habilidad_oculta_pokemon(wartortle, cura_lluvia).
+habilidad_oculta_pokemon(blastoise, cura_lluvia).
+habilidad_oculta_pokemon(caterpie, fuga).
+habilidad_oculta_pokemon(metapod, desconocido).
+habilidad_oculta_pokemon(butterfree, cromolente).
+habilidad_oculta_pokemon(weedle, fuga).
+habilidad_oculta_pokemon(beedrill, allanamiento).
+habilidad_oculta_pokemon(pidgey, allanamiento).
+habilidad_oculta_pokemon(pidgeotto, allanamiento).
+habilidad_oculta_pokemon(pidgeot, allanamiento).
+habilidad_oculta_pokemon(rattata, agallas).
+habilidad_oculta_pokemon(raticate, agallas).
+habilidad_oculta_pokemon(spearow, agallas).
+habilidad_oculta_pokemon(pikachu, pararrayos).
+habilidad_oculta_pokemon(raichu, pararrayos).
+habilidad_oculta_pokemon(meowth, nerviosismo).
+habilidad_oculta_pokemon(persian, gelido).
+habilidad_oculta_pokemon(ponyta, impulso).
+habilidad_oculta_pokemon(rapidash, impulso).
+habilidad_oculta_pokemon(gastly, desconocido).
+habilidad_oculta_pokemon(haunter, desconocido).
+habilidad_oculta_pokemon(gengar, desconocido).
+habilidad_oculta_pokemon(rhyhorn, roca_royal).
+habilidad_oculta_pokemon(rhydon, audaz).
+habilidad_oculta_pokemon(magikarp, desconocido).
+habilidad_oculta_pokemon(gyarados, desconocido).
+habilidad_oculta_pokemon(ditto, desconocido).
+habilidad_oculta_pokemon(eevee, anticipacion).
+habilidad_oculta_pokemon(vaporeon, humedad).
+habilidad_oculta_pokemon(jolteon, pararrayos).
+habilidad_oculta_pokemon(flareon, agallas).
+habilidad_oculta_pokemon(espeon, magico).
+habilidad_oculta_pokemon(umbreon, rastro).
+habilidad_oculta_pokemon(leafeon, clorofila).
+habilidad_oculta_pokemon(glaceon, gelido).
+habilidad_oculta_pokemon(sylveon, piel_feerica).
+habilidad_oculta_pokemon(snorlax, gloton).
+habilidad_oculta_pokemon(ralts, rastro).
+habilidad_oculta_pokemon(kirlia, rastro).
+habilidad_oculta_pokemon(gardevoir, telepatia).
+habilidad_oculta_pokemon(gallade, hoja_magica).
+habilidad_oculta_pokemon(poliwhirl, humedad).
+habilidad_oculta_pokemon(poliwrath, humedad).
+habilidad_oculta_pokemon(politoed, humedad).
+habilidad_oculta_pokemon(applin, gula).
+habilidad_oculta_pokemon(flapple, desconocido).
+habilidad_oculta_pokemon(dipplin, cura_lluvia).
+habilidad_oculta_pokemon(mew, desconocido).
+habilidad_oculta_pokemon(mewtwo, desconocido).
+habilidad_oculta_pokemon(celebi, desconocido).
+habilidad_oculta_pokemon(lugia, desconocido).
+habilidad_oculta_pokemon(latias, desconocido).
+habilidad_oculta_pokemon(latios, firmeza).
+habilidad_oculta_pokemon(dialga, telepatia).
+habilidad_oculta_pokemon(palkia, telepatia).
+habilidad_oculta_pokemon(giratina, telepatia).
+habilidad_oculta_pokemon(heracross, agallas).
+habilidad_oculta_pokemon(ledyba, humor_campeon).
+habilidad_oculta_pokemon(ledian, luminoso).
+habilidad_oculta_pokemon(roselia, hojas_toxicas).
+habilidad_oculta_pokemon(roserade, hojas_toxicas).
+habilidad_oculta_pokemon(roggenrola, resquicio).
+habilidad_oculta_pokemon(boldore, resquicio).
+habilidad_oculta_pokemon(gigalith, resquicio).
+habilidad_oculta_pokemon(lucario, justiciero).
+habilidad_oculta_pokemon(meditite, telepatia).
+habilidad_oculta_pokemon(mime_jr, ritmo_propio).
+habilidad_oculta_pokemon(mr_mime, ritmo_propio).
+habilidad_oculta_pokemon(mawile, potencia).
+habilidad_oculta_pokemon(yamask, desalmado).
+habilidad_oculta_pokemon(darkrai, mal_suenio).
+habilidad_oculta_pokemon(feebas, desconocido).
+habilidad_oculta_pokemon(milotic, espejo).
+habilidad_oculta_pokemon(grimer, agallas).
+habilidad_oculta_pokemon(muk, poder_quimico).
+habilidad_oculta_pokemon(aron, cabezahierro).
+habilidad_oculta_pokemon(lairon, cabezahierro).
+habilidad_oculta_pokemon(aggron, cabezahierro).
+habilidad_oculta_pokemon(oshawott, caparazon).
+habilidad_oculta_pokemon(dewott, caparazon).
+habilidad_oculta_pokemon(samurott, caparazon).
+habilidad_oculta_pokemon(tapu_fini, telepatia).
+habilidad_oculta_pokemon(groudon, cuerpo_puro).
+habilidad_oculta_pokemon(rayquaza, desconocido).
+habilidad_oculta_pokemon(cubone, pararrayos).
+habilidad_oculta_pokemon(marowak, garra_dura).
+habilidad_oculta_pokemon(hoopa, telepatia).
+habilidad_oculta_pokemon(sableye, burla).
+habilidad_oculta_pokemon(cresselia, nenufar).
+habilidad_oculta_pokemon(chikorita, hoja_magica).
+habilidad_oculta_pokemon(bayleef, hoja_magica).
+habilidad_oculta_pokemon(meganium, hoja_magica).
+habilidad_oculta_pokemon(togepi, buena_onda).
+habilidad_oculta_pokemon(togetic, cuerpo_puro).
+habilidad_oculta_pokemon(togekiss, compasivo).
+habilidad_oculta_pokemon(pichu, ignicion).
+habilidad_oculta_pokemon(igglybuff, tenacidad).
+habilidad_oculta_pokemon(jigglypuff, tenacidad).
+habilidad_oculta_pokemon(wigglytuff, tenacidad).
+habilidad_oculta_pokemon(smoochum, robustez).
+habilidad_oculta_pokemon(jynx, cuerpo_maldito).
+habilidad_oculta_pokemon(shroomish, allanamiento).
+habilidad_oculta_pokemon(masquerain, intimidacion).
+habilidad_oculta_pokemon(gulpin, viscosidad).
+habilidad_oculta_pokemon(swalot, viscosidad).
+habilidad_oculta_pokemon(shuppet, cachipasado).
+habilidad_oculta_pokemon(banette, cachipasado).
+habilidad_oculta_pokemon(absol, justiciero).
+habilidad_oculta_pokemon(zangoose, toxicidad).
+habilidad_oculta_pokemon(shinx, impulso).
+habilidad_oculta_pokemon(luxio, impulso).
+habilidad_oculta_pokemon(luxray, intimidacion).
+habilidad_oculta_pokemon(snorunt, manto_niveo).
+habilidad_oculta_pokemon(glalie, gelido).
+habilidad_oculta_pokemon(froslass, manto_niveo).
+habilidad_oculta_pokemon(buneary, humor_campeon).
+habilidad_oculta_pokemon(lopunny, humor_campeon).
+habilidad_oculta_pokemon(foongus, efecto_espora).
+habilidad_oculta_pokemon(amoonguss, efecto_espora).
+habilidad_oculta_pokemon(pumpkaboo, pickup).
+habilidad_oculta_pokemon(gourgeist, insomnio).
+habilidad_oculta_pokemon(litleo, desconocido).
+habilidad_oculta_pokemon(pyroar, desconocido).
+habilidad_oculta_pokemon(axew, desconocido).
+habilidad_oculta_pokemon(fraxure, desconocido).
+habilidad_oculta_pokemon(haxorus, desconocido).
+habilidad_oculta_pokemon(inkay, desconocido).
+habilidad_oculta_pokemon(malamar, desconocido).
+habilidad_oculta_pokemon(pidove, galanteo).
+habilidad_oculta_pokemon(tranquill, galanteo).
+habilidad_oculta_pokemon(unfezant, tenacidad).
+habilidad_oculta_pokemon(scraggy, autoestima).
+habilidad_oculta_pokemon(skorupi, ataque_nocturno).
+habilidad_oculta_pokemon(drapion, cachiporra).
+habilidad_oculta_pokemon(litten, cuerpo_llamas).
+habilidad_oculta_pokemon(torracat, cuerpo_llamas).
+habilidad_oculta_pokemon(incineroar, cuerpo_llamas).
+habilidad_oculta_pokemon(petilil, limonada).
+habilidad_oculta_pokemon(lilligant, ritmo_propio).
+habilidad_oculta_pokemon(skrelp, veneno_oculto).
+habilidad_oculta_pokemon(tyrunt, ira_del_tiempo).
+habilidad_oculta_pokemon(tyrantrum, ira_del_tiempo).
+habilidad_oculta_pokemon(amaura, nada).
+habilidad_oculta_pokemon(aurorus, nada).
+habilidad_oculta_pokemon(rowlet, frondosos).
+habilidad_oculta_pokemon(dartrix, frondosos).
+habilidad_oculta_pokemon(empoleon, competitiva).
+habilidad_oculta_pokemon(piplup, competividad).
+
+% habitad_pokemon
+pokemon_habitat(bulbasaur, pradera).
+pokemon_habitat(ivysaur, pradera).
+pokemon_habitat(venusaur, pradera).
+pokemon_habitat(charmander, montania).
+pokemon_habitat(charmeleon, montania).
+pokemon_habitat(charizard, montania).
+pokemon_habitat(squirtle, agua_dulce).
+pokemon_habitat(wartortle, agua_dulce).
+pokemon_habitat(blastoise, agua_dulce).
+pokemon_habitat(caterpie, bosque).
+pokemon_habitat(metapod, bosque).
+pokemon_habitat(butterfree, bosque).
+pokemon_habitat(weedle, bosque).
+pokemon_habitat(kakuna, bosque).
+pokemon_habitat(beedrill, bosque).
+pokemon_habitat(pidgey, bosque).
+pokemon_habitat(pidgeotto, bosque).
+pokemon_habitat(pidgeot, bosque).
+pokemon_habitat(rattata, pradera).
+pokemon_habitat(raticate, pradera).
+pokemon_habitat(spearow, pradera).
+pokemon_habitat(pikachu, pradera).
+pokemon_habitat(raichu, pradera).
+pokemon_habitat(meowth, urbana).
+pokemon_habitat(persian, urbano).
+pokemon_habitat(ponyta, pradera).
+pokemon_habitat(rapidash, pradera).
+pokemon_habitat(gastly, bosque).
+pokemon_habitat(haunter, desconocido).
+pokemon_habitat(gengar, gruta).
+pokemon_habitat(rhyhorn, montania).
+pokemon_habitat(rhydon, montania).
+pokemon_habitat(magikarp, agua_dulce).
+pokemon_habitat(gyarados, agua_dulce).
+pokemon_habitat(ditto, desconocido).
+pokemon_habitat(eevee, bosque).
+pokemon_habitat(vaporeon, agua_dulce).
+pokemon_habitat(jolteon, pradera).
+pokemon_habitat(flareon, montania).
+pokemon_habitat(espeon, bosque).
+pokemon_habitat(umbreon, bosque).
+pokemon_habitat(leafeon, bosque).
+pokemon_habitat(glaceon, montania).
+pokemon_habitat(sylveon, pradera).
+pokemon_habitat(snorlax, pradera).
+pokemon_habitat(ralts, bosque).
+pokemon_habitat(kirlia, bosque).
+pokemon_habitat(gardevoir, bosque).
+pokemon_habitat(gallade, bosque).
+pokemon_habitat(poliwhirl, agua_dulce).
+pokemon_habitat(poliwrath, agua_dulce).
+pokemon_habitat(politoed, agua_dulce).
+pokemon_habitat(applin, pradera).
+pokemon_habitat(flapple, desconocido).
+pokemon_habitat(appletun, desconocido).
+pokemon_habitat(dipplin, agua_dulce).
+pokemon_habitat(mew, desconocido).
+pokemon_habitat(mewtwo, desconocido).
+pokemon_habitat(celebi, bosque).
+pokemon_habitat(lugia, oceano).
+pokemon_habitat(deoxys, espacio).
+pokemon_habitat(latias, agua).
+pokemon_habitat(latios, agua).
+pokemon_habitat(dialga, desconocido).
+pokemon_habitat(palkia, desconocido).
+pokemon_habitat(giratina, mundo_distorsion).
+pokemon_habitat(xerneas, desconocido).
+pokemon_habitat(yveltal, desconocido).
+pokemon_habitat(zygarde, caverna).
+pokemon_habitat(lunala, ultraespacio).
+pokemon_habitat(necrozma, ultravia).
+pokemon_habitat(raikou, pradera).
+pokemon_habitat(entei, montania).
+pokemon_habitat(suicune, desconocido).
+pokemon_habitat(heracross, bosque).
+pokemon_habitat(ledyba, pradera).
+pokemon_habitat(ledian, bosque).
+pokemon_habitat(flabebe, pradera).
+pokemon_habitat(floette, bosque).
+pokemon_habitat(florges, pradera).
+pokemon_habitat(roselia, pradera).
+pokemon_habitat(roserade, bosque).
+pokemon_habitat(plusle, pradera).
+pokemon_habitat(voltorb, planta_industrial).
+pokemon_habitat(electrode, planta_industrial).
+pokemon_habitat(roggenrola, montania).
+pokemon_habitat(boldore, montania).
+pokemon_habitat(gigalith, montania).
+pokemon_habitat(lucario, desconocido).
+pokemon_habitat(meditite, montania).
+pokemon_habitat(mime_jr, pradera).
+pokemon_habitat(mr_mime, pradera).
+pokemon_habitat(mawile, cuevas).
+pokemon_habitat(yamask, desierto).
+pokemon_habitat(darkrai, desconocido).
+pokemon_habitat(feebas, agua_dulce).
+pokemon_habitat(milotic, agua_dulce).
+pokemon_habitat(grimer, urbano).
+pokemon_habitat(muk, urbano).
+pokemon_habitat(aron, montania).
+pokemon_habitat(lairon, montania).
+pokemon_habitat(aggron, montania).
+pokemon_habitat(oshawott, agua_dulce).
+pokemon_habitat(dewott, agua_dulce).
+pokemon_habitat(samurott, desconocido).
+pokemon_habitat(tapu_fini, desconocido).
+pokemon_habitat(groudon, desconocido).
+pokemon_habitat(rayquaza, cielo).
+pokemon_habitat(cubone, montania).
+pokemon_habitat(marowak, montania).
+pokemon_habitat(hoopa, desconocido).
+pokemon_habitat(sableye, cueva).
+pokemon_habitat(cresselia, desconocido).
+pokemon_habitat(chikorita, pradera).
+pokemon_habitat(bayleef, pradera).
+pokemon_habitat(meganium, bosque).
+pokemon_habitat(pichu, pradera).
+pokemon_habitat(igglybuff, pradera).
+pokemon_habitat(jigglypuff, pradera).
+pokemon_habitat(wigglytuff, pradera).
+pokemon_habitat(smoochum, montania).
+pokemon_habitat(jynx, montania).
+pokemon_habitat(shroomish, bosque).
+pokemon_habitat(breloom, bosque).
+pokemon_habitat(surskit, agua_dulce).
+pokemon_habitat(masquerain, agua_dulce).
+pokemon_habitat(gulpin, pradera).
+pokemon_habitat(swalot, pradera).
+pokemon_habitat(shuppet, bosque).
+pokemon_habitat(banette, urbano).
+pokemon_habitat(absol, montania).
+pokemon_habitat(zangoose, pradera).
+pokemon_habitat(kecleon, bosque).
+pokemon_habitat(shinx, pradera).
+pokemon_habitat(luxio, montania).
+pokemon_habitat(luxray, pradera).
+pokemon_habitat(snorunt, cueva).
+pokemon_habitat(glalie, montania).
+pokemon_habitat(froslass, montania).
+pokemon_habitat(buneary, pradera).
+pokemon_habitat(lopunny, pradera).
+pokemon_habitat(foongus, bosque).
+pokemon_habitat(amoonguss, bosque).
+pokemon_habitat(pumpkaboo, bosque).
+pokemon_habitat(gourgeist, pradera).
+pokemon_habitat(litleo, sabana).
+pokemon_habitat(pyroar, pradera).
+pokemon_habitat(axew, bosque).
+pokemon_habitat(fraxure, bosque).
+pokemon_habitat(haxorus, montania).
+pokemon_habitat(inkay, mar).
+pokemon_habitat(malamar, desconocido).
+pokemon_habitat(pidove, bosque).
+pokemon_habitat(tranquill, bosque).
+pokemon_habitat(unfezant, bosque).
+pokemon_habitat(scraggy, montania).
+pokemon_habitat(skorupi, desierto).
+pokemon_habitat(drapion, desierto).
+pokemon_habitat(litten, desconocido).
+pokemon_habitat(torracat, desconocido).
+pokemon_habitat(incineroar, desconocido).
+pokemon_habitat(petilil, bosque).
+pokemon_habitat(lilligant, bosque).
+pokemon_habitat(zorua, bosque).
+pokemon_habitat(zoroark, bosque).
+pokemon_habitat(deino, montania).
+pokemon_habitat(zweilous, montania).
+pokemon_habitat(hydreigon, desconocido).
+pokemon_habitat(skrelp, marino).
+pokemon_habitat(tyrunt, montania).
+pokemon_habitat(tyrantrum, desconocido).
+pokemon_habitat(amaura, montania).
+pokemon_habitat(aurorus, montania).
+pokemon_habitat(rowlet, bosque).
+pokemon_habitat(dartrix, desconocido).
+pokemon_habitat(empoleon, agua_dulce).
+pokemon_habitat(piplup, agua_dulce).
+
+pokemon_grupo_huevo(bulbasaur, [mounstro, planta]).
+pokemon_grupo_huevo(ivysaur, [monstruo, planta]).
+pokemon_grupo_huevo(venusaur, [monstruo, planta]).
+pokemon_grupo_huevo(charmander, [monstruo, dragon]).
+pokemon_grupo_huevo(charmeleon, [monstruo, dragon]).
+pokemon_grupo_huevo(charizard, [monstruo, dragon]).
+pokemon_grupo_huevo(squirtle, [monstruo, agua_1]).
+pokemon_grupo_huevo(wartortle, [monstruo, agua_1]).
+pokemon_grupo_huevo(blastoise, [monstruo, agua_1]).
+pokemon_grupo_huevo(caterpie, bicho).
+pokemon_grupo_huevo(metapod, bicho).
+pokemon_grupo_huevo(butterfree, bicho).
+pokemon_grupo_huevo(weedle, bicho).
+pokemon_grupo_huevo(kakuna, bicho).
+pokemon_grupo_huevo(beedrill, bicho).
+pokemon_grupo_huevo(pidgey, volador).
+pokemon_grupo_huevo(pidgeotto, volador).
+pokemon_grupo_huevo(pidgeot, volador).
+pokemon_grupo_huevo(rattata, campo).
+pokemon_grupo_huevo(raticate, campo).
+pokemon_grupo_huevo(spearow, volador).
+pokemon_grupo_huevo(spearow, campo).
+pokemon_grupo_huevo(pikachu, [monstruo, hada]).
+pokemon_grupo_huevo(raichu, [monstruo, hada]).
+pokemon_grupo_huevo(meowth, [campo]).
+pokemon_grupo_huevo(persian, [campo, monstruo]).
+pokemon_grupo_huevo(ponyta, [campo, monstruo]).
+pokemon_grupo_huevo(rapidash, [campo]).
+pokemon_grupo_huevo(gastly, [amorfo]).
+pokemon_grupo_huevo(haunter, [amorfo, humanoide]).
+pokemon_grupo_huevo(gengar, [amorfo]).
+pokemon_grupo_huevo(rhyhorn, [monstruo, campo]).
+pokemon_grupo_huevo(rhydon, [monstruo, campo]).
+pokemon_grupo_huevo(magikarp, [agua_2, dragon]).
+pokemon_grupo_huevo(gyarados, [agua_2, dragon]).
+pokemon_grupo_huevo(ditto, [desconocido]).
+pokemon_grupo_huevo(eevee, [campo]).
+pokemon_grupo_huevo(vaporeon, [monstruo, agua_1]).
+pokemon_grupo_huevo(jolteon, [monstruo, campo]).
+pokemon_grupo_huevo(flareon, [monstruo, campo]).
+pokemon_grupo_huevo(espeon, [campo]).
+pokemon_grupo_huevo(umbreon, [campo]).
+pokemon_grupo_huevo(leafeon, [campo]).
+pokemon_grupo_huevo(glaceon, [campo]).
+pokemon_grupo_huevo(sylveon, [campo]).
+pokemon_grupo_huevo(snorlax, [monstruo]).
+pokemon_grupo_huevo(ralts, [humanoide]).
+pokemon_grupo_huevo(kirlia, [humanoide]).
+pokemon_grupo_huevo(gardevoir, [humanoide]).
+pokemon_grupo_huevo(gallade, [humanoide]).
+pokemon_grupo_huevo(poliwhirl, [agua_1, monstruo]).
+pokemon_grupo_huevo(poliwrath, [monstruo, agua_1]).
+pokemon_grupo_huevo(politoed, [agua_1]).
+pokemon_grupo_huevo(applin, [planta]).
+pokemon_grupo_huevo(flapple, [dragon, monstruo]).
+pokemon_grupo_huevo(appletun, [monstruo, dragon]).
+pokemon_grupo_huevo(dipplin, [monstruo, agua_1]).
+pokemon_grupo_huevo(mew, [desconocido]).
+pokemon_grupo_huevo(mewtwo, [desconocido]).
+pokemon_grupo_huevo(celebi, [hada]).
+pokemon_grupo_huevo(lugia, [desconocido]).
+pokemon_grupo_huevo(jirachi, [mineral]).
+pokemon_grupo_huevo(deoxys, [desconocido]).
+pokemon_grupo_huevo(latias, [agua_1, monstruo]).
+pokemon_grupo_huevo(dialga, [mineral]).
+pokemon_grupo_huevo(palkia, [desconocido]).
+pokemon_grupo_huevo(xerneas, [desconocido]).
+pokemon_grupo_huevo(yveltal, [desconocido]).
+pokemon_grupo_huevo(zygarde, [desconocido]).
+pokemon_grupo_huevo(victini, [felicidad]).
+pokemon_grupo_huevo(meloetta, [felicidad]).
+pokemon_grupo_huevo(genesect, [desconocido]).
+pokemon_grupo_huevo(meltan, [desconocido]).
+pokemon_grupo_huevo(solgaleo, [desconocido]).
+pokemon_grupo_huevo(lunala, [desconocido]).
+pokemon_grupo_huevo(necrozma, [desconocido]).
+pokemon_grupo_huevo(raikou, [gigante]).
+pokemon_grupo_huevo(entei, [gigante]).
+pokemon_grupo_huevo(suicune, [gigante]).
+pokemon_grupo_huevo(heracross, [bicho, monstruo]).
+pokemon_grupo_huevo(ledyba, [bicho]).
+pokemon_grupo_huevo(ledyba, [bicho]).
+pokemon_grupo_huevo(ledian, [bicho]).
+pokemon_grupo_huevo(flabebe, [planta, hada]).
+pokemon_grupo_huevo(floette, [planta, hada]).
+pokemon_grupo_huevo(florges, [planta, hada]).
+pokemon_grupo_huevo(roselia, [planta, hada]).
+pokemon_grupo_huevo(roserade, [planta, hada]).
+pokemon_grupo_huevo(plusle, [campo, hada]).
+pokemon_grupo_huevo(voltorb, [mineral]).
+pokemon_grupo_huevo(electrode, [mineral]).
+pokemon_grupo_huevo(roggenrola, [mineral]).
+pokemon_grupo_huevo(boldore, [mineral]).
+pokemon_grupo_huevo(gigalith, [mineral]).
+pokemon_grupo_huevo(lucario, [humanoide]).
+pokemon_grupo_huevo(meditite, [humanoide]).
+pokemon_grupo_huevo(mime_jr, [humanoide]).
+pokemon_grupo_huevo(mr_mime, [humanoide]).
+pokemon_grupo_huevo(mawile, [monstruo, campo]).
+pokemon_grupo_huevo(yamask, [mineral]).
+pokemon_grupo_huevo(darkrai, [desconocido]).
+pokemon_grupo_huevo(feebas, [agua_1, dragon]).
+pokemon_grupo_huevo(milotic, [agua_1]).
+pokemon_grupo_huevo(grimer, [monstruo]).
+pokemon_grupo_huevo(muk, [monstruo]).
+pokemon_grupo_huevo(aron, [monstruo, mineral]).
+pokemon_grupo_huevo(lairon, [mineral]).
+pokemon_grupo_huevo(aggron, [monstruo, mineral]).
+pokemon_grupo_huevo(oshawott, [campo, agua_1]).
+pokemon_grupo_huevo(dewott, [campo, agua_1]).
+pokemon_grupo_huevo(samurott, [campo, agua_1]).
+pokemon_grupo_huevo(tapu_fini, [desconocido]).
+pokemon_grupo_huevo(groudon, [desconocido]).
+pokemon_grupo_huevo(rayquaza, [desconocido]).
+pokemon_grupo_huevo(cubone, [monstruo]).
+pokemon_grupo_huevo(cubone, [terrestre_1]).
+pokemon_grupo_huevo(marowak, [monstruo, terrestre_1]).
+pokemon_grupo_huevo(hoopa, [desconocido]).
+pokemon_grupo_huevo(sableye, [humanoide, mineral]).
+pokemon_grupo_huevo(jigglypuff, [hada]).
+pokemon_grupo_huevo(wigglytuff, [hada]).
+pokemon_grupo_huevo(smoochum, [humanoide]).
+pokemon_grupo_huevo(jynx, [humanoide]).
+pokemon_grupo_huevo(shroomish, [planta, hada]).
+pokemon_grupo_huevo(breloom, [planta, hada]).
+pokemon_grupo_huevo(surskit, [agua_1]).
+pokemon_grupo_huevo(masquerain, [agua_1, agua_3]).
+pokemon_grupo_huevo(gulpin, [monstruo, huevo]).
+pokemon_grupo_huevo(swalot, [monstruo, huevo]).
+pokemon_grupo_huevo(shuppet, [amorfo]).
+pokemon_grupo_huevo(banette, [amorfo]).
+pokemon_grupo_huevo(absol, [campo, monstruo]).
+pokemon_grupo_huevo(zangoose, [campo, monstruo]).
+pokemon_grupo_huevo(kecleon, [monstruo]).
+pokemon_grupo_huevo(shinx, [campo]).
+pokemon_grupo_huevo(luxio, [campo]).
+pokemon_grupo_huevo(luxio, [humanoide]).
+pokemon_grupo_huevo(luxray, [campo, humanoide]).
+pokemon_grupo_huevo(snorunt, [monstruo, mineral]).
+pokemon_grupo_huevo(glalie, [mineral]).
+pokemon_grupo_huevo(froslass, [humanoide]).
+pokemon_grupo_huevo(buneary, [campo, humanoide]).
+pokemon_grupo_huevo(lopunny, [campo, humanoide]).
+pokemon_grupo_huevo(foongus, [planta]).
+pokemon_grupo_huevo(amoonguss, [planta, humanoide]).
+pokemon_grupo_huevo(pumpkaboo, [planta, humanoide]).
+pokemon_grupo_huevo(gourgeist, [planta, humanoide]).
+pokemon_grupo_huevo(litleo, [campo]).
+pokemon_grupo_huevo(pyroar, [campo]).
+pokemon_grupo_huevo(axew, [monstruo, dragon]).
+pokemon_grupo_huevo(fraxure, [monstruo, dragon]).
+pokemon_grupo_huevo(haxorus, [monstruo, dragon]).
+pokemon_grupo_huevo(inkay, [agua_1]).
+pokemon_grupo_huevo(malamar, [agua_1, agua_3]).
+pokemon_grupo_huevo(pidove, [volador]).
+pokemon_grupo_huevo(tranquill, [volador]).
+pokemon_grupo_huevo(unfezant, [volador]).
+pokemon_grupo_huevo(scraggy, [monstruo]).
+pokemon_grupo_huevo(scraggy, [campo]).
+pokemon_grupo_huevo(skorupi, [insecto, agua_3]).
+pokemon_grupo_huevo(drapion, [insecto, agua_3]).
+pokemon_grupo_huevo(litten, [campo]).
+pokemon_grupo_huevo(torracat, [campo]).
+pokemon_grupo_huevo(incineroar, [campo]).
+pokemon_grupo_huevo(petilil, [planta]).
+pokemon_grupo_huevo(lilligant, [planta]).
+pokemon_grupo_huevo(zorua, [campo, humanoide]).
+pokemon_grupo_huevo(zoroark, [campo, humanoide]).
+pokemon_grupo_huevo(deino, [monstruo, dragon]).
+pokemon_grupo_huevo(zweilous, [monstruo, dragon]).
+pokemon_grupo_huevo(hydreigon, [dragon]).
+pokemon_grupo_huevo(hydreigon, [monstruo]).
+pokemon_grupo_huevo(skrelp, [agua_1]).
+pokemon_grupo_huevo(tyrunt, [monstruo, dragon]).
+pokemon_grupo_huevo(tyrantrum, [monstruo, dragon]).
+pokemon_grupo_huevo(amaura, [monstruo, planta]).
+pokemon_grupo_huevo(aurorus, [monstruo, planta]).
+pokemon_grupo_huevo(rowlet, [volador]).
+pokemon_grupo_huevo(dartrix, [volador]).
+pokemon_grupo_huevo(empoleon, [agua_1, monstruo]).
+pokemon_grupo_huevo(piplup, [agua_1, monstruo]).
+
 % pokemon iniciales
 generacion_inicial(primera, [bulbasaur, charmander, squirtle]).
 generacion_inicial(segunda, [chikorita, cyndaquil, totodile]).
@@ -1939,8 +3392,48 @@ evolucion_nivel(spearow, fearow, 20).
 evolucion_nivel(ekans, arbok, 22).
 evolucion_nivel(sandshrew, sandslash, 22).
 
+% Mega evolucion
+mega_evolucion(venasaur, megavenusaur).
+mega_evolucion(charizard, megacharizard_x).
+mega_evolucion(charizard, megacharizard_y).
+mega_evolucion(blastoise, mega_blastoise).
+mega_evolucion(beedrill, mega_beedrill).
+mega_evolucion(pidgeot, mega_pidgeot).
+mega_evolucion(pidgeot, mega_pidgeot).
+mega_evolucion(gengar, megagengar_x).
+mega_evolucion(gengar, megagengar_y).
+mega_evolucion(gyarados, mega_gyarados).
+mega_evolucion(gardevoir, mega_gardevoir).
+mega_evolucion(gardevoir, mega_gardevoir).
+mega_evolucion(gallade, mega_gallade).
+mega_evolucion(gallade, mega_gallade).
+mega_evolucion(mewtwo, mega_mewtwo).
+mega_evolucion(latias, mega_latias).
+mega_evolucion(latios, mega_latios).
+mega_evolucion(heracross, mega_heracross).
+mega_evolucion(gigalith, mega_gigalith).
+mega_evolucion(lucario, mega_lucario).
+mega_evolucion(rayquaza, mega_rayquaza).
+mega_evolucion(sableye, mega_sableye).
+mega_evolucion(lopunny, mega_lopunny).
 
-
+% gigamax
+gigamax(venasaur, venusaur_gigamax).
+gigamax(charizard, charizard_gigamax).
+gigamax(blastoise, blastoise_gigamax).
+gigamax(butterfree, giga_butterfree).
+gigamax(butterfree, butterfree_gigamax).
+gigamax(rattata, rattata_alola).
+gigamax(pikachu, pikachu_gigamax).
+gigamax(raichu, raichu_alola).
+gigamax(meowth, meowth_gigamax).
+gigamax(gengar, gengar_gigamaz).
+gigamax(evee, evee_gigamax).
+gigamax(snorlax, snorlax_gigamax).
+gigamax(flapple, flapple_gigamax).
+gigamax(appletun, appletun_gigamax).
+gigamax(marowak, marowa_alola).
+gigamax(marowak, marowa_gigamax).
 
 % Consultas generales
 % Consultas de tipo
