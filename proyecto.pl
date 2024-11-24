@@ -346,10 +346,10 @@ figura(18).
 figura(19).
 figura(20).
 
-%gigamax 
-gigamax(gigamax).
-gigamax(alola).
-gigamax(galar).
+% forma_regional 
+forma_regional(gigamax).
+forma_regional(alola).
+forma_regional(galar).
 
 % Grupos de huevo
 grupo_huevo(monstruo).
@@ -1009,6 +1009,8 @@ movimiento_Especial(chorro_de_tinta).
 movimiento_Especial(arrancar).
 movimiento_Especial(hoja_magica).
 
+% movimiento Z
+
 % Generacion y region
 generacionRegion(primera, kanto).
 generacionRegion(segunda, johto).
@@ -1462,8 +1464,6 @@ habilidad(viscosecrecion, 'permite al portador reducir la velocidad del oponente
 habilidad(viscosidad, 'permite al portador reducir la velocidad del oponente al hacer contacto').
 habilidad(vista_lince, 'evita que la precision del portador sea reducida').
 habilidad(voz_fluida, 'permite al portador usar movimientos de sonido con prioridad aumentada').
-
-
 
 % habilidades Z
 habilidad(zoquete, 'Evita que el portador use objetos en combate').
@@ -3437,6 +3437,12 @@ gigamax(flapple, flapple_gigamax).
 gigamax(appletun, appletun_gigamax).
 gigamax(marowak, marowa_alola).
 gigamax(marowak, marowa_gigamax).
+
+% mecanicas
+mecanica(megaEvolucion)
+mecanica(movimientoZ)
+mecanica(dinamax)
+mecanica(teracristalizacion)
 
 % Consultas generales
 % Consultas de tipo

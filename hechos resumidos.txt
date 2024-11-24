@@ -1,31 +1,42 @@
 Hechos en uso actualmente
-tipo
+Tipos de pokemon
 genero
 especie
+habitat
 peso
 altura
 color
 un solo color
 varicolor
 figura
-forma
-habitat
+forma regional
 grupo huevo
 ratio de captura
 solo un genero
-promedio por stat
-porcentaje de captura por genero 
-pasos para eclosionar un huevo
+porcentaje de genero
 distincion por genero
 amistad base
+pasos para eclosionar un huevo
 regiones
 objetos equipables
-Movimientos por nivel
+movimientos por nivel
 movimiento por mt
 movimientos por tutor
 movimientos huevo
 movimientos espciales(unico por pokemon)
-
+movimiento Z
+generacion y region
+Total de pokemones por generacion
+resistencias
+debilidades
+eficaz x2(muy eficaz)
+poco eficaz
+inmune
+habilidad
+promedio por stat
+porcentaje de captura por genero 
+regiones
+objetos equipables
 Generacion y region
 total de pokemon por region
 resistencia
@@ -34,24 +45,8 @@ muy_eficaz
 poco_eficaz
 inmune
 fortalezas
-habilidades
-naturalezas
-pokemon
-habilidades
-habilidad_pokemon
-habilidad_oculta_pokemon
-habitad_pokemon
-generacion_inicial
-generacionLegendarios
-
-
-
-evolucion_nivel
-mega_ev
-evolucion_intercambio
-evolucion_objeto
-evolucion_amistad
-evolucion_nivel_habitat
-evolucion_nivel_hora
-evolucion_nivel_habilidad
+tipo de evolucion
+evolucion por nivel
+mega evolucion
 gigamax
+mmecanicas
