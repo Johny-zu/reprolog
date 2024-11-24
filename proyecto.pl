@@ -1114,353 +1114,356 @@ inmune(normal, [fantasma]).
 inmune(lucha, [normal, roca]).
 inmune(volador, [tierra]).
 inmune(veneno, [acero]).
-inmune(acero, [veneno]).v
+inmune(acero, [veneno]).
 
 % habilidades A
-habilidad(Abalorio_debacle, 'Reduce la velocidad del portador al ser golpeado por un ataque').
-habilidad(Absorbe_agua, 'Recupera PS al recibir un ataque de agua').
-habilidad(Absorbe_electricidad, 'Recupera PS al recibir un ataque de electricidad').
-habilidad(Absorbe_fuego, 'Recupera PS al recibir un ataque de fuego').
-habilidad(Acero_templado, 'Aumenta la defensa del portador en un 50%').
-habilidad(Acérrimo, 'Aumenta el ataque del portador en un 50% cuando está en apuros').
-habilidad(Aclimatación, 'Permite al portador cambiar su tipo al del último ataque recibido').
-habilidad(Adaptable, 'Aumenta la potencia de los movimientos del mismo tipo que el portador').
-habilidad(Afortunado, 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
-habilidad(Agallas, 'Aumenta el ataque del portador cuando sufre un problema de estado').
-habilidad(Agrupamiento, 'Permite al portador cambiar de gigamax en combate').
-habilidad(Alas_vendaval, 'Aumenta la prioridad de los movimientos de tipo volador del portador').
-habilidad(Alerta, 'Evita que el portador sea golpeado por movimientos de prioridad').
-habilidad(Allanamiento, 'Permite al portador ignorar las barreras del oponente').
-habilidad(Alma_acerada, 'Aumenta la defensa del portador en un 50%').
-habilidad(Alma_cura, 'Permite al portador curar problemas de estado de sus aliados en combate').
-habilidad(Alma_errante, 'Permite al portador intercambiar habilidades con el oponente al ser golpeado').
-habilidad(Amor_filial, 'Permite al portador golpear dos veces con cada ataque').
-habilidad(Antibalas, 'Protege al portador de movimientos basados en proyectiles').
-habilidad(Antibarrera, 'Permite al portador ignorar las barreras del oponente').
-habilidad(Anticipación, 'Permite al portador detectar movimientos peligrosos del oponente').
-habilidad(Antídoto, 'Permite al portador curar problemas de estado de veneno').
-habilidad(Armadura_batalla, 'Aumenta la defensa del portador en un 50%').
-habilidad(Armadura_frágil, 'Reduce la defensa del portador pero aumenta su velocidad al ser golpeado').
-habilidad(Armadura_prisma, 'Reduce el daño recibido de movimientos super efectivos').
-habilidad(Audaz, 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
-habilidad(Aura_feérica, 'Aumenta la potencia de los movimientos de tipo hada en un 33%').
-habilidad(Aura_oscura, 'Aumenta la potencia de los movimientos de tipo siniestro en un 33%').
+% habilidades A
+habilidad(abalorio_debacle, 'Reduce la velocidad del portador al ser golpeado por un ataque').
+habilidad(absorbe_agua, 'Recupera PS al recibir un ataque de agua').
+habilidad(absorbe_electricidad, 'Recupera PS al recibir un ataque de electricidad').
+habilidad(absorbe_fuego, 'Recupera PS al recibir un ataque de fuego').
+habilidad(acero_templado, 'Aumenta la defensa del portador en un 50%').
+habilidad(acerrimo, 'Aumenta el ataque del portador en un 50% cuando esta en apuros').
+habilidad(aclimatacion, 'Permite al portador cambiar su tipo al del último ataque recibido').
+habilidad(adaptable, 'Aumenta la potencia de los movimientos del mismo tipo que el portador').
+habilidad(afortunado, 'Aumenta la probabilidad de que los movimientos del portador sean criticos').
+habilidad(agallas, 'Aumenta el ataque del portador cuando sufre un problema de estado').
+habilidad(agrupamiento, 'Permite al portador cambiar de gigamax en combate').
+habilidad(alas_vendaval, 'Aumenta la prioridad de los movimientos de tipo volador del portador').
+habilidad(alerta, 'Evita que el portador sea golpeado por movimientos de prioridad').
+habilidad(allanamiento, 'Permite al portador ignorar las barreras del oponente').
+habilidad(alma_acerada, 'Aumenta la defensa del portador en un 50%').
+habilidad(alma_cura, 'Permite al portador curar problemas de estado de sus aliados en combate').
+habilidad(alma_errante, 'Permite al portador intercambiar habilidades con el oponente al ser golpeado').
+habilidad(amor_filial, 'Permite al portador golpear dos veces con cada ataque').
+habilidad(antibalas, 'Protege al portador de movimientos basados en proyectiles').
+habilidad(antibarrera, 'Permite al portador ignorar las barreras del oponente').
+habilidad(anticipacion, 'Permite al portador detectar movimientos peligrosos del oponente').
+habilidad(antidoto, 'Permite al portador curar problemas de estado de veneno').
+habilidad(armadura_batalla, 'Aumenta la defensa del portador en un 50%').
+habilidad(armadura_fragil, 'Reduce la defensa del portador pero aumenta su velocidad al ser golpeado').
+habilidad(armadura_prisma, 'Reduce el daño recibido de movimientos super efectivos').
+habilidad(audaz, 'Aumenta la probabilidad de que los movimientos del portador sean criticos').
+habilidad(aura_feerica, 'Aumenta la potencia de los movimientos de tipo hada en un 33%').
+habilidad(aura_oscura, 'Aumenta la potencia de los movimientos de tipo siniestro en un 33%').
 
-% habilidades B
-habilidad(Baba, 'Reduce la velocidad del oponente al hacer contacto con el portador').
-habilidad(Banco, 'Permite al portador evitar ataques en el primer turno').
-habilidad(Batería, 'Aumenta la potencia de los movimientos especiales de los aliados').
-habilidad(Bromista, 'Permite al portador usar movimientos de estado con prioridad aumentada').
+% habilidades b
+habilidad(baba, 'reduce la velocidad del oponente al hacer contacto con el portador').
+habilidad(banco, 'permite al portador evitar ataques en el primer turno').
+habilidad(bateria, 'aumenta la potencia de los movimientos especiales de los aliados').
+habilidad(bromista, 'permite al portador usar movimientos de estado con prioridad aumentada').
 
-% habilidades C
-habilidad(Cabeza_roca, 'Evita que el portador reciba dano por retroceso').
-habilidad(Cacheo, 'Permite al portador conocer el objeto del oponente al entrar en combate').
-habilidad(Cacofonía, 'Evita que el portador sea afectado por movimientos de sonido').
-habilidad(Cadena_tóxica, 'Permite al portador envenenar al oponente al hacer contacto').
-habilidad(Calco, 'Permite al portador copiar la habilidad del oponente al entrar en combate').
-habilidad(Cálculo_final, 'Permite al portador infligir dano al oponente al ser debilitado').
-habilidad(Caldero_debacle, 'Reduce la velocidad del portador al ser golpeado por un ataque').
-habilidad(Cambio_color, 'Permite al portador cambiar su tipo al del último ataque recibido').
-habilidad(Cambio_heroico, 'Permite al portador cambiar de gigamax en combate').
-habilidad(Cambio_táctico, 'Permite al portador cambiar de gigamax dependiendo del movimiento usado').
-habilidad(Capa_tóxica, 'Permite al portador envenenar al oponente al hacer contacto').
-habilidad(Caparazón, 'Evita que el portador reciba golpes críticos').
-habilidad(Cara_de_hielo, 'Permite al portador cambiar su tipo a hielo al ser golpeado').
-habilidad(Carga_cuark, 'Aumenta la potencia de los movimientos eléctricos del portador').
-habilidad(Carrillo, 'Permite al portador recuperar PS al consumir una baya').
-habilidad(Chorro_arena, 'Permite al portador aumentar su evasión en tormentas de arena').
-habilidad(Clorofila, 'Aumenta la velocidad del portador bajo la luz solar intensa').
-habilidad(Cobardía, 'Permite al portador escapar de los combates con facilidad').
-habilidad(Cola_armadura, 'Aumenta la defensa del portador').
-habilidad(Cola_surf, 'Permite al portador usar movimientos de tipo agua con prioridad aumentada').
-habilidad(Colector, 'Permite al portador aumentar su ataque especial al recibir un ataque de agua').
-habilidad(Cólera, 'Aumenta el ataque del portador cada vez que recibe dano').
-habilidad(Comandar, 'Permite al portador aumentar las estadísticas de sus aliados en combate').
-habilidad(Combustible, 'Permite al portador aumentar la potencia de sus movimientos de fuego').
-habilidad(Competitivo, 'Aumenta el ataque especial del portador cuando sus estadísticas son reducidas').
-habilidad(Compiescolta, 'Permite al portador proteger a sus aliados en combate').
-habilidad(Coránima, 'Aumenta la velocidad del portador cada vez que debilita a un oponente').
-habilidad(Coraza_ira, 'Aumenta el ataque del portador cuando recibe un golpe crítico').
-habilidad(Coraza_reflejo, 'Permite al portador reflejar movimientos de estado al oponente').
-habilidad(Corrosión, 'Permite al portador envenenar a cualquier tipo de Pokémon, incluso los de tipo acero y veneno').
-habilidad(Cortante, 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
-habilidad(Corte_fuerte, 'Aumenta la potencia de los movimientos de corte del portador').
-habilidad(Cosecha, 'Permite al portador recuperar una baya consumida al final del turno').
-habilidad(Cromolente, 'Permite al portador reducir la velocidad del oponente al hacer contacto').
-habilidad(Cuerpo_áureo, 'Evita que las estadísticas del portador sean reducidas').
-habilidad(Cuerpo_horneado, 'Permite al portador aumentar la potencia de sus movimientos de fuego').
-habilidad(Cuerpo_llama, 'Permite al portador quemar al oponente al hacer contacto').
-habilidad(Cuerpo_maldito, 'Permite al portador inutilizar el último movimiento del oponente al hacer contacto').
-habilidad(Cuerpo_mortal, 'Permite al portador infligir dano al oponente al ser debilitado').
-habilidad(Cuerpo_puro, 'Evita que las estadísticas del portador sean reducidas').
-habilidad(Cuerpo_vívido, 'Aumenta la precisión del portador').
-habilidad(Cura_lluvia, 'Permite al portador recuperar PS bajo la lluvia').
-habilidad(Cura_natural, 'Permite al portador curar sus problemas de estado al ser retirado del combate').
+% habilidades c
+habilidad(cabeza_roca, 'evita que el portador reciba dano por retroceso').
+habilidad(cacheo, 'permite al portador conocer el objeto del oponente al entrar en combate').
+habilidad(cacofonia, 'evita que el portador sea afectado por movimientos de sonido').
+habilidad(cadena_toxica, 'permite al portador envenenar al oponente al hacer contacto').
+habilidad(calco, 'permite al portador copiar la habilidad del oponente al entrar en combate').
+habilidad(calculo_final, 'permite al portador infligir dano al oponente al ser debilitado').
+habilidad(caldero_debacle, 'reduce la velocidad del portador al ser golpeado por un ataque').
+habilidad(cambio_color, 'permite al portador cambiar su tipo al del último ataque recibido').
+habilidad(cambio_heroico, 'permite al portador cambiar de gigamax en combate').
+habilidad(cambio_tactico, 'permite al portador cambiar de gigamax dependiendo del movimiento usado').
+habilidad(capa_toxica, 'permite al portador envenenar al oponente al hacer contacto').
+habilidad(caparazon, 'evita que el portador reciba golpes criticos').
+habilidad(cara_de_hielo, 'permite al portador cambiar su tipo a hielo al ser golpeado').
+habilidad(carga_cuark, 'aumenta la potencia de los movimientos electricos del portador').
+habilidad(carrillo, 'permite al portador recuperar ps al consumir una baya').
+habilidad(chorro_arena, 'permite al portador aumentar su evasion en tormentas de arena').
+habilidad(clorofila, 'aumenta la velocidad del portador bajo la luz solar intensa').
+habilidad(cobardia, 'permite al portador escapar de los combates con facilidad').
+habilidad(cola_armadura, 'aumenta la defensa del portador').
+habilidad(cola_surf, 'permite al portador usar movimientos de tipo agua con prioridad aumentada').
+habilidad(colector, 'permite al portador aumentar su ataque especial al recibir un ataque de agua').
+habilidad(colera, 'aumenta el ataque del portador cada vez que recibe dano').
+habilidad(comandar, 'permite al portador aumentar las estadisticas de sus aliados en combate').
+habilidad(combustible, 'permite al portador aumentar la potencia de sus movimientos de fuego').
+habilidad(competitivo, 'aumenta el ataque especial del portador cuando sus estadisticas son reducidas').
+habilidad(compiescolta, 'permite al portador proteger a sus aliados en combate').
+habilidad(coranima, 'aumenta la velocidad del portador cada vez que debilita a un oponente').
+habilidad(coraza_ira, 'aumenta el ataque del portador cuando recibe un golpe critico').
+habilidad(coraza_reflejo, 'permite al portador reflejar movimientos de estado al oponente').
+habilidad(corrosion, 'permite al portador envenenar a cualquier tipo de pokemon, incluso los de tipo acero y veneno').
+habilidad(cortante, 'aumenta la probabilidad de que los movimientos del portador sean criticos').
+habilidad(corte_fuerte, 'aumenta la potencia de los movimientos de corte del portador').
+habilidad(cosecha, 'permite al portador recuperar una baya consumida al final del turno').
+habilidad(cromolente, 'permite al portador reducir la velocidad del oponente al hacer contacto').
+habilidad(cuerpo_aureo, 'evita que las estadisticas del portador sean reducidas').
+habilidad(cuerpo_horneado, 'permite al portador aumentar la potencia de sus movimientos de fuego').
+habilidad(cuerpo_llama, 'permite al portador quemar al oponente al hacer contacto').
+habilidad(cuerpo_maldito, 'permite al portador inutilizar el último movimiento del oponente al hacer contacto').
+habilidad(cuerpo_mortal, 'permite al portador infligir dano al oponente al ser debilitado').
+habilidad(cuerpo_puro, 'evita que las estadisticas del portador sean reducidas').
+habilidad(cuerpo_vivido, 'aumenta la precision del portador').
+habilidad(cura_lluvia, 'permite al portador recuperar ps bajo la lluvia').
+habilidad(cura_natural, 'permite al portador curar sus problemas de estado al ser retirado del combate').
 
-% habilidades D
-habilidad(Defensa_hoja, 'Aumenta la defensa del portador bajo la luz solar intensa').
-habilidad(Descarga, 'Permite al portador paralizar al oponente al hacer contacto').
-habilidad(Despiste, 'Evita que el portador sea afectado por movimientos de atracción').
-habilidad(Detonación, 'Permite al portador infligir dano al oponente al ser debilitado').
-habilidad(Dicha, 'Aumenta la probabilidad de que los movimientos del portador sean críticos').
-habilidad(Dinamo, 'Aumenta la velocidad del portador al recibir un ataque eléctrico').
-habilidad(Disemillar, 'Permite al portador plantar semillas en el oponente al hacer contacto').
-habilidad(Disfraz, 'Permite al portador evitar dano una vez al entrar en combate').
-habilidad(Don_floral, 'Aumenta el ataque y la defensa de los aliados del portador bajo la luz solar intensa').
-habilidad(Efecto_espora, 'Permite al portador causar problemas de estado al oponente al hacer contacto').
+% habilidades d
+habilidad(defensa_hoja, 'aumenta la defensa del portador bajo la luz solar intensa').
+habilidad(descarga, 'permite al portador paralizar al oponente al hacer contacto').
+habilidad(despiste, 'evita que el portador sea afectado por movimientos de atraccion').
+habilidad(detonacion, 'permite al portador infligir dano al oponente al ser debilitado').
+habilidad(dicha, 'aumenta la probabilidad de que los movimientos del portador sean criticos').
+habilidad(dinamo, 'aumenta la velocidad del portador al recibir un ataque electrico').
+habilidad(disemillar, 'permite al portador plantar semillas en el oponente al hacer contacto').
+habilidad(disfraz, 'permite al portador evitar dano una vez al entrar en combate').
+habilidad(don_floral, 'aumenta el ataque y la defensa de los aliados del portador bajo la luz solar intensa').
+habilidad(efecto_espora, 'permite al portador causar problemas de estado al oponente al hacer contacto').
 
-% habilidades E
-habilidad(Electricidad_estática, 'Permite al portador paralizar al oponente al hacer contacto').
-habilidad(Electrogénesis, 'Crea un campo eléctrico al entrar en combate').
-habilidad(Electromotor, 'Aumenta la velocidad del portador al recibir un ataque eléctrico').
-habilidad(Encadenado, 'Permite al portador evitar que el oponente escape').
-habilidad(Energía_eólica, 'Aumenta la velocidad del portador bajo la luz solar intensa').
-habilidad(Energía_pura, 'Evita que las estadísticas del portador sean reducidas').
-habilidad(Enjambre, 'Aumenta la potencia de los movimientos de tipo bicho cuando el portador tiene pocos PS').
-habilidad(Ensanamiento, 'Aumenta la potencia de los movimientos del portador cuando el oponente tiene pocos PS').
-habilidad(Entusiasmo, 'Aumenta la potencia de los movimientos del portador pero reduce su precisión').
-habilidad(Escala_de_hielo, 'Aumenta la defensa del portador cuando tiene un problema de estado').
-habilidad(Escala_especial, 'Aumenta la defensa especial del portador').
-habilidad(Esclusa_de_aire, 'Evita los efectos del clima en combate').
-habilidad(Escudo_limitado, 'Permite al portador evitar golpes críticos').
-habilidad(Escudo_magma, 'Evita que el portador sea congelado').
-habilidad(Escudo_recio, 'Aumenta la defensa del portador').
-habilidad(Espada_debacle, 'Aumenta la potencia de los movimientos de tipo acero').
-habilidad(Espada_indómita, 'Aumenta el ataque del portador al entrar en combate').
-habilidad(Espejo_mágico, 'Refleja los movimientos de estado al oponente').
-habilidad(Espesura, 'Aumenta la potencia de los movimientos de tipo planta cuando el portador tiene pocos PS').
-habilidad(Espíritu_vital, 'Permite al portador recuperar PS al causar dano').
-habilidad(Evocarrecuerdos, 'Aumenta la potencia de los movimientos del portador dependiendo de los aliados debilitados').
-habilidad(Experto, 'Aumenta la potencia de los movimientos débiles del portador').
-habilidad(Expulsarena, 'Crea una tormenta de arena al entrar en combate').
+% habilidades e
+habilidad(electricidad_estatica, 'permite al portador paralizar al oponente al hacer contacto').
+habilidad(electrogenesis, 'crea un campo electrico al entrar en combate').
+habilidad(electromotor, 'aumenta la velocidad del portador al recibir un ataque electrico').
+habilidad(encadenado, 'permite al portador evitar que el oponente escape').
+habilidad(energia_eolica, 'aumenta la velocidad del portador bajo la luz solar intensa').
+habilidad(energia_pura, 'evita que las estadisticas del portador sean reducidas').
+habilidad(enjambre, 'aumenta la potencia de los movimientos de tipo bicho cuando el portador tiene pocos ps').
+habilidad(ensanamiento, 'aumenta la potencia de los movimientos del portador cuando el oponente tiene pocos ps').
+habilidad(entusiasmo, 'aumenta la potencia de los movimientos del portador pero reduce su precision').
+habilidad(escala_de_hielo, 'aumenta la defensa del portador cuando tiene un problema de estado').
+habilidad(escala_especial, 'aumenta la defensa especial del portador').
+habilidad(esclusa_de_aire, 'evita los efectos del clima en combate').
+habilidad(escudo_limitado, 'permite al portador evitar golpes criticos').
+habilidad(escudo_magma, 'evita que el portador sea congelado').
+habilidad(escudo_recio, 'aumenta la defensa del portador').
+habilidad(espada_debacle, 'aumenta la potencia de los movimientos de tipo acero').
+habilidad(espada_indomita, 'aumenta el ataque del portador al entrar en combate').
+habilidad(espejo_magico, 'refleja los movimientos de estado al oponente').
+habilidad(espesura, 'aumenta la potencia de los movimientos de tipo planta cuando el portador tiene pocos ps').
+habilidad(espiritu_vital, 'permite al portador recuperar ps al causar dano').
+habilidad(evocarrecuerdos, 'aumenta la potencia de los movimientos del portador dependiendo de los aliados debilitados').
+habilidad(experto, 'aumenta la potencia de los movimientos debiles del portador').
+habilidad(expulsarena, 'crea una tormenta de arena al entrar en combate').
 
-% habilidades F
-habilidad(Filtro, 'Reduce el dano recibido de movimientos super efectivos').
-habilidad(Firmeza, 'Evita que el portador sea debilitado de un solo golpe cuando tiene todos sus PS').
-habilidad(Flaqueza, 'Permite al portador aumentar su ataque cuando recibe un golpe crítico').
-habilidad(Flexibilidad, 'Evita que el portador sea paralizado').
-habilidad(Francotirador, 'Aumenta el dano de los golpes críticos del portador').
-habilidad(Fuente_energía, 'Permite al portador recuperar PS al causar dano').
-habilidad(Fuerte_afecto, 'Aumenta la potencia de los movimientos del portador cuando tiene un alto nivel de amistad').
-habilidad(Fuerza_cerebral, 'Aumenta el ataque especial del portador').
-habilidad(Fuerza_mental, 'Evita que el portador retroceda').
-habilidad(Fuga, 'Permite al portador escapar de los combates con facilidad').
-habilidad(Funda, 'Evita que el portador sea afectado por movimientos de polvo y esporas').
+% habilidades f
+habilidad(filtro, 'reduce el dano recibido de movimientos super efectivos').
+habilidad(firmeza, 'evita que el portador sea debilitado de un solo golpe cuando tiene todos sus ps').
+habilidad(flaqueza, 'permite al portador aumentar su ataque cuando recibe un golpe critico').
+habilidad(flexibilidad, 'evita que el portador sea paralizado').
+habilidad(francotirador, 'aumenta el dano de los golpes criticos del portador').
+habilidad(fuente_energia, 'permite al portador recuperar ps al causar dano').
+habilidad(fuerte_afecto, 'aumenta la potencia de los movimientos del portador cuando tiene un alto nivel de amistad').
+habilidad(fuerza_cerebral, 'aumenta el ataque especial del portador').
+habilidad(fuerza_mental, 'evita que el portador retroceda').
+habilidad(fuga, 'permite al portador escapar de los combates con facilidad').
+habilidad(funda, 'evita que el portador sea afectado por movimientos de polvo y esporas').
 
-% habilidades G
-habilidad(Garra_dura, 'Aumenta la potencia de los movimientos de contacto del portador').
-habilidad(Gas_reactivo, 'Neutraliza las habilidades de todos los Pokémon en el campo de batalla').
-habilidad(Gélido, 'Permite al portador congelar al oponente al hacer contacto').
-habilidad(General_supremo, 'Aumenta la potencia de los movimientos del portador cuando tiene un alto nivel de amistad').
-habilidad(Geofagia, 'Permite al portador recuperar PS al consumir una baya en un campo de hierba').
-habilidad(Gran_encanto, 'Aumenta la probabilidad de que los movimientos del portador causen retroceso').
-habilidad(Guardia_espectro, 'Reduce el dano recibido de movimientos de tipo fantasma').
-habilidad(Guardia_metálica, 'Aumenta la defensa del portador').
-habilidad(Gula, 'Permite al portador consumir una baya cuando sus PS están por debajo del 50%').
+% habilidades g
+habilidad(garra_dura, 'aumenta la potencia de los movimientos de contacto del portador').
+habilidad(gas_reactivo, 'neutraliza las habilidades de todos los pokemon en el campo de batalla').
+habilidad(gelido, 'permite al portador congelar al oponente al hacer contacto').
+habilidad(general_supremo, 'aumenta la potencia de los movimientos del portador cuando tiene un alto nivel de amistad').
+habilidad(geofagia, 'permite al portador recuperar ps al consumir una baya en un campo de hierba').
+habilidad(gran_encanto, 'aumenta la probabilidad de que los movimientos del portador causen retroceso').
+habilidad(guardia_espectro, 'reduce el dano recibido de movimientos de tipo fantasma').
+habilidad(guardia_metalica, 'aumenta la defensa del portador').
+habilidad(gula, 'permite al portador consumir una baya cuando sus ps estan por debajo del 50%').
 
-% habilidades H
-habilidad(Hedor, 'Permite al portador causar retroceso al oponente al hacer contacto').
-habilidad(Helice_caudal, 'Aumenta la velocidad del portador al recibir un ataque de tipo agua').
-habilidad(Herbivoro, 'Aumenta el ataque del portador al recibir un ataque de tipo planta').
-habilidad(Herbogenesis, 'Crea un campo de hierba al entrar en combate').
-habilidad(Hidratacion, 'Permite al portador curar sus problemas de estado bajo la lluvia').
-habilidad(Hidrorrefuerzo, 'Aumenta la potencia de los movimientos de tipo agua del portador').
-habilidad(Hospitalidad, 'Permite al portador curar a sus aliados al entrar en combate').
-habilidad(Huida, 'Permite al portador escapar de los combates con facilidad').
-habilidad(Humedad, 'Evita el uso de movimientos de autodestrucción en combate').
-habilidad(Humo_blanco, 'Evita que las estadísticas del portador sean reducidas').
-habilidad(Hurto, 'Permite al portador robar el objeto del oponente al hacer contacto').
+% habilidades h
+habilidad(hedor, 'permite al portador causar retroceso al oponente al hacer contacto').
+habilidad(helice_caudal, 'aumenta la velocidad del portador al recibir un ataque de tipo agua').
+habilidad(herbivoro, 'aumenta el ataque del portador al recibir un ataque de tipo planta').
+habilidad(herbogenesis, 'crea un campo de hierba al entrar en combate').
+habilidad(hidratacion, 'permite al portador curar sus problemas de estado bajo la lluvia').
+habilidad(hidrorrefuerzo, 'aumenta la potencia de los movimientos de tipo agua del portador').
+habilidad(hospitalidad, 'permite al portador curar a sus aliados al entrar en combate').
+habilidad(huida, 'permite al portador escapar de los combates con facilidad').
+habilidad(humedad, 'evita el uso de movimientos de autodestruccion en combate').
+habilidad(humo_blanco, 'evita que las estadisticas del portador sean reducidas').
+habilidad(hurto, 'permite al portador robar el objeto del oponente al hacer contacto').
 
-% habilidades I
-habilidad(Ignifugo, 'Reduce el dano recibido de movimientos de tipo fuego').
-habilidad(Ignorante, 'Ignora los cambios en las estadísticas del oponente').
-habilidad(Iluminacion, 'Aumenta la precisión del portador y sus aliados').
-habilidad(Ilusion, 'Permite al portador entrar en combate disfrazado como el último Pokémon del equipo').
-habilidad(Iman_habilidad, 'Aumenta la potencia de los movimientos de tipo acero del portador').
-habilidad(Impasible, 'Aumenta la velocidad del portador cuando retrocede').
-habilidad(Impulso, 'Aumenta la velocidad del portador al final de cada turno').
-habilidad(Impetu_ardiente, 'Aumenta la potencia de los movimientos de tipo fuego del portador').
-habilidad(Impetu_arena, 'Aumenta la velocidad del portador en tormentas de arena').
-habilidad(Impetu_toxico, 'Aumenta la potencia de los movimientos del portador cuando está envenenado').
-habilidad(Impostor, 'Permite al portador transgigamaxrse en el oponente al entrar en combate').
-habilidad(Indefenso, 'Permite al portador golpear siempre con sus movimientos').
-habilidad(Inicio_lento, 'Reduce el ataque y la velocidad del portador durante los primeros cinco turnos').
-habilidad(Inmunidad, 'Evita que el portador sea envenenado').
-habilidad(Insomnio, 'Evita que el portador se duerma').
-habilidad(Insonorizar, 'Evita que el portador sea afectado por movimientos de sonido').
-habilidad(Intimidacion, 'Reduce el ataque del oponente al entrar en combate').
-habilidad(Intrepido, 'Permite al portador golpear a Pokémon de tipo fantasma con movimientos de tipo normal y lucha').
-habilidad(Irascible, 'Aumenta el ataque del portador cuando recibe un golpe crítico').
+% habilidades i
+habilidad(ignifugo, 'reduce el dano recibido de movimientos de tipo fuego').
+habilidad(ignorante, 'ignora los cambios en las estadisticas del oponente').
+habilidad(iluminacion, 'aumenta la precision del portador y sus aliados').
+habilidad(ilusion, 'permite al portador entrar en combate disfrazado como el último pokemon del equipo').
+habilidad(iman_habilidad, 'aumenta la potencia de los movimientos de tipo acero del portador').
+habilidad(impasible, 'aumenta la velocidad del portador cuando retrocede').
+habilidad(impulso, 'aumenta la velocidad del portador al final de cada turno').
+habilidad(impetu_ardiente, 'aumenta la potencia de los movimientos de tipo fuego del portador').
+habilidad(impetu_arena, 'aumenta la velocidad del portador en tormentas de arena').
+habilidad(impetu_toxico, 'aumenta la potencia de los movimientos del portador cuando esta envenenado').
+habilidad(impostor, 'permite al portador transgigamaxrse en el oponente al entrar en combate').
+habilidad(indefenso, 'permite al portador golpear siempre con sus movimientos').
+habilidad(inicio_lento, 'reduce el ataque y la velocidad del portador durante los primeros cinco turnos').
+habilidad(inmunidad, 'evita que el portador sea envenenado').
+habilidad(insomnio, 'evita que el portador se duerma').
+habilidad(insonorizar, 'evita que el portador sea afectado por movimientos de sonido').
+habilidad(intimidacion, 'reduce el ataque del oponente al entrar en combate').
+habilidad(intrepido, 'permite al portador golpear a pokemon de tipo fantasma con movimientos de tipo normal y lucha').
+habilidad(irascible, 'aumenta el ataque del portador cuando recibe un golpe critico').
 
-% habilidades J
-habilidad(Justiciero, 'Aumenta el ataque del portador cuando es golpeado por un movimiento de tipo siniestro').
+% habilidades j
+habilidad(justiciero, 'aumenta el ataque del portador cuando es golpeado por un movimiento de tipo siniestro').
 
-% habilidades L
-habilidad(Latido_oricalco, 'Aumenta la potencia de los movimientos de tipo dragón del portador').
-habilidad(Letargo_perenne, 'Evita que el portador se despierte una vez dormido').
-habilidad(Levitacion, 'Evita que el portador sea afectado por movimientos de tipo tierra').
-habilidad(Libero, 'Permite al portador cambiar su tipo al del movimiento que va a usar').
-habilidad(Liviano, 'Aumenta la velocidad del portador cuando pierde su objeto').
-habilidad(Llovizna, 'Crea lluvia al entrar en combate').
+% habilidades l
+habilidad(latido_oricalco, 'aumenta la potencia de los movimientos de tipo dragon del portador').
+habilidad(letargo_perenne, 'evita que el portador se despierte una vez dormido').
+habilidad(levitacion, 'evita que el portador sea afectado por movimientos de tipo tierra').
+habilidad(libero, 'permite al portador cambiar su tipo al del movimiento que va a usar').
+habilidad(liviano, 'aumenta la velocidad del portador cuando pierde su objeto').
+habilidad(llovizna, 'crea lluvia al entrar en combate').
 
-% habilidades M
-habilidad(Madrugar, 'Permite al portador despertarse más rápido de lo normal').
-habilidad(Maduracion, 'Permite al portador duplicar el efecto de las bayas que consume').
-habilidad(Mal_sueno, 'Reduce los PS del oponente dormido al final de cada turno').
-habilidad(Mandibula_dragon, 'Aumenta la potencia de los movimientos de tipo dragón del portador').
-habilidad(Mandibula_fuerte, 'Aumenta la potencia de los movimientos de mordisco del portador').
-habilidad(Mano_rapida, 'Permite al portador usar movimientos de prioridad con mayor frecuencia').
-habilidad(Manto_frondoso, 'Aumenta la evasión del portador en tormentas de arena').
-habilidad(Manto_niveo, 'Aumenta la evasión del portador en granizadas').
-habilidad(Mar_del_albor, 'Crea un campo de niebla al entrar en combate').
-habilidad(Mar_llamas, 'Aumenta la potencia de los movimientos de tipo fuego del portador cuando tiene pocos PS').
-habilidad(Mas, 'Aumenta el ataque especial del portador cuando hay un aliado con la habilidad Menos').
-habilidad(Medicina_extrana, 'Permite al portador curar los problemas de estado de sus aliados al entrar en combate').
-habilidad(Megadisparador, 'Aumenta la potencia de los movimientos de pulso del portador').
-habilidad(Menos, 'Aumenta el ataque especial del portador cuando hay un aliado con la habilidad Más').
-habilidad(Metal_liviano, 'Reduce el peso del portador').
-habilidad(Metal_pesado, 'Aumenta el peso del portador').
-habilidad(Mimetismo, 'Permite al portador cambiar su tipo dependiendo del terreno en combate').
-habilidad(Modo_daruma, 'Permite al portador cambiar de gigamax cuando sus PS están por debajo del 50%').
-habilidad(Momia, 'Permite al portador cambiar la habilidad del oponente a Momia al hacer contacto').
-habilidad(Monotema, 'Aumenta la potencia de los movimientos del portador cuando solo conoce un movimiento').
-habilidad(Motor_hadronico, 'Aumenta la velocidad del portador cuando recibe un ataque de tipo eléctrico').
-habilidad(Mudar, 'Permite al portador curar sus problemas de estado al final de cada turno').
-habilidad(Multiescamas, 'Reduce el dano recibido por el portador cuando tiene todos sus PS').
-habilidad(Multitipo, 'Permite al portador cambiar su tipo dependiendo de la tabla que tenga equipada').
-habilidad(Muro_magico, 'Refleja los movimientos de estado al oponente').
-habilidad(Mutapetito, 'Permite al portador cambiar su tipo al del último movimiento que recibió').
-habilidad(Mutatipo, 'Permite al portador cambiar su tipo al del último movimiento que usó').
-habilidad(Nado_rapido, 'Aumenta la velocidad del portador bajo la lluvia').
+% habilidades m
+habilidad(madrugar, 'permite al portador despertarse mas rapido de lo normal').
+habilidad(maduracion, 'permite al portador duplicar el efecto de las bayas que consume').
+habilidad(mal_sueno, 'reduce los ps del oponente dormido al final de cada turno').
+habilidad(mandibula_dragon, 'aumenta la potencia de los movimientos de tipo dragon del portador').
+habilidad(mandibula_fuerte, 'aumenta la potencia de los movimientos de mordisco del portador').
+habilidad(mano_rapida, 'permite al portador usar movimientos de prioridad con mayor frecuencia').
+habilidad(manto_frondoso, 'aumenta la evasion del portador en tormentas de arena').
+habilidad(manto_niveo, 'aumenta la evasion del portador en granizadas').
+habilidad(mar_del_albor, 'crea un campo de niebla al entrar en combate').
+habilidad(mar_llamas, 'aumenta la potencia de los movimientos de tipo fuego del portador cuando tiene pocos ps').
+habilidad(mas, 'aumenta el ataque especial del portador cuando hay un aliado con la habilidad menos').
+habilidad(medicina_extrana, 'permite al portador curar los problemas de estado de sus aliados al entrar en combate').
+habilidad(megadisparador, 'aumenta la potencia de los movimientos de pulso del portador').
+habilidad(menos, 'aumenta el ataque especial del portador cuando hay un aliado con la habilidad mas').
+habilidad(metal_liviano, 'reduce el peso del portador').
+habilidad(metal_pesado, 'aumenta el peso del portador').
+habilidad(mimetismo, 'permite al portador cambiar su tipo dependiendo del terreno en combate').
+habilidad(modo_daruma, 'permite al portador cambiar de gigamax cuando sus ps estan por debajo del 50%').
+habilidad(momia, 'permite al portador cambiar la habilidad del oponente a momia al hacer contacto').
+habilidad(monotema, 'aumenta la potencia de los movimientos del portador cuando solo conoce un movimiento').
+habilidad(motor_hadronico, 'aumenta la velocidad del portador cuando recibe un ataque de tipo electrico').
+habilidad(mudar, 'permite al portador curar sus problemas de estado al final de cada turno').
+habilidad(multiescamas, 'reduce el dano recibido por el portador cuando tiene todos sus ps').
+habilidad(multitipo, 'permite al portador cambiar su tipo dependiendo de la tabla que tenga equipada').
+habilidad(muro_magico, 'refleja los movimientos de estado al oponente').
+habilidad(mutapetito, 'permite al portador cambiar su tipo al del último movimiento que recibio').
+habilidad(mutatipo, 'permite al portador cambiar su tipo al del último movimiento que uso').
+habilidad(nado_rapido, 'aumenta la velocidad del portador bajo la lluvia').
 
-% habilidades N
-habilidad(Nebulogenesis, 'Crea un campo de niebla al entrar en combate').
-habilidad(Nectar_dulce, 'Aumenta la potencia de los movimientos de tipo bicho del portador').
-habilidad(Nerviosismo, 'Evita que los oponentes usen bayas').
-habilidad(Nevada, 'Crea una tormenta de granizo al entrar en combate').
-habilidad(Normalidad, 'Permite al portador cambiar el tipo de sus movimientos a tipo normal').
-habilidad(Ojo_compuesto, 'Aumenta la precisión de los movimientos del portador').
+% habilidades n
+habilidad(nebulogenesis, 'crea un campo de niebla al entrar en combate').
+habilidad(nectar_dulce, 'aumenta la potencia de los movimientos de tipo bicho del portador').
+habilidad(nerviosismo, 'evita que los oponentes usen bayas').
+habilidad(nevada, 'crea una tormenta de granizo al entrar en combate').
+habilidad(normalidad, 'permite al portador cambiar el tipo de sus movimientos a tipo normal').
+habilidad(ojo_compuesto, 'aumenta la precision de los movimientos del portador').
 
-% habilidades O
-habilidad(Ojo_mental, 'Evita que la precisión del portador sea reducida').
-habilidad(Olor_persistente, 'Permite al portador golpear a Pokémon de tipo fantasma con movimientos de tipo normal y lucha').
-habilidad(Oportunista, 'Permite al portador copiar los aumentos de estadísticas del oponente').
-% habilidades P
-habilidad(Paleosintesis, 'Aumenta una estadística del portador bajo la luz solar intensa').
-habilidad(Pararrayos, 'Atrae los movimientos de tipo eléctrico y aumenta el ataque especial del portador').
-habilidad(Pareja_de_baile, 'Permite al portador copiar el último movimiento usado por un aliado').
-habilidad(Pelaje_recio, 'Reduce el dano recibido de movimientos de contacto').
-habilidad(Peluche, 'Reduce el dano recibido de movimientos físicos, pero aumenta el dano recibido de movimientos de tipo fuego').
-habilidad(Pelusa, 'Reduce el dano recibido de movimientos de contacto, pero aumenta el dano recibido de movimientos de tipo fuego').
-habilidad(Pereza, 'Permite al portador recuperar PS al final de cada turno').
-habilidad(Perro_guardián, 'Evita que las estadísticas del portador sean reducidas').
-habilidad(Piel_celeste, 'Cambia los movimientos de tipo normal a tipo volador y aumenta su potencia').
-habilidad(Piel_electrica, 'Cambia los movimientos de tipo normal a tipo eléctrico y aumenta su potencia').
-habilidad(Piel_feerica, 'Cambia los movimientos de tipo normal a tipo hada y aumenta su potencia').
-habilidad(Piel_helada, 'Cambia los movimientos de tipo normal a tipo hielo y aumenta su potencia').
-habilidad(Piel_milagro, 'Aumenta la precisión de los movimientos de estado del portador').
-habilidad(Piel_seca, 'Permite al portador recuperar PS al recibir un ataque de tipo agua, pero aumenta el dano recibido de movimientos de tipo fuego').
-habilidad(Piel_tosca, 'Permite al portador causar dano al oponente al hacer contacto').
-habilidad(Pies_rapidos, 'Aumenta la velocidad del portador cuando sufre un problema de estado').
-habilidad(Poder_arena, 'Aumenta la potencia de los movimientos de tipo roca, tierra y acero en tormentas de arena').
-habilidad(Poder_fungico, 'Permite al portador causar problemas de estado al oponente al hacer contacto').
-habilidad(Poder_solar, 'Aumenta el ataque especial del portador bajo la luz solar intensa').
-habilidad(Polvo_escudo, 'Evita que el portador sea afectado por efectos secundarios de movimientos').
-habilidad(Pompa, 'Permite al portador recuperar PS al recibir un ataque de tipo agua').
-habilidad(Potencia, 'Aumenta la potencia de los movimientos del portador').
-habilidad(Potencia_bruta, 'Aumenta la potencia de los movimientos del portador, pero elimina sus efectos secundarios').
-habilidad(Prediccion, 'Permite al portador detectar movimientos peligrosos del oponente').
-habilidad(Presion, 'Aumenta el consumo de PP del oponente al usar movimientos contra el portador').
-habilidad(Prestidigitador, 'Permite al portador robar el objeto del oponente al hacer contacto').
-habilidad(Primer_auxilio, 'Permite al portador recuperar PS al ser retirado del combate').
-habilidad(Psicogenesis, 'Crea un campo psíquico al entrar en combate').
-habilidad(Punk_rock, 'Aumenta la potencia de los movimientos de sonido del portador y reduce el dano recibido de movimientos de sonido').
-habilidad(Punta_acero, 'Permite al portador causar dano al oponente al hacer contacto').
-habilidad(Punto_toxico, 'Permite al portador envenenar al oponente al hacer contacto').
-habilidad(Puno_ferreo, 'Aumenta la potencia de los movimientos de puno del portador').
-habilidad(Puno_invisible, 'Permite al portador golpear al oponente con movimientos de contacto sin hacer contacto físico').
+% habilidades o
+habilidad(ojo_mental, 'evita que la precision del portador sea reducida').
+habilidad(olor_persistente, 'permite al portador golpear a pokemon de tipo fantasma con movimientos de tipo normal y lucha').
+habilidad(oportunista, 'permite al portador copiar los aumentos de estadisticas del oponente').
+% habilidades p
+habilidad(paleosintesis, 'aumenta una estadistica del portador bajo la luz solar intensa').
+habilidad(pararrayos, 'atrae los movimientos de tipo electrico y aumenta el ataque especial del portador').
+habilidad(pareja_de_baile, 'permite al portador copiar el último movimiento usado por un aliado').
+habilidad(pelaje_recio, 'reduce el dano recibido de movimientos de contacto').
+habilidad(peluche, 'reduce el dano recibido de movimientos fisicos, pero aumenta el dano recibido de movimientos de tipo fuego').
+habilidad(pelusa, 'reduce el dano recibido de movimientos de contacto, pero aumenta el dano recibido de movimientos de tipo fuego').
+habilidad(pereza, 'permite al portador recuperar ps al final de cada turno').
+habilidad(perro_guardian, 'evita que las estadisticas del portador sean reducidas').
+habilidad(piel_celeste, 'cambia los movimientos de tipo normal a tipo volador y aumenta su potencia').
+habilidad(piel_electrica, 'cambia los movimientos de tipo normal a tipo electrico y aumenta su potencia').
+habilidad(piel_feerica, 'cambia los movimientos de tipo normal a tipo hada y aumenta su potencia').
+habilidad(piel_helada, 'cambia los movimientos de tipo normal a tipo hielo y aumenta su potencia').
+habilidad(piel_milagro, 'aumenta la precision de los movimientos de estado del portador').
+habilidad(piel_seca, 'permite al portador recuperar ps al recibir un ataque de tipo agua, pero aumenta el dano recibido de movimientos de tipo fuego').
+habilidad(piel_tosca, 'permite al portador causar dano al oponente al hacer contacto').
+habilidad(pies_rapidos, 'aumenta la velocidad del portador cuando sufre un problema de estado').
+habilidad(poder_arena, 'aumenta la potencia de los movimientos de tipo roca, tierra y acero en tormentas de arena').
+habilidad(poder_fungico, 'permite al portador causar problemas de estado al oponente al hacer contacto').
+habilidad(poder_solar, 'aumenta el ataque especial del portador bajo la luz solar intensa').
+habilidad(polvo_escudo, 'evita que el portador sea afectado por efectos secundarios de movimientos').
+habilidad(pompa, 'permite al portador recuperar ps al recibir un ataque de tipo agua').
+habilidad(potencia, 'aumenta la potencia de los movimientos del portador').
+habilidad(potencia_bruta, 'aumenta la potencia de los movimientos del portador, pero elimina sus efectos secundarios').
+habilidad(prediccion, 'permite al portador detectar movimientos peligrosos del oponente').
+habilidad(presion, 'aumenta el consumo de pp del oponente al usar movimientos contra el portador').
+habilidad(prestidigitador, 'permite al portador robar el objeto del oponente al hacer contacto').
+habilidad(primer_auxilio, 'permite al portador recuperar ps al ser retirado del combate').
+habilidad(psicogenesis, 'crea un campo psiquico al entrar en combate').
+habilidad(punk_rock, 'aumenta la potencia de los movimientos de sonido del portador y reduce el dano recibido de movimientos de sonido').
+habilidad(punta_acero, 'permite al portador causar dano al oponente al hacer contacto').
+habilidad(punto_toxico, 'permite al portador envenenar al oponente al hacer contacto').
+habilidad(puno_ferreo, 'aumenta la potencia de los movimientos de puno del portador').
+habilidad(puno_invisible, 'permite al portador golpear al oponente con movimientos de contacto sin hacer contacto fisico').
 
-% habilidades Q
-habilidad(Quitanieves, 'Aumenta la velocidad del portador en tormentas de granizo').
+% habilidades q
+habilidad(quitanieves, 'aumenta la velocidad del portador en tormentas de granizo').
 
-% habilidades R
-habilidad(Rafaga_delta, 'Aumenta la potencia de los movimientos de tipo volador del portador y crea un viento fuerte al entrar en combate').
-habilidad(Reaccion_quimica, 'Permite al portador cambiar su tipo dependiendo del objeto que tenga equipado').
-habilidad(Receptor, 'Permite al portador heredar la habilidad de un aliado debilitado').
-habilidad(Recogebolas, 'Permite al portador recoger objetos lanzados por el oponente').
-habilidad(Recogemiel, 'Permite al portador recoger miel al final del combate').
-habilidad(Recogida, 'Permite al portador recoger objetos al final del turno si no tiene ninguno equipado').
-habilidad(Regeneracion, 'Permite al portador recuperar PS al ser retirado del combate').
-habilidad(Regia_presencia, 'Evita que el oponente use movimientos de prioridad').
-habilidad(Relicho_blanco, 'Aumenta el ataque del portador al debilitar a un oponente').
-habilidad(Relicho_negro, 'Aumenta el ataque especial del portador al debilitar a un oponente').
-habilidad(Remoto, 'Permite al portador usar movimientos de contacto sin hacer contacto físico').
-habilidad(Respondon, 'Permite al portador usar el último movimiento usado por el oponente').
-habilidad(Retirada, 'Permite al portador aumentar su defensa al ser golpeado').
-habilidad(Reves, 'Permite al portador aumentar la potencia de sus movimientos cuando tiene pocos PS').
-habilidad(Rezagado, 'Permite al portador moverse al final del turno').
-habilidad(Ritmo_propio, 'Evita que el portador sea confundido').
-habilidad(Rivalidad, 'Aumenta la potencia de los movimientos del portador contra oponentes del mismo género, pero reduce la potencia contra oponentes de género diferente').
-habilidad(Rizos_rebeldes, 'Aumenta la defensa del portador al ser golpeado por un movimiento de contacto').
-habilidad(Robustez, 'Evita que el portador sea debilitado de un solo golpe cuando tiene todos sus PS').
-habilidad(Roca_solida, 'Reduce el dano recibido de movimientos super efectivos').
-habilidad(Rompeaura, 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
-habilidad(Rompemoldes, 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
-habilidad(Rumia, 'Permite al portador recuperar PS al consumir una baya').
-habilidad(Sacapecho, 'Evita que las estadísticas del portador sean reducidas').
+% habilidades r
+habilidad(rafaga_delta, 'aumenta la potencia de los movimientos de tipo volador del portador y crea un viento fuerte al entrar en combate').
+habilidad(reaccion_quimica, 'permite al portador cambiar su tipo dependiendo del objeto que tenga equipado').
+habilidad(receptor, 'permite al portador heredar la habilidad de un aliado debilitado').
+habilidad(recogebolas, 'permite al portador recoger objetos lanzados por el oponente').
+habilidad(recogemiel, 'permite al portador recoger miel al final del combate').
+habilidad(recogida, 'permite al portador recoger objetos al final del turno si no tiene ninguno equipado').
+habilidad(regeneracion, 'permite al portador recuperar ps al ser retirado del combate').
+habilidad(regia_presencia, 'evita que el oponente use movimientos de prioridad').
+habilidad(relicho_blanco, 'aumenta el ataque del portador al debilitar a un oponente').
+habilidad(relicho_negro, 'aumenta el ataque especial del portador al debilitar a un oponente').
+habilidad(remoto, 'permite al portador usar movimientos de contacto sin hacer contacto fisico').
+habilidad(respondon, 'permite al portador usar el último movimiento usado por el oponente').
+habilidad(retirada, 'permite al portador aumentar su defensa al ser golpeado').
+habilidad(reves, 'permite al portador aumentar la potencia de sus movimientos cuando tiene pocos ps').
+habilidad(rezagado, 'permite al portador moverse al final del turno').
+habilidad(ritmo_propio, 'evita que el portador sea confundido').
+habilidad(rivalidad, 'aumenta la potencia de los movimientos del portador contra oponentes del mismo genero, pero reduce la potencia contra oponentes de genero diferente').
+habilidad(rizos_rebeldes, 'aumenta la defensa del portador al ser golpeado por un movimiento de contacto').
+habilidad(robustez, 'evita que el portador sea debilitado de un solo golpe cuando tiene todos sus ps').
+habilidad(roca_solida, 'reduce el dano recibido de movimientos super efectivos').
+habilidad(rompeaura, 'permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
+habilidad(rompemoldes, 'permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
+habilidad(rumia, 'permite al portador recuperar ps al consumir una baya').
+habilidad(sacapecho, 'evita que las estadisticas del portador sean reducidas').
 
-% habilidades S
-habilidad(Sal_purificadora, 'Reduce el dano recibido de movimientos de tipo fantasma y evita que el portador sea afectado por problemas de estado').
-habilidad(Sebo, 'Reduce el dano recibido de movimientos de tipo fuego y hielo').
-habilidad(Sequia, 'Crea luz solar intensa al entrar en combate').
-habilidad(Simbiosis, 'Permite al portador pasar su objeto a un aliado cuando este consume o pierde su objeto').
-habilidad(Simple, 'Duplica los cambios en las estadísticas del portador').
-habilidad(Sincronia, 'Permite al portador pasar su problema de estado al oponente que lo causó').
-habilidad(Sistema_alfa, 'Permite al portador cambiar su tipo dependiendo del disco que tenga equipado').
-habilidad(Sombra_trampa, 'Evita que el oponente escape').
-habilidad(Superguarda, 'Reduce el dano recibido de movimientos super efectivos').
-habilidad(Surcavientos, 'Aumenta la velocidad del portador cuando hay un viento afín en el campo de batalla').
+% habilidades s
+habilidad(sal_purificadora, 'reduce el dano recibido de movimientos de tipo fantasma y evita que el portador sea afectado por problemas de estado').
+habilidad(sebo, 'reduce el dano recibido de movimientos de tipo fuego y hielo').
+habilidad(sequia, 'crea luz solar intensa al entrar en combate').
+habilidad(simbiosis, 'permite al portador pasar su objeto a un aliado cuando este consume o pierde su objeto').
+habilidad(simple, 'duplica los cambios en las estadisticas del portador').
+habilidad(sincronia, 'permite al portador pasar su problema de estado al oponente que lo causo').
+habilidad(sistema_alfa, 'permite al portador cambiar su tipo dependiendo del disco que tenga equipado').
+habilidad(sombra_trampa, 'evita que el oponente escape').
+habilidad(superguarda, 'reduce el dano recibido de movimientos super efectivos').
+habilidad(surcavientos, 'aumenta la velocidad del portador cuando hay un viento afin en el campo de batalla').
 
-% habilidades T
-habilidad(tablilla_debacle, 'Reduce la potencia de los movimientos de tipo hada del oponente').
-habilidad(telepatia, 'Evita que el portador reciba dano de los movimientos de sus aliados en combates múltiples').
-habilidad(tenacidad, 'Permite al portador resistir un golpe que lo debilitaría y quedarse con 1 PS').
-habilidad(teracambio, 'Permite al portador cambiar su tipo al tipo Tera al entrar en combate').
-habilidad(teracaparazon, 'Evita que el portador reciba golpes críticos').
-habilidad(teragigamaxcion_0, 'Permite al portador cambiar su tipo al tipo Tera al usar un movimiento de tipo Tera').
-habilidad(termoconversion, 'Permite al portador cambiar su tipo al tipo del último movimiento recibido').
-habilidad(terravoltaje, 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
-habilidad(tierra_del_ocaso, 'Crea un campo de niebla al entrar en combate').
-habilidad(tinovictoria, 'Aumenta la potencia de los movimientos de tipo tierra del portador').
-habilidad(titere_toxico, 'Permite al portador envenenar al oponente al hacer contacto').
-habilidad(toque_toxico, 'Permite al portador envenenar al oponente al hacer contacto').
-habilidad(torrente, 'Aumenta la potencia de los movimientos de tipo agua del portador cuando tiene pocos PS').
-habilidad(tragamisil, 'Permite al portador recuperar PS al consumir una baya').
-habilidad(trampa_arena, 'Evita que el oponente escape y causa dano al final de cada turno').
-habilidad(transistor, 'Aumenta la potencia de los movimientos de tipo eléctrico del portador').
-habilidad(transportarrocas, 'Permite al portador usar movimientos de tipo roca con prioridad aumentada').
-habilidad(tumbos, 'Permite al portador aumentar su velocidad al ser golpeado').
-habilidad(turbollama, 'Permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
+% habilidades t
+habilidad(tablilla_debacle, 'reduce la potencia de los movimientos de tipo hada del oponente').
+habilidad(telepatia, 'evita que el portador reciba dano de los movimientos de sus aliados en combates múltiples').
+habilidad(tenacidad, 'permite al portador resistir un golpe que lo debilitaria y quedarse con 1 ps').
+habilidad(teracambio, 'permite al portador cambiar su tipo al tipo tera al entrar en combate').
+habilidad(teracaparazon, 'evita que el portador reciba golpes criticos').
+habilidad(teragigamaxcion_0, 'permite al portador cambiar su tipo al tipo tera al usar un movimiento de tipo tera').
+habilidad(termoconversion, 'permite al portador cambiar su tipo al tipo del último movimiento recibido').
+habilidad(terravoltaje, 'permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
+habilidad(tierra_del_ocaso, 'crea un campo de niebla al entrar en combate').
+habilidad(tinovictoria, 'aumenta la potencia de los movimientos de tipo tierra del portador').
+habilidad(titere_toxico, 'permite al portador envenenar al oponente al hacer contacto').
+habilidad(toque_toxico, 'permite al portador envenenar al oponente al hacer contacto').
+habilidad(torrente, 'aumenta la potencia de los movimientos de tipo agua del portador cuando tiene pocos ps').
+habilidad(tragamisil, 'permite al portador recuperar ps al consumir una baya').
+habilidad(trampa_arena, 'evita que el oponente escape y causa dano al final de cada turno').
+habilidad(transistor, 'aumenta la potencia de los movimientos de tipo electrico del portador').
+habilidad(transportarrocas, 'permite al portador usar movimientos de tipo roca con prioridad aumentada').
+habilidad(tumbos, 'permite al portador aumentar su velocidad al ser golpeado').
+habilidad(turbollama, 'permite al portador ignorar las habilidades del oponente que afectan a los movimientos').
 
-% habilidades U
-habilidad(ultraimpulso, 'Aumenta la estadística más alta del portador al debilitar a un oponente').
-habilidad(unidad_ecuestre, 'Permite al portador cambiar de gigamax al entrar en combate').
-habilidad(unisono, 'Permite al portador aumentar la potencia de sus movimientos cuando hay un aliado con la misma habilidad en el campo de batalla').
+% habilidades u
+habilidad(ultraimpulso, 'aumenta la estadistica mas alta del portador al debilitar a un oponente').
+habilidad(unidad_ecuestre, 'permite al portador cambiar de gigamax al entrar en combate').
+habilidad(unisono, 'permite al portador aumentar la potencia de sus movimientos cuando hay un aliado con la misma habilidad en el campo de batalla').
 
-% habilidades V
-habilidad(veleta, 'Permite al portador aumentar una estadística al azar al final de cada turno').
-habilidad(velo_agua, 'Evita que el portador sea quemado').
-habilidad(velo_arena, 'Evita que el portador sea afectado por problemas de estado en tormentas de arena').
-habilidad(velo_aroma, 'Evita que los aliados del portador sean afectados por problemas de estado').
-habilidad(velo_dulce, 'Evita que los aliados del portador sean afectados por problemas de estado en combates múltiples').
-habilidad(velo_flor, 'Evita que los aliados del portador sean afectados por problemas de estado').
-habilidad(velo_pastel, 'Permite al portador curar problemas de estado de sus aliados al entrar en combate').
-habilidad(ventosas, 'Evita que el portador sea forzado a salir del combate').
-habilidad(vigilante, 'Permite al portador detectar movimientos peligrosos del oponente').
-habilidad(viscosecrecion, 'Permite al portador reducir la velocidad del oponente al hacer contacto').
-habilidad(viscosidad, 'Permite al portador reducir la velocidad del oponente al hacer contacto').
-habilidad(vista_lince, 'Evita que la precisión del portador sea reducida').
-habilidad(voz_fluida, 'Permite al portador usar movimientos de sonido con prioridad aumentada').
+% habilidades v
+habilidad(veleta, 'permite al portador aumentar una estadistica al azar al final de cada turno').
+habilidad(velo_agua, 'evita que el portador sea quemado').
+habilidad(velo_arena, 'evita que el portador sea afectado por problemas de estado en tormentas de arena').
+habilidad(velo_aroma, 'evita que los aliados del portador sean afectados por problemas de estado').
+habilidad(velo_dulce, 'evita que los aliados del portador sean afectados por problemas de estado en combates múltiples').
+habilidad(velo_flor, 'evita que los aliados del portador sean afectados por problemas de estado').
+habilidad(velo_pastel, 'permite al portador curar problemas de estado de sus aliados al entrar en combate').
+habilidad(ventosas, 'evita que el portador sea forzado a salir del combate').
+habilidad(vigilante, 'permite al portador detectar movimientos peligrosos del oponente').
+habilidad(viscosecrecion, 'permite al portador reducir la velocidad del oponente al hacer contacto').
+habilidad(viscosidad, 'permite al portador reducir la velocidad del oponente al hacer contacto').
+habilidad(vista_lince, 'evita que la precision del portador sea reducida').
+habilidad(voz_fluida, 'permite al portador usar movimientos de sonido con prioridad aumentada').
+
+
 
 % habilidades Z
 habilidad(zoquete, 'Evita que el portador use objetos en combate').
@@ -2538,196 +2541,196 @@ pokemon(1025, dolliv, [planta, normal], 9).
 pokemon(1026, arboliva, [planta, normal], 9).
 
 % habilidades_pokemon
-Habilidad_pokemon(bulbasaur, espesura).
-Habilidad_pokemon(ivysaur, espesura).
-Habilidad_pokemon(venusaur, espesura).
-Habilidad_pokemon(charmander, mar_llamas).
-Habilidad_pokemon(charmeleon, mar_llamas).
-Habilidad_pokemon(charizard, mar_llamas).
-Habilidad_pokemon(squirtle, torrente).
-Habilidad_pokemon(wartortle, torrente).
-Habilidad_pokemon(blastoise, torrente).
-Habilidad_pokemon(caterpie, escudo_polvo).
-Habilidad_pokemon(metapod, mudar).
-Habilidad_pokemon(butterfree, ojo_compuesto).
-Habilidad_pokemon(weedle, escudo_polvo).
-Habilidad_pokemon(kakuna, mudar).
-Habilidad_pokemon(beedrill, enjambre).
-Habilidad_pokemon(pidgey, vista_lince).
-Habilidad_pokemon(pidgeotto, vista_lince).
-Habilidad_pokemon(pidgeot, vista_lince).
-Habilidad_pokemon(rattata, fuga).
-Habilidad_pokemon(raticate, fuga).
-Habilidad_pokemon(spearow, mirada_fija).
-Habilidad_pokemon(pikachu, estatica).
-Habilidad_pokemon(raichu, estatica).
-Habilidad_pokemon(meowth, recogida).
-Habilidad_pokemon(persian, limpieza).
-Habilidad_pokemon(ponyta, cuerpo_llamas).
-Habilidad_pokemon(rapidash, cuerpo_llamas).
-Habilidad_pokemon(gastly, levitacion).
-Habilidad_pokemon(haunter, levitacion).
-Habilidad_pokemon(gengar, levitacion).
-Habilidad_pokemon(rhyhorn, pararrayos).
-Habilidad_pokemon(rhydon, pararrayos).
-Habilidad_pokemon(magikarp, nado_rapido).
-Habilidad_pokemon(gyarados, intimidacion).
-Habilidad_pokemon(ditto, imposta).
-Habilidad_pokemon(eevee, adaptabilidad).
-Habilidad_pokemon(vaporeon, absorber_agua).
-Habilidad_pokemon(jolteon, absorber_voltaje).
-Habilidad_pokemon(flareon, absorbe_fuego).
-Habilidad_pokemon(espeon, sincronia).
-Habilidad_pokemon(umbreon, sincronia).
-Habilidad_pokemon(leafeon, hoja_afilada).
-Habilidad_pokemon(glaceon, manto_nieve).
-Habilidad_pokemon(sylveon, encanto).
-Habilidad_pokemon(snorlax, inmunidad).
-Habilidad_pokemon(ralts, sincronia).
-Habilidad_pokemon(kirlia, sincronia).
-Habilidad_pokemon(gardevoir, rastro).
-Habilidad_pokemon(gallade, impasible).
-Habilidad_pokemon(poliwhirl, absorbe_agua).
-Habilidad_pokemon(poliwrath, absorbe_agua).
-Habilidad_pokemon(politoed, absorbe_agua).
-Habilidad_pokemon(applin, cosecha).
-Habilidad_pokemon(flapple, corte_fuerte).
-Habilidad_pokemon(appletun, cosecha).
-Habilidad_pokemon(dipplin, torrente).
-Habilidad_pokemon(mew, sincronia).
-Habilidad_pokemon(mewtwo, presion).
-Habilidad_pokemon(celebi, cuerpo).
-Habilidad_pokemon(lugia, presion).
-Habilidad_pokemon(jirachi, dicha).
-Habilidad_pokemon(deoxys, presion).
-Habilidad_pokemon(latias, levitacion).
-Habilidad_pokemon(latios, levitacion).
-Habilidad_pokemon(dialga, presion).
-Habilidad_pokemon(palkia, presion).
-Habilidad_pokemon(giratina, presion).
-Habilidad_pokemon(xerneas, aura_feerica).
-Habilidad_pokemon(yveltal, presion).
-Habilidad_pokemon(zygarde, orden_ancestral).
-Habilidad_pokemon(victini, victoria).
-Habilidad_pokemon(meloetta, melodia).
-Habilidad_pokemon(genesect, descargar).
-Habilidad_pokemon(meltan, iman).
-Habilidad_pokemon(solgaleo, metal_escudo).
-Habilidad_pokemon(lunala, espectro_total).
-Habilidad_pokemon(necrozma, aura_oscura).
-Habilidad_pokemon(raikou, presion).
-Habilidad_pokemon(entei, presion).
-Habilidad_pokemon(suicune, absorbe_agua).
-Habilidad_pokemon(heracross, enjambre).
-Habilidad_pokemon(ledyba, enjambre).
-Habilidad_pokemon(ledian, enjambre).
-Habilidad_pokemon(flabebe, simbiosis).
-Habilidad_pokemon(floette, reino_floral).
-Habilidad_pokemon(florges, reino_floral).
-Habilidad_pokemon(roselia, espesura).
-Habilidad_pokemon(roserade, espesura).
-Habilidad_pokemon(voltorb, estatico).
-Habilidad_pokemon(electrode, estatico).
-Habilidad_pokemon(roggenrola, robustez).
-Habilidad_pokemon(boldore, robustez).
-Habilidad_pokemon(gigalith, robustez).
-Habilidad_pokemon(lucario, impasible).
-Habilidad_pokemon(meditite, pureza).
-Habilidad_pokemon(mime_jr, filtro).
-Habilidad_pokemon(mr_mime, filtro).
-Habilidad_pokemon(mawile, intimidacion).
-Habilidad_pokemon(yamask, presion).
-Habilidad_pokemon(darkrai, presion).
-Habilidad_pokemon(feebas, nado_rapido).
-Habilidad_pokemon(milotic, despejar).
-Habilidad_pokemon(grimer, viscosidad).
-Habilidad_pokemon(muk, absorbe_toxico).
-Habilidad_pokemon(aron, robustez).
-Habilidad_pokemon(lairon, robustez).
-Habilidad_pokemon(aggron, robustez).
-Habilidad_pokemon(oshawott, torrente).
-Habilidad_pokemon(dewott, torrente).
-Habilidad_pokemon(samurott, torrente).
-Habilidad_pokemon(tapu_fini, hidroimpulso).
-Habilidad_pokemon(groudon, sequia).
-Habilidad_pokemon(rayquaza, presion).
-Habilidad_pokemon(cubone, cabezazo).
-Habilidad_pokemon(marowak, pararrayos).
-Habilidad_pokemon(hoopa, magia_curiosa).
-Habilidad_pokemon(sableye, vista_lince).
-Habilidad_pokemon(cresselia, levitacion).
-Habilidad_pokemon(chikorita, espesura).
-Habilidad_pokemon(bayleef, espesura).
-Habilidad_pokemon(meganium, espesura).
-Habilidad_pokemon(togepi, encanto).
-Habilidad_pokemon(togetic, encanto).
-Habilidad_pokemon(togekiss, don_sereno).
-Habilidad_pokemon(pichu, estatica).
-Habilidad_pokemon(igglybuff, despeje).
-Habilidad_pokemon(jigglypuff, gran_encanto).
-Habilidad_pokemon(wigglytuff, gran_encanto).
-Habilidad_pokemon(smoochum, despierto).
-Habilidad_pokemon(jynx, despierto).
-Habilidad_pokemon(shroomish, efecto_espina).
-Habilidad_pokemon(breloom, efecto_espina).
-Habilidad_pokemon(surskit, enjambre).
-Habilidad_pokemon(surskit, absorbe_agua).
-Habilidad_pokemon(masquerain, enjambre).
-Habilidad_pokemon(gulpin, liquid_ooze).
-Habilidad_pokemon(swalot, liquid_ooze).
-Habilidad_pokemon(shuppet, insomnio).
-Habilidad_pokemon(banette, insomnio).
-Habilidad_pokemon(absol, presion).
-Habilidad_pokemon(zangoose, inmunidad).
-Habilidad_pokemon(kecleon, cambio_color).
-Habilidad_pokemon(shinx, robustez).
-Habilidad_pokemon(luxio, robustez).
-Habilidad_pokemon(luxray, rivalidad).
-Habilidad_pokemon(snorunt, gelido).
-Habilidad_pokemon(glalie, cuerpo_maldito).
-Habilidad_pokemon(froslass, velo_nieve).
-Habilidad_pokemon(buneary, fuga).
-Habilidad_pokemon(lopunny, fuga).
-Habilidad_pokemon(foongus, regeneracion).
-Habilidad_pokemon(amoonguss, regeneracion).
-Habilidad_pokemon(pumpkaboo, insomnio).
-Habilidad_pokemon(gourgeist, cosecha).
-Habilidad_pokemon(litleo, fuego_interno).
-Habilidad_pokemon(pyroar, robustez).
-Habilidad_pokemon(axew, rompemoldes).
-Habilidad_pokemon(fraxure, rompemoldes).
-Habilidad_pokemon(haxorus, rompemoldes).
-Habilidad_pokemon(inkay, ventosas).
-Habilidad_pokemon(malamar, ventosas).
-Habilidad_pokemon(pidove, agallas).
-Habilidad_pokemon(pidove, tenacidad).
-Habilidad_pokemon(tranquill, agallas).
-Habilidad_pokemon(tranquill, tenacidad).
-Habilidad_pokemon(unfezant, mirada_tensa).
-Habilidad_pokemon(unfezant, superanimo).
-Habilidad_pokemon(scraggy, intimidacion).
-Habilidad_pokemon(scraggy, nerviosismo).
-Habilidad_pokemon(skorupi, corte_fuerte).
-Habilidad_pokemon(drapion, batalla).
-Habilidad_pokemon(litten, mar_llamas).
-Habilidad_pokemon(torracat, mar_llamas).
-Habilidad_pokemon(incineroar, mar_llamas).
-Habilidad_pokemon(petilil, clorofila).
-Habilidad_pokemon(lilligant, clorofila).
-Habilidad_pokemon(zorua, ilusion).
-Habilidad_pokemon(zoroark, ilusion).
-Habilidad_pokemon(deino, cabeza_roca).
-Habilidad_pokemon(zweilous, cabeza_roca).
-Habilidad_pokemon(hydreigon, levitacion).
-Habilidad_pokemon(skrelp, absorbeagua).
-Habilidad_pokemon(tyrunt, mandibula_fuerte).
-Habilidad_pokemon(tyrantrum, mandibula_fuerte).
-Habilidad_pokemon(amaura, refrigerar).
-Habilidad_pokemon(aurorus, refraccion).
-Habilidad_pokemon(rowlet, espesura).
-Habilidad_pokemon(dartrix, espesura).
-Habilidad_pokemon(empoleon, torrente).
-Habilidad_pokemon(piplup, torrente).
+habilidad_pokemon(bulbasaur, espesura).
+habilidad_pokemon(ivysaur, espesura).
+habilidad_pokemon(venusaur, espesura).
+habilidad_pokemon(charmander, mar_llamas).
+habilidad_pokemon(charmeleon, mar_llamas).
+habilidad_pokemon(charizard, mar_llamas).
+habilidad_pokemon(squirtle, torrente).
+habilidad_pokemon(wartortle, torrente).
+habilidad_pokemon(blastoise, torrente).
+habilidad_pokemon(caterpie, escudo_polvo).
+habilidad_pokemon(metapod, mudar).
+habilidad_pokemon(butterfree, ojo_compuesto).
+habilidad_pokemon(weedle, escudo_polvo).
+habilidad_pokemon(kakuna, mudar).
+habilidad_pokemon(beedrill, enjambre).
+habilidad_pokemon(pidgey, vista_lince).
+habilidad_pokemon(pidgeotto, vista_lince).
+habilidad_pokemon(pidgeot, vista_lince).
+habilidad_pokemon(rattata, fuga).
+habilidad_pokemon(raticate, fuga).
+habilidad_pokemon(spearow, mirada_fija).
+habilidad_pokemon(pikachu, estatica).
+habilidad_pokemon(raichu, estatica).
+habilidad_pokemon(meowth, recogida).
+habilidad_pokemon(persian, limpieza).
+habilidad_pokemon(ponyta, cuerpo_llamas).
+habilidad_pokemon(rapidash, cuerpo_llamas).
+habilidad_pokemon(gastly, levitacion).
+habilidad_pokemon(haunter, levitacion).
+habilidad_pokemon(gengar, levitacion).
+habilidad_pokemon(rhyhorn, pararrayos).
+habilidad_pokemon(rhydon, pararrayos).
+habilidad_pokemon(magikarp, nado_rapido).
+habilidad_pokemon(gyarados, intimidacion).
+habilidad_pokemon(ditto, imposta).
+habilidad_pokemon(eevee, adaptabilidad).
+habilidad_pokemon(vaporeon, absorber_agua).
+habilidad_pokemon(jolteon, absorber_voltaje).
+habilidad_pokemon(flareon, absorbe_fuego).
+habilidad_pokemon(espeon, sincronia).
+habilidad_pokemon(umbreon, sincronia).
+habilidad_pokemon(leafeon, hoja_afilada).
+habilidad_pokemon(glaceon, manto_nieve).
+habilidad_pokemon(sylveon, encanto).
+habilidad_pokemon(snorlax, inmunidad).
+habilidad_pokemon(ralts, sincronia).
+habilidad_pokemon(kirlia, sincronia).
+habilidad_pokemon(gardevoir, rastro).
+habilidad_pokemon(gallade, impasible).
+habilidad_pokemon(poliwhirl, absorbe_agua).
+habilidad_pokemon(poliwrath, absorbe_agua).
+habilidad_pokemon(politoed, absorbe_agua).
+habilidad_pokemon(applin, cosecha).
+habilidad_pokemon(flapple, corte_fuerte).
+habilidad_pokemon(appletun, cosecha).
+habilidad_pokemon(dipplin, torrente).
+habilidad_pokemon(mew, sincronia).
+habilidad_pokemon(mewtwo, presion).
+habilidad_pokemon(celebi, cuerpo).
+habilidad_pokemon(lugia, presion).
+habilidad_pokemon(jirachi, dicha).
+habilidad_pokemon(deoxys, presion).
+habilidad_pokemon(latias, levitacion).
+habilidad_pokemon(latios, levitacion).
+habilidad_pokemon(dialga, presion).
+habilidad_pokemon(palkia, presion).
+habilidad_pokemon(giratina, presion).
+habilidad_pokemon(xerneas, aura_feerica).
+habilidad_pokemon(yveltal, presion).
+habilidad_pokemon(zygarde, orden_ancestral).
+habilidad_pokemon(victini, victoria).
+habilidad_pokemon(meloetta, melodia).
+habilidad_pokemon(genesect, descargar).
+habilidad_pokemon(meltan, iman).
+habilidad_pokemon(solgaleo, metal_escudo).
+habilidad_pokemon(lunala, espectro_total).
+habilidad_pokemon(necrozma, aura_oscura).
+habilidad_pokemon(raikou, presion).
+habilidad_pokemon(entei, presion).
+habilidad_pokemon(suicune, absorbe_agua).
+habilidad_pokemon(heracross, enjambre).
+habilidad_pokemon(ledyba, enjambre).
+habilidad_pokemon(ledian, enjambre).
+habilidad_pokemon(flabebe, simbiosis).
+habilidad_pokemon(floette, reino_floral).
+habilidad_pokemon(florges, reino_floral).
+habilidad_pokemon(roselia, espesura).
+habilidad_pokemon(roserade, espesura).
+habilidad_pokemon(voltorb, estatico).
+habilidad_pokemon(electrode, estatico).
+habilidad_pokemon(roggenrola, robustez).
+habilidad_pokemon(boldore, robustez).
+habilidad_pokemon(gigalith, robustez).
+habilidad_pokemon(lucario, impasible).
+habilidad_pokemon(meditite, pureza).
+habilidad_pokemon(mime_jr, filtro).
+habilidad_pokemon(mr_mime, filtro).
+habilidad_pokemon(mawile, intimidacion).
+habilidad_pokemon(yamask, presion).
+habilidad_pokemon(darkrai, presion).
+habilidad_pokemon(feebas, nado_rapido).
+habilidad_pokemon(milotic, despejar).
+habilidad_pokemon(grimer, viscosidad).
+habilidad_pokemon(muk, absorbe_toxico).
+habilidad_pokemon(aron, robustez).
+habilidad_pokemon(lairon, robustez).
+habilidad_pokemon(aggron, robustez).
+habilidad_pokemon(oshawott, torrente).
+habilidad_pokemon(dewott, torrente).
+habilidad_pokemon(samurott, torrente).
+habilidad_pokemon(tapu_fini, hidroimpulso).
+habilidad_pokemon(groudon, sequia).
+habilidad_pokemon(rayquaza, presion).
+habilidad_pokemon(cubone, cabezazo).
+habilidad_pokemon(marowak, pararrayos).
+habilidad_pokemon(hoopa, magia_curiosa).
+habilidad_pokemon(sableye, vista_lince).
+habilidad_pokemon(cresselia, levitacion).
+habilidad_pokemon(chikorita, espesura).
+habilidad_pokemon(bayleef, espesura).
+habilidad_pokemon(meganium, espesura).
+habilidad_pokemon(togepi, encanto).
+habilidad_pokemon(togetic, encanto).
+habilidad_pokemon(togekiss, don_sereno).
+habilidad_pokemon(pichu, estatica).
+habilidad_pokemon(igglybuff, despeje).
+habilidad_pokemon(jigglypuff, gran_encanto).
+habilidad_pokemon(wigglytuff, gran_encanto).
+habilidad_pokemon(smoochum, despierto).
+habilidad_pokemon(jynx, despierto).
+habilidad_pokemon(shroomish, efecto_espina).
+habilidad_pokemon(breloom, efecto_espina).
+habilidad_pokemon(surskit, enjambre).
+habilidad_pokemon(surskit, absorbe_agua).
+habilidad_pokemon(masquerain, enjambre).
+habilidad_pokemon(gulpin, liquid_ooze).
+habilidad_pokemon(swalot, liquid_ooze).
+habilidad_pokemon(shuppet, insomnio).
+habilidad_pokemon(banette, insomnio).
+habilidad_pokemon(absol, presion).
+habilidad_pokemon(zangoose, inmunidad).
+habilidad_pokemon(kecleon, cambio_color).
+habilidad_pokemon(shinx, robustez).
+habilidad_pokemon(luxio, robustez).
+habilidad_pokemon(luxray, rivalidad).
+habilidad_pokemon(snorunt, gelido).
+habilidad_pokemon(glalie, cuerpo_maldito).
+habilidad_pokemon(froslass, velo_nieve).
+habilidad_pokemon(buneary, fuga).
+habilidad_pokemon(lopunny, fuga).
+habilidad_pokemon(foongus, regeneracion).
+habilidad_pokemon(amoonguss, regeneracion).
+habilidad_pokemon(pumpkaboo, insomnio).
+habilidad_pokemon(gourgeist, cosecha).
+habilidad_pokemon(litleo, fuego_interno).
+habilidad_pokemon(pyroar, robustez).
+habilidad_pokemon(axew, rompemoldes).
+habilidad_pokemon(fraxure, rompemoldes).
+habilidad_pokemon(haxorus, rompemoldes).
+habilidad_pokemon(inkay, ventosas).
+habilidad_pokemon(malamar, ventosas).
+habilidad_pokemon(pidove, agallas).
+habilidad_pokemon(pidove, tenacidad).
+habilidad_pokemon(tranquill, agallas).
+habilidad_pokemon(tranquill, tenacidad).
+habilidad_pokemon(unfezant, mirada_tensa).
+habilidad_pokemon(unfezant, superanimo).
+habilidad_pokemon(scraggy, intimidacion).
+habilidad_pokemon(scraggy, nerviosismo).
+habilidad_pokemon(skorupi, corte_fuerte).
+habilidad_pokemon(drapion, batalla).
+habilidad_pokemon(litten, mar_llamas).
+habilidad_pokemon(torracat, mar_llamas).
+habilidad_pokemon(incineroar, mar_llamas).
+habilidad_pokemon(petilil, clorofila).
+habilidad_pokemon(lilligant, clorofila).
+habilidad_pokemon(zorua, ilusion).
+habilidad_pokemon(zoroark, ilusion).
+habilidad_pokemon(deino, cabeza_roca).
+habilidad_pokemon(zweilous, cabeza_roca).
+habilidad_pokemon(hydreigon, levitacion).
+habilidad_pokemon(skrelp, absorbeagua).
+habilidad_pokemon(tyrunt, mandibula_fuerte).
+habilidad_pokemon(tyrantrum, mandibula_fuerte).
+habilidad_pokemon(amaura, refrigerar).
+habilidad_pokemon(aurorus, refraccion).
+habilidad_pokemon(rowlet, espesura).
+habilidad_pokemon(dartrix, espesura).
+habilidad_pokemon(empoleon, torrente).
+habilidad_pokemon(piplup, torrente).
 habilidad_pokemon(turtwig, espesura).
 habilidad_pokemon(grotle, espesura).
 habilidad_pokemon(torterra, espesura).
@@ -3358,14 +3361,14 @@ generacion_inicial(octava, [grookey, scorbunny, sobble]).
 generacion_inicial(novena, [sprigatito, fuecoco, quaxly]).
 
 % trio de legendarios por generacion
-generacionLegendarios(primera, [articuno, zapdos, moltres, mewtwo]).
-generacionLegendarios(segunda, [raikou, entei, suicune, lugia, ho-oh]).
-generacionLegendarios(tercera, [latias, latios, kyogre, groudon, rayquaza, Regirock, Regice, Registeel]).
-generacionLegendarios(cuarta, [uxie, mesprit, azelf, dialga, palkia, heatran, regigigas, giratina, cresselia]).
-generacionLegendarios(quinta, [tornadus, thundurus, reshiram, zekrom, landorus, kyurem]).
-generacionLegendarios(sexta, [xerneas, yveltal, zygarde]).
-generacionLegendarios(septima, [solgaleo, lunala, necrozma]).
-generacionLegendarios(octava, [zacian, zamazenta, eternatus]).
+gen_legendarios(primera, [articuno, zapdos, moltres, mewtwo]).
+gen_legendarios(segunda, [raikou, entei, suicune, lugia, ho-oh]).
+gen_legendarios(tercera, [latias, latios, kyogre, groudon, rayquaza, regirock, regice, registeel]).
+gen_legendarios(cuarta, [uxie, mesprit, azelf, dialga, palkia, heatran, regigigas, giratina, cresselia]).
+gen_legendarios(quinta, [tornadus, thundurus, reshiram, zekrom, landorus, kyurem]).
+gen_legendarios(sexta, [xerneas, yveltal, zygarde]).
+gen_legendarios(septima, [solgaleo, lunala, necrozma]).
+gen_legendarios(octava, [zacian, zamazenta, eternatus]).
 
 % tipo_evolucion
 tipo_evolucion(lineal).
@@ -3464,7 +3467,7 @@ resistencia(Tipo1, Tipo2) :- \+ fortaleza(Tipo1, Tipo2), \+ debilidad(Tipo1, Tip
 % Clasificar naturalezas fuertes: aumentan algo y no son neutras
 naturaleza_fuerte(Nombre, Aumenta) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta \= neutra, Disminuye = neutra.
 
-% Clasificar naturalezas débiles: disminuyen algo y no son neutras
+% Clasificar naturalezas debiles: disminuyen algo y no son neutras
 naturaleza_debil(Nombre, Disminuye) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta = neutra, Disminuye \= neutra.
 
 % Clasificar naturalezas neutras: no aumentan ni disminuyen
