@@ -25,6 +25,9 @@ movimientos por tutor
 movimientos huevo
 movimientos espciales(unico por pokemon)
 movimiento Z
+movimiento z caracteristicos
+cristales Z
+cristales z especificos
 generacion y region
 Total de pokemones por generacion
 resistencias
@@ -47,6 +50,6 @@ inmune
 fortalezas
 tipo de evolucion
 evolucion por nivel
-mega evolucion
+mega evolucion y piedra correspondinte
 gigamax
 mmecanicas

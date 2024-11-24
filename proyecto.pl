@@ -1010,6 +1010,84 @@ movimiento_Especial(arrancar).
 movimiento_Especial(hoja_magica).
 
 % movimiento Z
+movimiento_z(helice_trepanadora).
+movimiento_z(hidrovortice_abisal).
+movimiento_z(guadana_sedosa).
+movimiento_z(dracoaliento_devastador).
+movimiento_z(gigavoltio_destructor).
+movimiento_z(presa_espectral).
+movimiento_z(hecatombe_pirica).
+movimiento_z(arrumaco_sideral).
+movimiento_z(crioaliento_despiadado).
+movimiento_z(rafaga_demoledora).
+movimiento_z(carrera_arrolladora).
+movimiento_z(megaton_floral).
+movimiento_z(disruptor_psiquico).
+movimiento_z(agujero_negro_aniquilador).
+movimiento_z(barrena_telurica).
+movimiento_z(diluvio_corrosivo).
+movimiento_z(picado_supersonico).
+
+% movimientos z compuesto
+movimiento_z_especial(pikachu, placaje_electrico, pikavoltio_letal).
+movimiento_z_especial(pikachu_gorra, rayo, gigarrayo_fulminante).
+movimiento_z_especial(raichu_alola, rayo, surfeo_galvanico).
+movimiento_z_especial(eevee, ultima_baza, novena_potencia).
+movimiento_z_especial(snorlax, gigaimpacto, arrojo_intempestivo).
+movimiento_z_especial(mew, psiquico, supernova_original).
+movimiento_z_especial(decidueye, puntada_sombria, aluvion_de_flechas_sombrias).
+movimiento_z_especial(incineroar, lariat_oscuro, hiperplancha_oscura).
+movimiento_z_especial(primarina, aria_burbuja, sinfonia_de_la_diva_marina).
+movimiento_z_especial(espiritus_guardianes, furia_natural, colera_del_guardian).
+movimiento_z_especial(marshadow, robasombra, constelacion_robaalmas).
+movimiento_z_especial(lycanroc, roca_afilada, tempestad_rocosa).
+movimiento_z_especial(mimikyu, carantona, somanta_amistosa).
+movimiento_z_especial(kommo_o, fragor_escamas, estruendo_implacable).
+movimiento_z_especial(solgaleo, meteoimpacto, embestida_solar).
+movimiento_z_especial(necrozma, meteoimpacto, embestida_solar).
+movimiento_z_especial(lunala, rayo_umbrio, deflagracion_lunar).
+movimiento_z_especial(necrozma, rayo_umbrio, deflagracion_lunar).
+movimiento_z_especial(necrozma, rayo_umbrio, fotodestruccion_apocaliptica).
+
+% cristales z
+cristal_z(normastal_z).
+cristal_z(pirostal_z).
+cristal_z(hidrostal_z).
+cristal_z(electrostal_z).
+cristal_z(fitostal_z).
+cristal_z(criostal_z).
+cristal_z(lizastal_z).
+cristal_z(toxistal_z).
+cristal_z(geostal_z).
+cristal_z(aerostal_z).
+cristal_z(psicostal_z).
+cristal_z(insectostal_z).
+cristal_z(litostal_z).
+cristal_z(espectrostal_z).
+cristal_z(dracostal_z).
+cristal_z(nictostal_z).
+cristal_z(metalostal_z).
+cristal_z(feeristal_z).
+
+% cristales especificos z
+cristal_z(pikastal_z).
+cristal_z(ash_pikastal_z).
+cristal_z(alo_raistal_z).
+cristal_z(eeveestal_z).
+cristal_z(snorlastal_z).
+cristal_z(mewstal_z).
+cristal_z(dueyestal_z).
+cristal_z(incinostal_z).
+cristal_z(primastal_z).
+cristal_z(tapistal_z).
+cristal_z(marshastal_z).
+cristal_z(kommostal_z).
+cristal_z(lycanrostal_z).
+cristal_z(solgaleostal_z).
+cristal_z(lunalastal_z).
+cristal_z(mimikyustal_z).
+cristal_z(ultranecrostal_z).
+
 
 % Generacion y region
 generacionRegion(primera, kanto).
@@ -3395,30 +3473,103 @@ evolucion_nivel(spearow, fearow, 20).
 evolucion_nivel(ekans, arbok, 22).
 evolucion_nivel(sandshrew, sandslash, 22).
 
-% Mega evolucion
-mega_evolucion(venasaur, megavenusaur).
-mega_evolucion(charizard, megacharizard_x).
-mega_evolucion(charizard, megacharizard_y).
-mega_evolucion(blastoise, mega_blastoise).
-mega_evolucion(beedrill, mega_beedrill).
-mega_evolucion(pidgeot, mega_pidgeot).
-mega_evolucion(pidgeot, mega_pidgeot).
-mega_evolucion(gengar, megagengar_x).
-mega_evolucion(gengar, megagengar_y).
-mega_evolucion(gyarados, mega_gyarados).
-mega_evolucion(gardevoir, mega_gardevoir).
-mega_evolucion(gardevoir, mega_gardevoir).
-mega_evolucion(gallade, mega_gallade).
-mega_evolucion(gallade, mega_gallade).
-mega_evolucion(mewtwo, mega_mewtwo).
-mega_evolucion(latias, mega_latias).
-mega_evolucion(latios, mega_latios).
-mega_evolucion(heracross, mega_heracross).
-mega_evolucion(gigalith, mega_gigalith).
-mega_evolucion(lucario, mega_lucario).
-mega_evolucion(rayquaza, mega_rayquaza).
-mega_evolucion(sableye, mega_sableye).
-mega_evolucion(lopunny, mega_lopunny).
+% Mega evolucion y piedra correspondiente
+megaevolucion(venusaur, megavenusaur).
+megaevolucion(charizard, megacharizard_x).
+megaevolucion(charizard, megacharizard_y).
+megaevolucion(blastoise, megablastoise).
+megaevolucion(beedrill, megabeedrill).
+megaevolucion(pidgeot, megapidgeot).
+megaevolucion(alakazam, megaalakazam).
+megaevolucion(slowbro, megaslowbro).
+megaevolucion(gengar, megagengar).
+megaevolucion(kangaskhan, megakangaskhan).
+megaevolucion(pinsir, megapinsir).
+megaevolucion(gyarados, megagyarados).
+megaevolucion(aerodactyl, megaaerodactyl).
+megaevolucion(mewtwo, megamewtwo_x).
+megaevolucion(mewtwo, megamewtwo_y).
+megaevolucion(ampharos, megaampharos).
+megaevolucion(steelix, megasteelix).
+megaevolucion(scizor, megascizor).
+megaevolucion(heracross, megaheracross).
+megaevolucion(houndoom, megahoundoom).
+megaevolucion(tyranitar, megatyranitar).
+megaevolucion(sceptile, megasceptile).
+megaevolucion(blaziken, megablaziken).
+megaevolucion(swampert, megaswampert).
+megaevolucion(gardevoir, megagardevoir).
+megaevolucion(mawile, megamawile).
+megaevolucion(aggron, megaaggron).
+megaevolucion(medicham, megamedicham).
+megaevolucion(manectric, megamanectric).
+megaevolucion(sharpedo, megasharpedo).
+megaevolucion(camerupt, megacamerupt).
+megaevolucion(altaria, megaaltaria).
+megaevolucion(banette, megabanette).
+megaevolucion(absol, megaabsol).
+megaevolucion(glalie, megaglalie).
+megaevolucion(salamence, megasalamence).
+megaevolucion(metagross, megametagross).
+megaevolucion(latias, megalatias).
+megaevolucion(latios, megalatios).
+megaevolucion(rayquaza, megarequaza).
+megaevolucion(lopunny, megalopunny).
+megaevolucion(garchomp, megagarchomp).
+megaevolucion(lucario, megalucario).
+megaevolucion(abomasnow, megaabomasnow).
+megaevolucion(gallade, megagallade).
+megaevolucion(audino, megaaudino).
+megaevolucion(diancie, megadiancie).
+
+% Piedras de mega evolucion
+mega_piedra(venusaurita).
+mega_piedra(charizardita_x).
+mega_piedra(charizardita_y).
+mega_piedra(blastoisita).
+mega_piedra(beedrillita).
+mega_piedra(pidgeotita).
+mega_piedra(alakazamita).
+mega_piedra(slowbronita).
+mega_piedra(gengarita).
+mega_piedra(kangaskhanita).
+mega_piedra(pinsirita).
+mega_piedra(gyaradosita).
+mega_piedra(aerodactylita).
+mega_piedra(mewtwoita_x).
+mega_piedra(mewtwoita_y).
+mega_piedra(ampharosita).
+mega_piedra(steelixita).
+mega_piedra(scizorita).
+mega_piedra(heracrossita).
+mega_piedra(houndoomita).
+mega_piedra(tyranitarita).
+mega_piedra(sceptilita).
+mega_piedra(blazikenita).
+mega_piedra(swampertita).
+mega_piedra(gardevoirita).
+mega_piedra(mawilita).
+mega_piedra(aggronita).
+mega_piedra(medichamita).
+mega_piedra(manectricita).
+mega_piedra(sharpedonita).
+mega_piedra(cameruptita).
+mega_piedra(altarianita).
+mega_piedra(banettita).
+mega_piedra(absolita).
+mega_piedra(glalieita).
+mega_piedra(salamencita).
+mega_piedra(metagrossita).
+mega_piedra(latiasita).
+mega_piedra(latiosita).
+mega_piedra(ninguna).
+mega_piedra(lopunnita).
+mega_piedra(garchompita).
+mega_piedra(lucarita).
+mega_piedra(abomasnowita).
+mega_piedra(galladita).
+mega_piedra(audinita).
+mega_piedra(diancita).
 
 % gigamax
 gigamax(venasaur, venusaur_gigamax).
@@ -3439,10 +3590,10 @@ gigamax(marowak, marowa_alola).
 gigamax(marowak, marowa_gigamax).
 
 % mecanicas
-mecanica(megaEvolucion)
-mecanica(movimientoZ)
-mecanica(dinamax)
-mecanica(teracristalizacion)
+mecanica(megaEvolucion).
+mecanica(movimientoZ).
+mecanica(dinamax).
+mecanica(teracristalizacion).
 
 % Consultas generales
 % Consultas de tipo
