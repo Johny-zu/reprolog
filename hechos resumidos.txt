@@ -1,14 +1,30 @@
 Hechos en uso actualmente
 tipo
+genero
+especie
+peso
+altura
+color
+varicolor
+figura
+forma
 habitat
 grupo huevo
 regiones
-Debilidades
-inmunidades
+Generacion y region
+total de pokemon por region
+resistencia
+debilidad
+muy_eficaz
+poco_eficaz
+inmune
 fortalezas
 habilidades
 naturalezas
 pokemon
+generacion_inicial
+generacionLegendarios
+
 
 
 evolucion_nivel

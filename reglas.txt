@@ -2,14 +2,6 @@
 consult(proyecto).
 
 % Consultas generales
-% Consultas de tipo
-tipo_pokemon(Tipo) :- tipo(Tipo).
-
-% Habitat
-habitat_pokemon(Habitat) :- habitat(Habitat).
-
-% Grupo huevo
-clase_huevo(Thuevo) :- grupo_huevo(Thuevo).
 
 % regiones
 regiones(Region) :- region(Region).
