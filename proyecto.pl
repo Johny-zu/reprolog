@@ -531,10 +531,59 @@ figura(18).
 figura(19).
 figura(20).
 
-% forma_regional 
-forma_regional(gigamax).
-forma_regional(alola).
-forma_regional(galar).
+% forma regiona de alola
+forma_regional(rattata, [siniestro, normal], alola).
+forma_regional(raticate, [siniestro, normal], alola).
+forma_regional(raichu, [electrico, psiquico], alola).
+forma_regional(sandshrew, [hielo, acero], alola).
+forma_regional(sandslash, [hielo, acero], alola).
+forma_regional(vulpix, [hielo], alola).
+forma_regional(ninetales, [hielo, hada], alola).
+forma_regional(diglett, [tierra, acero], alola).
+forma_regional(dugtrio, [tierra, acero], alola).
+forma_regional(meowth, [siniestro], alola).
+forma_regional(persian, [siniestro], alola).
+forma_regional(geodude, [roca, electrico], alola).
+forma_regional(graveler, [roca, electrico], alola).
+forma_regional(golem, [roca, electrico], alola).
+forma_regional(grimer, [veneno, siniestro], alola).
+forma_regional(muk, [veneno, siniestro], alola).
+forma_regional(exeggutor, [planta, dragon], alola).
+forma_regional(marowak, [fuego, fantasma], alola).
+
+% forma regional de galar
+forma_regional(zigzagoon, [siniestro, normal], galar).
+forma_regional(linoone, [siniestro, normal], galar).
+forma_regional(darumaka, [hielo], galar).
+forma_regional(darmanitan, [hielo], galar).
+forma_regional(darmanitan, [hielo, fuego], galar). % Modo Zen
+forma_regional(yamask, [tierra, fantasma], galar).
+forma_regional(stunfisk, [tierra, acero], galar).
+
+% forma regional de hisui
+forma_regional(voltorb, [planta, electrico], hisui).
+forma_regional(electrode, [planta, electrico], hisui).
+forma_regional(growlithe, [fuego, roca], hisui).
+forma_regional(arcanine, [fuego, roca], hisui).
+forma_regional(qwilfish, [siniestro, veneno], hisui).
+forma_regional(sneasel, [lucha, veneno], hisui).
+forma_regional(typhlosion, [fuego, fantasma], hisui).
+forma_regional(samurott, [agua, siniestro], hisui).
+forma_regional(lilligant, [planta, lucha], hisui).
+forma_regional(zorua, [normal, fantasma], hisui).
+forma_regional(zoroark, [normal, fantasma], hisui).
+forma_regional(braviary, [psiquico, volador], hisui).
+forma_regional(sliggoo, [acero, dragon], hisui).
+forma_regional(goodra, [acero, dragon], hisui).
+forma_regional(avalugg, [hielo, roca], hisui).
+forma_regional(decidueye, [planta, lucha], hisui).
+
+% forma regional de paldea
+forma_regional(wooper, [veneno, tierra], paldea).
+forma_regional(quagsire, [veneno, tierra], paldea).
+forma_regional(tauros, [lucha], paldea).
+
+
 
 % Grupos de huevo
 grupo_huevo(monstruo).
@@ -3649,8 +3698,8 @@ tipo_evolucion(doble).
 tipo_evolucion(intercambio).
 
 % Evolucion por nivel
-evolucion_nivel(bulbasaur, venusaur, 16).
-evolucion_nivel(venusaur, venusaur, 32).
+evolucion_nivel(bulbasaur, ivysaur, 16).
+evolucion_nivel(ivysaur, venusaur, 32).
 evolucion_nivel(charmander, charmeleon, 16).
 evolucion_nivel(charmeleon, charizard, 36).
 evolucion_nivel(squirtle, wartortle, 16).
@@ -3665,6 +3714,427 @@ evolucion_nivel(rattata, raticate, 20).
 evolucion_nivel(spearow, fearow, 20).
 evolucion_nivel(ekans, arbok, 22).
 evolucion_nivel(sandshrew, sandslash, 22).
+evolucion_nivel(nidoranhembra, nidorina, 16).
+evolucion_nivel(nidorina, nidoqueen, 36).
+evolucion_nivel(nidoranmacho, nidorino, 16).
+evolucion_nivel(nidorino, nidoking, 36).
+evolucion_nivel(clefairy, clefable, 36).
+evolucion_nivel(oddish, gloom, 21).
+evolucion_nivel(gloom, vileplume, 36).
+evolucion_nivel(paras, parasect, 24).
+evolucion_nivel(venonat, venomoth, 31).
+evolucion_nivel(diglett, dugtrio, 26).
+evolucion_nivel(meowth, persian, 28).
+evolucion_nivel(psyduck, golduck, 33).
+evolucion_nivel(mankey, primeape, 28).
+evolucion_nivel(growlithe, arcanine, 36).
+evolucion_nivel(poliwag, poliwhirl, 25).
+evolucion_nivel(poliwhirl, poliwrath, 36).
+evolucion_nivel(abra, kadabra, 16).
+evolucion_nivel(kadabra, alakazam, 36).
+evolucion_nivel(machop, machoke, 28).
+evolucion_nivel(machoke, machamp, 36).
+evolucion_nivel(bellsprout, weepinbell, 21).
+evolucion_nivel(weepinbell, victreebel, 36).
+evolucion_nivel(tentacool, tentacruel, 30).
+evolucion_nivel(geodude, graveler, 25).
+evolucion_nivel(graveler, golem, 36).
+evolucion_nivel(ponyta, rapidash, 40).
+evolucion_nivel(slowpoke, slowbro, 37).
+evolucion_nivel(magnemite, magneton, 30).
+evolucion_nivel(doduo, dodrio, 31).
+evolucion_nivel(seel, dewgong, 34).
+evolucion_nivel(grimer, muk, 38).
+evolucion_nivel(shellder, cloyster, 36).
+evolucion_nivel(gastly, haunter, 25).
+evolucion_nivel(haunter, gengar, 36).
+evolucion_nivel(onix, steelix, 36).
+evolucion_nivel(drowzee, hypno, 26).
+evolucion_nivel(krabby, kingler, 28).
+evolucion_nivel(voltorb, electrode, 30).
+evolucion_nivel(exeggcute, exeggutor, 36).
+evolucion_nivel(cubone, marowak, 28).
+evolucion_nivel(hitmonlee, hitmonchan, 36).
+evolucion_nivel(lickitung, lickilicky, 36).
+evolucion_nivel(koffing, weezing, 35).
+evolucion_nivel(rhyhorn, rhydon, 42).
+evolucion_nivel(horsea, seadra, 32).
+evolucion_nivel(goldeen, seaking, 33).
+evolucion_nivel(staryu, starmie, 36).
+evolucion_nivel(magikarp, gyarados, 20).
+evolucion_nivel(lapras, lapras, 36).
+evolucion_nivel(ditto, ditto, 36).
+evolucion_nivel(eevee, vaporeon, 36).
+evolucion_nivel(porygon, porygon2, 36).
+evolucion_nivel(omanyte, omastar, 40).
+evolucion_nivel(kabuto, kabutops, 40).
+evolucion_nivel(dratini, dragonair, 30).
+evolucion_nivel(dragonair, dragonite, 55).
+
+% segunda generacion
+evolucion_nivel(chikorita, bayleef, 16).
+evolucion_nivel(bayleef, meganium, 32).
+evolucion_nivel(cyndaquil, quilava, 14).
+evolucion_nivel(quilava, typhlosion, 36).
+evolucion_nivel(totodile, croconaw, 18).
+evolucion_nivel(croconaw, feraligatr, 30).
+evolucion_nivel(sentret, furret, 15).
+evolucion_nivel(hoothoot, noctowl, 20).
+evolucion_nivel(ledyba, ledian, 18).
+evolucion_nivel(spinarak, ariados, 22).
+evolucion_nivel(chinchou, lanturn, 27).
+evolucion_nivel(togepi, togetic, 20).
+evolucion_nivel(natu, xatu, 25).
+evolucion_nivel(mareep, flaaffy, 15).
+evolucion_nivel(flaaffy, ampharos, 30).
+evolucion_nivel(marill, azumarill, 18).
+evolucion_nivel(hoppip, skiploom, 18).
+evolucion_nivel(skiploom, jumpluff, 27).
+evolucion_nivel(sunkern, sunflora, 30).
+evolucion_nivel(wooper, quagsire, 20).
+evolucion_nivel(espeon, umbreon, 20). % por amistad diurna/nocturna
+evolucion_nivel(murkrow, honchkrow, 25). % si se usa Piedra Noche
+evolucion_nivel(misdreavus, mismagius, 25). % si se usa Piedra Noche
+evolucion_nivel(yanma, yanmega, 33).
+evolucion_nivel(phanpy, donphan, 25).
+evolucion_nivel(porygon2, porygon-z, 35). % con datos actualizados
+
+% tercera generacion
+evolucion_nivel(treecko, grovyle, 16).
+evolucion_nivel(grovyle, sceptile, 36).
+evolucion_nivel(torchic, combusken, 16).
+evolucion_nivel(combusken, blaziken, 36).
+evolucion_nivel(mudkip, marshtomp, 16).
+evolucion_nivel(marshtomp, swampert, 36).
+evolucion_nivel(poochyena, mightyena, 18).
+evolucion_nivel(zigzagoon, linoone, 20).
+evolucion_nivel(wurmple, silcoon, 7).
+evolucion_nivel(silcoon, beautifly, 10).
+evolucion_nivel(wurmple, cascoon, 7).
+evolucion_nivel(cascoon, dustox, 10).
+evolucion_nivel(lotad, lombre, 14).
+evolucion_nivel(seedot, nuzleaf, 14).
+evolucion_nivel(taillow, swellow, 22).
+evolucion_nivel(shroomish, breloom, 23).
+evolucion_nivel(wingull, pelipper, 25).
+evolucion_nivel(slakoth, vigoroth, 18).
+evolucion_nivel(vigoroth, slaking, 36).
+evolucion_nivel(nincada, ninjask, 20).
+evolucion_nivel(whismur, loudred, 20).
+evolucion_nivel(loudred, exploud, 40).
+evolucion_nivel(makuhita, hariyama, 24).
+evolucion_nivel(azurill, marill, 18).
+evolucion_nivel(skitty, delcatty, 30).
+evolucion_nivel(aron, lairon, 32).
+evolucion_nivel(lairon, aggron, 42).
+evolucion_nivel(meditite, medicham, 37).
+evolucion_nivel(electrike, manectric, 26).
+evolucion_nivel(numel, camerupt, 33).
+evolucion_nivel(spheal, sealeo, 32).
+evolucion_nivel(sealeo, walrein, 44).
+evolucion_nivel(bagon, shelgon, 30).
+evolucion_nivel(shelgon, salamence, 50).
+evolucion_nivel(beldum, metang, 20).
+evolucion_nivel(metang, metagross, 45).
+
+% cuarta generacion
+evolucion_nivel(turtwig, grotle, 18).
+evolucion_nivel(grotle, torterra, 32).
+evolucion_nivel(chimchar, monferno, 14).
+evolucion_nivel(monferno, infernape, 36).
+evolucion_nivel(piplup, prinplup, 16).
+evolucion_nivel(prinplup, empoleon, 36).
+evolucion_nivel(starly, staravia, 14).
+evolucion_nivel(staravia, staraptor, 34).
+evolucion_nivel(bidoof, bibarel, 15).
+evolucion_nivel(shinx, luxio, 15).
+evolucion_nivel(luxio, luxray, 30).
+evolucion_nivel(cranidos, rampardos, 30).
+evolucion_nivel(shieldon, bastiodon, 30).
+evolucion_nivel(buizel, floatzel, 26).
+evolucion_nivel(shellos, gastrodon, 30).
+evolucion_nivel(drifloon, drifblim, 28).
+evolucion_nivel(buneary, lopunny, 35).
+evolucion_nivel(glameow, purugly, 38).
+evolucion_nivel(bronzor, bronzong, 33).
+evolucion_nivel(bonsly, sudowoodo, 17).
+evolucion_nivel(mime_jr, mr_mime, 15).
+evolucion_nivel(happiny, chansey, 20).
+evolucion_nivel(gible, gabite, 24).
+evolucion_nivel(gabite, garchomp, 48).
+evolucion_nivel(riolu, lucario, 25).
+evolucion_nivel(snover, abomasnow, 40).
+
+% quinta generacion
+evolucion_nivel(snipell, servine, 17).
+evolucion_nivel(servine, serperior, 36).
+evolucion_nivel(tepig, pignite, 17).
+evolucion_nivel(pignite, emboar, 36).
+evolucion_nivel(oshawott, dewott, 17).
+evolucion_nivel(dewott, samurott, 36).
+evolucion_nivel(patrat, watchog, 20).
+evolucion_nivel(lillipup, herdier, 16).
+evolucion_nivel(herdier, stoutland, 32).
+evolucion_nivel(purrloin, liepard, 20).
+evolucion_nivel(pansage, simisage, 32).
+evolucion_nivel(pansear, simisear, 32).
+evolucion_nivel(panpour, simipour, 32).
+evolucion_nivel(munna, musharna, 24).
+evolucion_nivel(pidove, tranquill, 21).
+evolucion_nivel(tranquill, unfezant, 32).
+evolucion_nivel(blitzle, zebstrika, 27).
+evolucion_nivel(roggenrola, boldore, 25).
+evolucion_nivel(timburr, conkeldurr, 32).
+evolucion_nivel(tympole, palpitoad, 25).
+evolucion_nivel(palpitoad, seismitoad, 36).
+evolucion_nivel(sewaddle, swadloon, 20).
+evolucion_nivel(swadloon, leavanny, 32).
+evolucion_nivel(venipede, whirlipede, 22).
+evolucion_nivel(whirlipede, scolipede, 30).
+evolucion_nivel(cottonee, whimsicott, 20).
+evolucion_nivel(petilil, lilligant, 20).
+evolucion_nivel(sandile, krokorok, 29).
+evolucion_nivel(krokorok, krookodile, 40).
+evolucion_nivel(darumaka, darmanitan, 35).
+evolucion_nivel(dwebble, crustle, 34).
+evolucion_nivel(scraggy, scrafty, 39).
+evolucion_nivel(yamask, cofagrigus, 34).
+evolucion_nivel(tirtouga, carracosta, 37).
+evolucion_nivel(archen, archeops, 37).
+evolucion_nivel(trubbish, garbodor, 36).
+evolucion_nivel(zorua, zoroark, 30).
+evolucion_nivel(minccino, cinccino, 32).
+evolucion_nivel(gothita, gothorita, 32).
+evolucion_nivel(gothorita, gothitelle, 41).
+evolucion_nivel(solosis, duosion, 32).
+evolucion_nivel(duosion, reuniclus, 41).
+evolucion_nivel(ducklett, swanna, 35).
+evolucion_nivel(vanillite, vanillish, 35).
+evolucion_nivel(vanillish, vanilluxe, 47).
+evolucion_nivel(deerling, sawsbuck, 34).
+evolucion_nivel(foongus, amoonguss, 39).
+evolucion_nivel(frillish, jellicent, 40).
+evolucion_nivel(joltik, galvantula, 36).
+evolucion_nivel(ferroseed, ferrothorn, 40).
+evolucion_nivel(klink, klang, 38).
+evolucion_nivel(klang, klinklang, 49).
+evolucion_nivel(litwick, lampent, 41).
+evolucion_nivel(lampent, chandelure, 53).
+evolucion_nivel(axew, fraxure, 38).
+evolucion_nivel(fraxure, haxorus, 48).
+evolucion_nivel(cubchoo, beartic, 37).
+evolucion_nivel(rufflet, braviary, 54).
+evolucion_nivel(vullaby, mandibuzz, 54).
+evolucion_nivel(deino, zweilous, 50).
+evolucion_nivel(zweilous, hydreigon, 64).
+
+% sexta generacion
+evolucion_nivel(chespin, quilladin, 16).
+evolucion_nivel(quilladin, chesnaught, 36).
+evolucion_nivel(fennekin, braixen, 16).
+evolucion_nivel(braixen, delphox, 36).
+evolucion_nivel(froakie, frogadier, 16).
+evolucion_nivel(frogadier, greninja, 36).
+evolucion_nivel(bunnelby, diggersby, 20).
+evolucion_nivel(fletchling, fletchinder, 17).
+evolucion_nivel(fletchinder, talonflame, 35).
+evolucion_nivel(scatterbug, spewpa, 9).
+evolucion_nivel(spewpa, vivillon, 12).
+evolucion_nivel(litleo, pyroar, 35).
+evolucion_nivel(flabébé, floette, 19).
+evolucion_nivel(floette, florges, 50).
+evolucion_nivel(skiddo, gogoat, 32).
+evolucion_nivel(pancham, pangoro, 32).
+evolucion_nivel(espurr, meowstic, 25).
+evolucion_nivel(honedge, doublade, 35).
+evolucion_nivel(doublade, aegislash, 50).
+evolucion_nivel(inkay, malamar, 30).
+evolucion_nivel(binacle, barbaracle, 39).
+evolucion_nivel(helioptile, heliolisk, 39).
+evolucion_nivel(tyrunt, tyrantrum, 39).
+evolucion_nivel(amaura, aurorus, 39).
+evolucion_nivel(goomy, sliggoo, 40).
+evolucion_nivel(sliggoo, goodra, 50).
+evolucion_nivel(phantump, trevenant, 40).
+evolucion_nivel(pumpkaboo, gourgeist, 40).
+evolucion_nivel(bergmite, avalugg, 37).
+evolucion_nivel(noibat, noivern, 48).
+
+% septima generacion
+evolucion_nivel(rowlet, dartrix, 17).
+evolucion_nivel(dartrix, decidueye, 34).
+evolucion_nivel(litten, torracat, 17).
+evolucion_nivel(torracat, incineroar, 34).
+evolucion_nivel(popplio, brionne, 17).
+evolucion_nivel(brionne, primarina, 34).
+evolucion_nivel(pikipek, trumbeak, 14).
+evolucion_nivel(trumbeak, toucannon, 28).
+evolucion_nivel(yungoos, gumshoos, 20).
+evolucion_nivel(grubbin, charjabug, 20).
+evolucion_nivel(charjabug, vikavolt, 50).
+evolucion_nivel(crabrawler, crabominable, 40).
+evolucion_nivel(cutiefly, ribombee, 25).
+evolucion_nivel(rockruff, lycanroc, 25).
+evolucion_nivel(mareanie, toxapex, 38).
+evolucion_nivel(mudbray, mudsdale, 30).
+evolucion_nivel(dewpider, araquanid, 22).
+evolucion_nivel(fomantis, lurantis, 34).
+evolucion_nivel(morelull, shiinotic, 24).
+evolucion_nivel(stufful, bewear, 27).
+evolucion_nivel(bounsweet, steenee, 18).
+evolucion_nivel(steenee, tsareena, 29).
+evolucion_nivel(wimpod, golisopod, 30).
+evolucion_nivel(salandit, salazzle, 33).
+evolucion_nivel(jangmo_o, hakamo_o, 35).
+evolucion_nivel(hakamo_o, kommo_o, 45).
+
+% octava generacion
+evolucion_nivel(grookey, thwackey, 16).
+evolucion_nivel(thwackey, rillaboom, 35).
+evolucion_nivel(scorbunny, raboot, 16).
+evolucion_nivel(raboot, cinderace, 35).
+evolucion_nivel(sobble, drizzile, 16).
+evolucion_nivel(drizzile, inteleon, 35).
+evolucion_nivel(skwovet, greedent, 24).
+evolucion_nivel(rookidee, corvisquire, 18).
+evolucion_nivel(corvisquire, corviknight, 38).
+evolucion_nivel(blipbug, dottler, 10).
+evolucion_nivel(dottler, orbeetle, 30).
+evolucion_nivel(nickit, thievul, 18).
+evolucion_nivel(gossifleur, eldegoss, 20).
+evolucion_nivel(wooloo, dubwool, 24).
+evolucion_nivel(chewtle, drednaw, 22).
+evolucion_nivel(yamper, boltund, 25).
+evolucion_nivel(rolycoly, carkol, 18).
+evolucion_nivel(carkol, coalossal, 34).
+evolucion_nivel(applin, flapple, 30).
+evolucion_nivel(applin, appletun, 30).
+evolucion_nivel(silicobra, sandaconda, 36).
+evolucion_nivel(cramorant, cramorant, 36).
+evolucion_nivel(arrokuda, barraskewda, 26).
+evolucion_nivel(toxel, toxtricity, 30).
+evolucion_nivel(sizzlipede, centiskorch, 28).
+evolucion_nivel(clobbopus, grapploct, 35).
+evolucion_nivel(sinistea, polteageist, 30).
+evolucion_nivel(hatenna, hatrim, 32).
+evolucion_nivel(hatrim, hatterene, 42).
+evolucion_nivel(impidimp, morgrem, 32).
+evolucion_nivel(morgrem, grimmsnarl, 42).
+evolucion_nivel(milcery, alcremie, 30).
+evolucion_nivel(falinks, falinks, 36).
+evolucion_nivel(pincurchin, pincurchin, 30).
+evolucion_nivel(snom, frosmoth, 30).
+evolucion_nivel(cufant, copperajah, 34).
+evolucion_nivel(dreepy, drakloa, 50).
+evolucion_nivel(drakloa, dragapult, 60).
+
+% novena generacion
+evolucion_nivel(sprigatito, floragato, 16).
+evolucion_nivel(floragato, meowscarada, 36).
+evolucion_nivel(fuecoco, crocalor, 16).
+evolucion_nivel(crocalor, skeledirge, 36).
+evolucion_nivel(quaxly, quaxwell, 16).
+evolucion_nivel(quaxwell, quaquaval, 36).
+evolucion_nivel(lechonk, oinkologne, 18).
+evolucion_nivel(tarountula, spidops, 15).
+evolucion_nivel(nymble, lokix, 24).
+evolucion_nivel(pawmi, pawmo, 18).
+evolucion_nivel(tandemaus, maushold, 25).
+evolucion_nivel(fidough, dachsbun, 26).
+evolucion_nivel(smoliv, dolliv, 25).
+evolucion_nivel(dolliv, arboliva, 35).
+evolucion_nivel(nacli, naclstack, 24).
+evolucion_nivel(naclstack, garganacl, 38).
+evolucion_nivel(wattrel, kilowattrel, 25).
+evolucion_nivel(maschiff, mabosstiff, 30).
+evolucion_nivel(shroodle, grafaiai, 28).
+evolucion_nivel(toedscool, toedscruel, 30).
+evolucion_nivel(flittle, espathra, 35).
+evolucion_nivel(tinkatink, tinkatuff, 24).
+evolucion_nivel(tinkatuff, tinkaton, 38).
+evolucion_nivel(wiglett, wugtrio, 26).
+evolucion_nivel(varoom, revavroom, 40).
+evolucion_nivel(glimmet, glimmora, 35).
+evolucion_nivel(greavard, houndstone, 30).
+evolucion_nivel(frigaribax, arctibax, 38).
+evolucion_nivel(arctibax, baxcalibur, 55).
+
+% evolucion por noche
+evolucion_noche(rattata_alola, raticate_alola).
+evolucion_noche(cubone, cubone_alola).
+evolucion_noche(eevee, umbreon).
+evolucion_noche(gligar, gliscor).
+evolucion_noche(sneasel, weavile).
+evolucion_noche(sneasel_hisui, sneasler).
+evolucion_noche(ursaring, ursaluna).
+evolucion_noche(linoone_galar, linoone_galar).
+evolucion_noche(chingling, chimecho).
+evolucion_noche(milcery, alcremie).
+
+
+% evolucion por dia
+evolucion_dia(rockruff, lycanroc_noche).
+evolucion_dia(buduw, roselia).
+evolucion_dia(rockruff, lycanroc_dia).
+evolucion_dia(happiny, chansey).
+evolucion_dia(riolu, lucario).
+evolucion_dia(tyrunt, tyrantrum).
+evolucion_dia(amaura, aurorus).
+evolucion_dia(yungoos, gumshoos).
+evolucion_dia(fomantis, lurantis).
+evolucion_dia(milcery, alcremie).
+
+% evolucion por tarde
+evolucion_tarde(rockruff, lycanroc_tarde).
+evolucion_tarde(milcery, alcremie).
+
+% evolucion por intercambio
+evolucion_por_intercambio(cadabra, alakazam).
+evolucion_por_intercambio(machoke, machamp).
+evolucion_por_intercambio(graveler, golem).
+evolucion_por_intercambio(haunter, gengar).
+evolucion_por_intercambio(boldore, gigalith).
+evolucion_por_intercambio(gurdurr, conkeldurr).
+evolucion_por_intercambio(phantump, trevenant).
+evolucion_por_intercambio(pumpkaboo, gourgeist).
+
+% evolucion por intercambio con objeto
+evolucion_por_intercambio_objeto(poliwhirl, politoad, roca_del_rey).
+evolucion_por_intercambio_objeto(slowpoke, slowking, roca_delrey).
+evolucion_por_intercambio_objeto(onix, steelix, revestimiento_metalico).
+evolucion_por_intercambio_objeto(scizor, scyther, revestimiento_metalico).
+evolucion_por_intercambio_objeto(seadra, kingdra, escama_dragon).
+evolucion_por_intercambio_objeto(porygon, porygon2, mejora).
+evolucion_por_intercambio_objeto(clamperl, gorebyss, diente_marino).
+evolucion_por_intercambio_objeto(clamperl, huntail, escama_marina).
+evolucion_por_intercambio_objeto(dusknoir, dusclops, tela_terrible).
+evolucion_por_intercambio_objeto(electabuzz, electivire, electrizador).
+evolucion_por_intercambio_objeto(magmar, magmortar, magmatizador).
+evolucion_por_intercambio_objeto(rhydon, rhyperior, protector).
+evolucion_por_intercambio_objeto(porygon2, porygon-z, disco_extrano).
+evolucion_por_intercambio_objeto(spritzee, aromatisse, saquito_fragante).
+
+% evolucion por amistad
+evolucion_por_amistad(meowth_alola, persion_alola).
+evolucion_por_amistad(golbat, crobat).
+evolucion_por_amistad(chansey, blissey).
+evolucion_por_amistad(eevee, espeon).
+evolucion_por_amistad(eevee, umbreon).
+evolucion_por_amistad(eevee, sylveon).
+evolucion_por_amistad(pichu, pikachu).
+evolucion_por_amistad(cleffa, clefairy).
+evolucion_por_amistad(igglybuff, jigglypuff).
+evolucion_por_amistad(togepi, togetic).
+evolucion_por_amistad(azurill, marill).
+evolucion_por_amistad(budew, roselia).
+evolucion_por_amistad(buneary, lopunny).
+evolucion_por_amistad(chingling, chimecho).
+evolucion_por_amistad(munchlax, snorlax).
+evolucion_por_amistad(riolu, lucario).
+evolucion_por_amistad(woobat, swoobat).
+evolucion_por_amistad(swadloon, leavanny).
+evolucion_por_amistad(codigo_cero, silvally).
+evolucion_por_amistad(snoom, frosmoth).
 
 % Mega evolucion y piedra correspondiente
 megaevolucion(venusaur, megavenusaur).
@@ -3768,19 +4238,30 @@ mega_piedra(diancita).
 gigamax(venasaur, venusaur_gigamax).
 gigamax(charizard, charizard_gigamax).
 gigamax(blastoise, blastoise_gigamax).
-gigamax(butterfree, giga_butterfree).
 gigamax(butterfree, butterfree_gigamax).
-gigamax(rattata, rattata_alola).
 gigamax(pikachu, pikachu_gigamax).
-gigamax(raichu, raichu_alola).
 gigamax(meowth, meowth_gigamax).
+gigamax(machamp, machamp_gigamax).
 gigamax(gengar, gengar_gigamaz).
+gigamax(kingler, kingler_gigamax).
+gigamax(lapras, lapras_gigamax).
 gigamax(evee, evee_gigamax).
 gigamax(snorlax, snorlax_gigamax).
+gigamax(garbodor, garbodor_gigamax).
+gigamax(melmetal, melmetal_gigamax).
+gigamax(corviknight, corviknight_gigamax).
+gigamax(coalossal, coalossal_gigamax).
 gigamax(flapple, flapple_gigamax).
 gigamax(appletun, appletun_gigamax).
-gigamax(marowak, marowa_alola).
-gigamax(marowak, marowa_gigamax).
+gigamax(sandaconda, sandaconda_gigamax).
+gigamax(toxtricity, toxtricity_gigamax).
+gigamax(centiskorch, centiskorch_gigamax).
+gigamax(hatterene, hatterene_gigamax).
+gigamax(grimmsnarl, grimmsnarl_gigamax).
+gigamax(alcremie, alcremie_gigamax).
+gigamax(copperajah, copperajah_gigamax).
+gigamax(duraludon, duraludon_gigamax).
+gigamax(urshifu, urshifu_gigamax).
 
 % mecanicas
 mecanica(megaEvolucion).

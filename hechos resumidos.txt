@@ -12,7 +12,8 @@ color
 un solo color
 varicolor
 figura
-forma regional
+forma regional regiones
+forma_regional pokemon
 grupo huevo
 ratio de captura
 solo un genero
@@ -53,6 +54,12 @@ inmune
 fortalezas
 tipo de evolucion
 evolucion por nivel
+evolucion por noche
+evolucion por dia
+evolucion por tarde
+evolucion por intercambio
+evolucion por intercambio y objeto
+evolucion por amistad
 mega evolucion y piedra correspondinte
 gigamax
 mmecanicas
