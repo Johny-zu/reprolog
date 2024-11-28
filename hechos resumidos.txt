@@ -1,10 +1,11 @@
 Hechos en uso actualmente
 Tipos de pokemon
+categorias
 genero
-especie
-solo machos
-solo hembras
+solo macho
+solo hembra
 sin genero
+especie
 habitat
 peso
 altura
@@ -12,15 +13,20 @@ color
 un solo color
 varicolor
 figura
-forma regional regiones
-forma_regional pokemon
+forma regional
+forma regional alola
+forma regional galar
+forma regional hisui
+forma regional paldea
 grupo huevo
+doble grupo huevo
 ratio de captura
-solo un genero
 porcentaje de genero
 distincion por genero
 amistad base
 pasos para eclosionar un huevo
+puntos de experiencia 
+amistad base
 regiones
 objetos equipables
 movimientos por nivel
@@ -29,37 +35,35 @@ movimientos por tutor
 movimientos huevo
 movimientos espciales(unico por pokemon)
 movimiento Z
-movimiento z caracteristicos
+movimiento z compuesto
 cristales Z
 cristales z especificos
 generacion y region
 Total de pokemones por generacion
-resistencias
-debilidades
-eficaz x2(muy eficaz)
+resistente
+eficaz
+muy_eficaz
 poco eficaz
 inmune
 habilidad
-promedio por stat
-porcentaje de captura por genero 
-regiones
-objetos equipables
-Generacion y region
-total de pokemon por region
-resistencia
-debilidad
-muy_eficaz
-poco_eficaz
-inmune
-fortalezas
-tipo de evolucion
+naturalezas
+pokemon
+habilidad_pokemon
+Habilidad oculta
+habitad_pokemon
+pokemon_iniciales
+pokemon legendarios
+pokemon singulares
+tipo evolucion
 evolucion por nivel
-evolucion por noche
+evolucion noche 
 evolucion por dia
 evolucion por tarde
 evolucion por intercambio
-evolucion por intercambio y objeto
+evolucion por intercambio con objeto
 evolucion por amistad
-mega evolucion y piedra correspondinte
+Mega evolucion y piedra
+mega piedra
 gigamax
-mmecanicas
+mecanicas
+
