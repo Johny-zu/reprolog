@@ -690,6 +690,7 @@ ratiocaptura(225).
 ratiocaptura(235).
 ratiocaptura(255).
 
+% stat promdeio
 stats_promedio(195).
 stats_promedio(200).
 stats_promedio(205).
@@ -942,18 +943,6 @@ puntosExp(147).
 puntosExp(239).
 puntosExp(60).
 puntosExp(168).
-
-% abistad base
-amistadBase(20).
-amistadBase(30).
-amistadBase(35).
-amistadBase(40).
-amistadBase(50).
-amistadBase(60).
-amistadBase(70).
-amistadBase(80).
-amistadBase(90).
-amistadBase(100).
 
 % regiones
 region(kanto).
@@ -1443,7 +1432,7 @@ movimiento_z(barrena_telurica).
 movimiento_z(diluvio_corrosivo).
 movimiento_z(picado_supersonico).
 
-% movimientos z compuesto
+% movimiento z compuesto
 movimiento_z_especial(pikachu, placaje_electrico, pikavoltio_letal).
 movimiento_z_especial(pikachu_gorra, rayo, gigarrayo_fulminante).
 movimiento_z_especial(raichu_alola, rayo, surfeo_galvanico).
@@ -1485,23 +1474,23 @@ cristal_z(metalostal_z).
 cristal_z(feeristal_z).
 
 % cristales especificos z
-cristal_z(pikastal_z).
-cristal_z(ash_pikastal_z).
-cristal_z(alo_raistal_z).
-cristal_z(eeveestal_z).
-cristal_z(snorlastal_z).
-cristal_z(mewstal_z).
-cristal_z(dueyestal_z).
-cristal_z(incinostal_z).
-cristal_z(primastal_z).
-cristal_z(tapistal_z).
-cristal_z(marshastal_z).
-cristal_z(kommostal_z).
-cristal_z(lycanrostal_z).
-cristal_z(solgaleostal_z).
-cristal_z(lunalastal_z).
-cristal_z(mimikyustal_z).
-cristal_z(ultranecrostal_z).
+cristal_z_especifico(pikastal_z).
+cristal_z_especifico(ash_pikastal_z).
+cristal_z_especifico(alo_raistal_z).
+cristal_z_especifico(eeveestal_z).
+cristal_z_especifico(snorlastal_z).
+cristal_z_especifico(mewstal_z).
+cristal_z_especifico(dueyestal_z).
+cristal_z_especifico(incinostal_z).
+cristal_z_especifico(primastal_z).
+cristal_z_especifico(tapistal_z).
+cristal_z_especifico(marshastal_z).
+cristal_z_especifico(kommostal_z).
+cristal_z_especifico(lycanrostal_z).
+cristal_z_especifico(solgaleostal_z).
+cristal_z_especifico(lunalastal_z).
+cristal_z_especifico(mimikyustal_z).
+cristal_z_especifico(ultranecrostal_z).
 
 
 % generacion y region
@@ -4535,6 +4524,77 @@ mecanica(movimientoZ).
 mecanica(dinamax).
 mecanica(teracristalizacion).
 mecanica(gigamax).
+
+
+% librerias que se necesitar para correr las Consultas
+:- discontiguous tipo/2.
+:- discontiguous categoria/2.
+:- discontiguous genero/2.
+:- discontiguous solo_macho/1.
+:- discontiguous solo_hembra/1.
+:- discontiguous sin_genero/1.
+:- discontiguous especie/2.
+:- discontiguous habitat/2.
+:- discontiguous peso/2.
+:- discontiguous altura/2.
+:- discontiguous color/2.
+:- discontiguous uncolor/2.
+:- discontiguous varicolor/2.
+:- discontiguous figura/2.
+:- discontiguous formas_regionales/2.
+:- discontiguous forma_regional_alola/2.
+:- discontiguous forma_regional_galar/2.
+:- discontiguous forma_regional_hisui/2.
+:- discontiguous forma_regional_paldea/2.
+:- discontiguous grupo_huevo/2.
+:- discontiguous dobleGrupoHuevo/2.
+:- discontiguous ratiocaptura/2.
+:- discontiguous genero_porcentaje/2.
+:- discontiguous distincion_genero/2.
+:- discontiguous amistadbase/2.
+:- discontiguous pasoseclosion/2.
+:- discontiguous puntosExp/2.
+:- discontiguous regiones/2.
+:- discontiguous objetos_equipables/2.
+:- discontiguous movimiento_nivel/3.
+:- discontiguous movimiento_mt/3.
+:- discontiguous movimiento_tutor/3.
+:- discontiguous movimiento_huevo/3.
+:- discontiguous movimiento_especial/3.
+:- discontiguous movimiento_z/3.
+:- discontiguous movimiento_z_especial/3.
+:- discontiguous cristal_z/2.
+:- discontiguous cristal_z_especifico/2.
+:- discontiguous generacionregion/2.
+:- discontiguous generaciontotal/2.
+:- discontiguous resistente/2.
+:- discontiguous eficaz/2.
+:- discontiguous muy_eficaz/2.
+:- discontiguous poco_eficaz/2.
+:- discontiguous inmune/2.
+:- discontiguous habilidad/2.
+:- discontiguous naturaleza/3.
+:- discontiguous pokemon/4.
+:- discontiguous habilidad_pokemon/2.
+:- discontiguous habilidad_oculta/2.
+:- discontiguous habitad_pokemon/2.
+:- discontiguous generacion_inicial/2.
+:- discontiguous gen_legendarios/2.
+:- discontiguous generacionsingular/2.
+:- discontiguous stats_concluidos/2.
+:- discontiguous tipo_evolucion/2.
+:- discontiguous evolucion_nivel/3.
+:- discontiguous evolucion_noche/2.
+:- discontiguous evolucion_dia/2.
+:- discontiguous evolucion_tarde/2.
+:- discontiguous evolucion_por_intercambio/2.
+:- discontiguous evolucion_por_intercambio_objeto/3.
+:- discontiguous evolucion_por_amistad/2.
+:- discontiguous megaevolucion/2.
+:- discontiguous mega_piedra/1.
+:- discontiguous gigamax/2.
+:- discontiguous mecanica/1.
+
 
 
 % Consultas generales

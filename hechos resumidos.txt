@@ -26,7 +26,6 @@ distincion por genero
 amistad base
 pasos para eclosionar un huevo
 puntos de experiencia 
-amistad base
 regiones
 objetos equipables
 movimientos por nivel
@@ -43,7 +42,7 @@ Total de pokemones por generacion
 resistente
 eficaz
 muy_eficaz
-poco eficaz
+poco_eficaz
 inmune
 habilidad
 naturalezas
@@ -52,8 +51,9 @@ habilidad_pokemon
 Habilidad oculta
 habitad_pokemon
 pokemon_iniciales
-pokemon legendarios
-pokemon singulares
+pokemon legendarios(gen_legendarios)
+pokemon singulares(generacionsingular)
+stats_concluidos
 tipo evolucion
 evolucion por nivel
 evolucion noche 
