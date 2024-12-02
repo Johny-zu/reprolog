@@ -7,6 +7,23 @@ nombre_pokemon(Nombre).
 num_pokemon(Numero, Nombre).
 pokemon_reg(Nombre, Generacion).
 tipo_pokemon(Nombre, Tipo).
+es_tipo_planta(Nombre). 
+es_tipo_fuego(Nombre).
+es_tipo_agua(Nombre).
+es_tipo_volador(Nombre).
+es_tipo_normal(Nombre).
+es_tipo_lucha(Nombre).
+es_tipo_veneno(Nombre).
+es_tipo_tierra(Nombre).
+es_tipo_roca(Nombre).
+es_tipo_bicho(Nombre).
+es_tipo_fantasma(Nombre).
+es_tipo_acero(Nombre).
+es_tipo_electrico(Nombre).
+es_tipo_psiquico(Nombre).
+es_tipo_hada(Nombre).
+es_tipo_hielo(Nombre).
+es_tipo_dragon(Nombre).
 nombre_tip_gen(Nombre, Tipo, Generacion).
 pokemon_inicial(Nombre, Tipo, Region, Categoria).
 pokemon_legendarios(Nombre, Tipo, Region, Categoria).
@@ -40,3 +57,4 @@ quinta_figura_pokemon(Nombre, Figura).
 sexta_figura_pokemon(Nombre, Figura).
 septima_figura_pokemon(Nombre, Figura).
 octava_figura_pokemon(Nombre, Figura).
+grupo_huevo_desconocido(Nombre, Grupo_huevo).

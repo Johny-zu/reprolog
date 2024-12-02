@@ -4581,6 +4581,24 @@ pokemon_reg(Nombre, Generacion) :- pokemon(_, Nombre, _, Generacion).
 tipo_pokemon(Nombre, Tipo) :- pokemon(_, Nombre, Tipo, _).
 nombre_tip_gen(Nombre, Tipo, Generacion) :- pokemon(_, Nombre, Tipo, Generacion).
 
+es_tipo_planta(Nombre) :- pokemon(_, Nombre, [planta], _).
+es_tipo_fuego(Nombre) :- pokemon(_, Nombre, [fuego], _).
+es_tipo_agua(Nombre) :- pokemon(_, Nombre, [agua], _).
+es_tipo_volador(Nombre) :- pokemon(_, Nombre, [volador], _).
+es_tipo_normal(Nombre) :- pokemon(_, Nombre, [normal], _).
+es_tipo_lucha(Nombre) :- pokemon(_, Nombre, [lucha], _).
+es_tipo_veneno(Nombre) :- pokemon(_, Nombre, [veneno], _).
+es_tipo_tierra(Nombre) :- pokemon(_, Nombre, [tierra], _).
+es_tipo_roca(Nombre) :- pokemon(_, Nombre, [roca], _).
+es_tipo_bicho(Nombre) :- pokemon(_, Nombre, [bicho], _).
+es_tipo_fantasma(Nombre) :- pokemon(_, Nombre, [fantasma], _).
+es_tipo_acero(Nombre) :- pokemon(_, Nombre, [acero], _).
+es_tipo_electrico(Nombre) :- pokemon(_, Nombre, [electrico], _).
+es_tipo_psiquico(Nombre) :- pokemon(_, Nombre, [psiquico], _).
+es_tipo_hada(Nombre) :- pokemon(_, Nombre, [hada], _).
+es_tipo_hielo(Nombre) :- pokemon(_, Nombre, [hielo], _).
+es_tipo_dragon(Nombre) :- pokemon(_, Nombre, [dragon], _).
+
 % Regla para determinar la categoría basada en el número de Pokédex
 pokemon_inicial(Nombre, Tipo, Region, Categoria) :-
     pokemon(Numero, Nombre, Tipo, Region),
@@ -5526,3 +5544,79 @@ octava_figura_pokemon(Nombre, Figura) :-
     ;   (Numero = 1015)
     ), Figura = 8.
 
+grupo_huevo_desconocido(Nombre, Grupo_huevo) :-
+    pokemon(Numero, Nombre, _, _),
+    (Numero = 29
+    ; Numero = 31
+    ; Numero = 144
+    ; Numero = 145
+    ; Numero = 146
+    ; Numero = 150
+    ; Numero = 151
+    ; Numero = 172
+    ; Numero = 173
+    ; Numero = 174
+    ; Numero = 175
+    ; Numero = 201
+    ; Numero = 236
+    ; Numero = 238
+    ; Numero = 239
+    ; Numero = 240
+    ; Numero = 243
+    ; Numero = 244
+    ; Numero = 245
+    ; Numero = 249
+    ; Numero = 250
+    ; Numero = 251
+    ; Numero = 298
+    ; Numero = 360
+    ; Numero = 377
+    ; Numero = 378
+    ; Numero = 379
+    ; Numero = 380
+    ; Numero = 381
+    ; Numero = 382
+    ; Numero = 383
+    ; Numero = 384
+    ; Numero = 385
+    ; Numero = 386
+    ; Numero = 406
+    ; Numero = 433
+    ; Numero = 438
+    ; Numero = 439
+    ; Numero = 440
+    ; Numero = 446
+    ; Numero = 447
+    ; Numero = 458
+    ; Numero = 480
+    ; Numero = 481
+    ; Numero = 482
+    ; Numero = 483
+    ; Numero = 484
+    ; Numero = 485
+    ; Numero = 486
+    ; Numero = 487
+    ; Numero = 488
+    ; Numero = 491
+    ; Numero = 492
+    ; Numero = 493
+    ; Numero = 494
+    ; Numero = 638
+    ; Numero = 639
+    ; Numero = 640
+    ; Numero = 641
+    ; Numero = 642
+    ; Numero = 643
+    ; Numero = 644
+    ; Numero = 645
+    ; Numero = 646
+    ; Numero = 647
+    ; Numero = 648
+    ; Numero = 649
+    ),
+    Grupo_huevo = desconocido.
+
+grupo_huevo_ditto(Nombre, Grupo_huevo) :-
+    pokemon(Numero, Nombre, _, _),
+    (Numero = 132),
+    Grupo_huevo = grupo_ditto.
