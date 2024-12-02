@@ -89,12 +89,10 @@ tipo(hada).
 
 % categorias
 categoria(inicial).
+categoria(basico).
 categoria(legendario).
 categoria(singular).
-categoria(errante).
-categoria(adelantado).
 categoria(bebe).
-categoria(sublegendario).   
 
 % genero
 genero(hembra).
@@ -4595,35 +4593,129 @@ mecanica(teracristalizacion).
 mecanica(gigamax).
 
 % Consultas generales
-
-%Debilidades
-movimientos_peligro(Debil) :- debilidad(Debil, _).
-
-% fortalezas
-movimientos_eficaces(Fortaleza, Debilidad) :- fortaleza(Fortaleza, Debilidad).
-
-% Inmunidad
-inmunidad_tipos(Tipo_p) :- inmunidad(Tipo_p, _).
-
-% Regla para determinar resistencias
-resistencia(Tipo1, Tipo2) :- \+ fortaleza(Tipo1, Tipo2), \+ debilidad(Tipo1, Tipo2).
-
-% Descripcion de naturaleza
-% Clasificar naturalezas fuertes: aumentan algo y no son neutras
-naturaleza_fuerte(Nombre, Aumenta) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta \= neutra, Disminuye = neutra.
-
-% Clasificar naturalezas debiles: disminuyen algo y no son neutras
-naturaleza_debil(Nombre, Disminuye) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta = neutra, Disminuye \= neutra.
-
-% Clasificar naturalezas neutras: no aumentan ni disminuyen
-naturaleza_neutra(Nombre) :- naturaleza(Nombre, Aumenta, Disminuye), Aumenta = neutra, Disminuye = neutra.
-
-% Desripciones de habilidad
-desc_habilidad(Habilidad) :- habilidad(Habilidad, _).
-
-% Consulta para obtener nombre y generacion de un pokemon
 numero_pokedex(Numero) :- pokemon(Numero, _, _, _).
 nombre_pokemon(Nombre) :- pokemon(_, Nombre, _, _).
-numero_nombre(Numero, Nombre) :- pokemon(Numero, Nombre, _, _).
-nombre_generacion(Nombre, Generacion) :- pokemon(_, Nombre, _, Generacion).
-nombre_tipo(Nombre, Tipo) :- pokemon(_, Nombre, Tipo, _).
+num_pokemon(Numero, Nombre) :- pokemon(Numero, Nombre, _, _).
+pokemon_reg(Nombre, Generacion) :- pokemon(_, Nombre, _, Generacion).
+tipo_pokemon(Nombre, Tipo) :- pokemon(_, Nombre, Tipo, _).
+nombre_tip_gen(Nombre, Tipo, Generacion) :- pokemon(_, Nombre, Tipo, Generacion).
+
+% Regla para determinar la categoría basada en el número de Pokédex
+pokemon_inicial(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    (   (Numero >= 1, Numero =< 9)
+    ;   (Numero >= 152, Numero =< 160)
+    ;   (Numero >= 252, Numero =< 260)
+    ;   (Numero >= 387, Numero =< 395)
+    ;   (Numero >= 495, Numero =< 503)
+    ;   (Numero >= 650, Numero =< 658)
+    ;   (Numero >= 722, Numero =< 730)
+    ;   (Numero >= 810, Numero =< 818)
+    ;   (Numero >= 910, Numero =< 918)
+    ),
+    Categoria = inicial.
+
+pokemon_legendarios(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    (   (Numero >= 144, Numero =< 146)
+    ;   (Numero >= 150)
+    ;   (Numero >= 243, Numero =< 245)
+    ;   (Numero >= 249, Numero =< 250)
+    ;   (Numero >= 377, Numero =< 380)
+    ;   (Numero >= 382, Numero =< 383)
+    ;   (Numero >= 480, Numero =< 483)
+    ;   (Numero >= 485, Numero =< 486)
+    ;   (Numero >= 638, Numero =< 639)
+    ;   (Numero >= 643, Numero =< 645)
+    ;   (Numero >= 716, Numero =< 718)
+    ;   (Numero >= 785, Numero =< 787)
+    ;   (Numero >= 789, Numero =< 792)
+    ;   (Numero >= 800, Numero =< 802)
+    ;   (Numero >= 808, Numero =< 809)
+    ;   (Numero >= 888, Numero =< 890)
+    ;   (Numero >= 892, Numero =< 893)
+    ;   (Numero >= 895, Numero =< 896)
+    ;   (Numero >= 898, Numero =< 898)
+    ), Categoria = legendario.
+
+pokemon_singulares(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    (   (Numero = 151)
+    ;   (Numero = 251)  
+    ;   (Numero = 385)
+    ;   (Numero = 386)
+    ;   (Numero >= 489, Numero =< 493)
+    ;   (Numero = 494)
+    ;   (Numero >= 647, Numero =< 649)
+    ;   (Numero >= 719, Numero =< 721)
+    ;   (Numero >= 801, Numero =< 802)
+    ;   (Numero >= 807, Numero =< 809)
+    ;   (Numero == 893)
+    ), Categoria = singular.
+
+pokemon_bebe(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    (   (Numero >= 172), (Numero =< 175)
+    ;   (Numero = 236) 
+    ;   (Numero = 238)
+    ;   (Numero = 239)
+    ;   (Numero = 298)
+    ;   (Numero = 260)
+    ;   (Numero = 406)
+    ;   (Numero = 433)
+    ;   (Numero >= 438), (Numero =< 440)
+    ;   (Numero = 446) 
+    ;   (Numero = 447)
+    ;   (Numero = 458)
+    ;   (Numero = 848)
+    ), Categoria = bebe.
+    
+pokemon_basicos_primera(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo),
+    ((Numero >= 10), (Numero =< 145)), 
+    Categoria = basico.
+
+pokemon_basicos_segunda(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    (   (Numero >= 161, Numero =< 243)
+    ;   (Numero >= 246, Numero =< 348)
+    ),
+    Categoria = basico.
+
+pokemon_basicos_tercera(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 261, Numero =< 376))
+    , Categoria = basico.
+
+pokemon_basicos_cuarta(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 396, Numero =< 479))
+    , Categoria = basico.
+
+pokemon_basicos_quinta(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 504, Numero =< 637))
+    , Categoria = basico.
+
+pokemon_basicos_sexta(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 659, Numero =< 715))
+    , Categoria = basico.
+
+pokemon_basicos_septima(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 731, Numero =< 809))
+    , Categoria = basico.
+
+pokemon_basicos_octava(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 819, Numero =< 887))
+    , Categoria = basico.
+
+pokemon_basicos_novena(Nombre, Tipo, Region, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, Region),
+    ((Numero >= 915, Numero =< 1001))
+    , Categoria = basico.
+
+es_peso(X, Z) :- pokemon(_, X, _, _), peso(Z).
+es_altura(X, Z) :- pokemon(_, X, _, _), altura(Z).

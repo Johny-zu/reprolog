@@ -1,0 +1,25 @@
+% consultas generales
+es_fuego_kanto(Pokemon) :- tipo(Pokemon, fuego), regiones(Pokemon, kanto).
+
+% regla de catergorias
+numero_pokedex(Numero) 
+nombre_pokemon(Nombre).
+num_pokemon(Numero, Nombre).
+pokemon_reg(Nombre, Generacion).
+tipo_pokemon(Nombre, Tipo).
+nombre_tip_gen(Nombre, Tipo, Generacion).
+pokemon_inicial(Nombre, Tipo, Region, Categoria).
+pokemon_legendarios(Nombre, Tipo, Region, Categoria).
+pokemon_singulares(Nombre, Tipo, Region, Categoria).
+pokemon_bebe(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_primera(Nombre, Tipo, Categoria).
+pokemon_basicos_segunda(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_tercera(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_cuarta(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_quinta(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_sexta(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_septima(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_octava(Nombre, Tipo, Region, Categoria).
+pokemon_basicos_novena(Nombre, Tipo, Region, Categoria).
+es_peso(X, Y).
+es_altura(X, Z).
