@@ -319,21 +319,15 @@ especie(flor).
 especie(hongo).
 
 % habitat
-habitat(bosque).
-habitat(cueva).
-habitat(desierto).
-habitat(montana).
 habitat(pradera).
-habitat(rio).
-habitat(mar).
-habitat(ciudad).
-habitat(pantano).
+habitat(bosque).
+habitat(agua_dulce).
+habitat(agua_salada).
+habitat(caverna).
+habitat(montana).
 habitat(campo).
-habitat(volcan).
-habitat(isla).
-habitat(lago).
-habitat(costa).
-habitat(cementerio).
+habitat(ciudad).
+habitat(raros).
 
 % peso
 peso(6.9).
@@ -4719,3 +4713,192 @@ pokemon_basicos_novena(Nombre, Tipo, Region, Categoria) :-
 
 es_peso(X, Z) :- pokemon(_, X, _, _), peso(Z).
 es_altura(X, Z) :- pokemon(_, X, _, _), altura(Z).
+
+pokemon_habitat_pradera(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 1, Numero =< 3)
+    ;   (Numero >= 19, Numero =< 20)
+    ;   (Numero >= 23, Numero =< 24)
+    ;   (Numero >= 29, Numero =< 34)
+    ;   (Numero >= 37, Numero =< 45)
+    ;   (Numero >= 58, Numero =< 59)
+    ;   (Numero >= 77, Numero =< 78)
+    ;   (Numero >= 83, Numero =< 85)
+    ;   (Numero >= 96, Numero =< 97)
+    ;   (Numero >= 108, Numero =< 115)
+    ;   (Numero >= 123, Numero =< 125)
+    ;   (Numero >= 128, Numero =< 128)
+    ;   (Numero >= 152, Numero =< 157)
+    ;   (Numero >= 161, Numero =< 162)
+    ;   (Numero >= 174, Numero =< 174)
+    ;   (Numero >= 179, Numero =< 182)
+    ;   (Numero >= 187, Numero =< 192)
+    ;   (Numero >= 203, Numero =< 203)
+    ;   (Numero >= 212, Numero =< 212)
+    ;   (Numero >= 239, Numero =< 239)
+    ;   (Numero >= 241, Numero =< 245)
+    ;   (Numero >= 255, Numero =< 257)
+    ;   (Numero >= 261, Numero =< 264)
+    ;   (Numero >= 276, Numero =< 277)
+    ;   (Numero >= 309, Numero =< 317)
+    ;   (Numero >= 335, Numero =< 336)
+    ;   (Numero >= 351, Numero =< 358)
+    ), Habitat = pradera.
+
+pokemon_habitat_bosque(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 10, Numero =< 15)
+    ;   (Numero >= 16, Numero =< 18)
+    ;   (Numero >= 25, Numero =< 26)
+    ;   (Numero >= 46, Numero =< 49)
+    ;   (Numero >= 69, Numero =< 71)
+    ;   (Numero >= 102, Numero =< 103)
+    ;   (Numero >= 127, Numero =< 127)
+    ;   (Numero >= 163, Numero =< 177)
+    ;   (Numero >= 185, Numero =< 198)
+    ;   (Numero >= 204, Numero =< 205)
+    ;   (Numero >= 214, Numero =< 215)
+    ;   (Numero >= 234, Numero =< 234)
+    ;   (Numero >= 251, Numero =< 254)
+    ;   (Numero >= 265, Numero =< 269)
+    ;   (Numero >= 273, Numero =< 275)
+    ;   (Numero >= 285, Numero =< 292)
+    ;   (Numero >= 300, Numero =< 301)
+    ;   (Numero >= 313, Numero =< 314)
+    ;   (Numero >= 334, Numero =< 334)
+    ;   (Numero >= 352, Numero =< 357)
+    ), Habitat = bosque.
+
+pokemon_habitat_agua_dulce(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 7, Numero =< 9)
+    ;   (Numero >= 54, Numero =< 55)
+    ;   (Numero >= 60, Numero =< 62)
+    ;   (Numero >= 79, Numero =< 80)
+    ;   (Numero >= 98, Numero =< 99)
+    ;   (Numero >= 118, Numero =< 119)
+    ;   (Numero >= 129, Numero =< 130)
+    ;   (Numero >= 147, Numero =< 149)
+    ;   (Numero >= 159, Numero =< 160)
+    ;   (Numero >= 183, Numero =< 186)
+    ;   (Numero >= 194, Numero =< 195)
+    ;   (Numero >= 258, Numero =< 260)
+    ;   (Numero >= 270, Numero =< 272)
+    ;   (Numero >= 283, Numero =< 284)
+    ;   (Numero >= 298, Numero =< 298)
+    ;   (Numero >= 339, Numero =< 342)
+    ;   (Numero >= 347, Numero =< 350)
+    ;   (Numero >= 380, Numero =< 381)
+    ), Habitat = agua_dulce.
+
+pokemon_habitat_agua_salada(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 72, Numero =< 73)
+    ;   (Numero >= 86, Numero =< 87)
+    ;   (Numero >= 90, Numero =< 91)
+    ;   (Numero >= 116, Numero =< 117)
+    ;   (Numero >= 120, Numero =< 121)
+    ;   (Numero >= 131, Numero =< 131)
+    ;   (Numero >= 138, Numero =< 141)
+    ;   (Numero >= 170, Numero =< 171)
+    ;   (Numero >= 211, Numero =< 224)
+    ;   (Numero >= 226, Numero =< 226)
+    ;   (Numero >= 230, Numero =< 230)
+    ;   (Numero >= 222, Numero =< 222)
+    ;   (Numero >= 278, Numero =< 279)
+    ;   (Numero >= 318, Numero =< 321)
+    ;   (Numero >= 345, Numero =< 346)
+    ;   (Numero >= 363, Numero =< 369)
+    ;   (Numero >= 370, Numero =< 370)
+    ;   (Numero >= 382, Numero =< 382)
+    ;   (Numero >= 366, Numero =< 368)
+    ), Habitat = agua_salada.
+
+pokemon_habitat_caverna(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 41, Numero =< 42)
+    ;   (Numero >= 50, Numero =< 51)
+    ;   (Numero >= 92, Numero =< 95)
+    ;   (Numero >= 169, Numero =< 169)
+    ;   (Numero >= 200, Numero =< 202)
+    ;   (Numero >= 206, Numero =< 208)
+    ;   (Numero >= 220, Numero =< 221)
+    ;   (Numero >= 293, Numero =< 295)
+    ;   (Numero >= 299, Numero =< 303)
+    ;   (Numero >= 337, Numero =< 338)
+    ;   (Numero >= 361, Numero =< 362)
+    ;   (Numero >= 360, Numero =< 360)
+    ;   (Numero >= 377, Numero =< 379)
+    ), Habitat = caverna.
+
+pokemon_habitat_montana(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 4, Numero =< 6)
+    ;   (Numero >= 35, Numero =< 36)
+    ;   (Numero >= 56, Numero =< 57)
+    ;   (Numero >= 66, Numero =< 68)
+    ;   (Numero >= 74, Numero =< 76)
+    ;   (Numero >= 104, Numero =< 105)
+    ;   (Numero >= 126, Numero =< 126)
+    ;   (Numero >= 142, Numero =< 143)
+    ;   (Numero >= 173, Numero =< 173)
+    ;   (Numero >= 207, Numero =< 207)
+    ;   (Numero >= 213, Numero =< 213)
+    ;   (Numero >= 218, Numero =< 219)
+    ;   (Numero >= 225, Numero =< 225)
+    ;   (Numero >= 240, Numero =< 240)
+    ;   (Numero >= 246, Numero =< 248)
+    ;   (Numero >= 296, Numero =< 297)
+    ;   (Numero >= 304, Numero =< 306)
+    ;   (Numero >= 308, Numero =< 308)
+    ;   (Numero >= 322, Numero =< 323)
+    ;   (Numero >= 324, Numero =< 327)
+    ;   (Numero >= 359, Numero =< 359)
+    ;   (Numero >= 385, Numero =< 385)
+    ), Habitat = montana.
+
+pokemon_habitat_campo(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 21, Numero =< 22)
+    ;   (Numero >= 27, Numero =< 28)
+    ;   (Numero >= 81, Numero =< 82)
+    ;   (Numero >= 111, Numero =< 112)
+    ;   (Numero >= 228, Numero =< 232)
+    ;   (Numero >= 227, Numero =< 227)
+    ;   (Numero >= 328, Numero =< 330)
+    ;   (Numero >= 331, Numero =< 332)
+    ;   (Numero >= 343, Numero =< 344)
+    ;   (Numero >= 371, Numero =< 373)
+    ;   (Numero >= 374, Numero =< 376)
+    ;   (Numero >= 383, Numero =< 383)
+    ), Habitat = campo.
+
+pokemon_habitat_ciudad(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 52, Numero =< 53)
+    ;   (Numero >= 63, Numero =< 65)
+    ;   (Numero >= 88, Numero =< 89)
+    ;   (Numero >= 100, Numero =< 101)
+    ;   (Numero >= 106, Numero =< 107)
+    ;   (Numero >= 109, Numero =< 110)
+    ;   (Numero >= 113, Numero =< 113)
+    ;   (Numero >= 122, Numero =< 124)
+    ;   (Numero >= 132, Numero =< 133)
+    ;   (Numero >= 135, Numero =< 137)
+    ;   (Numero >= 196, Numero =< 197)
+    ;   (Numero >= 209, Numero =< 210)
+    ;   (Numero >= 233, Numero =< 235)
+    ;   (Numero >= 236, Numero =< 238)
+    ;   (Numero >= 280, Numero =< 282)
+    ;   (Numero >= 353, Numero =< 354)
+    ;   (Numero >= 242, Numero =< 242)
+    ), Habitat = ciudad.
+
+pokemon_habitat_raros(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 144, Numero =< 146)
+    ;   (Numero >= 150, Numero =< 151)
+    ;   (Numero >= 201, Numero =< 201)
+    ;   (Numero >= 249, Numero =< 250)
+    ;   (Numero >= 384, Numero =< 386)
+    ), Habitat = raros.

@@ -23,3 +23,12 @@ pokemon_basicos_octava(Nombre, Tipo, Region, Categoria).
 pokemon_basicos_novena(Nombre, Tipo, Region, Categoria).
 es_peso(X, Y).
 es_altura(X, Z).
+pokemon_habitat_pradera(Nombre, Region, Habitat).
+pokemon_habitat_bosque(Nombre, Region, Habitat).
+kemon_habitat_agua_dulce(Nombre, Region, Habitat).
+pokemon_habitat_agua_salada(Nombre, Region, Habitat).
+pokemon_habitat_caverna(Nombre, Region, Habitat).
+pokemon_habitat_montana(Nombre, Region, Habitat).
+pokemon_habitat_campo(Nombre, Region, Habitat).
+pokemon_habitat_ciudad(Nombre, Region, Habitat).
+pokemon_habitat_raros(Nombre, Region, Habitat)
