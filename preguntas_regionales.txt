@@ -31,4 +31,12 @@ pokemon_habitat_caverna(Nombre, Region, Habitat).
 pokemon_habitat_montana(Nombre, Region, Habitat).
 pokemon_habitat_campo(Nombre, Region, Habitat).
 pokemon_habitat_ciudad(Nombre, Region, Habitat).
-pokemon_habitat_raros(Nombre, Region, Habitat)
+pokemon_habitat_raros(Nombre, Region, Habitat).
+primera_figura_pokemon(Nombre, Figura).
+segunda_figura_pokemon(Nombre, Figura).
+tercera_figura_pokemon(Nombre, Figura).
+cuarta_figura_pokemon(Nombre, Figura).
+quinta_figura_pokemon(Nombre, Figura).
+sexta_figura_pokemon(Nombre, Figura).
+septima_figura_pokemon(Nombre, Figura).
+octava_figura_pokemon(Nombre, Figura).
