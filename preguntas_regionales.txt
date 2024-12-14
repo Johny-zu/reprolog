@@ -58,7 +58,7 @@ linea_evolutiva_completa(Nombre, Linea).
 cantidad_pokemon_generacion(primera, Cantidad).
 generacion_mas_pokemon(Generacion).
 regiones_tipo_pokemon(Tipo, Regiones).
-pokemon_multiples_evoluciones(Nombre, Evoluciones).
+pokemon_multiples_evoluciones(Nombre, Evoluciones). --> para evoluciones alternativas
 metodo_evolucion(Nombre, Evolucion, Metodo).
 obtener_evoluciones(Nombre, [Evolucion | Resto]).
 cantidad_pokemon_generacion(Generacion, Cantidad).
@@ -90,3 +90,12 @@ cantidad_pokemon_con_tipo(Tipo, Cantidad).
 pokemon_evoluciona_noche(Pokemon, Evolucion).
 pokemon_evoluciona_dia(Pokemon, Evolucion).
 pokemon_evoluciona_tarde(Pokemon, Evolucion).
+pokemon_cambia_tipo_al_evolucionar(Pokemon, Evolucion, TiposAntiguos, TiposNuevos).
+pokemon_resistente_fuego_montana(Nombre).
+pokemon_resistente_planta_bosque(Nombre).
+pokemon_inmune_veneno_caverna(Nombre).
+pokemon_poco_eficaz_fuego_ciudad(Nombre).
+pokemon_tipo_hada_pradera(Nombre).
+pokemon_muy_eficaz_dragon_montana(Nombre).
+pokemon_habilidad_absorbe_agua_agua_dulce(Nombre).
+pokemon_resistente_siniestro_montana(Nombre).

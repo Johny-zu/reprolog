@@ -3109,6 +3109,10 @@ habilidad_pokemon(gyarados, intimidacion).
 habilidad_pokemon(ditto, imposta).
 habilidad_pokemon(eevee, adaptabilidad).
 habilidad_pokemon(vaporeon, absorber_agua).
+habilidad_pokemon(lapras, absorbe_agua).
+habilidad_pokemon(volcanion, absorbe_agua).
+habilidad_pokemon(mantyke, absorbe_agua).
+habilidad_pokemon(mantine, absorbe_agua).
 habilidad_pokemon(jolteon, absorber_voltaje).
 habilidad_pokemon(flareon, absorbe_fuego).
 habilidad_pokemon(espeon, sincronia).
@@ -4594,7 +4598,8 @@ mecanica(dinamax).
 mecanica(teracristalizacion).
 mecanica(gigamax).
 
-% Consultas generales
+% 
+% preguntas
 numero_pokedex(Numero) :- pokemon(Numero, _, _, _).
 nombre_pokemon(Nombre) :- pokemon(_, Nombre, _, _).
 num_pokemon(Numero, Nombre) :- pokemon(Numero, Nombre, _, _).
@@ -5834,3 +5839,62 @@ pokemon_evoluciona_dia(Pokemon, Evolucion) :-
 
 pokemon_evoluciona_tarde(Pokemon, Evolucion) :-
     evolucion_tarde(Pokemon, Evolucion).
+
+pokemon_cambia_tipo_al_evolucionar(Pokemon, Evolucion, TiposAntiguos, TiposNuevos) :-
+    evolucion_nivel(Pokemon, Evolucion, _),
+    pokemon(_, Pokemon, TiposAntiguos, _),
+    pokemon(_, Evolucion, TiposNuevos, _),
+    TiposAntiguos \= TiposNuevos.
+
+pokemon_resistente_fuego_montana(Nombre) :-
+    resistente(fuego, TiposResistentes),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_planta_bosque(Nombre) :-
+    resistente(planta, TiposResistentes),
+    pokemon_habitat_bosque(Nombre, _, bosque),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_inmune_veneno_caverna(Nombre) :-
+    inmune(veneno, TiposInmunes),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposInmunes).
+
+pokemon_poco_eficaz_fuego_ciudad(Nombre) :-
+    poco_eficaz(fuego, TiposPocoEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposPocoEficaces).
+
+pokemon_tipo_hada_pradera(Nombre) :-
+    pokemon_habitat_pradera(Nombre, _, pradera),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(hada, TiposPokemon).
+
+pokemon_muy_eficaz_dragon_montana(Nombre) :-
+    muy_eficaz(dragon, TiposMuyEficaces),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_habilidad_absorbe_agua_agua_dulce(Nombre) :-
+    pokemon_habitat_agua_dulce(Nombre, _, agua_dulce),
+    habilidad_pokemon(Nombre, absorbe_agua).
+
+pokemon_resistente_siniestro_montana(Nombre) :-
+    resistente(siniestro, TiposResistentes),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+
