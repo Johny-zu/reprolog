@@ -99,3 +99,17 @@ pokemon_tipo_hada_pradera(Nombre).
 pokemon_muy_eficaz_dragon_montana(Nombre).
 pokemon_habilidad_absorbe_agua_agua_dulce(Nombre).
 pokemon_resistente_siniestro_montana(Nombre).
+pokemon_resistente_agua_lago(Nombre).
+pokemon_resistente_electrico_ciudad(Nombre).
+pokemon_resistente_hielo_tundra(Nombre).
+pokemon_resistente_veneno_pantano(Nombre).
+pokemon_resistente_volador_selva(Nombre).
+pokemon_resistente_bicho_bosque(Nombre).
+pokemon_resistente_roca_caverna(Nombre).
+pokemon_resistente_tierra_desierto(Nombre).
+pokemon_resistente_psiquico_ciudad(Nombre).
+pokemon_resistente_hada_pradera(Nombre).
+pokemon_resistente_dragon_montana(Nombre).
+pokemon_resistente_lucha_ciudad(Nombre).
+pokemon_resistente_acero_caverna(Nombre).
+pokemon_resistente_fantasma_caverna(Nombre).

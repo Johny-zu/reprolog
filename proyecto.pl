@@ -4849,6 +4849,70 @@ pokemon_habitat_agua_salada(Nombre, Region, Habitat) :-
     ;   (Numero >= 366, Numero =< 368)
     ), Habitat = agua_salada.
 
+pokemon_habitat_lago(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 129, Numero =< 130)
+    ;   (Numero >= 147, Numero =< 149)
+    ;   (Numero >= 158, Numero =< 160)
+    ;   (Numero >= 183, Numero =< 186)
+    ;   (Numero >= 194, Numero =< 195)
+    ;   (Numero >= 223, Numero =< 224)
+    ;   (Numero >= 245, Numero =< 245)
+    ;   (Numero >= 258, Numero =< 260)
+    ;   (Numero >= 270, Numero =< 272)
+    ;   (Numero >= 283, Numero =< 284)
+    ;   (Numero >= 298, Numero =< 298)
+    ;   (Numero >= 339, Numero =< 342)
+    ;   (Numero >= 347, Numero =< 350)
+    ;   (Numero >= 370, Numero =< 370)
+    ;   (Numero >= 380, Numero =< 381)
+    ), Habitat = lago.
+
+pokemon_habitat_tundra(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 144, Numero =< 146)
+    ;   (Numero >= 220, Numero =< 221)
+    ;   (Numero >= 225, Numero =< 225)
+    ;   (Numero >= 361, Numero =< 362)
+    ;   (Numero >= 378, Numero =< 378)
+    ), Habitat = tundra.
+
+pokemon_habitat_pantano(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 88, Numero =< 89)
+    ;   (Numero >= 109, Numero =< 110)
+    ;   (Numero >= 206, Numero =< 207)
+    ;   (Numero >= 316, Numero =< 317)
+    ;   (Numero >= 434, Numero =< 435)
+    ), Habitat = pantano.
+
+pokemon_habitat_selva(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 46, Numero =< 49)
+    ;   (Numero >= 123, Numero =< 123)
+    ;   (Numero >= 127, Numero =< 127)
+    ;   (Numero >= 214, Numero =< 214)
+    ;   (Numero >= 263, Numero =< 264)
+    ;   (Numero >= 273, Numero =< 275)
+    ;   (Numero >= 285, Numero =< 286)
+    ;   (Numero >= 290, Numero =< 292)
+    ;   (Numero >= 314, Numero =< 314)
+    ;   (Numero >= 331, Numero =< 332)
+    ;   (Numero >= 357, Numero =< 357)
+    ), Habitat = selva.
+
+pokemon_habitat_desierto(Nombre, Region, Habitat) :-
+    pokemon(Numero, Nombre, _, Region),
+    (   (Numero >= 27, Numero =< 28)
+    ;   (Numero >= 50, Numero =< 51)
+    ;   (Numero >= 74, Numero =< 76)
+    ;   (Numero >= 104, Numero =< 105)
+    ;   (Numero >= 231, Numero =< 232)
+    ;   (Numero >= 328, Numero =< 330)
+    ;   (Numero >= 343, Numero =< 344)
+    ;   (Numero >= 383, Numero =< 383)
+    ), Habitat = desierto.
+
 pokemon_habitat_caverna(Nombre, Region, Habitat) :-
     pokemon(Numero, Nombre, _, Region),
     (   (Numero >= 41, Numero =< 42)
@@ -5898,3 +5962,100 @@ pokemon_resistente_siniestro_montana(Nombre) :-
     member(Tipo, TiposResistentes).
 
 
+pokemon_resistente_agua_lago(Nombre) :-
+    resistente(agua, TiposResistentes),
+    pokemon_habitat_agua_dulce(Nombre, _, agua_dulce),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_electrico_ciudad(Nombre) :-
+    resistente(electrico, TiposResistentes),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_hielo_tundra(Nombre) :-
+    resistente(hielo, TiposResistentes),
+    pokemon_habitat_tundra(Nombre, _, tundra),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_veneno_pantano(Nombre) :-
+    resistente(veneno, TiposResistentes),
+    pokemon_habitat_pantano(Nombre, _, pantano),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_volador_selva(Nombre) :-
+    resistente(volador, TiposResistentes),
+    pokemon_habitat_selva(Nombre, _, selva),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_bicho_bosque(Nombre) :-
+    resistente(bicho, TiposResistentes),
+    pokemon_habitat_bosque(Nombre, _, bosque),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_roca_caverna(Nombre) :-
+    resistente(roca, TiposResistentes),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_tierra_desierto(Nombre) :-
+    resistente(tierra, TiposResistentes),
+    pokemon_habitat_desierto(Nombre, _, desierto),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_psiquico_ciudad(Nombre) :-
+    resistente(psiquico, TiposResistentes),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_hada_pradera(Nombre) :-
+    resistente(hada, TiposResistentes),
+    pokemon_habitat_pradera(Nombre, _, pradera),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_dragon_montana(Nombre) :-
+    resistente(dragon, TiposResistentes),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_lucha_ciudad(Nombre) :-
+    resistente(lucha, TiposResistentes),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_acero_caverna(Nombre) :-
+    resistente(acero, TiposResistentes),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
+
+pokemon_resistente_fantasma_caverna(Nombre) :-
+    resistente(fantasma, TiposResistentes),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposResistentes).
