@@ -1571,6 +1571,7 @@ resistente(fuego, [planta, hielo, bicho, acero]).
 resistente(volador, [planta, lucha, bicho]).
 resistente(normal, [fantasma]).
 resistente(lucha, [normal, hielo, roca, siniestro]).
+resistente(siniestro, [fantasma, psiquico]).
 resistente(veneno, [planta, lucha, veneno, insecto, hada]).
 resistente(tierra, [veneno, roca]).
 resistente(roca, [normal, fuego, veneno, volador]).
@@ -4459,53 +4460,54 @@ evolucion_objeto(togetic, togekiss, 'piedra dia').
 evolucion_objeto(kirlia, gallade, 'piedra alba').
 
 % mega evolucion y piedra correspondiente
-megaevolucion(venusaur, megavenusaur).
-megaevolucion(charizard, megacharizard_x).
-megaevolucion(charizard, megacharizard_y).
-megaevolucion(blastoise, megablastoise).
-megaevolucion(beedrill, megabeedrill).
-megaevolucion(pidgeot, megapidgeot).
-megaevolucion(alakazam, megaalakazam).
-megaevolucion(slowbro, megaslowbro).
-megaevolucion(gengar, megagengar).
-megaevolucion(kangaskhan, megakangaskhan).
-megaevolucion(pinsir, megapinsir).
-megaevolucion(gyarados, megagyarados).
-megaevolucion(aerodactyl, megaaerodactyl).
-megaevolucion(mewtwo, megamewtwo_x).
-megaevolucion(mewtwo, megamewtwo_y).
-megaevolucion(ampharos, megaampharos).
-megaevolucion(steelix, megasteelix).
-megaevolucion(scizor, megascizor).
-megaevolucion(heracross, megaheracross).
-megaevolucion(houndoom, megahoundoom).
-megaevolucion(tyranitar, megatyranitar).
-megaevolucion(sceptile, megasceptile).
-megaevolucion(blaziken, megablaziken).
-megaevolucion(swampert, megaswampert).
-megaevolucion(gardevoir, megagardevoir).
-megaevolucion(mawile, megamawile).
-megaevolucion(aggron, megaaggron).
-megaevolucion(medicham, megamedicham).
-megaevolucion(manectric, megamanectric).
-megaevolucion(sharpedo, megasharpedo).
-megaevolucion(camerupt, megacamerupt).
-megaevolucion(altaria, megaaltaria).
-megaevolucion(banette, megabanette).
-megaevolucion(absol, megaabsol).
-megaevolucion(glalie, megaglalie).
-megaevolucion(salamence, megasalamence).
-megaevolucion(metagross, megametagross).
-megaevolucion(latias, megalatias).
-megaevolucion(latios, megalatios).
-megaevolucion(rayquaza, megarequaza).
-megaevolucion(lopunny, megalopunny).
-megaevolucion(garchomp, megagarchomp).
-megaevolucion(lucario, megalucario).
-megaevolucion(abomasnow, megaabomasnow).
-megaevolucion(gallade, megagallade).
-megaevolucion(audino, megaaudino).
-megaevolucion(diancie, megadiancie).
+megaevolucion(venusaur, megavenusaur, [planta, veneno]).
+megaevolucion(charizard, megacharizard_x, [fuego, dragon]).
+megaevolucion(charizard, megacharizard_y, [fuego, volador]).
+megaevolucion(blastoise, megablastoise, [agua]).
+megaevolucion(beedrill, megabeedrill, [bicho, veneno]).
+megaevolucion(pidgeot, megapidgeot, [normal, volador]).
+megaevolucion(alakazam, megaalakazam, [psiquico]).
+megaevolucion(slowbro, megaslowbro, [agua, psiquico]).
+megaevolucion(gengar, megagengar, [fantasma, veneno]).
+megaevolucion(kangaskhan, megakangaskhan, [normal]).
+megaevolucion(pinsir, megapinsir, [bicho, volador]).
+megaevolucion(gyarados, megagyarados, [agua, siniestro]).
+megaevolucion(aerodactyl, megaaerodactyl, [roca, volador]).
+megaevolucion(mewtwo, megamewtwo_x, [psiquico, lucha]).
+megaevolucion(mewtwo, megamewtwo_y, [psiquico]).
+megaevolucion(ampharos, megaampharos, [electrico, dragon]).
+megaevolucion(steelix, megasteelix, [acero, tierra]).
+megaevolucion(scizor, megascizor, [bicho, acero]).
+megaevolucion(heracross, megaheracross, [bicho, lucha]).
+megaevolucion(houndoom, megahoundoom, [siniestro, fuego]).
+megaevolucion(tyranitar, megatyranitar, [roca, siniestro]).
+megaevolucion(sceptile, megasceptile, [planta, dragon]).
+megaevolucion(blaziken, megablaziken, [fuego, lucha]).
+megaevolucion(swampert, megaswampert, [agua, tierra]).
+megaevolucion(gardevoir, megagardevoir, [psiquico, hada]).
+megaevolucion(mawile, megamawile, [acero, hada]).
+megaevolucion(aggron, megaaggron, [acero]).
+megaevolucion(medicham, megamedicham, [lucha, psiquico]).
+megaevolucion(manectric, megamanectric, [electrico]).
+megaevolucion(sharpedo, megasharpedo, [agua, siniestro]).
+megaevolucion(camerupt, megacamerupt, [fuego, tierra]).
+megaevolucion(altaria, megaaltaria, [dragon, hada]).
+megaevolucion(banette, megabanette, [fantasma]).
+megaevolucion(absol, megaabsol, [siniestro]).
+megaevolucion(glalie, megaglalie, [hielo]).
+megaevolucion(salamence, megasalamence, [dragon, volador]).
+megaevolucion(metagross, megametagross, [acero, psiquico]).
+megaevolucion(latias, megalatias, [dragon, psiquico]).
+megaevolucion(latios, megalatios, [dragon, psiquico]).
+megaevolucion(rayquaza, megarequaza, [dragon, volador]).
+megaevolucion(lopunny, megalopunny, [normal, lucha]).
+megaevolucion(garchomp, megagarchomp, [dragon, tierra]).
+megaevolucion(lucario, megalucario, [lucha, acero]).
+megaevolucion(abomasnow, megaabomasnow, [hielo, planta]).
+megaevolucion(gallade, megagallade, [psiquico, lucha]).
+megaevolucion(audino, megaaudino, [normal, hada]).
+megaevolucion(diancie, megadiancie, [roca, hada]).
+
 
 % piedras de mega evolucion
 mega_piedra(venusaurita).
@@ -5743,6 +5745,92 @@ pokemon_evolucion_por_batalla_sin_mega(Nombre) :-
     ;   Numero = 1017
     ).
 
+evolucion_nivel_especifico(Nivel, Pokemon, Evolucion) :-
+    evolucion_nivel(Pokemon, Evolucion, Nivel).
+
+legendarios_eventos(Nombre) :-
+    pokemon(Numero, Nombre, _, _),
+    (   Numero = 494
+    ;   Numero = 251
+    ;   Numero = 649
+    ;   Numero = 721
+    ;   Numero = 802
+    ;   Numero = 151
+    ;   Numero = 386
+    ;   Numero = 647
+    ;   Numero = 648
+    ).
+
+forma_regional(Pokemon, Region, Tipo) :-
+    (   forma_regional_alola(Pokemon, Tipo),
+        Region = alola
+    ;   forma_regional_galar(Pokemon, Tipo),
+        Region = galar
+    ;   forma_regional_hisui(Pokemon, Tipo),
+        Region = hisui
+    ;   forma_regional_paldea(Pokemon, Tipo),
+        Region = paldea
+    ).
+
+movimientos_z_por_tipo(Tipo, MovimientosZ) :-
+    findall(MovimientoZ, movimiento_z(MovimientoZ, Tipo), MovimientosZ).
+
+pokemon_evolucion_unica(Pokemon) :-
+    metodo_evolucion(Pokemon, _, _),
+    \+ metodo_evolucion(_, Pokemon, _).
+
 pokemon_mas_de_una_forma(Pokemon) :-
-    formas_regionales(Formas),
-    member(Pokemon, Formas).
+    (forma_regional_alola(Pokemon, _); 
+     forma_regional_galar(Pokemon, _); 
+     forma_regional_hisui(Pokemon, _); 
+     forma_regional_paldea(Pokemon, _)).
+
+pokemon_doble_inicial(Nombre) :-
+    pokemon(Numero, Nombre, _, _),
+    (   Numero = 25
+    ;   Numero = 133
+    ;   Numero = 155
+    ;   Numero = 501
+    ;   Numero = 722
+    ).
+
+cantidad_resistencias(Tipo, Cantidad) :-
+    resistente(Tipo, Tipos),
+    length(Tipos, Cantidad).
+
+cantidad_eficacias(Tipo, Cantidad) :-
+    eficaz(Tipo, Tipos),
+    length(Tipos, Cantidad).
+
+cantidad_super_eficacias(Tipo, Cantidad) :-
+    muy_eficaz(Tipo, Tipos),
+    length(Tipos, Cantidad).
+
+cantidad_inmunidades_tipo(Tipo, Cantidad) :-
+    inmune(Tipo, Tipos),
+    length(Tipos, Cantidad).
+
+cambio_tipo_mega(Pokemon, Mega, TipoNuevo) :-
+    megaevolucion(Pokemon, Mega),
+    tipo(Mega, TipoNuevo),
+    \+ tipo(Pokemon, TipoNuevo).
+
+movimiento_de_tipo(Movimiento, Tipo) :-
+    movimiento_nivel(Movimiento, Tipo).
+
+pokemon_con_doble_tipo(Pokemon, Tipos) :-
+    pokemon(_, Pokemon, Tipos, _),
+    length(Tipos, 2).
+
+cantidad_pokemon_con_tipo(Tipo, Cantidad) :-
+    findall(Pokemon, (pokemon(_, Pokemon, Tipos, _), member(Tipo, Tipos)), ListaPokemons),
+    length(ListaPokemons, Cantidad).
+
+pokemon_evoluciona_noche(Pokemon, Evolucion) :-
+    evolucion_noche(Pokemon, Evolucion).
+
+pokemon_evoluciona_dia(Pokemon, Evolucion) :-
+    evolucion_dia(Pokemon, Evolucion).
+
+pokemon_evoluciona_tarde(Pokemon, Evolucion) :-
+    evolucion_tarde(Pokemon, Evolucion).

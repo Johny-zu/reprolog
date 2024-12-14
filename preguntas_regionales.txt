@@ -71,5 +71,22 @@ pokemon_doble_mega(Pokemon).
 pokemon_evolucion_unica(Pokemon).
 pokemon_evolucion_por_batalla_sin_mega(Pokemon).
 pokemon_mas_de_una_forma(Pokemon).
-
-
+evolucion_nivel_especifico(Nivel, Pokemon, Evolucion).
+legendarios_eventos(Nombre).
+cantidad_tipos_de_tipo(Tipo, Cantidad).
+forma_regional(Pokemon, Region, Tipo).
+movimientos_por_tipo(Tipo, Movimientos).
+pokemon_evolucion_por_tipo(Pokemon, Tipo).
+pokemon_evolucion_unica(Pokemon).
+pokemon_mas_de_una_forma(Pokemon).
+pokemon_doble_inicial(Nombre).
+cantidad_resistencias(Tipo, Cantidad).
+cantidad_eficacias(Tipo, Cantidad).
+cantidad_super_eficacias(Tipo, Cantidad).
+cantidad_inmunidades_tipo(Tipo, Cantidad).
+movimiento_de_tipo(Movimiento, Tipo).
+pokemon_con_doble_tipo(Pokemon, Tipos).
+cantidad_pokemon_con_tipo(Tipo, Cantidad).
+pokemon_evoluciona_noche(Pokemon, Evolucion).
+pokemon_evoluciona_dia(Pokemon, Evolucion).
+pokemon_evoluciona_tarde(Pokemon, Evolucion).
