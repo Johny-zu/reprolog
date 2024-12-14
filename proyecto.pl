@@ -4092,8 +4092,6 @@ evolucion_nivel(hoppip, skiploom, 18).
 evolucion_nivel(skiploom, jumpluff, 27).
 evolucion_nivel(sunkern, sunflora, 30).
 evolucion_nivel(wooper, quagsire, 20).
-evolucion_nivel(eevee, umbreon, 20). % por amistad diurna
-evolucion_nivel(eevee, espeon, 20). % por amistad diurna
 evolucion_nivel(murkrow, honchkrow, 25). % si se usa piedra noche
 evolucion_nivel(misdreavus, mismagius, 25). % si se usa piedra noche
 evolucion_nivel(yanma, yanmega, 33).
@@ -5646,13 +5644,19 @@ grupo_huevo_ditto(Nombre, Grupo_huevo) :-
     (Numero = 132),
     Grupo_huevo = grupo_ditto.
 
-linea_evolutiva_completa(Nombre, [Nombre | Evoluciones]) :-
-    obtener_evoluciones(Nombre, Evoluciones).
+linea_evolutiva_completa(Pokemon, Linea) :-
+    findall(Evolucion, obtener_evoluciones(Pokemon, Evolucion), Lista),
+    flatten([Pokemon | Lista], Linea).
 
-obtener_evoluciones(Nombre, [Evolucion | Resto]) :-
-    evolucion_nivel(Nombre, Evolucion, _Nivel),
+obtener_evoluciones(Pokemon, [Evolucion | Resto]) :-
+    (   evolucion_nivel(Pokemon, Evolucion, _);
+        evolucion_por_intercambio_objeto(Pokemon, Evolucion, _);
+        evolucion_por_amistad(Pokemon, Evolucion);
+        evolucion_dia(Pokemon, Evolucion);
+        evolucion_noche(Pokemon, Evolucion)),
     obtener_evoluciones(Evolucion, Resto).
-obtener_evoluciones(_, []). 
+obtener_evoluciones(_, []).
+ 
 
 cantidad_pokemon_generacion(Generacion, Cantidad) :-generaciontotal(Generacion, Cantidad).
 
@@ -5660,34 +5664,85 @@ generacion_mas_pokemon(Generacion) :-
     findall(Cantidad-Gen, generaciontotal(Gen, Cantidad), Lista),
     max_member(_-Generacion, Lista).
 
+generacion_menos_pokemon(Generacion) :-
+    findall(Cantidad-Gen, generaciontotal(Gen, Cantidad), Lista),
+    min_member(_-Generacion, Lista).
+
 regiones_tipo_pokemon(Tipo, Regiones) :-
     findall(Region, (generacionregion(_, Region), tipo(Tipo)), Lista),
     list_to_set(Lista, Regiones).
 
 pokemon_multiples_evoluciones(Nombre, Evoluciones) :-
-    findall(Evolucion, 
-        (evolucion_nivel(Nombre, Evolucion, _); 
-         evolucion_por_amistad(Nombre, Evolucion);
-         evolucion_por_intercambio(Nombre, Evolucion); 
-         evolucion_por_intercambio_objeto(Nombre, Evolucion, _); 
-         evolucion_objeto(Nombre, Evolucion, _)), 
+    findall(Evolucion,
+        (   evolucion_nivel(Nombre, Evolucion, _)
+        ;   evolucion_por_amistad(Nombre, Evolucion)
+        ;   evolucion_por_intercambio(Nombre, Evolucion)
+        ;   evolucion_por_intercambio_objeto(Nombre, Evolucion, _)
+        ;   evolucion_objeto(Nombre, Evolucion, _)
+        ;   evolucion_dia(Nombre, Evolucion)
+        ;   evolucion_noche(Nombre, Evolucion)
+        ;   evolucion_tarde(Nombre, Evolucion)
+        ),
         Evoluciones),
     length(Evoluciones, N),
     N > 1.
 
-metodo_evolucion(Nombre, Metodo) :-
-    ( Nombre = eevee ->
-        Metodo = 'por nivel, piedra y amistad'
-    ; evolucion_nivel(Nombre, _, _) ->
-        Metodo = 'por nivel'
-    ; evolucion_por_amistad(Nombre, _) ->
-        Metodo = 'por amistad'
-    ; evolucion_por_intercambio(Nombre, _) ->
-        Metodo = 'por intercambio'
-    ; evolucion_por_intercambio_objeto(Nombre, _, _) ->
-        Metodo = 'con intercambio y objeto'
-    ; evolucion_objeto(Nombre, _, _) ->
-        Metodo = 'por piedra'
-    ; Metodo = 'no tiene evolución conocida'
+
+metodo_evolucion(Pokemon, Evolucion, Metodo) :-
+    (   evolucion_nivel(Pokemon, Evolucion, Nivel),
+        Metodo = metodo(nivel, Nivel)
+    ;   evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto),
+        Metodo = metodo(intercambio_objeto, Objeto)
+    ;   evolucion_por_intercambio(Pokemon, Evolucion),
+        Metodo = metodo(intercambio)
+    ;   evolucion_por_amistad(Pokemon, Evolucion),
+        Metodo = metodo(amistad)
+    ;   evolucion_dia(Pokemon, Evolucion),
+        Metodo = metodo(dia)
+    ;   evolucion_noche(Pokemon, Evolucion),
+        Metodo = metodo(noche)
+    ;   evolucion_tarde(Pokemon, Evolucion),
+        Metodo = metodo(tarde)
     ).
 
+eevee_evoluciones(Evoluciones) :-
+    findall(Evolucion, metodo_evolucion(eevee, Evolucion, _), Evoluciones).
+
+pokemon_doble_mega(Pokemon) :-
+    findall(Mega, megaevolucion(Pokemon, Mega), Megas),
+    length(Megas, N),
+    N > 1.
+
+pokemon_evolucion_por_tipo(Pokemon, Tipo) :-
+    evolucion_por_tipo(Pokemon, Tipo).
+
+pokemon_evolucion_por_batalla_sin_mega(Nombre) :-
+    pokemon(Numero, Nombre, _, _),
+    (   Numero = 351
+    ;   Numero = 382
+    ;   Numero = 383
+    ;   Numero = 412
+    ;   Numero = 421
+    ;   Numero = 493
+    ;   Numero = 555
+    ;   Numero = 648
+    ;   Numero = 658
+    ;   Numero = 681
+    ;   Numero = 716
+    ;   Numero = 718
+    ;   Numero = 746
+    ;   Numero = 774
+    ;   Numero = 778
+    ;   Numero = 800
+    ;   Numero = 845
+    ;   Numero = 875
+    ;   Numero = 877
+    ;   Numero = 888
+    ;   Numero = 889
+    ;   Numero = 964
+    ;   Numero = 1017
+    ).
+
+pokemon_mas_de_una_forma(Pokemon) :-
+    formas_regionales(Formas),
+    member(Pokemon, Formas).

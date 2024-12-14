@@ -1,0 +1,12 @@
+pokemon_dos_evoluciones(Pokemon) :-
+    findall(Evolucion, metodo_evolucion(Pokemon, Evolucion, _), Evoluciones),
+    length(Evoluciones, 2).
+
+pokemon_evolucion_por_tipo(Pokemon, Tipo) :-
+    evolucion_por_tipo(Pokemon, Tipo).
+
+
+pokemon_evolucion_unica(Pokemon) :-
+    metodo_evolucion(Pokemon, _, _),
+    \+ (metodo_evolucion(_, Pokemon, _)).
+
