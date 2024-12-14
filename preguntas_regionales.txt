@@ -2,7 +2,7 @@
 es_fuego_kanto(Pokemon) :- tipo(Pokemon, fuego), regiones(Pokemon, kanto).
 
 % regla de catergorias
-numero_pokedex(Numero) 
+numero_pokedex(Numero). 
 nombre_pokemon(Nombre).
 num_pokemon(Numero, Nombre).
 pokemon_reg(Nombre, Generacion).
@@ -58,3 +58,38 @@ sexta_figura_pokemon(Nombre, Figura).
 septima_figura_pokemon(Nombre, Figura).
 octava_figura_pokemon(Nombre, Figura).
 grupo_huevo_desconocido(Nombre, Grupo_huevo).
+linea_evolutiva_completa(Nombre, Linea).
+cantidad_pokemon_generacion(primera, Cantidad).
+generacion_mas_pokemon(Generacion).
+regiones_tipo_pokemon(Tipo, Regiones).
+pokemon_doble_evolucion(Nombre, Evoluciones).
+metodo_evolucion(Nombre, Metodo).
+
+
+
+
+
+Preguntas por hacer
+linea evolutiva completa
+eevee evoluciones
+quienes tienen doble mega
+quien tiene dos evoluciones
+quien tiene evolucion unica
+quien tiene evolucion por tipo
+quien tiene evolucion por batalla
+que pokemon tiene mas de una forma
+pokemon doble inicial 
+pokemon con tipo unico(agua acero)
+pokemon con doble o mas evolucion 
+megas especiales 
+quienes evolucionan en un cierto nivel
+formas singluares por evolucion
+legendarios de eventos 
+cuantos tipos hay de un tipo
+cuantos pokemon cambian de tipo durante la batalla
+cambios de tipos al evolucionar
+quienes cambian de tipo al mega evolucionar
+forma regional
+cuantos pokes hay por region 
+movimientos tipo
+movimientos z tipos

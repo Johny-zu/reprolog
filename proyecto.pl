@@ -1035,451 +1035,451 @@ objetos_equipables(flecha_venenosa).
 objetos_equipables(polvo).
 
 % movimeinto por nivel
-movimiento_nivel(placaje).
-movimiento_nivel(latigo_cepa).
-movimiento_nivel(tormenta_floral).
-movimiento_nivel(ascuas).
-movimiento_nivel(cuchillada).
-movimiento_nivel(onda_ignea).
-movimiento_nivel(pistola_agua).
-movimiento_nivel(fortaleza).
-movimiento_nivel(tornado).
-movimiento_nivel(ataque_ala).
-movimiento_nivel(picotazo).
-movimiento_nivel(rapidez).
-movimiento_nivel(hiperrayo).
-movimiento_nivel(impactrueno).
-movimiento_nivel(araniazo).
-movimiento_nivel(desarme).
-movimiento_nivel(rayo).
-movimiento_nivel(cornada).
-movimiento_nivel(salpicadura).
-movimiento_nivel(hidrobomba).
-movimiento_nivel(transgigamaxcion).
-movimiento_nivel(acua).
-movimiento_nivel(chispazo).
-movimiento_nivel(psiquico).
-movimiento_nivel(mordisco).
-movimiento_nivel(latigo_cepa).
-movimiento_nivel(ventisca).
-movimiento_nivel(carantonia).
-movimiento_nivel(golpe_cuerpo).
-movimiento_nivel(confusion).
-movimiento_nivel(corte).
-movimiento_nivel(hipnosis).
-movimiento_nivel(hidropulso).
-movimiento_nivel(mordisco).
-movimiento_nivel(hoja_magica).
-movimiento_nivel(transgigamaxcion).
-movimiento_nivel(anulacion).
-movimiento_nivel(confusion).
-movimiento_nivel(psicocorte).
-movimiento_nivel(malisioso).
-movimiento_nivel(brillo_magico).
-movimiento_nivel(cara_susto).
-movimiento_nivel(sombra).
-movimiento_nivel(geomancia).
-movimiento_nivel(vendaval).
-movimiento_nivel(terremoto).
-movimiento_nivel(calcinacion).
-movimiento_nivel(cabezazo).
-movimiento_nivel(proteccion).
-movimiento_nivel(maquinacion).
-movimiento_nivel(absorber).
-movimiento_nivel(envite_luminoso).
-movimiento_nivel(petalo_venenoso).
-movimiento_nivel(picotazo_ven).
-movimiento_nivel(pulsar).
-movimiento_nivel(sombra_vil).
-movimiento_nivel(punio_trueno).
-movimiento_nivel(golpe_cabeza).
-movimiento_nivel(ventisca).
-movimiento_nivel(envite_ign).
-movimiento_nivel(confusion).
-movimiento_nivel(pulso_umbrio).
-movimiento_nivel(bostezo).
-movimiento_nivel(helada).
-movimiento_nivel(luminocanon).
-movimiento_nivel(puya_nociva).
-movimiento_nivel(golpe_aire).
-movimiento_nivel(aire_afilado).
-movimiento_nivel(punio_fuego).
-movimiento_nivel(sorpresa).
-movimiento_nivel(drenadoras).
-movimiento_nivel(mal_de_ojo).
-movimiento_nivel(masaje).
-movimiento_nivel(pico_taladro).
-movimiento_nivel(malicioso).
-movimiento_nivel(chorro_de_agua).
-movimiento_nivel(psicoonda).
-movimiento_nivel(fresquito).
-movimiento_nivel(triturar).
-movimiento_nivel(pulsor).
-movimiento_nivel(eco_ancestral).
-movimiento_nivel(colmillo_hielo).
-movimiento_nivel(cabezahierro).
-movimiento_nivel(placaje).
-movimiento_nivel(burbuja).
+movimiento_nivel(placaje, normal).
+movimiento_nivel(latigo_cepa, planta).
+movimiento_nivel(tormenta_floral, planta).
+movimiento_nivel(ascuas, fuego).
+movimiento_nivel(cuchillada, normal).
+movimiento_nivel(onda_ignea, fuego).
+movimiento_nivel(pistola_agua, agua).
+movimiento_nivel(fortaleza, normal).
+movimiento_nivel(tornado, volador).
+movimiento_nivel(ataque_ala, volador).
+movimiento_nivel(picotazo, volador).
+movimiento_nivel(rapidez, normal).
+movimiento_nivel(hiperrayo, normal).
+movimiento_nivel(impactrueno, electrico).
+movimiento_nivel(araniazo, bicho).
+movimiento_nivel(desarme, oscuro).
+movimiento_nivel(rayo, electrico).
+movimiento_nivel(cornada, normal).
+movimiento_nivel(salpicadura, normal).
+movimiento_nivel(hidrobomba, agua).
+movimiento_nivel(transgigamaxcion, normal).
+movimiento_nivel(acua, agua).
+movimiento_nivel(chispazo, electrico).
+movimiento_nivel(psiquico, psiquico).
+movimiento_nivel(mordisco, oscuro).
+movimiento_nivel(latigo_cepa, planta).
+movimiento_nivel(ventisca, hielo).
+movimiento_nivel(carantonia, hada).
+movimiento_nivel(golpe_cuerpo, normal).
+movimiento_nivel(confusion, psiquico).
+movimiento_nivel(corte, normal).
+movimiento_nivel(hipnosis, psiquico).
+movimiento_nivel(hidropulso, agua).
+movimiento_nivel(mordisco, oscuro).
+movimiento_nivel(hoja_magica, planta).
+movimiento_nivel(transgigamaxcion, normal).
+movimiento_nivel(anulacion, oscuro).
+movimiento_nivel(confusion, psiquico).
+movimiento_nivel(psicocorte, psiquico).
+movimiento_nivel(malisioso, oscuro).
+movimiento_nivel(brillo_magico, hada).
+movimiento_nivel(cara_susto, normal).
+movimiento_nivel(sombra, fantasma).
+movimiento_nivel(geomancia, hada).
+movimiento_nivel(vendaval, volador).
+movimiento_nivel(terremoto, tierra).
+movimiento_nivel(calcinacion, fuego).
+movimiento_nivel(cabezazo, normal).
+movimiento_nivel(proteccion, normal).
+movimiento_nivel(maquinacion, oscuro).
+movimiento_nivel(absorber, planta).
+movimiento_nivel(envite_luminoso, hada).
+movimiento_nivel(petalo_venenoso, veneno).
+movimiento_nivel(picotazo_ven, veneno).
+movimiento_nivel(pulsar, normal).
+movimiento_nivel(sombra_vil, fantasma).
+movimiento_nivel(punio_trueno, electrico).
+movimiento_nivel(golpe_cabeza, normal).
+movimiento_nivel(ventisca, hielo).
+movimiento_nivel(envite_ign, fuego).
+movimiento_nivel(confusion, psiquico).
+movimiento_nivel(pulso_umbrio, oscuro).
+movimiento_nivel(bostezo, normal).
+movimiento_nivel(helada, hielo).
+movimiento_nivel(luminocanon, acero).
+movimiento_nivel(puya_nociva, veneno).
+movimiento_nivel(golpe_aire, volador).
+movimiento_nivel(aire_afilado, volador).
+movimiento_nivel(punio_fuego, fuego).
+movimiento_nivel(sorpresa, normal).
+movimiento_nivel(drenadoras, planta).
+movimiento_nivel(mal_de_ojo, fantasma).
+movimiento_nivel(masaje, normal).
+movimiento_nivel(pico_taladro, volador).
+movimiento_nivel(malicioso, oscuro).
+movimiento_nivel(chorro_de_agua, agua).
+movimiento_nivel(psicoonda, psiquico).
+movimiento_nivel(fresquito, hielo).
+movimiento_nivel(triturar, oscuro).
+movimiento_nivel(pulsor, normal).
+movimiento_nivel(eco_ancestral, normal).
+movimiento_nivel(colmillo_hielo, hielo).
+movimiento_nivel(cabezahierro, acero).
+movimiento_nivel(placaje, normal).
+movimiento_nivel(burbuja, agua).
 
 % movimiento por mt
-movimiento_mt(derribo).
-movimiento_mt(bomba_acida).
-movimiento_mt(encanto).
-movimiento_mt(giro_fuego).
-movimiento_mt(surf).
-movimiento_mt(dispado).
-movimiento_mt(psiquico).
-movimiento_mt(golpe_aereo).
-movimiento_mt(vuelo).
-movimiento_mt(cola_ferrea).
-movimiento_mt(choque_toxico).
-movimiento_mt(rayo).
-movimiento_mt(tajo_umbrio).
-movimiento_mt(llamarada).
-movimiento_mt(rayo_confuso).
-movimiento_mt(toxico).
-movimiento_mt(hipnosis).
-movimiento_mt(terratemblor).
-movimiento_mt(azote).
-movimiento_mt(transgigamaxcion).
-movimiento_mt(golpe_aereo).
-movimiento_mt(lanzallamas).
-movimiento_mt(retorno).
-movimiento_mt(proteccion).
-movimiento_mt(hoja_aguda).
-movimiento_mt(rayo_hielo).
-movimiento_mt(brillo_magico).
-movimiento_mt(descanso).
-movimiento_mt(recuperacion).
-movimiento_mt(bola_sombra).
-movimiento_mt(fuerza).
-movimiento_mt(sorpresa).
-movimiento_mt(avalancha).
-movimiento_mt(cuerpo_pesado).
-movimiento_mt(garra_dragon).
-movimiento_mt(garra_umbria).
-movimiento_mt(destructor).
-movimiento_mt(sombrio).
-movimiento_mt(pulso).
-movimiento_mt(beso).
-movimiento_mt(viento_afinado).
-movimiento_mt(golpe_aereo).
-movimiento_mt(surf).
-movimiento_mt(terremoto).
-movimiento_mt(zona).
-movimiento_mt(garra_umbria).
-movimiento_mt(danza_petalo).
-movimiento_mt(gigadrenado).
-movimiento_mt(corte).
-movimiento_mt(bola_sombra).
-movimiento_mt(rayo_solar).
-movimiento_mt(bomba_lodo).
-movimiento_mt(cabeza_hierro).
-movimiento_mt(terremoto).
-movimiento_mt(somnifero).
-movimiento_mt(sol_matinal).
-movimiento_mt(rayo).
-movimiento_mt(garrra_metal).
-movimiento_mt(hidrobomba).
-movimiento_mt(refugio).
-movimiento_mt(tornado).
-movimiento_mt(encanto).
-movimiento_mt(tinieblas).
-movimiento_mt(proteccion).
-movimiento_mt(hidropulso).
-movimiento_mt(descanso).
-movimiento_mt(cabezazo).
-movimiento_mt(surf).
-movimiento_mt(rayo).
-movimiento_mt(maquinacion).
-movimiento_mt(salpicadura).
-movimiento_mt(cabeza).
-movimiento_mt(garra).
-movimiento_mt(cola).
-movimiento_mt(envite).
-movimiento_mt(mordisco).
-movimiento_mt(pantalla).
-movimiento_mt(terremoto).
-movimiento_mt(maldicion).
-movimiento_mt(sombra).
-movimiento_mt(dragon).
-movimiento_mt(corte).
-movimiento_mt(fuego).
-movimiento_mt(golpes).
-movimiento_mt(rayo_solar).
-movimiento_mt(danza_petalos).
-movimiento_mt(maquinacion).
-movimiento_mt(carga_dragon).
+movimiento_mt(derribo, normal).
+movimiento_mt(bomba_acida, veneno).
+movimiento_mt(encanto, hada).
+movimiento_mt(giro_fuego, fuego).
+movimiento_mt(surf, agua).
+movimiento_mt(dispado, normal).
+movimiento_mt(psiquico, psiquico).
+movimiento_mt(golpe_aereo, volador).
+movimiento_mt(vuelo, volador).
+movimiento_mt(cola_ferrea, acero).
+movimiento_mt(choque_toxico, veneno).
+movimiento_mt(rayo, electrico).
+movimiento_mt(tajo_umbrio, oscuro).
+movimiento_mt(llamarada, fuego).
+movimiento_mt(rayo_confuso, fantasma).
+movimiento_mt(toxico, veneno).
+movimiento_mt(hipnosis, psiquico).
+movimiento_mt(terratemblor, tierra).
+movimiento_mt(azote, normal).
+movimiento_mt(transgigamaxcion, normal).
+movimiento_mt(golpe_aereo, volador).
+movimiento_mt(lanzallamas, fuego).
+movimiento_mt(retorno, normal).
+movimiento_mt(proteccion, normal).
+movimiento_mt(hoja_aguda, planta).
+movimiento_mt(rayo_hielo, hielo).
+movimiento_mt(brillo_magico, hada).
+movimiento_mt(descanso, psiquico).
+movimiento_mt(recuperacion, normal).
+movimiento_mt(bola_sombra, fantasma).
+movimiento_mt(fuerza, normal).
+movimiento_mt(sorpresa, normal).
+movimiento_mt(avalancha, roca).
+movimiento_mt(cuerpo_pesado, acero).
+movimiento_mt(garra_dragon, dragon).
+movimiento_mt(garra_umbria, fantasma).
+movimiento_mt(destructor, normal).
+movimiento_mt(sombrio, oscuro).
+movimiento_mt(pulso, normal).
+movimiento_mt(beso, hada).
+movimiento_mt(viento_afinado, volador).
+movimiento_mt(golpe_aereo, volador).
+movimiento_mt(surf, agua).
+movimiento_mt(terremoto, tierra).
+movimiento_mt(zona, normal).
+movimiento_mt(garra_umbria, fantasma).
+movimiento_mt(danza_petalo, planta).
+movimiento_mt(gigadrenado, planta).
+movimiento_mt(corte, normal).
+movimiento_mt(bola_sombra, fantasma).
+movimiento_mt(rayo_solar, planta).
+movimiento_mt(bomba_lodo, veneno).
+movimiento_mt(cabeza_hierro, acero).
+movimiento_mt(terremoto, tierra).
+movimiento_mt(somnifero, planta).
+movimiento_mt(sol_matinal, planta).
+movimiento_mt(rayo, electrico).
+movimiento_mt(garrra_metal, acero).
+movimiento_mt(hidrobomba, agua).
+movimiento_mt(refugio, normal).
+movimiento_mt(tornado, volador).
+movimiento_mt(encanto, hada).
+movimiento_mt(tinieblas, fantasma).
+movimiento_mt(proteccion, normal).
+movimiento_mt(hidropulso, agua).
+movimiento_mt(descanso, psiquico).
+movimiento_mt(cabezazo, normal).
+movimiento_mt(surf, agua).
+movimiento_mt(rayo, electrico).
+movimiento_mt(maquinacion, oscuro).
+movimiento_mt(salpicadura, normal).
+movimiento_mt(cabeza, normal).
+movimiento_mt(garra, normal).
+movimiento_mt(cola, normal).
+movimiento_mt(envite, normal).
+movimiento_mt(mordisco, oscuro).
+movimiento_mt(pantalla, normal).
+movimiento_mt(terremoto, tierra).
+movimiento_mt(maldicion, fantasma).
+movimiento_mt(sombra, fantasma).
+movimiento_mt(dragon, dragon).
+movimiento_mt(corte, normal).
+movimiento_mt(fuego, fuego).
+movimiento_mt(golpes, normal).
+movimiento_mt(rayo_solar, planta).
+movimiento_mt(danza_petalos, planta).
+movimiento_mt(maquinacion, oscuro).
+movimiento_mt(carga_dragon, dragon).
 
 % movimiento por tutor
-movimiento_tutor(danza_espada).
-movimiento_tutor(doble_filo).
-movimiento_tutor(sustituto).
-movimiento_tutor(lanza_llamas).
-movimiento_tutor(lazallamas).
-movimiento_tutor(giro_rapido).
-movimiento_tutor(hidrocanion).
-movimiento_tutor(picadura).
-movimiento_tutor(disparo).
-movimiento_tutor(rapidez).
-movimiento_tutor(respiro).
-movimiento_tutor(trueno).
-movimiento_tutor(electrocanion).
-movimiento_tutor(golpe_bajo).
-movimiento_tutor(hiperrayo).
-movimiento_tutor(maldicion).
-movimiento_tutor(bomba).
-movimiento_tutor(transgigamaxcion).
-movimiento_tutor(deseo).
-movimiento_tutor(superdiente).
-movimiento_tutor(psiquico).
-movimiento_tutor(rayo).
-movimiento_tutor(energia_ball).
-movimiento_tutor(frio_extremo).
-movimiento_tutor(megapunio).
-movimiento_tutor(gravedad).
-movimiento_tutor(onda_trueno).
-movimiento_tutor(psico_corte).
-movimiento_tutor(megapatada).
-movimiento_tutor(cuerpo_pesado).
-movimiento_tutor(cabeza_hierro).
-movimiento_tutor(pesadilla).
-movimiento_tutor(niebla).
-movimiento_tutor(azote).
-movimiento_tutor(surf).
-movimiento_tutor(rayo_aurora).
-movimiento_tutor(filo).
-movimiento_tutor(desarme).
-movimiento_tutor(pulso_dragon).
-movimiento_tutor(avalancha).
-movimiento_tutor(acua).
-movimiento_tutor(sonambulo).
-movimiento_tutor(bomba).
-movimiento_tutor(armadura).
-movimiento_tutor(garra).
-movimiento_tutor(tinieblas).
-movimiento_tutor(trueno).
-movimiento_tutor(punio_fuego).
-movimiento_tutor(punio_meteoro).
-movimiento_tutor(habilidad_oculta).
-movimiento_tutor(danza_petalo).
-movimiento_tutor(planta_fetida).
-movimiento_tutor(esfuerzo).
-movimiento_tutor(punio_veneno).
-movimiento_tutor(desconocido).
-movimiento_tutor(giro_bola).
-movimiento_tutor(contonear).
-movimiento_tutor(acua_jet).
-movimiento_tutor(pistola).
-movimiento_tutor(bola).
-movimiento_tutor(frenesi_planta).
-movimiento_tutor(cola_ferroz).
-movimiento_tutor(blando).
-movimiento_tutor(senial_ruido).
-movimiento_tutor(mordida).
-movimiento_tutor(absorber).
-movimiento_tutor(explosion_germen).
-movimiento_tutor(esfuerzo).
-movimiento_tutor(ningun).
-movimiento_tutor(golpe).
-movimiento_tutor(colmillo).
-movimiento_tutor(malicioso).
-movimiento_tutor(tijera_x).
-movimiento_tutor(agilidad).
-movimiento_tutor(pulso).
+movimiento_tutor(danza_espada, normal).
+movimiento_tutor(doble_filo, normal).
+movimiento_tutor(sustituto, normal).
+movimiento_tutor(lanza_llamas, fuego).
+movimiento_tutor(lazallamas, fuego).
+movimiento_tutor(giro_rapido, normal).
+movimiento_tutor(hidrocanion, agua).
+movimiento_tutor(picadura, bicho).
+movimiento_tutor(disparo, normal).
+movimiento_tutor(rapidez, normal).
+movimiento_tutor(respiro, volador).
+movimiento_tutor(trueno, electrico).
+movimiento_tutor(electrocanion, electrico).
+movimiento_tutor(golpe_bajo, oscuro).
+movimiento_tutor(hiperrayo, normal).
+movimiento_tutor(maldicion, fantasma).
+movimiento_tutor(bomba, normal).
+movimiento_tutor(transgigamaxcion, normal).
+movimiento_tutor(deseo, normal).
+movimiento_tutor(superdiente, normal).
+movimiento_tutor(psiquico, psiquico).
+movimiento_tutor(rayo, electrico).
+movimiento_tutor(energia_ball, planta).
+movimiento_tutor(frio_extremo, hielo).
+movimiento_tutor(megapunio, normal).
+movimiento_tutor(gravedad, psiquico).
+movimiento_tutor(onda_trueno, electrico).
+movimiento_tutor(psico_corte, psiquico).
+movimiento_tutor(megapatada, normal).
+movimiento_tutor(cuerpo_pesado, acero).
+movimiento_tutor(cabeza_hierro, acero).
+movimiento_tutor(pesadilla, fantasma).
+movimiento_tutor(niebla, hielo).
+movimiento_tutor(azote, normal).
+movimiento_tutor(surf, agua).
+movimiento_tutor(rayo_aurora, hielo).
+movimiento_tutor(filo, normal).
+movimiento_tutor(desarme, oscuro).
+movimiento_tutor(pulso_dragon, dragon).
+movimiento_tutor(avalancha, roca).
+movimiento_tutor(acua, agua).
+movimiento_tutor(sonambulo, psiquico).
+movimiento_tutor(bomba, normal).
+movimiento_tutor(armadura, normal).
+movimiento_tutor(garra, normal).
+movimiento_tutor(tinieblas, fantasma).
+movimiento_tutor(trueno, electrico).
+movimiento_tutor(punio_fuego, fuego).
+movimiento_tutor(punio_meteoro, acero).
+movimiento_tutor(habilidad_oculta, normal).
+movimiento_tutor(danza_petalo, planta).
+movimiento_tutor(planta_fetida, planta).
+movimiento_tutor(esfuerzo, normal).
+movimiento_tutor(punio_veneno, veneno).
+movimiento_tutor(desconocido, normal).
+movimiento_tutor(giro_bola, acero).
+movimiento_tutor(contonear, normal).
+movimiento_tutor(acua_jet, agua).
+movimiento_tutor(pistola, normal).
+movimiento_tutor(bola, normal).
+movimiento_tutor(frenesi_planta, planta).
+movimiento_tutor(cola_ferroz, acero).
+movimiento_tutor(blando, normal).
+movimiento_tutor(senial_ruido, normal).
+movimiento_tutor(mordida, oscuro).
+movimiento_tutor(absorber, planta).
+movimiento_tutor(explosion_germen, planta).
+movimiento_tutor(esfuerzo, normal).
+movimiento_tutor(ningun, normal).
+movimiento_tutor(golpe, normal).
+movimiento_tutor(colmillo, normal).
+movimiento_tutor(malicioso, oscuro).
+movimiento_tutor(tijera_x, bicho).
+movimiento_tutor(agilidad, psiquico).
+movimiento_tutor(pulso, normal).
 
 % movimiento huevo
-movimiento_huevo(viento_cortante).
-movimiento_huevo(tambor).
-movimiento_huevo(colmillo_igneo).
-movimiento_huevo(pulso_dragon).
-movimiento_huevo(placaje).
-movimiento_huevo(picadura).
-movimiento_huevo(vendaval).
-movimiento_huevo(ciclon).
-movimiento_huevo(agilidad).
-movimiento_huevo(mordisco).
-movimiento_huevo(remolino).
-movimiento_huevo(gruniido).
-movimiento_huevo(encanto).
-movimiento_huevo(cuerpo_llamas).
-movimiento_huevo(fijar).
-movimiento_huevo(niebla).
-movimiento_huevo(barrera).
-movimiento_huevo(transgigamaxcion).
-movimiento_huevo(encantamiento).
-movimiento_huevo(agua_lodosa).
-movimiento_huevo(captura).
-movimiento_huevo(maldicion).
-movimiento_huevo(curacion).
-movimiento_huevo(telepatia).
-movimiento_huevo(desarme).
-movimiento_huevo(rezo).
-movimiento_huevo(contraataque).
-movimiento_huevo(venganza).
-movimiento_huevo(danza_petalos).
-movimiento_huevo(drenadora).
-movimiento_huevo(psicoonda).
-movimiento_huevo(ciclon).
-movimiento_huevo(sustituto).
-movimiento_huevo(enfado).
-movimiento_huevo(foco).
-movimiento_huevo(rugido).
-movimiento_huevo(trampa).
-movimiento_huevo(contraataque).
-movimiento_huevo(finta).
-movimiento_huevo(matarile).
-movimiento_huevo(latigo_cep).
-movimiento_huevo(desconocido_movimiento).
-movimiento_huevo(hojas_navajas).
-movimiento_huevo(campana_curacion).
-movimiento_huevo(chispa).
-movimiento_huevo(cabezazo).
-movimiento_huevo(trampa_rocas).
-movimiento_huevo(bostezo).
-movimiento_huevo(punio_bala).
-movimiento_huevo(truco).
-movimiento_huevo(pulso).
-movimiento_huevo(psicocarga).
-movimiento_huevo(poder_oculto).
-movimiento_huevo(bello_misterio).
-movimiento_huevo(cabeza_hierro).
-movimiento_huevo(roca_afilada).
-movimiento_huevo(danio_secundario).
-movimiento_huevo(amago).
-movimiento_huevo(copion).
-movimiento_huevo(despejar).
-movimiento_huevo(cabeza_metal).
-movimiento_huevo(maquinacion).
-movimiento_huevo(danza_luna).
-movimiento_huevo(cuerpo_maldito).
-movimiento_huevo(drenadoras).
-movimiento_huevo(gigadrenado).
-movimiento_huevo(bostezo).
-movimiento_huevo(impactrueno).
-movimiento_huevo(encanto).
-movimiento_huevo(captura).
-movimiento_huevo(canto).
-movimiento_huevo(espada_santa).
-movimiento_huevo(bubble_beam).
-movimiento_huevo(furia).
-movimiento_huevo(reciclaje).
-movimiento_huevo(machada).
-movimiento_huevo(robo).
-movimiento_huevo(tajo_aereo).
-movimiento_huevo(granizo).
-movimiento_huevo(contraataque).
-movimiento_huevo(punio_hielo).
-movimiento_huevo(aroma_ve).
-movimiento_huevo(absorber).
-movimiento_huevo(desarme).
-movimiento_huevo(drenadoras).
-movimiento_huevo(contoneo).
-movimiento_huevo(rapido).
-movimiento_huevo(estallido).
-movimiento_huevo(cola_ferrea).
-movimiento_huevo(desconocido).
-movimiento_huevo(susto).
-movimiento_huevo(esporagodon).
-movimiento_huevo(fuego_fatuo).
-movimiento_huevo(pulso_aura).
-movimiento_huevo(pico_taladro).
-movimiento_huevo(aqua_ring).
-movimiento_huevo(aquajet).
+movimiento_huevo(viento_cortante, volador).
+movimiento_huevo(tambor, normal).
+movimiento_huevo(colmillo_igneo, fuego).
+movimiento_huevo(pulso_dragon, dragon).
+movimiento_huevo(placaje, normal).
+movimiento_huevo(picadura, bicho).
+movimiento_huevo(vendaval, volador).
+movimiento_huevo(ciclon, volador).
+movimiento_huevo(agilidad, psiquico).
+movimiento_huevo(mordisco, oscuro).
+movimiento_huevo(remolino, agua).
+movimiento_huevo(gruniido, normal).
+movimiento_huevo(encanto, hada).
+movimiento_huevo(cuerpo_llamas, fuego).
+movimiento_huevo(fijar, normal).
+movimiento_huevo(niebla, hielo).
+movimiento_huevo(barrera, psiquico).
+movimiento_huevo(transgigamaxcion, normal).
+movimiento_huevo(encantamiento, hada).
+movimiento_huevo(agua_lodosa, agua).
+movimiento_huevo(captura, normal).
+movimiento_huevo(maldicion, fantasma).
+movimiento_huevo(curacion, normal).
+movimiento_huevo(telepatia, psiquico).
+movimiento_huevo(desarme, oscuro).
+movimiento_huevo(rezo, normal).
+movimiento_huevo(contraataque, lucha).
+movimiento_huevo(venganza, lucha).
+movimiento_huevo(danza_petalos, planta).
+movimiento_huevo(drenadora, planta).
+movimiento_huevo(psicoonda, psiquico).
+movimiento_huevo(ciclon, volador).
+movimiento_huevo(sustituto, normal).
+movimiento_huevo(enfado, dragon).
+movimiento_huevo(foco, lucha).
+movimiento_huevo(rugido, normal).
+movimiento_huevo(trampa, normal).
+movimiento_huevo(contraataque, lucha).
+movimiento_huevo(finta, oscuro).
+movimiento_huevo(matarile, normal).
+movimiento_huevo(latigo_cep, planta).
+movimiento_huevo(desconocido_movimiento, normal).
+movimiento_huevo(hojas_navajas, planta).
+movimiento_huevo(campana_curacion, hada).
+movimiento_huevo(chispa, electrico).
+movimiento_huevo(cabezazo, normal).
+movimiento_huevo(trampa_rocas, roca).
+movimiento_huevo(bostezo, normal).
+movimiento_huevo(punio_bala, acero).
+movimiento_huevo(truco, psiquico).
+movimiento_huevo(pulso, normal).
+movimiento_huevo(psicocarga, psiquico).
+movimiento_huevo(poder_oculto, normal).
+movimiento_huevo(bello_misterio, hada).
+movimiento_huevo(cabeza_hierro, acero).
+movimiento_huevo(roca_afilada, roca).
+movimiento_huevo(danio_secundario, normal).
+movimiento_huevo(amago, normal).
+movimiento_huevo(copion, normal).
+movimiento_huevo(despejar, volador).
+movimiento_huevo(cabeza_metal, acero).
+movimiento_huevo(maquinacion, oscuro).
+movimiento_huevo(danza_luna, hada).
+movimiento_huevo(cuerpo_maldito, fantasma).
+movimiento_huevo(drenadoras, planta).
+movimiento_huevo(gigadrenado, planta).
+movimiento_huevo(bostezo, normal).
+movimiento_huevo(impactrueno, electrico).
+movimiento_huevo(encanto, hada).
+movimiento_huevo(captura, normal).
+movimiento_huevo(canto, normal).
+movimiento_huevo(espada_santa, lucha).
+movimiento_huevo(bubble_beam, agua).
+movimiento_huevo(furia, normal).
+movimiento_huevo(reciclaje, normal).
+movimiento_huevo(machada, lucha).
+movimiento_huevo(robo, oscuro).
+movimiento_huevo(tajo_aereo, volador).
+movimiento_huevo(granizo, hielo).
+movimiento_huevo(contraataque, lucha).
+movimiento_huevo(punio_hielo, hielo).
+movimiento_huevo(aroma_ve, planta).
+movimiento_huevo(absorber, planta).
+movimiento_huevo(desarme, oscuro).
+movimiento_huevo(drenadoras, planta).
+movimiento_huevo(contoneo, normal).
+movimiento_huevo(rapido, normal).
+movimiento_huevo(estallido, fuego).
+movimiento_huevo(cola_ferrea, acero).
+movimiento_huevo(desconocido, normal).
+movimiento_huevo(susto, normal).
+movimiento_huevo(esporagodon, planta).
+movimiento_huevo(fuego_fatuo, fuego).
+movimiento_huevo(pulso_aura, lucha).
+movimiento_huevo(pico_taladro, volador).
+movimiento_huevo(aqua_ring, agua).
+movimiento_huevo(aquajet, agua).
 
 % movimiento especial por pokemon
-movimiento_especial(planta_feroz).
-movimiento_especial(acrobata).
-movimiento_especial(cola_dragon).
-movimiento_especial(llamarada).
-movimiento_especial(hidro_bomba).
-movimiento_especial(proteccion).
-movimiento_especial(pico_taladro).
-movimiento_especial(remolino).
-movimiento_especial(viento).
-movimiento_especial(hiper_rayo).
-movimiento_especial(ataque_aereo).
-movimiento_especial(chispa).
-movimiento_especial(trueno).
-movimiento_especial(furia).
-movimiento_especial(fuego_fatuo).
-movimiento_especial(pesadilla).
-movimiento_especial(terremoto).
-movimiento_especial(transgigamaxcion).
-movimiento_especial(encantamiento).
-movimiento_especial(agua_lodosa).
-movimiento_especial(extrasensorial).
-movimiento_especial(pulso_umbrio).
-movimiento_especial(danza_lama).
-movimiento_especial(nevada).
-movimiento_especial(fuerza_lunar).
-movimiento_especial(psiquico).
-movimiento_especial(psi_onda).
-movimiento_especial(recuperacion).
-movimiento_especial(cometa).
-movimiento_especial(derribo).
-movimiento_especial(enfado).
-movimiento_especial(avalancha).
-movimiento_especial(rayo).
-movimiento_especial(danza_llamas).
-movimiento_especial(rafaga).
-movimiento_especial(megapunio).
-movimiento_especial(campana_curativa).
-movimiento_especial(bomba_lodo).
-movimiento_especial(rayo_solar).
-movimiento_especial(anillo_igneo).
-movimiento_especial(giro_bola).
-movimiento_especial(lanza_rocas).
-movimiento_especial(esfera_aural).
-movimiento_especial(premonicion).
-movimiento_especial(esfuerzo).
-movimiento_especial(rayo_confuso).
-movimiento_especial(bola_sombra).
-movimiento_especial(desconocido).
-movimiento_especial(cabeza_hierro).
-movimiento_especial(garra_metal).
-movimiento_especial(cabezahierro).
-movimiento_especial(hidropulso).
-movimiento_especial(hidrochorro).
-movimiento_especial(erupcion).
-movimiento_especial(remolino).
-movimiento_especial(golpe_aereo).
-movimiento_especial(cabeza_hierro).
-movimiento_especial(rayo_lunar).
-movimiento_especial(rayo_solar).
-movimiento_especial(beso_dulce).
-movimiento_especial(espora).
-movimiento_especial(drenadoras).
-movimiento_especial(danza_lluvia).
-movimiento_especial(toxina).
-movimiento_especial(tajo_umbrio).
-movimiento_especial(pulso_dragon).
-movimiento_especial(chispazo).
-movimiento_especial(patada_salto_alto).
-movimiento_especial(gigadrenado).
-movimiento_especial(bomba_germen).
-movimiento_especial(chorro_de_tinta).
-movimiento_especial(arrancar).
-movimiento_especial(hoja_magica).
+movimiento_especial(planta_feroz, planta).
+movimiento_especial(acrobata, volador).
+movimiento_especial(cola_dragon, dragon).
+movimiento_especial(llamarada, fuego).
+movimiento_especial(hidro_bomba, agua).
+movimiento_especial(proteccion, normal).
+movimiento_especial(pico_taladro, volador).
+movimiento_especial(remolino, agua).
+movimiento_especial(viento, volador).
+movimiento_especial(hiper_rayo, normal).
+movimiento_especial(ataque_aereo, volador).
+movimiento_especial(chispa, electrico).
+movimiento_especial(trueno, electrico).
+movimiento_especial(furia, normal).
+movimiento_especial(fuego_fatuo, fuego).
+movimiento_especial(pesadilla, fantasma).
+movimiento_especial(terremoto, tierra).
+movimiento_especial(transgigamaxcion, normal).
+movimiento_especial(encantamiento, hada).
+movimiento_especial(agua_lodosa, agua).
+movimiento_especial(extrasensorial, psiquico).
+movimiento_especial(pulso_umbrio, oscuro).
+movimiento_especial(danza_lama, normal).
+movimiento_especial(nevada, hielo).
+movimiento_especial(fuerza_lunar, hada).
+movimiento_especial(psiquico, psiquico).
+movimiento_especial(psi_onda, psiquico).
+movimiento_especial(recuperacion, normal).
+movimiento_especial(cometa, normal).
+movimiento_especial(derribo, roca).
+movimiento_especial(enfado, dragon).
+movimiento_especial(avalancha, roca).
+movimiento_especial(rayo, electrico).
+movimiento_especial(danza_llamas, fuego).
+movimiento_especial(rafaga, normal).
+movimiento_especial(megapunio, normal).
+movimiento_especial(campana_curativa, hada).
+movimiento_especial(bomba_lodo, veneno).
+movimiento_especial(rayo_solar, planta).
+movimiento_especial(anillo_igneo, fuego).
+movimiento_especial(giro_bola, acero).
+movimiento_especial(lanza_rocas, roca).
+movimiento_especial(esfera_aural, lucha).
+movimiento_especial(premonicion, psiquico).
+movimiento_especial(esfuerzo, normal).
+movimiento_especial(rayo_confuso, fantasma).
+movimiento_especial(bola_sombra, fantasma).
+movimiento_especial(desconocido, normal).
+movimiento_especial(cabeza_hierro, acero).
+movimiento_especial(garra_metal, acero).
+movimiento_especial(cabezahierro, acero).
+movimiento_especial(hidropulso, agua).
+movimiento_especial(hidrochorro, agua).
+movimiento_especial(erupcion, fuego).
+movimiento_especial(remolino, agua).
+movimiento_especial(golpe_aereo, volador).
+movimiento_especial(cabeza_hierro, acero).
+movimiento_especial(rayo_lunar, hada).
+movimiento_especial(rayo_solar, planta).
+movimiento_especial(beso_dulce, hada).
+movimiento_especial(espora, planta).
+movimiento_especial(drenadoras, planta).
+movimiento_especial(danza_lluvia, agua).
+movimiento_especial(toxina, veneno).
+movimiento_especial(tajo_umbrio, oscuro).
+movimiento_especial(pulso_dragon, dragon).
+movimiento_especial(chispazo, electrico).
+movimiento_especial(patada_salto_alto, lucha).
+movimiento_especial(gigadrenado, planta).
+movimiento_especial(bomba_germen, planta).
+movimiento_especial(chorro_de_tinta, agua).
+movimiento_especial(arrancar, normal).
+movimiento_especial(hoja_magica, planta).
 
 % movimiento z
-movimiento_z(helice_trepanadora).
-movimiento_z(hidrovortice_abisal).
-movimiento_z(guadana_sedosa).
-movimiento_z(dracoaliento_devastador).
-movimiento_z(gigavoltio_destructor).
-movimiento_z(presa_espectral).
-movimiento_z(hecatombe_pirica).
-movimiento_z(arrumaco_sideral).
-movimiento_z(crioaliento_despiadado).
-movimiento_z(rafaga_demoledora).
-movimiento_z(carrera_arrolladora).
-movimiento_z(megaton_floral).
-movimiento_z(disruptor_psiquico).
-movimiento_z(agujero_negro_aniquilador).
-movimiento_z(barrena_telurica).
-movimiento_z(diluvio_corrosivo).
-movimiento_z(picado_supersonico).
+movimiento_z(helice_trepanadora, volador).
+movimiento_z(hidrovortice_abisal, agua).
+movimiento_z(guadana_sedosa, bicho).
+movimiento_z(dracoaliento_devastador, dragon).
+movimiento_z(gigavoltio_destructor, electrico).
+movimiento_z(presa_espectral, fantasma).
+movimiento_z(hecatombe_pirica, fuego).
+movimiento_z(arrumaco_sideral, hada).
+movimiento_z(crioaliento_despiadado, hielo).
+movimiento_z(rafaga_demoledora, normal).
+movimiento_z(carrera_arrolladora, lucha).
+movimiento_z(megaton_floral, planta).
+movimiento_z(disruptor_psiquico, psiquico).
+movimiento_z(agujero_negro_aniquilador, oscuro).
+movimiento_z(barrena_telurica, tierra).
+movimiento_z(diluvio_corrosivo, veneno).
+movimiento_z(picado_supersonico, volador).
 
 % movimiento z compuesto
 movimiento_z_especial(pikachu, placaje_electrico, pikavoltio_letal).
@@ -3999,6 +3999,7 @@ tipo_evolucion(ramificada).
 tipo_evolucion(mixta).
 tipo_evolucion(doble).
 tipo_evolucion(intercambio).
+tipo_evolucion(objeto).
 
 % evolucion por nivel
 evolucion_nivel(bulbasaur, ivysaur, 16).
@@ -4050,8 +4051,6 @@ evolucion_nivel(seel, dewgong, 34).
 evolucion_nivel(grimer, muk, 38).
 evolucion_nivel(shellder, cloyster, 36).
 evolucion_nivel(gastly, haunter, 25).
-evolucion_nivel(haunter, gengar, 36).
-evolucion_nivel(onix, steelix, 36).
 evolucion_nivel(drowzee, hypno, 26).
 evolucion_nivel(krabby, kingler, 28).
 evolucion_nivel(voltorb, electrode, 30).
@@ -4067,7 +4066,6 @@ evolucion_nivel(staryu, starmie, 36).
 evolucion_nivel(magikarp, gyarados, 20).
 evolucion_nivel(lapras, lapras, 36).
 evolucion_nivel(ditto, ditto, 36).
-evolucion_nivel(eevee, vaporeon, 36).
 evolucion_nivel(porygon, porygon2, 36).
 evolucion_nivel(omanyte, omastar, 40).
 evolucion_nivel(kabuto, kabutops, 40).
@@ -4086,7 +4084,6 @@ evolucion_nivel(hoothoot, noctowl, 20).
 evolucion_nivel(ledyba, ledian, 18).
 evolucion_nivel(spinarak, ariados, 22).
 evolucion_nivel(chinchou, lanturn, 27).
-evolucion_nivel(togepi, togetic, 20).
 evolucion_nivel(natu, xatu, 25).
 evolucion_nivel(mareep, flaaffy, 15).
 evolucion_nivel(flaaffy, ampharos, 30).
@@ -4095,7 +4092,8 @@ evolucion_nivel(hoppip, skiploom, 18).
 evolucion_nivel(skiploom, jumpluff, 27).
 evolucion_nivel(sunkern, sunflora, 30).
 evolucion_nivel(wooper, quagsire, 20).
-evolucion_nivel(espeon, umbreon, 20). % por amistad diurna/nocturna
+evolucion_nivel(eevee, umbreon, 20). % por amistad diurna
+evolucion_nivel(eevee, espeon, 20). % por amistad diurna
 evolucion_nivel(murkrow, honchkrow, 25). % si se usa piedra noche
 evolucion_nivel(misdreavus, mismagius, 25). % si se usa piedra noche
 evolucion_nivel(yanma, yanmega, 33).
@@ -4438,6 +4436,29 @@ evolucion_por_amistad(woobat, swoobat).
 evolucion_por_amistad(swadloon, leavanny).
 evolucion_por_amistad(codigo_cero, silvally).
 evolucion_por_amistad(snoom, frosmoth).
+evolucion_por_amistad(togepi, togekiss).
+
+% evolucion por objeto
+evolucion_objeto(eevee, vaporeon, 'piedra agua').
+evolucion_objeto(eevee, jolteon, 'piedra trueno').
+evolucion_objeto(eevee, flareon, 'piedra fuego').
+evolucion_objeto(eevee, leafeon, 'piedra hoja').
+evolucion_objeto(eevee, glaceon, 'hielo heterno').
+evolucion_objeto(poliwhirl, poliwrath, 'piedra agua').
+evolucion_objeto(poliwhirl, politoed, 'roca del rey').
+evolucion_objeto(nidorino, nidoking, 'piedra lunar').
+evolucion_objeto(clefairy, clefable, 'piedra lunar').
+evolucion_objeto(jigglypuff, wigglytuff, 'piedra lunar').
+evolucion_objeto(skitty, delcatty, 'piedra lunar').
+evolucion_objeto(gloom, vileplume, 'piedra hoja').
+evolucion_objeto(weepinbeel , victreebel, 'piedra hoja').
+evolucion_objeto(exeggcute, exeggutor, 'piedra hoja').
+evolucion_objeto(pikachu, raichu, 'piedra trueno').
+evolucion_objeto(pikachu, alolan_raichu, 'piedra trueno').
+evolucion_objeto(minccino, cinccino, 'piedra dia').
+evolucion_objeto(roselia , roserade, 'piedra dia').
+evolucion_objeto(togetic, togekiss, 'piedra dia').
+evolucion_objeto(kirlia, gallade, 'piedra alba').
 
 % mega evolucion y piedra correspondiente
 megaevolucion(venusaur, megavenusaur).
@@ -4598,6 +4619,10 @@ es_tipo_psiquico(Nombre) :- pokemon(_, Nombre, [psiquico], _).
 es_tipo_hada(Nombre) :- pokemon(_, Nombre, [hada], _).
 es_tipo_hielo(Nombre) :- pokemon(_, Nombre, [hielo], _).
 es_tipo_dragon(Nombre) :- pokemon(_, Nombre, [dragon], _).
+
+evoluciona_nivel(Nombre, Evolucion, Nivel) :-
+    pokemon(_, Nombre, _, _),
+    evoluciona_nivel(Nombre, Evolucion, Nivel).
 
 % Regla para determinar la categoría basada en el número de Pokédex
 pokemon_inicial(Nombre, Tipo, Region, Categoria) :-
@@ -5620,3 +5645,49 @@ grupo_huevo_ditto(Nombre, Grupo_huevo) :-
     pokemon(Numero, Nombre, _, _),
     (Numero = 132),
     Grupo_huevo = grupo_ditto.
+
+linea_evolutiva_completa(Nombre, [Nombre | Evoluciones]) :-
+    obtener_evoluciones(Nombre, Evoluciones).
+
+obtener_evoluciones(Nombre, [Evolucion | Resto]) :-
+    evolucion_nivel(Nombre, Evolucion, _Nivel),
+    obtener_evoluciones(Evolucion, Resto).
+obtener_evoluciones(_, []). 
+
+cantidad_pokemon_generacion(Generacion, Cantidad) :-generaciontotal(Generacion, Cantidad).
+
+generacion_mas_pokemon(Generacion) :-
+    findall(Cantidad-Gen, generaciontotal(Gen, Cantidad), Lista),
+    max_member(_-Generacion, Lista).
+
+regiones_tipo_pokemon(Tipo, Regiones) :-
+    findall(Region, (generacionregion(_, Region), tipo(Tipo)), Lista),
+    list_to_set(Lista, Regiones).
+
+pokemon_multiples_evoluciones(Nombre, Evoluciones) :-
+    findall(Evolucion, 
+        (evolucion_nivel(Nombre, Evolucion, _); 
+         evolucion_por_amistad(Nombre, Evolucion);
+         evolucion_por_intercambio(Nombre, Evolucion); 
+         evolucion_por_intercambio_objeto(Nombre, Evolucion, _); 
+         evolucion_objeto(Nombre, Evolucion, _)), 
+        Evoluciones),
+    length(Evoluciones, N),
+    N > 1.
+
+metodo_evolucion(Nombre, Metodo) :-
+    ( Nombre = eevee ->
+        Metodo = 'por nivel, piedra y amistad'
+    ; evolucion_nivel(Nombre, _, _) ->
+        Metodo = 'por nivel'
+    ; evolucion_por_amistad(Nombre, _) ->
+        Metodo = 'por amistad'
+    ; evolucion_por_intercambio(Nombre, _) ->
+        Metodo = 'por intercambio'
+    ; evolucion_por_intercambio_objeto(Nombre, _, _) ->
+        Metodo = 'con intercambio y objeto'
+    ; evolucion_objeto(Nombre, _, _) ->
+        Metodo = 'por piedra'
+    ; Metodo = 'no tiene evolución conocida'
+    ).
+
