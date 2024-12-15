@@ -4453,6 +4453,16 @@ evolucion_por_amistad(codigo_cero, silvally).
 evolucion_por_amistad(snoom, frosmoth).
 evolucion_por_amistad(togepi, togekiss).
 
+% evolucion solo hombres
+evolucion_solo_macho(kirlia, gallade).
+evolucion_solo_macho(burmy, mothim).
+
+% evolucion solo mujeres
+evolucion_solo_hembra(combee, vespiquen).
+evolucion_solo_hembra(salandit, salazzle).
+evolucion_solo_hembra(burmy, wormadam).
+evolucion_solo_hembra(snorunt, froslass).
+
 % evolucion por objeto
 evolucion_objeto(eevee, vaporeon, 'piedra agua').
 evolucion_objeto(eevee, jolteon, 'piedra trueno').
@@ -4575,9 +4585,12 @@ mega_piedra(audinita).
 mega_piedra(diancita).
 
 % gigamax
-gigamax(venasaur, venusaur_gigamax).
+gigamax(venusaur, venusaur_gigamax).
 gigamax(charizard, charizard_gigamax).
 gigamax(blastoise, blastoise_gigamax).
+gigamax(cinderace, cinderace_gigamax).
+gigamax(inteleon, inteleon_gigamax).
+gigamax(rillaboom, rillaboom_gigamax).
 gigamax(butterfree, butterfree_gigamax).
 gigamax(pikachu, pikachu_gigamax).
 gigamax(meowth, meowth_gigamax).
@@ -4602,6 +4615,7 @@ gigamax(alcremie, alcremie_gigamax).
 gigamax(copperajah, copperajah_gigamax).
 gigamax(duraludon, duraludon_gigamax).
 gigamax(urshifu, urshifu_gigamax).
+gigamax(eternatus, eternatus_gigamax).
 
 % mecanicas
 mecanica(megaEvolucion).
@@ -4714,49 +4728,49 @@ pokemon_bebe(Nombre, Tipo, Region, Categoria) :-
     ), Categoria = bebe.
     
 pokemon_basicos_primera(Nombre, Tipo, Categoria) :-
-    pokemon(Numero, Nombre, Tipo),
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 10, Numero =< 145)), 
     Categoria = basico.
 
-pokemon_basicos_segunda(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_segunda(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     (   (Numero >= 161, Numero =< 243)
     ;   (Numero >= 246, Numero =< 348)
     ),
     Categoria = basico.
 
-pokemon_basicos_tercera(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_tercera(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 261, Numero =< 376))
     , Categoria = basico.
 
-pokemon_basicos_cuarta(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_cuarta(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 396, Numero =< 479))
     , Categoria = basico.
 
-pokemon_basicos_quinta(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_quinta(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 504, Numero =< 637))
     , Categoria = basico.
 
-pokemon_basicos_sexta(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_sexta(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 659, Numero =< 715))
     , Categoria = basico.
 
-pokemon_basicos_septima(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_septima(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 731, Numero =< 809))
     , Categoria = basico.
 
-pokemon_basicos_octava(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_octava(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 819, Numero =< 887))
     , Categoria = basico.
 
-pokemon_basicos_novena(Nombre, Tipo, Region, Categoria) :-
-    pokemon(Numero, Nombre, Tipo, Region),
+pokemon_basicos_novena(Nombre, Tipo, Categoria) :-
+    pokemon(Numero, Nombre, Tipo, _),
     ((Numero >= 915, Numero =< 1001))
     , Categoria = basico.
 
@@ -6360,57 +6374,48 @@ movimientos_tipo_mo_tutor(Tipo, Movimiento) :-
     movimiento_mo(Movimiento, Tipo),
     movimiento_tutor(Movimiento, Tipo).
 
-% Consulta para habilidades que afectan la lluvia
 habilidad_cura_lluvia(Habilidad) :-
     habilidad(Habilidad, Descripcion),
     sub_atom(Descripcion, _, _, _, "lluvia").
 
-% Consulta para habilidades que afectan la tormenta de arena
 habilidad_cura_tormenta_arena(Habilidad) :-
     habilidad(Habilidad, Descripcion),
     sub_atom(Descripcion, _, _, _, "tormenta de arena").
 
-% Consulta para habilidades que afectan el granizo
 habilidad_cura_granizo(Habilidad) :-
     habilidad(Habilidad, Descripcion),
     sub_atom(Descripcion, _, _, _, "granizo").
 
-% Consulta para Pokémon iniciales del grupo huevo dragón
 pokemon_inicial_huevo_dragon(Nombre) :-
     generacion_inicial(_, Iniciales),
     member(Nombre, Iniciales),
     pokemon_grupo_huevo(Nombre, GruposHuevo),
     member(dragon, GruposHuevo).
 
-% Consulta para Pokémon iniciales del grupo huevo agua 1
 pokemon_inicial_huevo_agua1(Nombre) :-
     generacion_inicial(_, Iniciales),
     member(Nombre, Iniciales),
     pokemon_grupo_huevo(Nombre, GruposHuevo),
     member(agua1, GruposHuevo).
 
-% Consulta para Pokémon iniciales del grupo huevo agua 2
 pokemon_inicial_huevo_agua2(Nombre) :-
     generacion_inicial(_, Iniciales),
     member(Nombre, Iniciales),
     pokemon_grupo_huevo(Nombre, GruposHuevo),
     member(agua2, GruposHuevo).
 
-% Consulta para Pokémon iniciales del grupo huevo agua 3
 pokemon_inicial_huevo_agua3(Nombre) :-
     generacion_inicial(_, Iniciales),
     member(Nombre, Iniciales),
     pokemon_grupo_huevo(Nombre, GruposHuevo),
     member(agua3, GruposHuevo).
 
-% Consulta para Pokémon iniciales del grupo huevo hada
 pokemon_inicial_huevo_hada(Nombre) :-
     generacion_inicial(_, Iniciales),
     member(Nombre, Iniciales),
     pokemon_grupo_huevo(Nombre, GruposHuevo),
     member(hada, GruposHuevo).
 
-% Consulta para Pokémon iniciales del grupo huevo planta
 pokemon_inicial_huevo_planta(Nombre) :-
     generacion_inicial(_, Iniciales),
     member(Nombre, Iniciales),
@@ -6443,3 +6448,67 @@ contar_pokemon_dos_tipos_generacion(Generacion, Count) :-
     findall(Nombre, (pokemon(_, Nombre, Tipos, Generacion), length(Tipos, 2)), Lista),
     length(Lista, Count).
 
+pokemon_inicial_gigamax(Nombre) :-
+    pokemon_inicial(Nombre, _, _, inicial),
+    gigamax(Nombre, _).
+
+pokemon_basicos_gigamax(Nombre) :-
+    (   pokemon_basicos_primera(Nombre, _, basico)
+    ;   pokemon_basicos_segunda(Nombre, _, basico)
+    ;   pokemon_basicos_tercera(Nombre, _, basico)
+    ;   pokemon_basicos_cuarta(Nombre, _, basico)
+    ;   pokemon_basicos_quinta(Nombre, _, basico)
+    ;   pokemon_basicos_sexta(Nombre, _, basico)
+    ;   pokemon_basicos_septima(Nombre, _, basico)
+    ;   pokemon_basicos_octava(Nombre, _, basico)
+    ;   pokemon_basicos_novena(Nombre, _, basico)
+    ),
+    gigamax(Nombre, _).
+
+pokemon_basicos_no_gigamax(Nombre) :-
+    (   pokemon_basicos_primera(Nombre, _, basico)
+    ;   pokemon_basicos_segunda(Nombre, _, basico)
+    ;   pokemon_basicos_tercera(Nombre, _, basico)
+    ;   pokemon_basicos_cuarta(Nombre, _, basico)
+    ;   pokemon_basicos_quinta(Nombre, _, basico)
+    ;   pokemon_basicos_sexta(Nombre, _, basico)
+    ;   pokemon_basicos_septima(Nombre, _, basico)
+    ;   pokemon_basicos_octava(Nombre, _, basico)
+    ;   pokemon_basicos_novena(Nombre, _, basico)
+    ),
+    \+ gigamax(Nombre, _).
+
+
+pokemon_evolucion_genero(Pokemon) :-
+    (   evolucion_solo_macho(Pokemon, _)
+    ;   evolucion_solo_hembra(Pokemon, _)
+    ),
+    pokemon(_, Pokemon, _, _).
+
+pokemon_forma_alola_hada(Pokemon) :-
+    forma_regional_alola(Pokemon, Tipos),
+    member(hada, Tipos).
+    
+pokemon_megaevolucion(Pokemon, MegaEvolucion, MegaPiedra) :-
+    megaevolucion(Pokemon, MegaEvolucion, _),
+    mega_piedra(MegaPiedra).
+
+pokemon_evolucion_nivel_intercambio(Pokemon, EvolucionNivel, EvolucionIntercambio) :-
+    evolucion_nivel(Pokemon, EvolucionNivel, _),
+    evolucion_por_intercambio(EvolucionNivel, EvolucionIntercambio).
+
+pokemon_evolucion_nivel_piedra(Pokemon, EvolucionNivel, EvolucionPiedra, Piedra) :-
+    evolucion_nivel(Pokemon, EvolucionNivel, _),
+    evolucion_objeto(EvolucionNivel, EvolucionPiedra, Piedra).
+
+pokemon_evolucion_nivel_intercambio_objeto(Pokemon, EvolucionNivel, EvolucionIntercambio, Objeto) :-
+    evolucion_nivel(Pokemon, EvolucionNivel, _),
+    evolucion_por_intercambio_objeto(EvolucionNivel, EvolucionIntercambio, Objeto).
+
+pokemon_evolucion_nivel_amistad(Pokemon, EvolucionNivel, EvolucionAmistad) :-
+    evolucion_nivel(Pokemon, EvolucionNivel, _),
+    evolucion_por_amistad(EvolucionNivel, EvolucionAmistad).
+
+pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Piedra) :-
+    evolucion_por_amistad(Pokemon, EvolucionAmistad),
+    evolucion_objeto(EvolucionAmistad, EvolucionPiedra, Piedra).
