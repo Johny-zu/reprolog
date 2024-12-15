@@ -141,3 +141,12 @@ pokemon_muy_eficaz_hada_pradera(Nombre).
 pokemon_muy_eficaz_lucha_ciudad(Nombre).
 pokemon_muy_eficaz_acero_caverna(Nombre).
 pokemon_muy_eficaz_fantasma_caverna(Nombre).
+pokemon_con_multiples_inmunidades(Nombre, Inmunidades).
+movimientos_tipo_mt_tutor(Tipo, Movimiento).
+movimientos_tipo_mt_huevo(Tipo, Movimiento).
+movimientos_tipo_huevo_nivel(Tipo, Movimiento).
+movimientos_tipo_nivel_mo(Tipo, Movimiento).
+movimientos_tipo_tutor_huevo(Tipo, Movimiento).
+movimientos_tipo_tutor_nivel(Tipo, Movimiento).
+movimientos_tipo_mt_nivel(Tipo, Movimiento).
+movimientos_tipo_mo_tutor(Tipo, Movimiento).

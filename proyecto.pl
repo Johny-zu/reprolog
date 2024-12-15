@@ -28,7 +28,7 @@
 :- discontiguous puntosExp/2.
 :- discontiguous regiones/2.
 :- discontiguous objetos_equipables/2.
-:- discontiguous movimiento_nivel/3.
+:- discontiguous movimiento_nivel/2.
 :- discontiguous movimiento_mt/3.
 :- discontiguous movimiento_tutor/3.
 :- discontiguous movimiento_huevo/3.
@@ -1120,6 +1120,8 @@ movimiento_nivel(colmillo_hielo, hielo).
 movimiento_nivel(cabezahierro, acero).
 movimiento_nivel(placaje, normal).
 movimiento_nivel(burbuja, agua).
+movimeinto_nivel(vuelo, volador).
+movimiento_nivel(surf, agua).
 
 % movimiento por mt
 movimiento_mt(derribo, normal).
@@ -1130,7 +1132,6 @@ movimiento_mt(surf, agua).
 movimiento_mt(dispado, normal).
 movimiento_mt(psiquico, psiquico).
 movimiento_mt(golpe_aereo, volador).
-movimiento_mt(vuelo, volador).
 movimiento_mt(cola_ferrea, acero).
 movimiento_mt(choque_toxico, veneno).
 movimiento_mt(rayo, electrico).
@@ -1210,6 +1211,17 @@ movimiento_mt(rayo_solar, planta).
 movimiento_mt(danza_petalos, planta).
 movimiento_mt(maquinacion, oscuro).
 movimiento_mt(carga_dragon, dragon).
+
+% movimiento por MO
+movimiento_mo(corte, normal).
+movimiento_mo(surf, agua).
+movimiento_mo(vuelo, volador).
+movimiento_mo(fuerza, normal).
+movimiento_mo(cascada, agua).
+movimiento_mo(golpe_roca, roca).
+movimiento_mo(remolino, agua).
+movimiento_mo(buceo, agua).
+movimiento_mo(escalada, normal).
 
 % movimiento por tutor
 movimiento_tutor(danza_espada, normal).
@@ -6076,9 +6088,6 @@ pokemon_eficaz_planta_bosque(Nombre) :-
     member(Tipo, TiposPokemon),
     member(Tipo, TiposEficaces).
 
-
-
-
 pokemon_eficaz_siniestro_montana(Nombre) :-
     eficaz(siniestro, TiposEficaces),
     pokemon_habitat_montana(Nombre, _, montana),
@@ -6308,3 +6317,43 @@ pokemon_muy_eficaz_fantasma_caverna(Nombre) :-
     pokemon(_, Nombre, TiposPokemon, _),
     member(Tipo, TiposPokemon),
     member(Tipo, TiposMuyEficaces).
+
+pokemon_con_multiples_inmunidades(Nombre, Inmunidades) :-
+    pokemon(_, Nombre, TiposPokemon, _),
+    findall(TipoInmune, (member(Tipo, TiposPokemon), inmune(Tipo, TiposInmunes), member(TipoInmune, TiposInmunes)), ListaInmunidades),
+    list_to_set(ListaInmunidades, InmunidadesUnicas),
+    length(InmunidadesUnicas, Cantidad),
+    Cantidad > 1,
+    Inmunidades = InmunidadesUnicas.
+
+movimientos_tipo_mt_tutor(Tipo, Movimiento) :-
+    movimiento_mt(Movimiento, Tipo),
+    movimiento_tutor(Movimiento, Tipo).
+
+movimientos_tipo_mt_huevo(Tipo, Movimiento) :-
+    movimiento_mt(Movimiento, Tipo),
+    movimiento_huevo(Movimiento, Tipo).
+
+movimientos_tipo_huevo_nivel(Tipo, Movimiento) :-
+    movimiento_huevo(Movimiento, Tipo),
+    movimiento_nivel(Movimiento, Tipo).
+
+movimientos_tipo_nivel_mo(Tipo, Movimiento) :-
+    movimiento_nivel(Movimiento, Tipo),
+    movimiento_mo(Movimiento, Tipo).
+
+movimientos_tipo_tutor_huevo(Tipo, Movimiento) :-
+    movimiento_tutor(Movimiento, Tipo),
+    movimiento_huevo(Movimiento, Tipo).
+
+movimientos_tipo_tutor_nivel(Tipo, Movimiento) :-
+    movimiento_tutor(Movimiento, Tipo),
+    movimiento_nivel(Movimiento, Tipo).
+
+movimientos_tipo_mt_nivel(Tipo, Movimiento) :-
+    movimiento_mt(Movimiento, Tipo),
+    movimiento_nivel(Movimiento, Tipo).
+
+movimientos_tipo_mo_tutor(Tipo, Movimiento) :-
+    movimiento_mo(Movimiento, Tipo),
+    movimiento_tutor(Movimiento, Tipo).
