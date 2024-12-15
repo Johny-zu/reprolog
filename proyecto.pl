@@ -6059,3 +6059,252 @@ pokemon_resistente_fantasma_caverna(Nombre) :-
     pokemon(_, Nombre, TiposPokemon, _),
     member(Tipo, TiposPokemon),
     member(Tipo, TiposResistentes).
+
+
+pokemon_eficaz_fuego_montana(Nombre) :-
+    eficaz(fuego, TiposEficaces),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_planta_bosque(Nombre) :-
+    eficaz(planta, TiposEficaces),
+    pokemon_habitat_bosque(Nombre, _, bosque),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+
+
+pokemon_eficaz_siniestro_montana(Nombre) :-
+    eficaz(siniestro, TiposEficaces),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_agua_lago(Nombre) :-
+    eficaz(agua, TiposEficaces),
+    pokemon_habitat_agua_dulce(Nombre, _, agua_dulce),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_electrico_ciudad(Nombre) :-
+    eficaz(electrico, TiposEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_hielo_tundra(Nombre) :-
+    eficaz(hielo, TiposEficaces),
+    pokemon_habitat_tundra(Nombre, _, tundra),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_veneno_pantano(Nombre) :-
+    eficaz(veneno, TiposEficaces),
+    pokemon_habitat_pantano(Nombre, _, pantano),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_bicho_bosque(Nombre) :-
+    eficaz(bicho, TiposEficaces),
+    pokemon_habitat_bosque(Nombre, _, bosque),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_roca_caverna(Nombre) :-
+    eficaz(roca, TiposEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_psiquico_ciudad(Nombre) :-
+    eficaz(psiquico, TiposEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_hada_pradera(Nombre) :-
+    eficaz(hada, TiposEficaces),
+    pokemon_habitat_pradera(Nombre, _, pradera),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_dragon_montana(Nombre) :-
+    eficaz(dragon, TiposEficaces),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_lucha_ciudad(Nombre) :-
+    eficaz(lucha, TiposEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_acero_caverna(Nombre) :-
+    eficaz(acero, TiposEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_eficaz_fantasma_caverna(Nombre) :-
+    eficaz(fantasma, TiposEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposEficaces).
+
+
+pokemon_muy_eficaz_fuego_montana(Nombre) :-
+    muy_eficaz(fuego, TiposMuyEficaces),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_planta_bosque(Nombre) :-
+    muy_eficaz(planta, TiposMuyEficaces),
+    pokemon_habitat_bosque(Nombre, _, bosque),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_veneno_caverna(Nombre) :-
+    muy_eficaz(veneno, TiposMuyEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_fuego_ciudad(Nombre) :-
+    muy_eficaz(fuego, TiposMuyEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_siniestro_montana(Nombre) :-
+    muy_eficaz(siniestro, TiposMuyEficaces),
+    pokemon_habitat_montana(Nombre, _, montana),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_agua_lago(Nombre) :-
+    muy_eficaz(agua, TiposMuyEficaces),
+    pokemon_habitat_agua_dulce(Nombre, _, agua_dulce),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_electrico_ciudad(Nombre) :-
+    muy_eficaz(electrico, TiposMuyEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_hielo_tundra(Nombre) :-
+    muy_eficaz(hielo, TiposMuyEficaces),
+    pokemon_habitat_tundra(Nombre, _, tundra),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_veneno_pantano(Nombre) :-
+    muy_eficaz(veneno, TiposMuyEficaces),
+    pokemon_habitat_pantano(Nombre, _, pantano),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_volador_selva(Nombre) :-
+    muy_eficaz(volador, TiposMuyEficaces),
+    pokemon_habitat_selva(Nombre, _, selva),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_bicho_bosque(Nombre) :-
+    muy_eficaz(bicho, TiposMuyEficaces),
+    pokemon_habitat_bosque(Nombre, _, bosque),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_roca_caverna(Nombre) :-
+    muy_eficaz(roca, TiposMuyEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_tierra_desierto(Nombre) :-
+    muy_eficaz(tierra, TiposMuyEficaces),
+    pokemon_habitat_desierto(Nombre, _, desierto),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_psiquico_ciudad(Nombre) :-
+    muy_eficaz(psiquico, TiposMuyEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_hada_pradera(Nombre) :-
+    muy_eficaz(hada, TiposMuyEficaces),
+    pokemon_habitat_pradera(Nombre, _, pradera),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_lucha_ciudad(Nombre) :-
+    muy_eficaz(lucha, TiposMuyEficaces),
+    pokemon_habitat_ciudad(Nombre, _, ciudad),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_acero_caverna(Nombre) :-
+    muy_eficaz(acero, TiposMuyEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
+
+pokemon_muy_eficaz_fantasma_caverna(Nombre) :-
+    muy_eficaz(fantasma, TiposMuyEficaces),
+    pokemon_habitat_caverna(Nombre, _, caverna),
+    pokemon(_, Nombre, TiposPokemon, _),
+    member(Tipo, TiposPokemon),
+    member(Tipo, TiposMuyEficaces).
