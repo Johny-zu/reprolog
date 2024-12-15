@@ -150,3 +150,18 @@ movimientos_tipo_tutor_huevo(Tipo, Movimiento).
 movimientos_tipo_tutor_nivel(Tipo, Movimiento).
 movimientos_tipo_mt_nivel(Tipo, Movimiento).
 movimientos_tipo_mo_tutor(Tipo, Movimiento).
+habilidad_cura_lluvia(Habilidad).
+habilidad_cura_tormenta_arena(Habilidad).
+habilidad_cura_granizo(Habilidad).
+pokemon_inicial_huevo_dragon(Nombre).
+pokemon_inicial_huevo_agua1(Nombre).
+pokemon_inicial_huevo_agua2(Nombre).
+pokemon_inicial_huevo_agua3(Nombre).
+pokemon_inicial_huevo_hada(Nombre).
+pokemon_inicial_huevo_planta(Nombre).
+region_grande(Region).
+movimiento_hada_tutor_eficaz(Movimiento).
+contar_pokemon_un_tipo(Count).
+contar_pokemon_dos_tipos(Count).
+contar_pokemon_un_tipo_generacion(Generacion, Count).
+contar_pokemon_dos_tipos_generacion(Generacion, Count).

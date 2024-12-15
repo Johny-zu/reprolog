@@ -1227,8 +1227,7 @@ movimiento_mo(escalada, normal).
 movimiento_tutor(danza_espada, normal).
 movimiento_tutor(doble_filo, normal).
 movimiento_tutor(sustituto, normal).
-movimiento_tutor(lanza_llamas, fuego).
-movimiento_tutor(lazallamas, fuego).
+movimiento_tutor(lanzallamas, fuego).
 movimiento_tutor(giro_rapido, normal).
 movimiento_tutor(hidrocanion, agua).
 movimiento_tutor(picadura, bicho).
@@ -3723,19 +3722,19 @@ pokemon_grupo_huevo(charizard, [monstruo, dragon]).
 pokemon_grupo_huevo(squirtle, [monstruo, agua_1]).
 pokemon_grupo_huevo(wartortle, [monstruo, agua_1]).
 pokemon_grupo_huevo(blastoise, [monstruo, agua_1]).
-pokemon_grupo_huevo(caterpie, bicho).
-pokemon_grupo_huevo(metapod, bicho).
-pokemon_grupo_huevo(butterfree, bicho).
-pokemon_grupo_huevo(weedle, bicho).
-pokemon_grupo_huevo(kakuna, bicho).
-pokemon_grupo_huevo(beedrill, bicho).
-pokemon_grupo_huevo(pidgey, volador).
-pokemon_grupo_huevo(pidgeotto, volador).
-pokemon_grupo_huevo(pidgeot, volador).
-pokemon_grupo_huevo(rattata, campo).
-pokemon_grupo_huevo(raticate, campo).
-pokemon_grupo_huevo(spearow, volador).
-pokemon_grupo_huevo(spearow, campo).
+pokemon_grupo_huevo(caterpie, [bicho]).
+pokemon_grupo_huevo(metapod, [bicho]).
+pokemon_grupo_huevo(butterfree, [bicho]).
+pokemon_grupo_huevo(weedle, [bicho]).
+pokemon_grupo_huevo(kakuna, [bicho]).
+pokemon_grupo_huevo(beedrill, [bicho]).
+pokemon_grupo_huevo(pidgey, [volador]).
+pokemon_grupo_huevo(pidgeotto, [volador]).
+pokemon_grupo_huevo(pidgeot, [volador]).
+pokemon_grupo_huevo(rattata, [campo]).
+pokemon_grupo_huevo(raticate, [campo]).
+pokemon_grupo_huevo(spearow, [volador]).
+pokemon_grupo_huevo(spearow, [campo]).
 pokemon_grupo_huevo(pikachu, [monstruo, hada]).
 pokemon_grupo_huevo(raichu, [monstruo, hada]).
 pokemon_grupo_huevo(meowth, [campo]).
@@ -3895,6 +3894,7 @@ pokemon_grupo_huevo(rowlet, [volador]).
 pokemon_grupo_huevo(dartrix, [volador]).
 pokemon_grupo_huevo(empoleon, [agua_1, monstruo]).
 pokemon_grupo_huevo(piplup, [agua_1, monstruo]).
+pokemon_grupo_huevo(treecko, [monstruo, dragon]).
 
 % pokemon iniciales
 generacion_inicial(primera, [bulbasaur, charmander, squirtle]).
@@ -4637,11 +4637,13 @@ es_tipo_hada(Nombre) :- pokemon(_, Nombre, [hada], _).
 es_tipo_hielo(Nombre) :- pokemon(_, Nombre, [hielo], _).
 es_tipo_dragon(Nombre) :- pokemon(_, Nombre, [dragon], _).
 
+
+% Regla para determinar la categoría basada en el número de Pokédex
+% COMINEZO DE PREGUNTAS
 evoluciona_nivel(Nombre, Evolucion, Nivel) :-
     pokemon(_, Nombre, _, _),
     evoluciona_nivel(Nombre, Evolucion, Nivel).
 
-% Regla para determinar la categoría basada en el número de Pokédex
 pokemon_inicial(Nombre, Tipo, Region, Categoria) :-
     pokemon(Numero, Nombre, Tipo, Region),
     (   (Numero >= 1, Numero =< 9)
@@ -6357,3 +6359,87 @@ movimientos_tipo_mt_nivel(Tipo, Movimiento) :-
 movimientos_tipo_mo_tutor(Tipo, Movimiento) :-
     movimiento_mo(Movimiento, Tipo),
     movimiento_tutor(Movimiento, Tipo).
+
+% Consulta para habilidades que afectan la lluvia
+habilidad_cura_lluvia(Habilidad) :-
+    habilidad(Habilidad, Descripcion),
+    sub_atom(Descripcion, _, _, _, "lluvia").
+
+% Consulta para habilidades que afectan la tormenta de arena
+habilidad_cura_tormenta_arena(Habilidad) :-
+    habilidad(Habilidad, Descripcion),
+    sub_atom(Descripcion, _, _, _, "tormenta de arena").
+
+% Consulta para habilidades que afectan el granizo
+habilidad_cura_granizo(Habilidad) :-
+    habilidad(Habilidad, Descripcion),
+    sub_atom(Descripcion, _, _, _, "granizo").
+
+% Consulta para Pokémon iniciales del grupo huevo dragón
+pokemon_inicial_huevo_dragon(Nombre) :-
+    generacion_inicial(_, Iniciales),
+    member(Nombre, Iniciales),
+    pokemon_grupo_huevo(Nombre, GruposHuevo),
+    member(dragon, GruposHuevo).
+
+% Consulta para Pokémon iniciales del grupo huevo agua 1
+pokemon_inicial_huevo_agua1(Nombre) :-
+    generacion_inicial(_, Iniciales),
+    member(Nombre, Iniciales),
+    pokemon_grupo_huevo(Nombre, GruposHuevo),
+    member(agua1, GruposHuevo).
+
+% Consulta para Pokémon iniciales del grupo huevo agua 2
+pokemon_inicial_huevo_agua2(Nombre) :-
+    generacion_inicial(_, Iniciales),
+    member(Nombre, Iniciales),
+    pokemon_grupo_huevo(Nombre, GruposHuevo),
+    member(agua2, GruposHuevo).
+
+% Consulta para Pokémon iniciales del grupo huevo agua 3
+pokemon_inicial_huevo_agua3(Nombre) :-
+    generacion_inicial(_, Iniciales),
+    member(Nombre, Iniciales),
+    pokemon_grupo_huevo(Nombre, GruposHuevo),
+    member(agua3, GruposHuevo).
+
+% Consulta para Pokémon iniciales del grupo huevo hada
+pokemon_inicial_huevo_hada(Nombre) :-
+    generacion_inicial(_, Iniciales),
+    member(Nombre, Iniciales),
+    pokemon_grupo_huevo(Nombre, GruposHuevo),
+    member(hada, GruposHuevo).
+
+% Consulta para Pokémon iniciales del grupo huevo planta
+pokemon_inicial_huevo_planta(Nombre) :-
+    generacion_inicial(_, Iniciales),
+    member(Nombre, Iniciales),
+    pokemon_grupo_huevo(Nombre, GruposHuevo),
+    member(planta, GruposHuevo).
+
+region_grande(Region) :-
+    generaciontotal(Generacion, Total),
+    Total > 100,
+    generacionregion(Generacion, Region).
+
+movimiento_hada_tutor_eficaz(Movimiento) :-
+    movimiento_tutor(Movimiento, Tipo),
+    poco_eficaz(Tipo, TiposPocoEficaces),
+    member(hada, TiposPocoEficaces).
+
+contar_pokemon_un_tipo(Count) :-
+    findall(Nombre, (pokemon(_, Nombre, Tipos, _), length(Tipos, 1)), Lista),
+    length(Lista, Count).
+
+contar_pokemon_dos_tipos(Count) :-
+    findall(Nombre, (pokemon(_, Nombre, Tipos, _), length(Tipos, 2)), Lista),
+    length(Lista, Count).
+
+contar_pokemon_un_tipo_generacion(Generacion, Count) :-
+    findall(Nombre, (pokemon(_, Nombre, Tipos, Generacion), length(Tipos, 1)), Lista),
+    length(Lista, Count).
+
+contar_pokemon_dos_tipos_generacion(Generacion, Count) :-
+    findall(Nombre, (pokemon(_, Nombre, Tipos, Generacion), length(Tipos, 2)), Lista),
+    length(Lista, Count).
+
