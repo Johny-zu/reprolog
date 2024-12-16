@@ -4721,7 +4721,6 @@ es_tipo_hielo(Nombre) :- pokemon(_, Nombre, [hielo], _).
 es_tipo_dragon(Nombre) :- pokemon(_, Nombre, [dragon], _).
 
 
-% Regla para determinar la categoría basada en el número de Pokédex
 % COMINEZO DE PREGUNTAS
 evoluciona_nivel(Nombre, Evolucion, Nivel) :-
     pokemon(_, Nombre, _, _),
@@ -6584,7 +6583,6 @@ pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Pie
     evolucion_por_amistad(Pokemon, EvolucionAmistad),
     evolucion_objeto(EvolucionAmistad, EvolucionPiedra, Piedra).
 
-% Regla: Pokémon sin género que pueden evolucionar.
 pokemon_sin_genero_evolucion(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, _, _),
     sin_genero(Pokemon),
@@ -6592,113 +6590,94 @@ pokemon_sin_genero_evolucion(Pokemon, Evolucion) :-
      evolucion_por_intercambio(Pokemon, Evolucion);
      evolucion_objeto(Pokemon, Evolucion, _)).
 
-% Regla: Pokémon de tipo tierra que evolucionan por intercambio sin objetos.
 pokemon_tierra_evolucion_intercambio(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(tierra, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo psíquico que evolucionan por intercambio sin objetos.
 pokemon_psiquico_evolucion_intercambio(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(psiquico, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo lucha que evolucionan por intercambio sin objetos.
 pokemon_lucha_evolucion_intercambio(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(lucha, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo fantasma que evolucionan por intercambio sin objetos.
 pokemon_fantasma_evolucion_intercambio(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(fantasma, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo tierra que evolucionan por intercambio con objeto.
 pokemon_tierra_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(tierra, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon de tipo agua que evolucionan por intercambio con objeto.
 pokemon_agua_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(agua, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon de tipo bicho que evolucionan por intercambio con objeto.
 pokemon_bicho_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(bicho, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon de tipo normal que evolucionan por intercambio con objeto.
 pokemon_normal_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(normal, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon de tipo fantasma que evolucionan por intercambio con objeto.
 pokemon_fantasma_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(fantasma, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon de tipo eléctrico que evolucionan por intercambio con objeto.
 pokemon_electrico_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(electrico, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon de tipo roca que evolucionan por intercambio con objeto.
 pokemon_roca_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
     pokemon(_, Pokemon, Tipos, _),
     member(roca, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon que evolucionan al intercambiarse con un objeto específico.
 pokemon_evolucion_intercambio_con_objeto(Pokemon, Evolucion, Objeto) :-
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla para encontrar la línea evolutiva de los Pokémon que evolucionan por intercambio específico
 pokemon_evolucion_intercambio_con_otro_poke(Nombre, Evolucion) :-
     pokemon(Numero, Nombre, _, _),
     (Numero = 588; Numero = 616),
     evolucion_por_intercambio(Nombre, Evolucion).
 
-% Regla: Pokémon de tipo veneno que evolucionan con amistad.
 pokemon_veneno_evolucion_amistad(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(veneno, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo normal que evolucionan con amistad.
 pokemon_normal_evolucion_amistad(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(normal, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo eléctrico que evolucionan con amistad.
 pokemon_electrico_evolucion_amistad(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(electrico, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo hada que evolucionan con amistad.
 pokemon_hada_evolucion_amistad(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(hada, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo lucha que evolucionan con amistad.
 pokemon_lucha_evolucion_amistad(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(lucha, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo bicho que evolucionan con amistad.
 pokemon_bicho_evolucion_amistad(Pokemon, Evolucion) :-
     pokemon(_, Pokemon, Tipos, _),
     member(bicho, Tipos),

@@ -1,3 +1,6 @@
+para consultar
+consult(proyecto).
+
 ¿Cuál es el número en la Pokédex de un Pokémon?
 numero_pokedex(Numero)
 
