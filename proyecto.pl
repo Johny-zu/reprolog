@@ -4472,7 +4472,7 @@ evolucion_tarde(rockruff, lycanroc_tarde).
 evolucion_tarde(milcery, alcremie).
 
 % evolucion por intercambio
-evolucion_por_intercambio(cadabra, alakazam).
+evolucion_por_intercambio(kadabra, alakazam).
 evolucion_por_intercambio(machoke, machamp).
 evolucion_por_intercambio(graveler, golem).
 evolucion_por_intercambio(haunter, gengar).
@@ -4480,6 +4480,8 @@ evolucion_por_intercambio(boldore, gigalith).
 evolucion_por_intercambio(gurdurr, conkeldurr).
 evolucion_por_intercambio(phantump, trevenant).
 evolucion_por_intercambio(pumpkaboo, gourgeist).
+evolucion_por_intercambio(karrablast, escavalier).
+evolucion_por_intercambio(shelmet, accelgor).
 
 % evolucion por intercambio con objeto
 evolucion_por_intercambio_objeto(poliwhirl, politoad, roca_del_rey).
@@ -6584,6 +6586,7 @@ pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Pie
 
 % Regla: Pokémon sin género que pueden evolucionar.
 pokemon_sin_genero_evolucion(Pokemon, Evolucion) :-
+    pokemon(_, Pokemon, _, _),
     sin_genero(Pokemon),
     (evolucion_nivel(Pokemon, Evolucion, _);
      evolucion_por_intercambio(Pokemon, Evolucion);
@@ -6591,188 +6594,124 @@ pokemon_sin_genero_evolucion(Pokemon, Evolucion) :-
 
 % Regla: Pokémon de tipo tierra que evolucionan por intercambio sin objetos.
 pokemon_tierra_evolucion_intercambio(Pokemon, Evolucion) :-
-    tipo(Pokemon, tierra),
+    pokemon(_, Pokemon, Tipos, _),
+    member(tierra, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo psíquico que evolucionan por intercambio sin objetos.
 pokemon_psiquico_evolucion_intercambio(Pokemon, Evolucion) :-
-    tipo(Pokemon, psiquico),
+    pokemon(_, Pokemon, Tipos, _),
+    member(psiquico, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo lucha que evolucionan por intercambio sin objetos.
 pokemon_lucha_evolucion_intercambio(Pokemon, Evolucion) :-
-    tipo(Pokemon, lucha),
+    pokemon(_, Pokemon, Tipos, _),
+    member(lucha, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo fantasma que evolucionan por intercambio sin objetos.
 pokemon_fantasma_evolucion_intercambio(Pokemon, Evolucion) :-
-    tipo(Pokemon, fantasma),
+    pokemon(_, Pokemon, Tipos, _),
+    member(fantasma, Tipos),
     evolucion_por_intercambio(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo tierra que evolucionan por intercambio con objeto.
 pokemon_tierra_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, tierra),
+    pokemon(_, Pokemon, Tipos, _),
+    member(tierra, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
 % Regla: Pokémon de tipo agua que evolucionan por intercambio con objeto.
 pokemon_agua_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, agua),
+    pokemon(_, Pokemon, Tipos, _),
+    member(agua, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
 % Regla: Pokémon de tipo bicho que evolucionan por intercambio con objeto.
 pokemon_bicho_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, bicho),
+    pokemon(_, Pokemon, Tipos, _),
+    member(bicho, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
 % Regla: Pokémon de tipo normal que evolucionan por intercambio con objeto.
 pokemon_normal_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, normal),
+    pokemon(_, Pokemon, Tipos, _),
+    member(normal, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
 % Regla: Pokémon de tipo fantasma que evolucionan por intercambio con objeto.
 pokemon_fantasma_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, fantasma),
+    pokemon(_, Pokemon, Tipos, _),
+    member(fantasma, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
 % Regla: Pokémon de tipo eléctrico que evolucionan por intercambio con objeto.
 pokemon_electrico_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, electrico),
+    pokemon(_, Pokemon, Tipos, _),
+    member(electrico, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
 % Regla: Pokémon de tipo roca que evolucionan por intercambio con objeto.
 pokemon_roca_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
-    tipo(Pokemon, roca),
+    pokemon(_, Pokemon, Tipos, _),
+    member(roca, Tipos),
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
-
-% Regla: Pokémon que evolucionan con la roca del rey.
-pokemon_evolucion_roca_del_rey(Pokemon, Evolucion) :-
-    evolucion_objeto(Pokemon, Evolucion, roca_del_rey).
 
 % Regla: Pokémon que evolucionan al intercambiarse con un objeto específico.
 pokemon_evolucion_intercambio_con_objeto(Pokemon, Evolucion, Objeto) :-
     evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-% Regla: Pokémon que evolucionan al intercambiarse por otro en específico.
-pokemon_evolucion_intercambio_especifico(Pokemon, Evolucion, OtroPokemon) :-
-    evolucion_por_intercambio(Pokemon, Evolucion),
-    evolucion_por_intercambio(OtroPokemon, Pokemon).
-
-% Regla: Pokémon de tipo siniestro que evolucionan con amistad.
-pokemon_siniestro_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, siniestro),
-    evolucion_por_amistad(Pokemon, Evolucion).
+% Regla para encontrar la línea evolutiva de los Pokémon que evolucionan por intercambio específico
+pokemon_evolucion_intercambio_con_otro_poke(Nombre, Evolucion) :-
+    pokemon(Numero, Nombre, _, _),
+    (Numero = 588; Numero = 616),
+    evolucion_por_intercambio(Nombre, Evolucion).
 
 % Regla: Pokémon de tipo veneno que evolucionan con amistad.
 pokemon_veneno_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, veneno),
+    pokemon(_, Pokemon, Tipos, _),
+    member(veneno, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo normal que evolucionan con amistad.
 pokemon_normal_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, normal),
+    pokemon(_, Pokemon, Tipos, _),
+    member(normal, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo eléctrico que evolucionan con amistad.
 pokemon_electrico_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, electrico),
+    pokemon(_, Pokemon, Tipos, _),
+    member(electrico, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo hada que evolucionan con amistad.
 pokemon_hada_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, hada),
+    pokemon(_, Pokemon, Tipos, _),
+    member(hada, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo lucha que evolucionan con amistad.
 pokemon_lucha_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, lucha),
+    pokemon(_, Pokemon, Tipos, _),
+    member(lucha, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
 % Regla: Pokémon de tipo bicho que evolucionan con amistad.
 pokemon_bicho_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, bicho),
+    pokemon(_, Pokemon, Tipos, _),
+    member(bicho, Tipos),
     evolucion_por_amistad(Pokemon, Evolucion).
 
-% Regla: Pokémon de tipo hielo que evolucionan con amistad.
-pokemon_hielo_evolucion_amistad(Pokemon, Evolucion) :-
-    tipo(Pokemon, hielo),
-    evolucion_por_amistad(Pokemon, Evolucion).
+pokemon_fuego_movimiento_agua(Pokemon, Movimiento) :-
+    pokemon(_, Pokemon, Tipos, _),
+    member(fuego, Tipos),
+    (movimiento_nivel(Movimiento, agua); movimiento_mt(Movimiento, agua)).
 
-% Regla: Pokémon de Alola que son de tipo hielo y tienen forma regional.
-pokemon_alola_hielo_forma_regional(Pokemon) :-
-    forma_regional_alola(Pokemon, Tipos),
-    member(hielo, Tipos).
 
-% Regla: Pokémon que cambian a tipo siniestro cuando tienen otra forma regional.
-pokemon_forma_regional_siniestro(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(siniestro, Tipos).
+pokemon_con_movimiento_z_exclusivo(Pokemon) :-
+    movimiento_z_especial(Pokemon, _, _).
 
-% Regla: Pokémon que cambian a tipo veneno cuando tienen otra forma regional.
-pokemon_forma_regional_veneno(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(veneno, Tipos).
-
-% Regla: Pokémon que cambian a tipo hielo cuando tienen otra forma regional.
-pokemon_forma_regional_hielo(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(hielo, Tipos).
-
-% Regla: Pokémon que cambian a tipo acero cuando tienen otra forma regional.
-pokemon_forma_regional_acero(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(acero, Tipos).
-
-% Regla: Pokémon que cambian a tipo psíquico cuando tienen otra forma regional.
-pokemon_forma_regional_psiquico(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(psiquico, Tipos).
-
-% Regla: Pokémon que cambian a tipo planta cuando tienen otra forma regional.
-pokemon_forma_regional_planta(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(planta, Tipos).
-
-% Regla: Pokémon que cambian a tipo roca cuando tienen otra forma regional.
-pokemon_forma_regional_roca(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(roca, Tipos).
-
-% Regla: Pokémon que cambian a tipo fantasma cuando tienen otra forma regional.
-pokemon_forma_regional_fantasma(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(fantasma, Tipos).
-
-% Regla: Pokémon que cambian a tipo lucha cuando tienen otra forma regional.
-pokemon_forma_regional_lucha(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(lucha, Tipos).
-
-% Regla: Pokémon que cambian a tipo normal cuando tienen otra forma regional.
-pokemon_forma_regional_normal(Pokemon) :-
-    (forma_regional_alola(Pokemon, Tipos);
-     forma_regional_galar(Pokemon, Tipos);
-     forma_regional_hisui(Pokemon, Tipos)),
-    member(normal, Tipos).
-
-% Regla: Pokémon que cambian a tipo dragón cuando tienen otra forma regional.
-pokemon_forma_regional_dragon(Pokemon) :-
-    forma_regional_alola(Pokemon, Tipos),
-    member(dragon, Tipos).
+pokemon_con_movimiento_z_exclusivo_movimiento_requerido(Pokemon, Movimiento) :-
+    movimiento_z_especial(Pokemon, Movimiento, _).

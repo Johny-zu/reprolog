@@ -529,21 +529,6 @@ pokemon_evolucion_nivel_intercambio_objeto(Pokemon, EvolucionNivel, EvolucionInt
 ¿Cuáles son los Pokémon que evolucionan por nivel y amistad?
 pokemon_evolucion_nivel_amistad(Pokemon, EvolucionNivel, EvolucionAmistad).
 
-178 .- ¿Cuáles son los Pokémon que evolucionan por amistad y piedra?
-pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Piedra).
-
-¿Cuáles son los Pokémon que evolucionan por nivel e intercambio?
-pokemon_evolucion_nivel_intercambio(Pokemon, EvolucionNivel, EvolucionIntercambio).
-
-¿Cuáles son los Pokémon que evolucionan por nivel y piedra?
-pokemon_evolucion_nivel_piedra(Pokemon, EvolucionNivel, EvolucionPiedra, Piedra).
-
-¿Cuáles son los Pokémon que evolucionan por nivel, intercambio y objeto?
-pokemon_evolucion_nivel_intercambio_objeto(Pokemon, EvolucionNivel, EvolucionIntercambio, Objeto).
-
-¿Cuáles son los Pokémon que evolucionan por nivel y amistad?
-pokemon_evolucion_nivel_amistad(Pokemon, EvolucionNivel, EvolucionAmistad).
-
 ¿Cuáles son los Pokémon que evolucionan por amistad y piedra?
 pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Piedra).
 
@@ -583,17 +568,11 @@ pokemon_electrico_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
 ¿Cuáles son los Pokémon de tipo roca que evolucionan por intercambio con objeto?
 pokemon_roca_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
 
-¿Cuáles son los Pokémon que evolucionan con la roca del rey?
-pokemon_evolucion_roca_del_rey(Pokemon, Evolucion).
-
 ¿Cuáles son los Pokémon que evolucionan al intercambiarse con un objeto específico?
 pokemon_evolucion_intercambio_con_objeto(Pokemon, Evolucion, Objeto).
 
 ¿Cuáles son los Pokémon que evolucionan al intercambiarse por otro en específico?
-pokemon_evolucion_intercambio_especifico(Pokemon, Evolucion, OtroPokemon).
-
-¿Cuáles son los Pokémon de tipo siniestro que evolucionan con amistad?
-pokemon_siniestro_evolucion_amistad(Pokemon, Evolucion).
+pokemon_evolucion_intercambio_con_otro_poke(Nombre, Evolucion).
 
 ¿Cuáles son los Pokémon de tipo veneno que evolucionan con amistad?
 pokemon_veneno_evolucion_amistad(Pokemon, Evolucion).
@@ -613,41 +592,8 @@ pokemon_lucha_evolucion_amistad(Pokemon, Evolucion).
 ¿Cuáles son los Pokémon de tipo bicho que evolucionan con amistad?
 pokemon_bicho_evolucion_amistad(Pokemon, Evolucion).
 
-¿Cuáles son los Pokémon de tipo hielo que evolucionan con amistad?
-pokemon_hielo_evolucion_amistad(Pokemon, Evolucion).
+¿Cuáles son los Pokémon con movimiento Z exclusivo?
+pokemon_con_movimiento_z_exclusivo(Pokemon).
 
-¿Cuáles son los Pokémon de Alola que son de tipo hielo y tienen forma regional?
-pokemon_alola_hielo_forma_regional(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo siniestro cuando tienen otra forma regional?
-pokemon_forma_regional_siniestro(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo veneno cuando tienen otra forma regional?
-pokemon_forma_regional_veneno(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo hielo cuando tienen otra forma regional?
-pokemon_forma_regional_hielo(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo acero cuando tienen otra forma regional?
-pokemon_forma_regional_acero(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo psíquico cuando tienen otra forma regional?
-pokemon_forma_regional_psiquico(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo planta cuando tienen otra forma regional?
-pokemon_forma_regional_planta(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo roca cuando tienen otra forma regional?
-pokemon_forma_regional_roca(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo fantasma cuando tienen otra forma regional?
-pokemon_forma_regional_fantasma(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo lucha cuando tienen otra forma regional?
-pokemon_forma_regional_lucha(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo normal cuando tienen otra forma regional?
-pokemon_forma_regional_normal(Pokemon).
-
-¿Cuáles son los Pokémon que cambian a tipo dragón cuando tienen otra forma regional?
-pokemon_forma_regional_dragon(Pokemon).
+¿Cuáles son los Pokémon con movimiento Z exclusivo y el movimiento requerido?
+pokemon_con_movimiento_z_exclusivo_movimiento_requerido(Pokemon, Movimiento).
