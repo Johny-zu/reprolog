@@ -19,12 +19,13 @@
 :- discontiguous forma_regional_hisui/2.
 :- discontiguous forma_regional_paldea/2.
 :- discontiguous grupo_huevo/2.
+:- discontiguous pokemon_grupo_huevo/2.
 :- discontiguous dobleGrupoHuevo/2.
 :- discontiguous ratiocaptura/2.
 :- discontiguous genero_porcentaje/2.
 :- discontiguous distincion_genero/2.
 :- discontiguous amistadbase/2.
-:- discontiguous pasoseclosion/2.
+:- discontiguous pasos_eclosion_huevo/2.
 :- discontiguous puntosExp/2.
 :- discontiguous regiones/2.
 :- discontiguous objetos_equipables/2.
@@ -66,6 +67,7 @@
 :- discontiguous mega_piedra/1.
 :- discontiguous gigamax/2.
 :- discontiguous mecanica/1.
+
 
 % tipos de pokemon
 tipo(normal).
@@ -860,24 +862,23 @@ amistadbase(90).
 amistadbase(100).
 
 % pasos para eclosionar
-pasoseclosion(0).
-pasoseclosion(1280).
-pasoseclosion(2560).
-pasoseclosion(2800).
-pasoseclosion(2805).
-pasoseclosion(3840).
-pasoseclosion(4080).
-pasoseclosion(5120).
-pasoseclosion(5120).
-pasoseclosion(5140).
-pasoseclosion(5355).
-pasoseclosion(5376).
-pasoseclosion(6400).
-pasoseclosion(8960).
-pasoseclosion(9180).
-pasoseclosion(10240).
-pasoseclosion(30720).
-pasoseclosion(desconocido).
+pasos_eclosion_huevo(1280, [grupo_huevo_agua1, grupo_huevo_agua2]).
+pasos_eclosion_huevo(2560, [grupo_huevo_bicho]).
+pasos_eclosion_huevo(2800, [grupo_huevo_volador]).
+pasos_eclosion_huevo(2805, [grupo_huevo_planta]).
+pasos_eclosion_huevo(3840, [grupo_huevo_monstruo, grupo_huevo_dragon]).
+pasos_eclosion_huevo(4080, [grupo_huevo_hada]).
+pasos_eclosion_huevo(5120, [grupo_huevo_campo, grupo_huevo_humanoide]).
+pasos_eclosion_huevo(5140, [grupo_huevo_mineral]).
+pasos_eclosion_huevo(5355, [grupo_huevo_amorfo]).
+pasos_eclosion_huevo(5376, [grupo_huevo_agua3]).
+pasos_eclosion_huevo(6400, [grupo_huevo_desconocido]).
+pasos_eclosion_huevo(8960, [grupo_huevo_mitico]).
+pasos_eclosion_huevo(9180, [grupo_huevo_legendario]).
+pasos_eclosion_huevo(10240, [grupo_huevo_ultra_bestia]).
+pasos_eclosion_huevo(30720, [grupo_huevo_singular]).
+pasos_eclosion_huevo(desconocido, [grupo_huevo_desconocido]).
+
 
 % puntos de experiencia
 puntosExp(860).
@@ -3713,7 +3714,155 @@ pokemon_habitat(dartrix, desconocido).
 pokemon_habitat(empoleon, agua_dulce).
 pokemon_habitat(piplup, agua_dulce).
 
-pokemon_grupo_huevo(bulbasaur, [mounstro, planta]).
+% Definición de los grupos huevo a los que pertenece cada Pokémon
+% Grupo huevo agua 1
+pokemon_grupo_huevo(squirtle, [monstruo, agua_1]).
+pokemon_grupo_huevo(wartortle, [monstruo, agua_1]).
+pokemon_grupo_huevo(blastoise, [monstruo, agua_1]).
+pokemon_grupo_huevo(poliwhirl, [agua_1, monstruo]).
+pokemon_grupo_huevo(poliwrath, [monstruo, agua_1]).
+pokemon_grupo_huevo(politoed, [agua_1]).
+pokemon_grupo_huevo(marill, [agua_1]).
+pokemon_grupo_huevo(psyduck, [agua_1]).
+pokemon_grupo_huevo(poliwag, [agua_1]).
+pokemon_grupo_huevo(feebas, [agua_1, dragon]).
+pokemon_grupo_huevo(milotic, [agua_1]).
+pokemon_grupo_huevo(surskit, [agua_1]).
+pokemon_grupo_huevo(masquerain, [agua_1, agua_3]).
+pokemon_grupo_huevo(inkay, [agua_1]).
+pokemon_grupo_huevo(malamar, [agua_1, agua_3]).
+
+% Grupo huevo agua 2
+pokemon_grupo_huevo(goldeen, [agua_2]).
+pokemon_grupo_huevo(seaking, [agua_2]).
+pokemon_grupo_huevo(magikarp, [agua_2, dragon]).
+pokemon_grupo_huevo(gyarados, [agua_2, dragon]).
+pokemon_grupo_huevo(remoraid, [agua_2]).
+
+% Grupo huevo agua 3
+pokemon_grupo_huevo(tentacool, [agua_3]).
+pokemon_grupo_huevo(tentacruel, [agua_3]).
+pokemon_grupo_huevo(qwilfish, [agua_3]).
+pokemon_grupo_huevo(clamperl, [agua_3]).
+pokemon_grupo_huevo(relicanth, [agua_3]).
+
+% Grupo huevo bicho
+pokemon_grupo_huevo(caterpie, [bicho]).
+pokemon_grupo_huevo(metapod, [bicho]).
+pokemon_grupo_huevo(butterfree, [bicho]).
+pokemon_grupo_huevo(weedle, [bicho]).
+pokemon_grupo_huevo(kakuna, [bicho]).
+pokemon_grupo_huevo(beedrill, [bicho]).
+pokemon_grupo_huevo(spinarak, [bicho]).
+pokemon_grupo_huevo(ledyba, [bicho]).
+pokemon_grupo_huevo(ledian, [bicho]).
+pokemon_grupo_huevo(surskit, [bicho]).
+
+% Grupo huevo campo
+pokemon_grupo_huevo(bulbasaur, [monstruo, planta]).
+pokemon_grupo_huevo(ivysaur, [monstruo, planta]).
+pokemon_grupo_huevo(venusaur, [monstruo, planta]).
+pokemon_grupo_huevo(rattata, [campo]).
+pokemon_grupo_huevo(raticate, [campo]).
+pokemon_grupo_huevo(spearow, [volador, campo]).
+pokemon_grupo_huevo(meowth, [campo]).
+pokemon_grupo_huevo(persian, [campo, monstruo]).
+pokemon_grupo_huevo(ponyta, [campo, monstruo]).
+pokemon_grupo_huevo(rapidash, [campo]).
+pokemon_grupo_huevo(eevee, [campo]).
+pokemon_grupo_huevo(jolteon, [monstruo, campo]).
+pokemon_grupo_huevo(flareon, [monstruo, campo]).
+pokemon_grupo_huevo(espeon, [campo]).
+pokemon_grupo_huevo(umbreon, [campo]).
+pokemon_grupo_huevo(leafeon, [campo]).
+pokemon_grupo_huevo(glaceon, [campo]).
+pokemon_grupo_huevo(sylveon, [campo]).
+pokemon_grupo_huevo(tauros, [campo]).
+pokemon_grupo_huevo(miltank, [campo]).
+pokemon_grupo_huevo(skitty, [campo]).
+pokemon_grupo_huevo(litten, [campo]).
+pokemon_grupo_huevo(torracat, [campo]).
+pokemon_grupo_huevo(incineroar, [campo]).
+pokemon_grupo_huevo(litleo, [campo]).
+pokemon_grupo_huevo(pyroar, [campo]).
+pokemon_grupo_huevo(scraggy, [monstruo, campo]).
+pokemon_grupo_huevo(zorua, [campo, humanoide]).
+pokemon_grupo_huevo(zoroark, [campo, humanoide]).
+
+% Grupo huevo dragón
+pokemon_grupo_huevo(charmander, [monstruo, dragon]).
+pokemon_grupo_huevo(charmeleon, [monstruo, dragon]).
+pokemon_grupo_huevo(charizard, [monstruo, dragon]).
+pokemon_grupo_huevo(dragonite, [dragon]).
+pokemon_grupo_huevo(salamence, [dragon]).
+pokemon_grupo_huevo(gible, [dragon]).
+pokemon_grupo_huevo(axew, [monstruo, dragon]).
+pokemon_grupo_huevo(fraxure, [monstruo, dragon]).
+pokemon_grupo_huevo(haxorus, [monstruo, dragon]).
+pokemon_grupo_huevo(dratini, [dragon]).
+pokemon_grupo_huevo(flapple, [dragon, monstruo]).
+pokemon_grupo_huevo(appletun, [monstruo, dragon]).
+pokemon_grupo_huevo(deino, [monstruo, dragon]).
+pokemon_grupo_huevo(zweilous, [monstruo, dragon]).
+pokemon_grupo_huevo(hydreigon, [dragon, monstruo]).
+pokemon_grupo_huevo(tyrunt, [monstruo, dragon]).
+pokemon_grupo_huevo(tyrantrum, [monstruo, dragon]).
+
+% Grupo huevo hada
+pokemon_grupo_huevo(pikachu, [monstruo, hada]).
+pokemon_grupo_huevo(raichu, [monstruo, hada]).
+pokemon_grupo_huevo(clefairy, [hada]).
+pokemon_grupo_huevo(jigglypuff, [hada]).
+pokemon_grupo_huevo(togepi, [hada]).
+pokemon_grupo_huevo(snubbull, [hada]).
+pokemon_grupo_huevo(ralts, [humanoide, hada]).
+pokemon_grupo_huevo(plusle, [campo, hada]).
+pokemon_grupo_huevo(flabebe, [planta, hada]).
+pokemon_grupo_huevo(floette, [planta, hada]).
+pokemon_grupo_huevo(florges, [planta, hada]).
+pokemon_grupo_huevo(roselia, [planta, hada]).
+pokemon_grupo_huevo(roserade, [planta, hada]).
+
+% Grupo huevo humanoide
+pokemon_grupo_huevo(haunter, [amorfo, humanoide]).
+pokemon_grupo_huevo(ralts, [humanoide]).
+pokemon_grupo_huevo(kirlia, [humanoide]).
+pokemon_grupo_huevo(gardevoir, [humanoide]).
+pokemon_grupo_huevo(gallade, [humanoide]).
+pokemon_grupo_huevo(machop, [humanoide]).
+pokemon_grupo_huevo(meditite, [humanoide]).
+pokemon_grupo_huevo(hitmonlee, [humanoide]).
+pokemon_grupo_huevo(hitmonchan, [humanoide]).
+pokemon_grupo_huevo(jynx, [humanoide]).
+pokemon_grupo_huevo(lucario, [humanoide]).
+pokemon_grupo_huevo(mime_jr, [humanoide]).
+pokemon_grupo_huevo(mr_mime, [humanoide]).
+pokemon_grupo_huevo(froslass, [humanoide]).
+pokemon_grupo_huevo(buneary, [campo, humanoide]).
+pokemon_grupo_huevo(lopunny, [campo, humanoide]).
+
+% Grupo huevo mineral
+pokemon_grupo_huevo(geodude, [mineral]).
+pokemon_grupo_huevo(onix, [mineral]).
+pokemon_grupo_huevo(sudowoodo, [mineral]).
+pokemon_grupo_huevo(nosepass, [mineral]).
+pokemon_grupo_huevo(beldum, [mineral]).
+pokemon_grupo_huevo(jirachi, [mineral]).
+pokemon_grupo_huevo(dialga, [mineral]).
+pokemon_grupo_huevo(voltorb, [mineral]).
+pokemon_grupo_huevo(electrode, [mineral]).
+pokemon_grupo_huevo(roggenrola, [mineral]).
+pokemon_grupo_huevo(boldore, [mineral]).
+pokemon_grupo_huevo(gigalith, [mineral]).
+pokemon_grupo_huevo(yamask, [mineral]).
+pokemon_grupo_huevo(aron, [monstruo, mineral]).
+pokemon_grupo_huevo(lairon, [mineral]).
+pokemon_grupo_huevo(aggron, [monstruo, mineral]).
+pokemon_grupo_huevo(snorunt, [monstruo, mineral]).
+pokemon_grupo_huevo(glalie, [mineral]).
+
+% Grupo huevo monstruo
+pokemon_grupo_huevo(bulbasaur, [monstruo, planta]).
 pokemon_grupo_huevo(ivysaur, [monstruo, planta]).
 pokemon_grupo_huevo(venusaur, [monstruo, planta]).
 pokemon_grupo_huevo(charmander, [monstruo, dragon]).
@@ -3722,179 +3871,97 @@ pokemon_grupo_huevo(charizard, [monstruo, dragon]).
 pokemon_grupo_huevo(squirtle, [monstruo, agua_1]).
 pokemon_grupo_huevo(wartortle, [monstruo, agua_1]).
 pokemon_grupo_huevo(blastoise, [monstruo, agua_1]).
-pokemon_grupo_huevo(caterpie, [bicho]).
-pokemon_grupo_huevo(metapod, [bicho]).
-pokemon_grupo_huevo(butterfree, [bicho]).
-pokemon_grupo_huevo(weedle, [bicho]).
-pokemon_grupo_huevo(kakuna, [bicho]).
-pokemon_grupo_huevo(beedrill, [bicho]).
-pokemon_grupo_huevo(pidgey, [volador]).
-pokemon_grupo_huevo(pidgeotto, [volador]).
-pokemon_grupo_huevo(pidgeot, [volador]).
-pokemon_grupo_huevo(rattata, [campo]).
-pokemon_grupo_huevo(raticate, [campo]).
-pokemon_grupo_huevo(spearow, [volador]).
-pokemon_grupo_huevo(spearow, [campo]).
 pokemon_grupo_huevo(pikachu, [monstruo, hada]).
 pokemon_grupo_huevo(raichu, [monstruo, hada]).
-pokemon_grupo_huevo(meowth, [campo]).
 pokemon_grupo_huevo(persian, [campo, monstruo]).
 pokemon_grupo_huevo(ponyta, [campo, monstruo]).
-pokemon_grupo_huevo(rapidash, [campo]).
 pokemon_grupo_huevo(gastly, [amorfo]).
 pokemon_grupo_huevo(haunter, [amorfo, humanoide]).
 pokemon_grupo_huevo(gengar, [amorfo]).
 pokemon_grupo_huevo(rhyhorn, [monstruo, campo]).
 pokemon_grupo_huevo(rhydon, [monstruo, campo]).
-pokemon_grupo_huevo(magikarp, [agua_2, dragon]).
-pokemon_grupo_huevo(gyarados, [agua_2, dragon]).
-pokemon_grupo_huevo(ditto, [desconocido]).
-pokemon_grupo_huevo(eevee, [campo]).
-pokemon_grupo_huevo(vaporeon, [monstruo, agua_1]).
-pokemon_grupo_huevo(jolteon, [monstruo, campo]).
-pokemon_grupo_huevo(flareon, [monstruo, campo]).
-pokemon_grupo_huevo(espeon, [campo]).
-pokemon_grupo_huevo(umbreon, [campo]).
-pokemon_grupo_huevo(leafeon, [campo]).
-pokemon_grupo_huevo(glaceon, [campo]).
-pokemon_grupo_huevo(sylveon, [campo]).
 pokemon_grupo_huevo(snorlax, [monstruo]).
-pokemon_grupo_huevo(ralts, [humanoide]).
-pokemon_grupo_huevo(kirlia, [humanoide]).
-pokemon_grupo_huevo(gardevoir, [humanoide]).
-pokemon_grupo_huevo(gallade, [humanoide]).
-pokemon_grupo_huevo(poliwhirl, [agua_1, monstruo]).
-pokemon_grupo_huevo(poliwrath, [monstruo, agua_1]).
-pokemon_grupo_huevo(politoed, [agua_1]).
-pokemon_grupo_huevo(applin, [planta]).
-pokemon_grupo_huevo(flapple, [dragon, monstruo]).
-pokemon_grupo_huevo(appletun, [monstruo, dragon]).
-pokemon_grupo_huevo(dipplin, [monstruo, agua_1]).
-pokemon_grupo_huevo(mew, [desconocido]).
-pokemon_grupo_huevo(mewtwo, [desconocido]).
-pokemon_grupo_huevo(celebi, [hada]).
-pokemon_grupo_huevo(lugia, [desconocido]).
-pokemon_grupo_huevo(jirachi, [mineral]).
-pokemon_grupo_huevo(deoxys, [desconocido]).
-pokemon_grupo_huevo(latias, [agua_1, monstruo]).
-pokemon_grupo_huevo(dialga, [mineral]).
-pokemon_grupo_huevo(palkia, [desconocido]).
-pokemon_grupo_huevo(xerneas, [desconocido]).
-pokemon_grupo_huevo(yveltal, [desconocido]).
-pokemon_grupo_huevo(zygarde, [desconocido]).
-pokemon_grupo_huevo(victini, [felicidad]).
-pokemon_grupo_huevo(meloetta, [felicidad]).
-pokemon_grupo_huevo(genesect, [desconocido]).
-pokemon_grupo_huevo(meltan, [desconocido]).
-pokemon_grupo_huevo(solgaleo, [desconocido]).
-pokemon_grupo_huevo(lunala, [desconocido]).
-pokemon_grupo_huevo(necrozma, [desconocido]).
-pokemon_grupo_huevo(raikou, [gigante]).
-pokemon_grupo_huevo(entei, [gigante]).
-pokemon_grupo_huevo(suicune, [gigante]).
+pokemon_grupo_huevo(lapras, [monstruo]).
+pokemon_grupo_huevo(kangaskhan, [monstruo]).
+pokemon_grupo_huevo(cubone, [monstruo, terrestre_1]).
+pokemon_grupo_huevo(marowak, [monstruo, terrestre_1]).
 pokemon_grupo_huevo(heracross, [bicho, monstruo]).
-pokemon_grupo_huevo(ledyba, [bicho]).
-pokemon_grupo_huevo(ledyba, [bicho]).
-pokemon_grupo_huevo(ledian, [bicho]).
-pokemon_grupo_huevo(flabebe, [planta, hada]).
-pokemon_grupo_huevo(floette, [planta, hada]).
-pokemon_grupo_huevo(florges, [planta, hada]).
-pokemon_grupo_huevo(roselia, [planta, hada]).
-pokemon_grupo_huevo(roserade, [planta, hada]).
-pokemon_grupo_huevo(plusle, [campo, hada]).
-pokemon_grupo_huevo(voltorb, [mineral]).
-pokemon_grupo_huevo(electrode, [mineral]).
-pokemon_grupo_huevo(roggenrola, [mineral]).
-pokemon_grupo_huevo(boldore, [mineral]).
-pokemon_grupo_huevo(gigalith, [mineral]).
-pokemon_grupo_huevo(lucario, [humanoide]).
-pokemon_grupo_huevo(meditite, [humanoide]).
-pokemon_grupo_huevo(mime_jr, [humanoide]).
-pokemon_grupo_huevo(mr_mime, [humanoide]).
 pokemon_grupo_huevo(mawile, [monstruo, campo]).
-pokemon_grupo_huevo(yamask, [mineral]).
-pokemon_grupo_huevo(darkrai, [desconocido]).
-pokemon_grupo_huevo(feebas, [agua_1, dragon]).
-pokemon_grupo_huevo(milotic, [agua_1]).
 pokemon_grupo_huevo(grimer, [monstruo]).
 pokemon_grupo_huevo(muk, [monstruo]).
 pokemon_grupo_huevo(aron, [monstruo, mineral]).
-pokemon_grupo_huevo(lairon, [mineral]).
 pokemon_grupo_huevo(aggron, [monstruo, mineral]).
-pokemon_grupo_huevo(oshawott, [campo, agua_1]).
-pokemon_grupo_huevo(dewott, [campo, agua_1]).
-pokemon_grupo_huevo(samurott, [campo, agua_1]).
-pokemon_grupo_huevo(tapu_fini, [desconocido]).
-pokemon_grupo_huevo(groudon, [desconocido]).
-pokemon_grupo_huevo(rayquaza, [desconocido]).
-pokemon_grupo_huevo(cubone, [monstruo]).
-pokemon_grupo_huevo(cubone, [terrestre_1]).
-pokemon_grupo_huevo(marowak, [monstruo, terrestre_1]).
-pokemon_grupo_huevo(hoopa, [desconocido]).
-pokemon_grupo_huevo(sableye, [humanoide, mineral]).
-pokemon_grupo_huevo(jigglypuff, [hada]).
-pokemon_grupo_huevo(wigglytuff, [hada]).
-pokemon_grupo_huevo(smoochum, [humanoide]).
-pokemon_grupo_huevo(jynx, [humanoide]).
-pokemon_grupo_huevo(shroomish, [planta, hada]).
-pokemon_grupo_huevo(breloom, [planta, hada]).
-pokemon_grupo_huevo(surskit, [agua_1]).
-pokemon_grupo_huevo(masquerain, [agua_1, agua_3]).
-pokemon_grupo_huevo(gulpin, [monstruo, huevo]).
-pokemon_grupo_huevo(swalot, [monstruo, huevo]).
-pokemon_grupo_huevo(shuppet, [amorfo]).
-pokemon_grupo_huevo(banette, [amorfo]).
-pokemon_grupo_huevo(absol, [campo, monstruo]).
-pokemon_grupo_huevo(zangoose, [campo, monstruo]).
-pokemon_grupo_huevo(kecleon, [monstruo]).
-pokemon_grupo_huevo(shinx, [campo]).
-pokemon_grupo_huevo(luxio, [campo]).
-pokemon_grupo_huevo(luxio, [humanoide]).
-pokemon_grupo_huevo(luxray, [campo, humanoide]).
-pokemon_grupo_huevo(snorunt, [monstruo, mineral]).
-pokemon_grupo_huevo(glalie, [mineral]).
-pokemon_grupo_huevo(froslass, [humanoide]).
-pokemon_grupo_huevo(buneary, [campo, humanoide]).
-pokemon_grupo_huevo(lopunny, [campo, humanoide]).
-pokemon_grupo_huevo(foongus, [planta]).
-pokemon_grupo_huevo(amoonguss, [planta, humanoide]).
-pokemon_grupo_huevo(pumpkaboo, [planta, humanoide]).
-pokemon_grupo_huevo(gourgeist, [planta, humanoide]).
-pokemon_grupo_huevo(litleo, [campo]).
-pokemon_grupo_huevo(pyroar, [campo]).
 pokemon_grupo_huevo(axew, [monstruo, dragon]).
 pokemon_grupo_huevo(fraxure, [monstruo, dragon]).
 pokemon_grupo_huevo(haxorus, [monstruo, dragon]).
-pokemon_grupo_huevo(inkay, [agua_1]).
-pokemon_grupo_huevo(malamar, [agua_1, agua_3]).
-pokemon_grupo_huevo(pidove, [volador]).
-pokemon_grupo_huevo(tranquill, [volador]).
-pokemon_grupo_huevo(unfezant, [volador]).
-pokemon_grupo_huevo(scraggy, [monstruo]).
-pokemon_grupo_huevo(scraggy, [campo]).
-pokemon_grupo_huevo(skorupi, [insecto, agua_3]).
-pokemon_grupo_huevo(drapion, [insecto, agua_3]).
-pokemon_grupo_huevo(litten, [campo]).
-pokemon_grupo_huevo(torracat, [campo]).
-pokemon_grupo_huevo(incineroar, [campo]).
-pokemon_grupo_huevo(petilil, [planta]).
-pokemon_grupo_huevo(lilligant, [planta]).
-pokemon_grupo_huevo(zorua, [campo, humanoide]).
-pokemon_grupo_huevo(zoroark, [campo, humanoide]).
-pokemon_grupo_huevo(deino, [monstruo, dragon]).
-pokemon_grupo_huevo(zweilous, [monstruo, dragon]).
-pokemon_grupo_huevo(hydreigon, [dragon]).
-pokemon_grupo_huevo(hydreigon, [monstruo]).
-pokemon_grupo_huevo(skrelp, [agua_1]).
 pokemon_grupo_huevo(tyrunt, [monstruo, dragon]).
 pokemon_grupo_huevo(tyrantrum, [monstruo, dragon]).
 pokemon_grupo_huevo(amaura, [monstruo, planta]).
 pokemon_grupo_huevo(aurorus, [monstruo, planta]).
-pokemon_grupo_huevo(rowlet, [volador]).
-pokemon_grupo_huevo(dartrix, [volador]).
 pokemon_grupo_huevo(empoleon, [agua_1, monstruo]).
 pokemon_grupo_huevo(piplup, [agua_1, monstruo]).
 pokemon_grupo_huevo(treecko, [monstruo, dragon]).
+
+% Grupo huevo amorfo
+pokemon_grupo_huevo(gastly, [amorfo]).
+pokemon_grupo_huevo(haunter, [amorfo, humanoide]).
+pokemon_grupo_huevo(gengar, [amorfo]).
+pokemon_grupo_huevo(grimer, [amorfo]).
+pokemon_grupo_huevo(muk, [amorfo]).
+pokemon_grupo_huevo(shuppet, [amorfo]).
+pokemon_grupo_huevo(banette, [amorfo]).
+
+% Grupo huevo volador
+pokemon_grupo_huevo(pidgey, [volador]).
+pokemon_grupo_huevo(pidgeotto, [volador]).
+pokemon_grupo_huevo(pidgeot, [volador]).
+pokemon_grupo_huevo(spearow, [volador, campo]).
+pokemon_grupo_huevo(hoothoot, [volador]).
+pokemon_grupo_huevo(taillow, [volador]).
+pokemon_grupo_huevo(starly, [volador]).
+pokemon_grupo_huevo(rowlet, [volador]).
+pokemon_grupo_huevo(dartrix, [volador]).
+pokemon_grupo_huevo(pidove, [volador]).
+pokemon_grupo_huevo(tranquill, [volador]).
+pokemon_grupo_huevo(unfezant, [volador]).
+
+% Grupo huevo mitico
+pokemon_grupo_huevo(mew, [desconocido]).
+pokemon_grupo_huevo(celebi, [hada]).
+pokemon_grupo_huevo(jirachi, [mineral]).
+pokemon_grupo_huevo(victini, [felicidad]).
+pokemon_grupo_huevo(magearna, [desconocido]).
+
+% Grupo huevo legendario
+pokemon_grupo_huevo(articuno, [desconocido]).
+pokemon_grupo_huevo(zapdos, [desconocido]).
+pokemon_grupo_huevo(moltres, [desconocido]).
+pokemon_grupo_huevo(lugia, [desconocido]).
+pokemon_grupo_huevo(ho-oh, [desconocido]).
+
+% Grupo huevo ultra bestia
+pokemon_grupo_huevo(nihilego, [desconocido]).
+pokemon_grupo_huevo(buzzwole, [desconocido]).
+pokemon_grupo_huevo(pheromosa, [desconocido]).
+pokemon_grupo_huevo(xurkitree, [desconocido]).
+pokemon_grupo_huevo(celesteela, [desconocido]).
+
+% Grupo huevo singular
+pokemon_grupo_huevo(meltan, [desconocido]).
+pokemon_grupo_huevo(melmetal, [desconocido]).
+pokemon_grupo_huevo(shaymin, [desconocido]).
+pokemon_grupo_huevo(arceus, [desconocido]).
+pokemon_grupo_huevo(marshadow, [desconocido]).
+
+% Grupo huevo desconocido
+pokemon_grupo_huevo(unown, [desconocido]).
+pokemon_grupo_huevo(spiritomb, [desconocido]).
+pokemon_grupo_huevo(klefki, [desconocido]).
+pokemon_grupo_huevo(minior, [desconocido]).
+pokemon_grupo_huevo(cosmog, [desconocido]).
+
+% Grupo huevo ditto
+pokemon_grupo_huevo(ditto, [desconocido]).
 
 % pokemon iniciales
 generacion_inicial(primera, [bulbasaur, charmander, squirtle]).
@@ -5743,6 +5810,8 @@ grupo_huevo_ditto(Nombre, Grupo_huevo) :-
     (Numero = 132),
     Grupo_huevo = grupo_ditto.
 
+
+
 linea_evolutiva_completa(Pokemon, Linea) :-
     findall(Evolucion, obtener_evoluciones(Pokemon, Evolucion), Lista),
     flatten([Pokemon | Lista], Linea).
@@ -6512,3 +6581,198 @@ pokemon_evolucion_nivel_amistad(Pokemon, EvolucionNivel, EvolucionAmistad) :-
 pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Piedra) :-
     evolucion_por_amistad(Pokemon, EvolucionAmistad),
     evolucion_objeto(EvolucionAmistad, EvolucionPiedra, Piedra).
+
+% Regla: Pokémon sin género que pueden evolucionar.
+pokemon_sin_genero_evolucion(Pokemon, Evolucion) :-
+    sin_genero(Pokemon),
+    (evolucion_nivel(Pokemon, Evolucion, _);
+     evolucion_por_intercambio(Pokemon, Evolucion);
+     evolucion_objeto(Pokemon, Evolucion, _)).
+
+% Regla: Pokémon de tipo tierra que evolucionan por intercambio sin objetos.
+pokemon_tierra_evolucion_intercambio(Pokemon, Evolucion) :-
+    tipo(Pokemon, tierra),
+    evolucion_por_intercambio(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo psíquico que evolucionan por intercambio sin objetos.
+pokemon_psiquico_evolucion_intercambio(Pokemon, Evolucion) :-
+    tipo(Pokemon, psiquico),
+    evolucion_por_intercambio(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo lucha que evolucionan por intercambio sin objetos.
+pokemon_lucha_evolucion_intercambio(Pokemon, Evolucion) :-
+    tipo(Pokemon, lucha),
+    evolucion_por_intercambio(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo fantasma que evolucionan por intercambio sin objetos.
+pokemon_fantasma_evolucion_intercambio(Pokemon, Evolucion) :-
+    tipo(Pokemon, fantasma),
+    evolucion_por_intercambio(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo tierra que evolucionan por intercambio con objeto.
+pokemon_tierra_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, tierra),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon de tipo agua que evolucionan por intercambio con objeto.
+pokemon_agua_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, agua),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon de tipo bicho que evolucionan por intercambio con objeto.
+pokemon_bicho_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, bicho),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon de tipo normal que evolucionan por intercambio con objeto.
+pokemon_normal_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, normal),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon de tipo fantasma que evolucionan por intercambio con objeto.
+pokemon_fantasma_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, fantasma),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon de tipo eléctrico que evolucionan por intercambio con objeto.
+pokemon_electrico_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, electrico),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon de tipo roca que evolucionan por intercambio con objeto.
+pokemon_roca_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto) :-
+    tipo(Pokemon, roca),
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon que evolucionan con la roca del rey.
+pokemon_evolucion_roca_del_rey(Pokemon, Evolucion) :-
+    evolucion_objeto(Pokemon, Evolucion, roca_del_rey).
+
+% Regla: Pokémon que evolucionan al intercambiarse con un objeto específico.
+pokemon_evolucion_intercambio_con_objeto(Pokemon, Evolucion, Objeto) :-
+    evolucion_por_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+% Regla: Pokémon que evolucionan al intercambiarse por otro en específico.
+pokemon_evolucion_intercambio_especifico(Pokemon, Evolucion, OtroPokemon) :-
+    evolucion_por_intercambio(Pokemon, Evolucion),
+    evolucion_por_intercambio(OtroPokemon, Pokemon).
+
+% Regla: Pokémon de tipo siniestro que evolucionan con amistad.
+pokemon_siniestro_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, siniestro),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo veneno que evolucionan con amistad.
+pokemon_veneno_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, veneno),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo normal que evolucionan con amistad.
+pokemon_normal_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, normal),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo eléctrico que evolucionan con amistad.
+pokemon_electrico_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, electrico),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo hada que evolucionan con amistad.
+pokemon_hada_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, hada),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo lucha que evolucionan con amistad.
+pokemon_lucha_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, lucha),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo bicho que evolucionan con amistad.
+pokemon_bicho_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, bicho),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de tipo hielo que evolucionan con amistad.
+pokemon_hielo_evolucion_amistad(Pokemon, Evolucion) :-
+    tipo(Pokemon, hielo),
+    evolucion_por_amistad(Pokemon, Evolucion).
+
+% Regla: Pokémon de Alola que son de tipo hielo y tienen forma regional.
+pokemon_alola_hielo_forma_regional(Pokemon) :-
+    forma_regional_alola(Pokemon, Tipos),
+    member(hielo, Tipos).
+
+% Regla: Pokémon que cambian a tipo siniestro cuando tienen otra forma regional.
+pokemon_forma_regional_siniestro(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(siniestro, Tipos).
+
+% Regla: Pokémon que cambian a tipo veneno cuando tienen otra forma regional.
+pokemon_forma_regional_veneno(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(veneno, Tipos).
+
+% Regla: Pokémon que cambian a tipo hielo cuando tienen otra forma regional.
+pokemon_forma_regional_hielo(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(hielo, Tipos).
+
+% Regla: Pokémon que cambian a tipo acero cuando tienen otra forma regional.
+pokemon_forma_regional_acero(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(acero, Tipos).
+
+% Regla: Pokémon que cambian a tipo psíquico cuando tienen otra forma regional.
+pokemon_forma_regional_psiquico(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(psiquico, Tipos).
+
+% Regla: Pokémon que cambian a tipo planta cuando tienen otra forma regional.
+pokemon_forma_regional_planta(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(planta, Tipos).
+
+% Regla: Pokémon que cambian a tipo roca cuando tienen otra forma regional.
+pokemon_forma_regional_roca(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(roca, Tipos).
+
+% Regla: Pokémon que cambian a tipo fantasma cuando tienen otra forma regional.
+pokemon_forma_regional_fantasma(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(fantasma, Tipos).
+
+% Regla: Pokémon que cambian a tipo lucha cuando tienen otra forma regional.
+pokemon_forma_regional_lucha(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(lucha, Tipos).
+
+% Regla: Pokémon que cambian a tipo normal cuando tienen otra forma regional.
+pokemon_forma_regional_normal(Pokemon) :-
+    (forma_regional_alola(Pokemon, Tipos);
+     forma_regional_galar(Pokemon, Tipos);
+     forma_regional_hisui(Pokemon, Tipos)),
+    member(normal, Tipos).
+
+% Regla: Pokémon que cambian a tipo dragón cuando tienen otra forma regional.
+pokemon_forma_regional_dragon(Pokemon) :-
+    forma_regional_alola(Pokemon, Tipos),
+    member(dragon, Tipos).

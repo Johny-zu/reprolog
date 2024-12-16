@@ -1,533 +1,653 @@
-// 1. ¿Cuál es el número en la Pokédex de un Pokémon?
-numero_pokedex(Numero). 
+¿Cuál es el número en la Pokédex de un Pokémon?
+numero_pokedex(Numero)
 
-// 2. ¿Cuál es el nombre de un Pokémon?
+¿Cuál es el nombre de un Pokémon?
 nombre_pokemon(Nombre).
 
-// 3. ¿Cuál es el número y el nombre de un Pokémon?
+¿Cuál es el número y el nombre de un Pokémon?
 num_pokemon(Numero, Nombre).
 
-// 4. ¿En qué generación apareció un Pokémon?
+¿En qué generación apareció un Pokémon?
 pokemon_reg(Nombre, Generacion).
 
-// 5. ¿Cuál es el tipo de un Pokémon?
+¿Cuál es el tipo de un Pokémon?
 tipo_pokemon(Nombre, Tipo).
 
-// 6. ¿Es un Pokémon de tipo planta?
-es_tipo_planta(Nombre). 
+¿Es un Pokémon de tipo planta?
+es_tipo_planta(Nombre)
 
-// 7. ¿Es un Pokémon de tipo fuego?
+¿Es un Pokémon de tipo fuego?
 es_tipo_fuego(Nombre).
 
-// 8. ¿Es un Pokémon de tipo agua?
+¿Es un Pokémon de tipo agua?
 es_tipo_agua(Nombre).
 
-// 9. ¿Es un Pokémon de tipo volador?
+¿Es un Pokémon de tipo volador?
 es_tipo_volador(Nombre).
 
-// 10. ¿Es un Pokémon de tipo normal?
+ ¿Es un Pokémon de tipo normal?
 es_tipo_normal(Nombre).
 
-// 11. ¿Es un Pokémon de tipo lucha?
+¿Es un Pokémon de tipo lucha?
 es_tipo_lucha(Nombre).
 
-// 12. ¿Es un Pokémon de tipo veneno?
+¿Es un Pokémon de tipo veneno?
 es_tipo_veneno(Nombre).
 
-// 13. ¿Es un Pokémon de tipo tierra?
+¿Es un Pokémon de tipo tierra?
 es_tipo_tierra(Nombre).
 
-// 14. ¿Es un Pokémon de tipo roca?
+¿Es un Pokémon de tipo roca?
 es_tipo_roca(Nombre).
 
-// 15. ¿Es un Pokémon de tipo bicho?
+¿Es un Pokémon de tipo bicho?
 es_tipo_bicho(Nombre).
 
-// 16. ¿Es un Pokémon de tipo fantasma?
+¿Es un Pokémon de tipo fantasma?
 es_tipo_fantasma(Nombre).
 
-// 17. ¿Es un Pokémon de tipo acero?
+¿Es un Pokémon de tipo acero?
 es_tipo_acero(Nombre).
 
-// 18. ¿Es un Pokémon de tipo eléctrico?
+¿Es un Pokémon de tipo eléctrico?
 es_tipo_electrico(Nombre).
 
-// 19. ¿Es un Pokémon de tipo psíquico?
+¿Es un Pokémon de tipo psíquico?
 es_tipo_psiquico(Nombre).
 
-// 20. ¿Es un Pokémon de tipo hada?
+¿Es un Pokémon de tipo hada?
 es_tipo_hada(Nombre).
 
-// 21. ¿Es un Pokémon de tipo hielo?
+¿Es un Pokémon de tipo hielo?
 es_tipo_hielo(Nombre).
 
-// 22. ¿Es un Pokémon de tipo dragón?
+¿Es un Pokémon de tipo dragón?
 es_tipo_dragon(Nombre).
 
-// 23. ¿Cuál es el nombre, tipo y generación de un Pokémon?
+¿Cuál es el nombre, tipo y generación de un Pokémon?
 nombre_tip_gen(Nombre, Tipo, Generacion).
 
-// 24. ¿Cuál es el Pokémon inicial de una región y su categoría?
+¿Cuál es el Pokémon inicial de una región y su categoría?
 pokemon_inicial(Nombre, Tipo, Region, Categoria).
 
-// 25. ¿Cuáles son los Pokémon legendarios de una región y su categoría?
+¿Cuáles son los Pokémon legendarios de una región y su categoría?
 pokemon_legendarios(Nombre, Tipo, Region, Categoria).
 
-// 26. ¿Cuáles son los Pokémon singulares de una región y su categoría?
+¿Cuáles son los Pokémon singulares de una región y su categoría?
 pokemon_singulares(Nombre, Tipo, Region, Categoria).
 
-// 27. ¿Cuáles son los Pokémon bebé de una región y su categoría?
+¿Cuáles son los Pokémon bebé de una región y su categoría?
 pokemon_bebe(Nombre, Tipo, Region, Categoria).
 
-// 28. ¿Cuáles son los Pokémon básicos de la primera generación y su categoría?
+¿Cuáles son los Pokémon básicos de la primera generación y su categoría?
 pokemon_basicos_primera(Nombre, Tipo, Categoria).
 
-// 29. ¿Cuáles son los Pokémon básicos de la segunda generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la segunda generación, su región y categoría?
 pokemon_basicos_segunda(Nombre, Tipo, Region, Categoria).
 
-// 30. ¿Cuáles son los Pokémon básicos de la tercera generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la tercera generación, su región y categoría?
 pokemon_basicos_tercera(Nombre, Tipo, Region, Categoria).
 
-// 31. ¿Cuáles son los Pokémon básicos de la cuarta generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la cuarta generación, su región y categoría?
 pokemon_basicos_cuarta(Nombre, Tipo, Region, Categoria).
 
-// 32. ¿Cuáles son los Pokémon básicos de la quinta generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la quinta generación, su región y categoría?
 pokemon_basicos_quinta(Nombre, Tipo, Region, Categoria).
 
-// 33. ¿Cuáles son los Pokémon básicos de la sexta generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la sexta generación, su región y categoría?
 pokemon_basicos_sexta(Nombre, Tipo, Region, Categoria).
 
-// 34. ¿Cuáles son los Pokémon básicos de la séptima generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la séptima generación, su región y categoría?
 pokemon_basicos_septima(Nombre, Tipo, Region, Categoria).
 
-// 35. ¿Cuáles son los Pokémon básicos de la octava generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la octava generación, su región y categoría?
 pokemon_basicos_octava(Nombre, Tipo, Region, Categoria).
 
-// 36. ¿Cuáles son los Pokémon básicos de la novena generación, su región y categoría?
+¿Cuáles son los Pokémon básicos de la novena generación, su región y categoría?
 pokemon_basicos_novena(Nombre, Tipo, Region, Categoria).
 
-// 37. ¿Cuál es el peso de un Pokémon?
+¿Cuál es el peso de un Pokémon?
 es_peso(X, Y).
 
-// 38. ¿Cuál es la altura de un Pokémon?
+¿Cuál es la altura de un Pokémon?
 es_altura(X, Z).
 
-// 39. ¿Cuál es el hábitat de pradera de un Pokémon en una región?
+¿Cuál es el hábitat de pradera de un Pokémon en una región?
 pokemon_habitat_pradera(Nombre, Region, Habitat).
 
-// 40. ¿Cuál es el hábitat de bosque de un Pokémon en una región?
+¿Cuál es el hábitat de bosque de un Pokémon en una región?
 pokemon_habitat_bosque(Nombre, Region, Habitat).
 
-// 41. ¿Cuál es el hábitat de agua dulce de un Pokémon en una región?
+¿Cuál es el hábitat de agua dulce de un Pokémon en una región?
 kemon_habitat_agua_dulce(Nombre, Region, Habitat).
 
-// 42. ¿Cuál es el hábitat de agua salada de un Pokémon en una región?
+¿Cuál es el hábitat de agua salada de un Pokémon en una región?
 pokemon_habitat_agua_salada(Nombre, Region, Habitat).
 
-// 43. ¿Cuál es el hábitat de caverna de un Pokémon en una región?
+¿Cuál es el hábitat de caverna de un Pokémon en una región?
 pokemon_habitat_caverna(Nombre, Region, Habitat).
 
-// 44. ¿Cuál es el hábitat de montaña de un Pokémon en una región?
+¿Cuál es el hábitat de montaña de un Pokémon en una región?
 pokemon_habitat_montana(Nombre, Region, Habitat).
 
-// 45. ¿Cuál es el hábitat de campo de un Pokémon en una región?
+¿Cuál es el hábitat de campo de un Pokémon en una región?
 pokemon_habitat_campo(Nombre, Region, Habitat).
 
-// 46. ¿Cuál es el hábitat de ciudad de un Pokémon en una región?
+¿Cuál es el hábitat de ciudad de un Pokémon en una región?
 pokemon_habitat_ciudad(Nombre, Region, Habitat).
 
-// 47. ¿Cuál es el hábitat de Pokémon raros en una región?
+¿Cuál es el hábitat de Pokémon raros en una región?
 pokemon_habitat_raros(Nombre, Region, Habitat).
 
-// 48. ¿Cuál es la primera figura de un Pokémon?
+¿Cuál es la primera figura de un Pokémon?
 primera_figura_pokemon(Nombre, Figura).
 
-// 49. ¿Cuál es la segunda figura de un Pokémon?
+¿Cuál es la segunda figura de un Pokémon?
 segunda_figura_pokemon(Nombre, Figura).
 
-// 50. ¿Cuál es la tercera figura de un Pokémon?
+¿Cuál es la tercera figura de un Pokémon?
 tercera_figura_pokemon(Nombre, Figura).
 
-// 51. ¿Cuál es la cuarta figura de un Pokémon?
+¿Cuál es la cuarta figura de un Pokémon?
 cuarta_figura_pokemon(Nombre, Figura).
 
-// 52. ¿Cuál es la quinta figura de un Pokémon?
+¿Cuál es la quinta figura de un Pokémon?
 quinta_figura_pokemon(Nombre, Figura).
 
-// 53. ¿Cuál es la sexta figura de un Pokémon?
+¿Cuál es la sexta figura de un Pokémon?
 sexta_figura_pokemon(Nombre, Figura).
 
-// 54. ¿Cuál es la séptima figura de un Pokémon?
+¿Cuál es la séptima figura de un Pokémon?
 septima_figura_pokemon(Nombre, Figura).
 
-// 55. ¿Cuál es la octava figura de un Pokémon?
+¿Cuál es la octava figura de un Pokémon?
 octava_figura_pokemon(Nombre, Figura).
 
-// 56. ¿Cuál es el grupo huevo desconocido de un Pokémon?
+¿Cuál es el grupo huevo desconocido de un Pokémon?
 grupo_huevo_desconocido(Nombre, Grupo_huevo).
 
-// 57. ¿Cuál es la línea evolutiva completa de un Pokémon?
+¿Cuál es la línea evolutiva completa de un Pokémon?
 linea_evolutiva_completa(Nombre, Linea).
 
-// 58. ¿Cuántos Pokémon hay en la primera generación?
+¿Cuántos Pokémon hay en la primera generación?
 cantidad_pokemon_generacion(primera, Cantidad).
 
-// 59. ¿Cuál es la generación con más Pokémon?
+¿Cuál es la generación con más Pokémon?
 generacion_mas_pokemon(Generacion).
 
-// 60. ¿Cuáles son las regiones donde se encuentran Pokémon de un tipo específico?
+¿Cuáles son las regiones donde se encuentran Pokémon de un tipo específico?
 regiones_tipo_pokemon(Tipo, Regiones).
 
-// 61. ¿Cuáles son las evoluciones alternativas de un Pokémon?
+¿Cuáles son las evoluciones alternativas de un Pokémon?
 pokemon_multiples_evoluciones(Nombre, Evoluciones).
 
-// 62. ¿Cuál es el método de evolución de un Pokémon?
+¿Cuál es el método de evolución de un Pokémon?
 metodo_evolucion(Nombre, Evolucion, Metodo).
 
-// 63. ¿Cuáles son las evoluciones de un Pokémon?
+¿Cuáles son las evoluciones de un Pokémon?
 obtener_evoluciones(Nombre, [Evolucion | Resto]).
 
-// 64. ¿Cuántos Pokémon hay en una generación específica?
+¿Cuántos Pokémon hay en una generación específica?
 cantidad_pokemon_generacion(Generacion, Cantidad).
 
-// 65. ¿Cuál es la generación con más Pokémon?
+¿Cuál es la generación con más Pokémon?
 generacion_mas_pokemon(Generacion).
 
-// 66. ¿Cuáles son las regiones donde se encuentran Pokémon de un tipo específico?
+¿Cuáles son las regiones donde se encuentran Pokémon de un tipo específico?
 regiones_tipo_pokemon(Tipo, Regiones).
 
-// 67. ¿Cuál es la generación con menos Pokémon?
+¿Cuál es la generación con menos Pokémon?
 generacion_menos_pokemon(Generacion).
 
-// 68. ¿Cuál es la línea evolutiva completa de un Pokémon?
-linea_evolutiva_completa(Pokemon, Linea). 
+¿Cuál es la línea evolutiva completa de un Pokémon?
+linea_evolutiva_completa(Pokemon, Linea)
 
-// 69. ¿Cuáles son las evoluciones de Eevee?
+¿Cuáles son las evoluciones de Eevee?
 eevee_evoluciones(Evoluciones).
 
-// 70. ¿Cuáles son los Pokémon con doble megaevolución?
+¿Cuáles son los Pokémon con doble megaevolución?
 pokemon_doble_mega(Pokemon).
 
-// 71. ¿Cuáles son los Pokémon con una única evolución?
+¿Cuáles son los Pokémon con una única evolución?
 pokemon_evolucion_unica(Pokemon).
 
-// 72. ¿Cuáles son los Pokémon que evolucionan por batalla sin megaevolución?
+¿Cuáles son los Pokémon que evolucionan por batalla sin megaevolución?
 pokemon_evolucion_por_batalla_sin_mega(Pokemon).
 
-// 73. ¿Cuáles son los Pokémon con más de una forma?
+¿Cuáles son los Pokémon con más de una forma?
 pokemon_mas_de_una_forma(Pokemon).
 
-// 74. ¿Cuál es la evolución de un Pokémon a un nivel específico?
+¿Cuál es la evolución de un Pokémon a un nivel específico?
 evolucion_nivel_especifico(Nivel, Pokemon, Evolucion).
 
-// 75. ¿Cuáles son los Pokémon legendarios de eventos?
+¿Cuáles son los Pokémon legendarios de eventos?
 legendarios_eventos(Nombre).
 
-// 76. ¿Cuántos tipos de un tipo específico hay?
+¿Cuántos tipos de un tipo específico hay?
 cantidad_tipos_de_tipo(Tipo, Cantidad).
 
-// 77. ¿Cuál es la forma regional de un Pokémon?
+¿Cuál es la forma regional de un Pokémon?
 forma_regional(Pokemon, Region, Tipo).
 
-// 78. ¿Cuáles son los movimientos de un tipo específico?
+¿Cuáles son los movimientos de un tipo específico?
 movimientos_por_tipo(Tipo, Movimientos).
 
-// 79. ¿Cuál es la evolución de un Pokémon por tipo?
+¿Cuál es la evolución de un Pokémon por tipo?
 pokemon_evolucion_por_tipo(Pokemon, Tipo).
 
-// 80. ¿Cuáles son los Pokémon con una única evolución?
+¿Cuáles son los Pokémon con una única evolución?
 pokemon_evolucion_unica(Pokemon).
 
-// 81. ¿Cuáles son los Pokémon con más de una forma?
+¿Cuáles son los Pokémon con más de una forma?
 pokemon_mas_de_una_forma(Pokemon).
 
-// 82. ¿Cuáles son los Pokémon con doble inicial?
+¿Cuáles son los Pokémon con doble inicial?
 pokemon_doble_inicial(Nombre).
 
-// 83. ¿Cuántas resistencias tiene un tipo específico?
+¿Cuántas resistencias tiene un tipo específico?
 cantidad_resistencias(Tipo, Cantidad).
 
-// 84. ¿Cuántas eficacias tiene un tipo específico?
+¿Cuántas eficacias tiene un tipo específico?
 cantidad_eficacias(Tipo, Cantidad).
 
-// 85. ¿Cuántas super eficacias tiene un tipo específico?
+¿Cuántas super eficacias tiene un tipo específico?
 cantidad_super_eficacias(Tipo, Cantidad).
 
-// 86. ¿Cuántas inmunidades tiene un tipo específico?
+¿Cuántas inmunidades tiene un tipo específico?
 cantidad_inmunidades_tipo(Tipo, Cantidad).
 
-// 87. ¿Cuál es el movimiento de un tipo específico?
+¿Cuál es el movimiento de un tipo específico?
 movimiento_de_tipo(Movimiento, Tipo).
 
-// 88. ¿Cuáles son los Pokémon con doble tipo?
+¿Cuáles son los Pokémon con doble tipo?
 pokemon_con_doble_tipo(Pokemon, Tipos).
 
-// 89. ¿Cuántos Pokémon hay con un tipo específico?
+¿Cuántos Pokémon hay con un tipo específico?
 cantidad_pokemon_con_tipo(Tipo, Cantidad).
 
-// 90. ¿Cuál es la evolución de un Pokémon que evoluciona de noche?
+¿Cuál es la evolución de un Pokémon que evoluciona de noche?
 pokemon_evoluciona_noche(Pokemon, Evolucion).
 
-// 91. ¿Cuál es la evolución de un Pokémon que evoluciona de día?
+¿Cuál es la evolución de un Pokémon que evoluciona de día?
 pokemon_evoluciona_dia(Pokemon, Evolucion).
 
-// 92. ¿Cuál es la evolución de un Pokémon que evoluciona por la tarde?
+¿Cuál es la evolución de un Pokémon que evoluciona por la tarde?
 pokemon_evoluciona_tarde(Pokemon, Evolucion).
 
-// 93. ¿Cuál es la evolución de un Pokémon que cambia de tipo al evolucionar?
+¿Cuál es la evolución de un Pokémon que cambia de tipo al evolucionar?
 pokemon_cambia_tipo_al_evolucionar(Pokemon, Evolucion, TiposAntiguos, TiposNuevos).
 
-// 94. ¿Cuáles son los Pokémon resistentes al fuego en la montaña?
+¿Cuáles son los Pokémon resistentes al fuego en la montaña?
 pokemon_resistente_fuego_montana(Nombre).
 
-// 95. ¿Cuáles son los Pokémon resistentes a planta en el bosque?
+¿Cuáles son los Pokémon resistentes a planta en el bosque?
 pokemon_resistente_planta_bosque(Nombre).
 
-// 96. ¿Cuáles son los Pokémon inmunes al veneno en la caverna?
+¿Cuáles son los Pokémon inmunes al veneno en la caverna?
 pokemon_inmune_veneno_caverna(Nombre).
 
-// 97. ¿Cuáles son los Pokémon poco eficaces contra fuego en la ciudad?
+¿Cuáles son los Pokémon poco eficaces contra fuego en la ciudad?
 pokemon_poco_eficaz_fuego_ciudad(Nombre).
 
-// 98. ¿Cuáles son los Pokémon de tipo hada en la pradera?
+¿Cuáles son los Pokémon de tipo hada en la pradera?
 pokemon_tipo_hada_pradera(Nombre).
 
-// 99. ¿Cuáles son los Pokémon muy eficaces contra dragón en la montaña?
+¿Cuáles son los Pokémon muy eficaces contra dragón en la montaña?
 pokemon_muy_eficaz_dragon_montana(Nombre).
 
-// 100. ¿Cuáles son los Pokémon con habilidad de absorber agua en agua dulce?
+¿Cuáles son los Pokémon con habilidad de absorber agua en agua dulce?
 pokemon_habilidad_absorbe_agua_agua_dulce(Nombre).
 
-// 101. ¿Cuáles son los Pokémon resistentes al tipo siniestro en la montaña?
+¿Cuáles son los Pokémon resistentes al tipo siniestro en la montaña?
 pokemon_resistente_siniestro_montana(Nombre).
 
-// 102. ¿Cuáles son los Pokémon resistentes al tipo agua en el lago?
+¿Cuáles son los Pokémon resistentes al tipo agua en el lago?
 pokemon_resistente_agua_lago(Nombre).
 
-// 103. ¿Cuáles son los Pokémon resistentes al tipo eléctrico en la ciudad?
+¿Cuáles son los Pokémon resistentes al tipo eléctrico en la ciudad?
 pokemon_resistente_electrico_ciudad(Nombre).
 
-// 104. ¿Cuáles son los Pokémon resistentes al tipo hielo en la tundra?
+¿Cuáles son los Pokémon resistentes al tipo hielo en la tundra?
 pokemon_resistente_hielo_tundra(Nombre).
 
-// 105. ¿Cuáles son los Pokémon resistentes al tipo veneno en el pantano?
+¿Cuáles son los Pokémon resistentes al tipo veneno en el pantano?
 pokemon_resistente_veneno_pantano(Nombre).
 
-// 106. ¿Cuáles son los Pokémon resistentes al tipo volador en la selva?
+¿Cuáles son los Pokémon resistentes al tipo volador en la selva?
 pokemon_resistente_volador_selva(Nombre).
 
-// 107. ¿Cuáles son los Pokémon resistentes al tipo bicho en el bosque?
+¿Cuáles son los Pokémon resistentes al tipo bicho en el bosque?
 pokemon_resistente_bicho_bosque(Nombre).
 
-// 108. ¿Cuáles son los Pokémon resistentes al tipo roca en la caverna?
+¿Cuáles son los Pokémon resistentes al tipo roca en la caverna?
 pokemon_resistente_roca_caverna(Nombre).
 
-// 109. ¿Cuáles son los Pokémon resistentes al tipo tierra en el desierto?
+¿Cuáles son los Pokémon resistentes al tipo tierra en el desierto?
 pokemon_resistente_tierra_desierto(Nombre).
 
-// 110. ¿Cuáles son los Pokémon resistentes al tipo psíquico en la ciudad?
+¿Cuáles son los Pokémon resistentes al tipo psíquico en la ciudad?
 pokemon_resistente_psiquico_ciudad(Nombre).
 
-// 111. ¿Cuáles son los Pokémon resistentes al tipo hada en la pradera?
+¿Cuáles son los Pokémon resistentes al tipo hada en la pradera?
 pokemon_resistente_hada_pradera(Nombre).
 
-// 112. ¿Cuáles son los Pokémon resistentes al tipo dragón en la montaña?
+¿Cuáles son los Pokémon resistentes al tipo dragón en la montaña?
 pokemon_resistente_dragon_montana(Nombre).
 
-// 113. ¿Cuáles son los Pokémon resistentes al tipo lucha en la ciudad?
+¿Cuáles son los Pokémon resistentes al tipo lucha en la ciudad?
 pokemon_resistente_lucha_ciudad(Nombre).
 
-// 114. ¿Cuáles son los Pokémon resistentes al tipo acero en la caverna?
+¿Cuáles son los Pokémon resistentes al tipo acero en la caverna?
 pokemon_resistente_acero_caverna(Nombre).
 
-// 115. ¿Cuáles son los Pokémon resistentes al tipo fantasma en la caverna?
+¿Cuáles son los Pokémon resistentes al tipo fantasma en la caverna?
 pokemon_resistente_fantasma_caverna(Nombre).
 
-// 116. ¿Cuáles son los Pokémon eficaces contra el tipo fuego en la montaña?
+¿Cuáles son los Pokémon eficaces contra el tipo fuego en la montaña?
 pokemon_eficaz_fuego_montana(Nombre).
 
-// 117. ¿Cuáles son los Pokémon eficaces contra el tipo planta en el bosque?
+¿Cuáles son los Pokémon eficaces contra el tipo planta en el bosque?
 pokemon_eficaz_planta_bosque(Nombre).
 
-// 118. ¿Cuáles son los Pokémon eficaces contra el tipo siniestro en la montaña?
+¿Cuáles son los Pokémon eficaces contra el tipo siniestro en la montaña?
 pokemon_eficaz_siniestro_montana(Nombre).
 
-// 119. ¿Cuáles son los Pokémon eficaces contra el tipo agua en el lago?
+¿Cuáles son los Pokémon eficaces contra el tipo agua en el lago?
 pokemon_eficaz_agua_lago(Nombre).
 
-// 120. ¿Cuáles son los Pokémon eficaces contra el tipo eléctrico en la ciudad?
+¿Cuáles son los Pokémon eficaces contra el tipo eléctrico en la ciudad?
 pokemon_eficaz_electrico_ciudad(Nombre).
 
-// 121. ¿Cuáles son los Pokémon eficaces contra el tipo hielo en la tundra?
+¿Cuáles son los Pokémon eficaces contra el tipo hielo en la tundra?
 pokemon_eficaz_hielo_tundra(Nombre).
 
-// 122. ¿Cuáles son los Pokémon eficaces contra el tipo veneno en el pantano?
+¿Cuáles son los Pokémon eficaces contra el tipo veneno en el pantano?
 pokemon_eficaz_veneno_pantano(Nombre).
 
-// 123. ¿Cuáles son los Pokémon eficaces contra el tipo roca en la caverna?
+¿Cuáles son los Pokémon eficaces contra el tipo roca en la caverna?
 pokemon_eficaz_roca_caverna(Nombre).
 
-// 124. ¿Cuáles son los Pokémon eficaces contra el tipo psíquico en la ciudad?
+¿Cuáles son los Pokémon eficaces contra el tipo psíquico en la ciudad?
 pokemon_eficaz_psiquico_ciudad(Nombre).
 
-// 125. ¿Cuáles son los Pokémon eficaces contra el tipo hada en la pradera?
+¿Cuáles son los Pokémon eficaces contra el tipo hada en la pradera?
 pokemon_eficaz_hada_pradera(Nombre).
 
-// 126. ¿Cuáles son los Pokémon eficaces contra el tipo dragón en la montaña?
+¿Cuáles son los Pokémon eficaces contra el tipo dragón en la montaña?
 pokemon_eficaz_dragon_montana(Nombre).
 
-// 127. ¿Cuáles son los Pokémon eficaces contra el tipo lucha en la ciudad?
+¿Cuáles son los Pokémon eficaces contra el tipo lucha en la ciudad?
 pokemon_eficaz_lucha_ciudad(Nombre).
 
-// 128. ¿Cuáles son los Pokémon muy eficaces contra el tipo fuego en la montaña?
+¿Cuáles son los Pokémon muy eficaces contra el tipo fuego en la montaña?
 pokemon_muy_eficaz_fuego_montana(Nombre).
 
-// 129. ¿Cuáles son los Pokémon muy eficaces contra el tipo planta en el bosque?
+¿Cuáles son los Pokémon muy eficaces contra el tipo planta en el bosque?
 pokemon_muy_eficaz_planta_bosque(Nombre).
 
-// 130. ¿Cuáles son los Pokémon muy eficaces contra el tipo veneno en la caverna?
+¿Cuáles son los Pokémon muy eficaces contra el tipo veneno en la caverna?
 pokemon_muy_eficaz_veneno_caverna(Nombre).
 
-// 131. ¿Cuáles son los Pokémon muy eficaces contra el tipo agua en el lago?
+¿Cuáles son los Pokémon muy eficaces contra el tipo agua en el lago?
 pokemon_muy_eficaz_agua_lago(Nombre).
 
-// 132. ¿Cuáles son los Pokémon muy eficaces contra el tipo eléctrico en la ciudad?
+¿Cuáles son los Pokémon muy eficaces contra el tipo eléctrico en la ciudad?
 pokemon_muy_eficaz_electrico_ciudad(Nombre).
 
-// 133. ¿Cuáles son los Pokémon muy eficaces contra el tipo hielo en la tundra?
+¿Cuáles son los Pokémon muy eficaces contra el tipo hielo en la tundra?
 pokemon_muy_eficaz_hielo_tundra(Nombre).
 
-// 134. ¿Cuáles son los Pokémon muy eficaces contra el tipo veneno en el pantano?
+¿Cuáles son los Pokémon muy eficaces contra el tipo veneno en el pantano?
 pokemon_muy_eficaz_veneno_pantano(Nombre).
 
-// 135. ¿Cuáles son los Pokémon muy eficaces contra el tipo volador en la selva?
+¿Cuáles son los Pokémon muy eficaces contra el tipo volador en la selva?
 pokemon_muy_eficaz_volador_selva(Nombre).
 
-// 136. ¿Cuáles son los Pokémon muy eficaces contra el tipo bicho en el bosque?
+¿Cuáles son los Pokémon muy eficaces contra el tipo bicho en el bosque?
 pokemon_muy_eficaz_bicho_bosque(Nombre).
 
-// 137. ¿Cuáles son los Pokémon muy eficaces contra el tipo roca en la caverna?
+¿Cuáles son los Pokémon muy eficaces contra el tipo roca en la caverna?
 pokemon_muy_eficaz_roca_caverna(Nombre).
 
-// 138. ¿Cuáles son los Pokémon muy eficaces contra el tipo tierra en el desierto?
+¿Cuáles son los Pokémon muy eficaces contra el tipo tierra en el desierto?
 pokemon_muy_eficaz_tierra_desierto(Nombre).
 
-// 139. ¿Cuáles son los Pokémon muy eficaces contra el tipo psíquico en la ciudad?
+¿Cuáles son los Pokémon muy eficaces contra el tipo psíquico en la ciudad?
 pokemon_muy_eficaz_psiquico_ciudad(Nombre).
 
-// 140. ¿Cuáles son los Pokémon muy eficaces contra el tipo hada en la pradera?
+¿Cuáles son los Pokémon muy eficaces contra el tipo hada en la pradera?
 pokemon_muy_eficaz_hada_pradera(Nombre).
 
-// 141. ¿Cuáles son los Pokémon muy eficaces contra el tipo lucha en la ciudad?
+¿Cuáles son los Pokémon muy eficaces contra el tipo lucha en la ciudad?
 pokemon_muy_eficaz_lucha_ciudad(Nombre).
 
-// 142. ¿Cuáles son los Pokémon muy eficaces contra el tipo acero en la caverna?
+¿Cuáles son los Pokémon muy eficaces contra el tipo acero en la caverna?
 pokemon_muy_eficaz_acero_caverna(Nombre).
 
-// 143. ¿Cuáles son los Pokémon muy eficaces contra el tipo fantasma en la caverna?
+¿Cuáles son los Pokémon muy eficaces contra el tipo fantasma en la caverna?
 pokemon_muy_eficaz_fantasma_caverna(Nombre).
 
-// 144. ¿Cuáles son los Pokémon con múltiples inmunidades?
+¿Cuáles son los Pokémon con múltiples inmunidades?
 pokemon_con_multiples_inmunidades(Nombre, Inmunidades).
 
-// 145. ¿Cuáles son los movimientos de tipo MT y tutor?
+¿Cuáles son los movimientos de tipo MT y tutor?
 movimientos_tipo_mt_tutor(Tipo, Movimiento).
 
-// 146. ¿Cuáles son los movimientos de tipo MT y huevo?
+¿Cuáles son los movimientos de tipo MT y huevo?
 movimientos_tipo_mt_huevo(Tipo, Movimiento).
 
-// 147. ¿Cuáles son los movimientos de tipo huevo y nivel?
+¿Cuáles son los movimientos de tipo huevo y nivel?
 movimientos_tipo_huevo_nivel(Tipo, Movimiento).
 
-// 148. ¿Cuáles son los movimientos de tipo nivel y MO?
+¿Cuáles son los movimientos de tipo nivel y MO?
 movimientos_tipo_nivel_mo(Tipo, Movimiento).
 
-// 149. ¿Cuáles son los movimientos de tipo tutor y huevo?
+¿Cuáles son los movimientos de tipo tutor y huevo?
 movimientos_tipo_tutor_huevo(Tipo, Movimiento).
 
-// 150. ¿Cuáles son los movimientos de tipo tutor y nivel?
+¿Cuáles son los movimientos de tipo tutor y nivel?
 movimientos_tipo_tutor_nivel(Tipo, Movimiento).
 
-// 151. ¿Cuáles son los movimientos de tipo MT y nivel?
+¿Cuáles son los movimientos de tipo MT y nivel?
 movimientos_tipo_mt_nivel(Tipo, Movimiento).
 
-// 152. ¿Cuáles son los movimientos de tipo MO y tutor?
+¿Cuáles son los movimientos de tipo MO y tutor?
 movimientos_tipo_mo_tutor(Tipo, Movimiento).
 
-// 153. ¿Cuáles son las habilidades que curan con la lluvia?
+¿Cuáles son las habilidades que curan con la lluvia?
 habilidad_cura_lluvia(Habilidad).
 
-// 154. ¿Cuáles son las habilidades que curan con tormenta de arena?
+¿Cuáles son las habilidades que curan con tormenta de arena?
 habilidad_cura_tormenta_arena(Habilidad).
 
-// 155. ¿Cuáles son las habilidades que curan con granizo?
+¿Cuáles son las habilidades que curan con granizo?
 habilidad_cura_granizo(Habilidad).
 
-// 156. ¿Cuáles son los Pokémon iniciales del grupo huevo dragón?
+¿Cuáles son los Pokémon iniciales del grupo huevo dragón?
 pokemon_inicial_huevo_dragon(Nombre).
 
-// 157. ¿Cuáles son los Pokémon iniciales del grupo huevo agua 1?
+¿Cuáles son los Pokémon iniciales del grupo huevo agua 1?
 pokemon_inicial_huevo_agua1(Nombre).
 
-// 158. ¿Cuáles son los Pokémon iniciales del grupo huevo agua 2?
+¿Cuáles son los Pokémon iniciales del grupo huevo agua 2?
 pokemon_inicial_huevo_agua2(Nombre).
 
-// 159. ¿Cuáles son los Pokémon iniciales del grupo huevo agua 3?
+¿Cuáles son los Pokémon iniciales del grupo huevo agua 3?
 pokemon_inicial_huevo_agua3(Nombre).
 
-// 160. ¿Cuáles son los Pokémon iniciales del grupo huevo hada?
+¿Cuáles son los Pokémon iniciales del grupo huevo hada?
 pokemon_inicial_huevo_hada(Nombre).
 
-// 161. ¿Cuáles son los Pokémon iniciales del grupo huevo planta?
+¿Cuáles son los Pokémon iniciales del grupo huevo planta?
 pokemon_inicial_huevo_planta(Nombre).
 
-// 162. ¿Cuáles son las regiones grandes?
+¿Cuáles son las regiones grandes?
 region_grande(Region).
 
-// 163. ¿Cuáles son los movimientos de tipo hada y tutor que son eficaces?
+¿Cuáles son los movimientos de tipo hada y tutor que son eficaces?
 movimiento_hada_tutor_eficaz(Movimiento).
 
-// 164. ¿Cuántos Pokémon hay de un solo tipo?
+¿Cuántos Pokémon hay de un solo tipo?
 contar_pokemon_un_tipo(Count).
 
-// 165. ¿Cuántos Pokémon hay de dos tipos?
+¿Cuántos Pokémon hay de dos tipos?
 contar_pokemon_dos_tipos(Count).
 
-// 166. ¿Cuántos Pokémon de un solo tipo hay en una generación específica?
+¿Cuántos Pokémon de un solo tipo hay en una generación específica?
 contar_pokemon_un_tipo_generacion(Generacion, Count).
 
-// 167. ¿Cuántos Pokémon de dos tipos hay en una generación específica?
+¿Cuántos Pokémon de dos tipos hay en una generación específica?
 contar_pokemon_dos_tipos_generacion(Generacion, Count).
 
-// 168. ¿Cuáles son los Pokémon iniciales con Gigamax?
+¿Cuáles son los Pokémon iniciales con Gigamax?
 pokemon_inicial_gigamax(Nombre).
 
-// 169. ¿Cuáles son los Pokémon básicos con Gigamax?
+¿Cuáles son los Pokémon básicos con Gigamax?
 pokemon_basicos_gigamax(Nombre).
 
-// 170. ¿Cuáles son los Pokémon básicos sin Gigamax?
+¿Cuáles son los Pokémon básicos sin Gigamax?
 pokemon_basicos_no_gigamax(Nombre).
 
-// 171. ¿Cuáles son los Pokémon que evolucionan según el género?
+¿Cuáles son los Pokémon que evolucionan según el género?
 pokemon_evolucion_genero(Pokemon).
 
-// 172. ¿Cuáles son los Pokémon con forma de Alola y tipo hada?
+¿Cuáles son los Pokémon con forma de Alola y tipo hada?
 pokemon_forma_alola_hada(Pokemon).
 
-// 173. ¿Cuáles son los Pokémon que pueden megaevolucionar?
+¿Cuáles son los Pokémon que pueden megaevolucionar?
 pokemon_megaevolucion(Pokemon, MegaEvolucion, MegaPiedra).
 
-// 174. ¿Cuáles son los Pokémon que evolucionan por nivel e intercambio?
+¿Cuáles son los Pokémon que evolucionan por nivel e intercambio?
 pokemon_evolucion_nivel_intercambio(Pokemon, EvolucionNivel, EvolucionIntercambio).
 
-// 175. ¿Cuáles son los Pokémon que evolucionan por nivel y piedra?
+¿Cuáles son los Pokémon que evolucionan por nivel y piedra?
 pokemon_evolucion_nivel_piedra(Pokemon, EvolucionNivel, EvolucionPiedra, Piedra).
 
-// 176. ¿Cuáles son los Pokémon que evolucionan por nivel, intercambio y objeto?
+¿Cuáles son los Pokémon que evolucionan por nivel, intercambio y objeto?
 pokemon_evolucion_nivel_intercambio_objeto(Pokemon, EvolucionNivel, EvolucionIntercambio, Objeto).
 
-// 177. ¿Cuáles son los Pokémon que evolucionan por nivel y amistad?
+¿Cuáles son los Pokémon que evolucionan por nivel y amistad?
 pokemon_evolucion_nivel_amistad(Pokemon, EvolucionNivel, EvolucionAmistad).
 
-// 178. ¿Cuáles son los Pokémon que evolucionan por amistad y piedra?
+178 .- ¿Cuáles son los Pokémon que evolucionan por amistad y piedra?
 pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Piedra).
+
+¿Cuáles son los Pokémon que evolucionan por nivel e intercambio?
+pokemon_evolucion_nivel_intercambio(Pokemon, EvolucionNivel, EvolucionIntercambio).
+
+¿Cuáles son los Pokémon que evolucionan por nivel y piedra?
+pokemon_evolucion_nivel_piedra(Pokemon, EvolucionNivel, EvolucionPiedra, Piedra).
+
+¿Cuáles son los Pokémon que evolucionan por nivel, intercambio y objeto?
+pokemon_evolucion_nivel_intercambio_objeto(Pokemon, EvolucionNivel, EvolucionIntercambio, Objeto).
+
+¿Cuáles son los Pokémon que evolucionan por nivel y amistad?
+pokemon_evolucion_nivel_amistad(Pokemon, EvolucionNivel, EvolucionAmistad).
+
+¿Cuáles son los Pokémon que evolucionan por amistad y piedra?
+pokemon_evolucion_amistad_piedra(Pokemon, EvolucionAmistad, EvolucionPiedra, Piedra).
+
+¿Cuáles son los Pokémon sin género que pueden evolucionar?
+pokemon_sin_genero_evolucion(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo tierra que evolucionan por intercambio sin objetos?
+pokemon_tierra_evolucion_intercambio(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo psíquico que evolucionan por intercambio sin objetos?
+pokemon_psiquico_evolucion_intercambio(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo lucha que evolucionan por intercambio sin objetos?
+pokemon_lucha_evolucion_intercambio(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo fantasma que evolucionan por intercambio sin objetos?
+pokemon_fantasma_evolucion_intercambio(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo tierra que evolucionan por intercambio con objeto?
+pokemon_tierra_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon de tipo agua que evolucionan por intercambio con objeto?
+pokemon_agua_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon de tipo bicho que evolucionan por intercambio con objeto?
+pokemon_bicho_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon de tipo normal que evolucionan por intercambio con objeto?
+pokemon_normal_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon de tipo fantasma que evolucionan por intercambio con objeto?
+pokemon_fantasma_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon de tipo eléctrico que evolucionan por intercambio con objeto?
+pokemon_electrico_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon de tipo roca que evolucionan por intercambio con objeto?
+pokemon_roca_evolucion_intercambio_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon que evolucionan con la roca del rey?
+pokemon_evolucion_roca_del_rey(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon que evolucionan al intercambiarse con un objeto específico?
+pokemon_evolucion_intercambio_con_objeto(Pokemon, Evolucion, Objeto).
+
+¿Cuáles son los Pokémon que evolucionan al intercambiarse por otro en específico?
+pokemon_evolucion_intercambio_especifico(Pokemon, Evolucion, OtroPokemon).
+
+¿Cuáles son los Pokémon de tipo siniestro que evolucionan con amistad?
+pokemon_siniestro_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo veneno que evolucionan con amistad?
+pokemon_veneno_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo normal que evolucionan con amistad?
+pokemon_normal_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo eléctrico que evolucionan con amistad?
+pokemon_electrico_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo hada que evolucionan con amistad?
+pokemon_hada_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo lucha que evolucionan con amistad?
+pokemon_lucha_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo bicho que evolucionan con amistad?
+pokemon_bicho_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de tipo hielo que evolucionan con amistad?
+pokemon_hielo_evolucion_amistad(Pokemon, Evolucion).
+
+¿Cuáles son los Pokémon de Alola que son de tipo hielo y tienen forma regional?
+pokemon_alola_hielo_forma_regional(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo siniestro cuando tienen otra forma regional?
+pokemon_forma_regional_siniestro(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo veneno cuando tienen otra forma regional?
+pokemon_forma_regional_veneno(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo hielo cuando tienen otra forma regional?
+pokemon_forma_regional_hielo(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo acero cuando tienen otra forma regional?
+pokemon_forma_regional_acero(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo psíquico cuando tienen otra forma regional?
+pokemon_forma_regional_psiquico(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo planta cuando tienen otra forma regional?
+pokemon_forma_regional_planta(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo roca cuando tienen otra forma regional?
+pokemon_forma_regional_roca(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo fantasma cuando tienen otra forma regional?
+pokemon_forma_regional_fantasma(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo lucha cuando tienen otra forma regional?
+pokemon_forma_regional_lucha(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo normal cuando tienen otra forma regional?
+pokemon_forma_regional_normal(Pokemon).
+
+¿Cuáles son los Pokémon que cambian a tipo dragón cuando tienen otra forma regional?
+pokemon_forma_regional_dragon(Pokemon).
